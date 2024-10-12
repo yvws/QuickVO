@@ -19,6 +19,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
+        .target(name: "QuickVOKit",dependencies: ["Starscream","WebRTC","QuickVO"]),
+          
     ]
 
 
