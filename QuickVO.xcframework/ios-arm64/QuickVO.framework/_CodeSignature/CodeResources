@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/gpupixel.framework/gpupixel</key>
 		<data>
-		Bh2nOppiVaF4M/WBJNfmPmMAsKc=
+		KFfhx4uBawSVuMnBYydN7/O8UrM=
 		</data>
 		<key>Frameworks/gpupixel.framework/lookup_custom.png</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/vnn_core_ios.framework/vnn_core_ios</key>
 		<data>
-		ob7HIjtaX//moJtL210yr98gsZ8=
+		Kk4b5lr5/ZbDbsYlJp5FoQJ0CPE=
 		</data>
 		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/vnn_face_ios.framework/vnn_face_ios</key>
 		<data>
-		cwHJKRrOP+EqFUp5FkslLjvzFLk=
+		0I8tPqsziyWZzrjm4mDA3RxBrCI=
 		</data>
 		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Frameworks/vnn_kit_ios.framework/vnn_kit_ios</key>
 		<data>
-		rNONz05nxSJK/MOBG5pEvBPKcwU=
+		FjUXsDoaaoXbzMYzJ+0Wtq4vqSY=
 		</data>
 		<key>Headers/QuickVO.h</key>
 		<data>
@@ -98,27 +98,27 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		ULGuAwFCg9mWAgcnhgvHrFXLhWI=
+		hOckll5BSMw24nfjOhgCma6+c5w=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		S0z3heVnNTjZFSnt/ZMddk59wHQ=
+		bjM3IEuwuNMZDAexb4HvmOUMe6g=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		98Js3WNnz/T1XKw4YWoZUjEABis=
+		qE6GYp1aVjp906tKJv0AdbMiiV4=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		f6+fXNgaNN5OmjtYBu4Tm3f4pp0=
+		wLIAHZ3ORzmdWFyVveebrr3QAk8=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		98Js3WNnz/T1XKw4YWoZUjEABis=
+		qE6GYp1aVjp906tKJv0AdbMiiV4=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		E+DfB4jyuzzYZCl2LtXUns95vTA=
+		bqPKI+UIH3PbhCcy65meN2aOVCY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			igXpSFcpJUTDv6BCu8fbdCgF67/XV6DVI9HWwbruc80=
+			vJnckNSRD0DYkNOpbEAlDPOjhcnOXnFb/o9Bdx2BxtY=
 			</data>
 		</dict>
 		<key>Frameworks/gpupixel.framework/lookup_custom.png</key>
@@ -222,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6wd19hPsP/W8bhPoEMV4EMCKBXpmJGHNX1aXoR9pw00=
+			9pr5jdKJCzGNL3TgNUvC4pluhlrr95SVMKa+5lU3ydI=
 			</data>
 		</dict>
 		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2OqFj28GtzlWp+MGoEADgE5Y7q64STpTM6zwRsAcPo=
+			wZSk/v4KFG97WfofQh5/ReobC5q1H0Mmo6AqmjHtFRA=
 			</data>
 		</dict>
 		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
@@ -264,7 +264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1QD2lv+z/v62DeGmsyE7Jci5j/GtfQDoHNs+36o/lyI=
+			bUrTk0iOwn0XPKWpYtl5e1mVxkA7oHX4CK4/8DJDX2Q=
 			</data>
 		</dict>
 		<key>Headers/QuickVO.h</key>
@@ -285,42 +285,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4+xILbjmwSGj16npLVDjDbKx4z6eZXNfoc1GhvnwB6E=
+			bpAvPADN0gpo/+GuCQjUff1hXEUKWi4GDj3sxefaBIM=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E8I5JoR4CHyYR36vuH6vzoceOWQSjb+rERW0aF7ppa8=
+			G3Na50q6afqeFbijXD+h2Z4dHLmdAE1kmfCXOaSjpOE=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1b1rTd/WwjiWkKezdZd8Vnna0m25jkTEYzgyvjDfZes=
+			54wSYqKqbGQYJEMqG+BaCAsYusZirTGWi5CNkAbqSGk=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rdGdvDHTquMDWyJgMMqQVp8FUg819XbYn+ixUxAaeXU=
+			70NKBGqHFqzc2wVKuWnOQzWz+zTRGGsER5foimPJkiU=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1b1rTd/WwjiWkKezdZd8Vnna0m25jkTEYzgyvjDfZes=
+			54wSYqKqbGQYJEMqG+BaCAsYusZirTGWi5CNkAbqSGk=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VRrJYdzXtMK+GFr4eGFgXPWZKtL88aR3iQBxbhBBoNU=
+			L1f5aPo3m5UOMFLOkHFZJFvQFE9uUmhpoTLhjQmaGQQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

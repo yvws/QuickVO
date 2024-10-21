@@ -91,7 +91,7 @@ extension QuickVO.RTCRoom {
   public func setRoomAudioVolume(_ volum: Swift.Double)
 }
 extension QuickVO.RTCRoomDelegate {
-  public func roomStatus(_ error: any Swift.Error)
+  public func roomStatus(_ status: QuickVO.RTCRoomConnect)
   public func roomError(_ error: any Swift.Error)
   public func didPublished(_ room: QuickVO.RTCRoom)
   public func didSubscribeed(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
@@ -106,204 +106,6 @@ extension QuickVO.RTCRoomDelegate {
 extension QuickVO.RTCEngine {
   public static func create(_ appId: Swift.String)
   public static func destroy()
-}
-extension QuickVO.HandyJSON {
-  public static func deserialize(from dict: Foundation.NSDictionary?, designatedPath: Swift.String? = nil) -> Self?
-  public static func deserialize(from dict: [Swift.String : Any]?, designatedPath: Swift.String? = nil) -> Self?
-  public static func deserialize(from json: Swift.String?, designatedPath: Swift.String? = nil) -> Self?
-}
-extension Swift.Array where Element : QuickVO.HandyJSON {
-  public static func deserialize(from json: Swift.String?, designatedPath: Swift.String? = nil) -> [Element?]?
-  public static func deserialize(from array: Foundation.NSArray?) -> [Element?]?
-  public static func deserialize(from array: [Any]?) -> [Element?]?
-}
-@_hasMissingDesignatedInitializers public class JSONDeserializer<T> where T : QuickVO.HandyJSON {
-  public static func deserializeFrom(dict: Foundation.NSDictionary?, designatedPath: Swift.String? = nil) -> T?
-  public static func deserializeFrom(dict: [Swift.String : Any]?, designatedPath: Swift.String? = nil) -> T?
-  public static func deserializeFrom(json: Swift.String?, designatedPath: Swift.String? = nil) -> T?
-  public static func update(object: inout T, from dict: [Swift.String : Any]?, designatedPath: Swift.String? = nil)
-  public static func update(object: inout T, from json: Swift.String?, designatedPath: Swift.String? = nil)
-  public static func deserializeModelArrayFrom(json: Swift.String?, designatedPath: Swift.String? = nil) -> [T?]?
-  public static func deserializeModelArrayFrom(array: Foundation.NSArray?) -> [T?]?
-  public static func deserializeModelArrayFrom(array: [Any]?) -> [T?]?
-  @objc deinit
-}
-public protocol _Transformable : QuickVO._Measurable {
-}
-open class ISO8601DateTransform : QuickVO.DateFormatterTransform {
-  public init()
-  @objc deinit
-}
-open class NSDecimalNumberTransform : QuickVO.TransformType {
-  public typealias Object = Foundation.NSDecimalNumber
-  public typealias JSON = Swift.String
-  public init()
-  open func transformFromJSON(_ value: Any?) -> Foundation.NSDecimalNumber?
-  open func transformToJSON(_ value: Foundation.NSDecimalNumber?) -> Swift.String?
-  @objc deinit
-}
-open class DateTransform : QuickVO.TransformType {
-  public typealias Object = Foundation.Date
-  public typealias JSON = Swift.Double
-  public init()
-  open func transformFromJSON(_ value: Any?) -> Foundation.Date?
-  open func transformToJSON(_ value: Foundation.Date?) -> Swift.Double?
-  @objc deinit
-}
-public struct DeserializeOptions : Swift.OptionSet {
-  public let rawValue: Swift.Int
-  public static let caseInsensitive: QuickVO.DeserializeOptions
-  public static let defaultOptions: QuickVO.DeserializeOptions
-  public init(rawValue: Swift.Int)
-  public typealias ArrayLiteralElement = QuickVO.DeserializeOptions
-  public typealias Element = QuickVO.DeserializeOptions
-  public typealias RawValue = Swift.Int
-}
-public enum DebugMode : Swift.Int {
-  case verbose
-  case debug
-  case error
-  case none
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public struct HandyJSONConfiguration {
-  public static var debugMode: QuickVO.DebugMode {
-    get
-    set
-  }
-  public static var deserializeOptions: QuickVO.DeserializeOptions
-}
-open class URLTransform : QuickVO.TransformType {
-  public typealias Object = Foundation.URL
-  public typealias JSON = Swift.String
-  public init(shouldEncodeURLString: Swift.Bool = true)
-  open func transformFromJSON(_ value: Any?) -> Foundation.URL?
-  open func transformToJSON(_ value: Foundation.URL?) -> Swift.String?
-  @objc deinit
-}
-public protocol _RawEnumProtocol : QuickVO._Transformable {
-  static func _transform(from object: Any) -> Self?
-  func _plainValue() -> Any?
-}
-extension Swift.RawRepresentable where Self : QuickVO._RawEnumProtocol {
-  public static func _transform(from object: Any) -> Self?
-  public func _plainValue() -> Any?
-}
-open class TransformOf<ObjectType, JSONType> : QuickVO.TransformType {
-  public typealias Object = ObjectType
-  public typealias JSON = JSONType
-  public init(fromJSON: @escaping (JSONType?) -> ObjectType?, toJSON: @escaping (ObjectType?) -> JSONType?)
-  open func transformFromJSON(_ value: Any?) -> ObjectType?
-  open func transformToJSON(_ value: ObjectType?) -> JSONType?
-  @objc deinit
-}
-public protocol _ExtendCustomModelType : QuickVO._Transformable {
-  init()
-  mutating func willStartMapping()
-  mutating func mapping(mapper: QuickVO.HelpingMapper)
-  mutating func didFinishMapping()
-}
-extension QuickVO._ExtendCustomModelType {
-  public mutating func willStartMapping()
-  public mutating func mapping(mapper: QuickVO.HelpingMapper)
-  public mutating func didFinishMapping()
-}
-open class HexColorTransform : QuickVO.TransformType {
-  public typealias Object = UIKit.UIColor
-  public typealias JSON = Swift.String
-  public init(prefixToJSON: Swift.Bool = false, alphaToJSON: Swift.Bool = false)
-  open func transformFromJSON(_ value: Any?) -> QuickVO.HexColorTransform.Object?
-  open func transformToJSON(_ value: QuickVO.HexColorTransform.Object?) -> QuickVO.HexColorTransform.JSON?
-  @objc deinit
-}
-open class EnumTransform<T> : QuickVO.TransformType where T : Swift.RawRepresentable {
-  public typealias Object = T
-  public typealias JSON = T.RawValue
-  public init()
-  open func transformFromJSON(_ value: Any?) -> T?
-  open func transformToJSON(_ value: T?) -> T.RawValue?
-  @objc deinit
-}
-public protocol _ExtendCustomBasicType : QuickVO._Transformable {
-  static func _transform(from object: Any) -> Self?
-  func _plainValue() -> Any?
-}
-extension QuickVO.HandyJSON {
-  public func toJSON() -> [Swift.String : Any]?
-  public func toJSONString(prettyPrint: Swift.Bool = false) -> Swift.String?
-}
-extension Swift.Collection where Self.Element : QuickVO.HandyJSON {
-  public func toJSON() -> [[Swift.String : Any]?]
-  public func toJSONString(prettyPrint: Swift.Bool = false) -> Swift.String?
-}
-public typealias CustomMappingKeyValueTuple = (Swift.Int, QuickVO.MappingPropertyHandler)
-public class MappingPropertyHandler {
-  public init(rawPaths: [Swift.String]?, assignmentClosure: ((Any?) -> (Any?))?, takeValueClosure: ((Any?) -> (Any?))?)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class HelpingMapper {
-  public func specify<T>(property: inout T, name: Swift.String)
-  public func specify<T>(property: inout T, converter: @escaping (Swift.String) -> T)
-  public func specify<T>(property: inout T, name: Swift.String?, converter: ((Swift.String) -> T)?)
-  public func exclude<T>(property: inout T)
-  @objc deinit
-}
-infix operator <-- : LogicalConjunctionPrecedence
-public func <-- <T>(property: inout T, name: Swift.String) -> QuickVO.CustomMappingKeyValueTuple
-public func <-- <T>(property: inout T, names: [Swift.String]) -> QuickVO.CustomMappingKeyValueTuple
-public func <-- <Transform>(property: inout Transform.Object, transformer: Transform) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-public func <-- <Transform>(property: inout Transform.Object, transformer: (Swift.String?, Transform?)) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-public func <-- <Transform>(property: inout Transform.Object, transformer: ([Swift.String], Transform?)) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-public func <-- <Transform>(property: inout Transform.Object?, transformer: Transform) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-public func <-- <Transform>(property: inout Transform.Object?, transformer: (Swift.String?, Transform?)) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-public func <-- <Transform>(property: inout Transform.Object?, transformer: ([Swift.String], Transform?)) -> QuickVO.CustomMappingKeyValueTuple where Transform : QuickVO.TransformType
-infix operator <<< : AssignmentPrecedence
-public func <<< (mapper: QuickVO.HelpingMapper, mapping: QuickVO.CustomMappingKeyValueTuple)
-public func <<< (mapper: QuickVO.HelpingMapper, mappings: [QuickVO.CustomMappingKeyValueTuple])
-infix operator >>> : AssignmentPrecedence
-public func >>> <T>(mapper: QuickVO.HelpingMapper, property: inout T)
-open class DataTransform : QuickVO.TransformType {
-  public typealias Object = Foundation.Data
-  public typealias JSON = Swift.String
-  public init()
-  open func transformFromJSON(_ value: Any?) -> Foundation.Data?
-  open func transformToJSON(_ value: Foundation.Data?) -> Swift.String?
-  @objc deinit
-}
-open class CustomDateFormatTransform : QuickVO.DateFormatterTransform {
-  public init(formatString: Swift.String)
-  @objc deinit
-}
-open class DateFormatterTransform : QuickVO.TransformType {
-  public typealias Object = Foundation.Date
-  public typealias JSON = Swift.String
-  final public let dateFormatter: Foundation.DateFormatter
-  public init(dateFormatter: Foundation.DateFormatter)
-  open func transformFromJSON(_ value: Any?) -> Foundation.Date?
-  open func transformToJSON(_ value: Foundation.Date?) -> Swift.String?
-  @objc deinit
-}
-public protocol TransformType {
-  associatedtype Object
-  associatedtype JSON
-  func transformFromJSON(_ value: Any?) -> Self.Object?
-  func transformToJSON(_ value: Self.Object?) -> Self.JSON?
-}
-public protocol HandyJSONCustomTransformable : QuickVO._ExtendCustomBasicType {
-}
-public protocol HandyJSON : QuickVO._ExtendCustomModelType {
-}
-public protocol HandyJSONEnum : QuickVO._RawEnumProtocol {
-}
-@_silgen_name("swift_getTypeByMangledNameInContext")
-public func _getTypeByMangledNameInContext(_ name: Swift.UnsafePointer<Swift.UInt8>, _ nameLength: Swift.Int, genericContext: Swift.UnsafeRawPointer?, genericArguments: Swift.UnsafeRawPointer?) -> (any Any.Type)?
-@_silgen_name("swift_getTypeContextDescriptor")
-public func _swift_getTypeContextDescriptor(_ metadata: Swift.UnsafeRawPointer?) -> Swift.UnsafeRawPointer?
-public protocol _Measurable {
 }
 extension Swift.Bool {
   public var int: Swift.Int {
@@ -455,14 +257,12 @@ public protocol RTCParticipantDelegate {
   func action(_ action: QuickVO.RTCParticipantAtion)
   func speacking(_ speacking: Swift.Bool)
   func network(_ net: QuickVO.NetMonitorValue)
-  func debugInfo(_ net: QuickVO.NetMonitorValue)
 }
 extension QuickVO.RTCParticipantDelegate {
   public func addAuidoTrack(_ track: QuickVO.RoomAudioTrack)
   public func action(_ action: QuickVO.RTCParticipantAtion)
   public func speacking(_ speacking: Swift.Bool)
   public func network(_ net: QuickVO.NetMonitorValue)
-  public func debugInfo(_ net: QuickVO.NetMonitorValue)
 }
 public class RTCParticipant {
   public var id: Swift.String
@@ -500,11 +300,10 @@ extension QuickVO.RoomError {
   }
 }
 public enum ConnectError : QuickVO.RoomError {
-  case requestError(Swift.Int, _: Swift.String? = nil)
+  case requestError(Swift.Int32, _: Swift.String? = nil)
   case requestTimeOut
-  case tokenInvalid
   case overTheLimit
-  case rtcConnectError
+  case disConnected
   public var description: Swift.String {
     get
   }
@@ -567,30 +366,6 @@ extension QuickVO.RTCRoomConnect : Swift.Equatable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
 extension QuickVO.RTCCameraPosion : Swift.Equatable {}
 extension QuickVO.RTCCameraPosion : Swift.Hashable {}
-extension Swift.Int : QuickVO._Transformable {}
-extension QuickVO.DebugMode : Swift.Equatable {}
-extension QuickVO.DebugMode : Swift.Hashable {}
-extension QuickVO.DebugMode : Swift.RawRepresentable {}
-extension Foundation.NSString : QuickVO._Transformable {}
-extension Foundation.NSNumber : QuickVO._Transformable {}
-extension Foundation.NSArray : QuickVO._Transformable {}
-extension Foundation.NSDictionary : QuickVO._Transformable {}
-extension Swift.UInt : QuickVO._Transformable {}
-extension Swift.Int8 : QuickVO._Transformable {}
-extension Swift.Int16 : QuickVO._Transformable {}
-extension Swift.Int32 : QuickVO._Transformable {}
-extension Swift.Int64 : QuickVO._Transformable {}
-extension Swift.UInt8 : QuickVO._Transformable {}
-extension Swift.UInt16 : QuickVO._Transformable {}
-extension Swift.UInt32 : QuickVO._Transformable {}
-extension Swift.UInt64 : QuickVO._Transformable {}
-extension Swift.Bool : QuickVO._Transformable {}
-extension Swift.Float : QuickVO._Transformable {}
-extension Swift.Double : QuickVO._Transformable {}
-extension Swift.String : QuickVO._Transformable {}
-extension Swift.Array : QuickVO._Transformable {}
-extension Swift.Set : QuickVO._Transformable {}
-extension Swift.Dictionary : QuickVO._Transformable {}
 extension QuickVO.RTCVideoMirror : Swift.Equatable {}
 extension QuickVO.RTCVideoMirror : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.Equatable {}
