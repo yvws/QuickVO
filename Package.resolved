@@ -1,6 +1,15 @@
 {
-  "originHash" : "ece940723e04e2c92d1ee268c684da53092768330ed1c9cb49fa6587dc6cb843",
+  "originHash" : "f474e45aa9d08da311aa3cce39ecc66ed5d0e53670c7cfc67d716135cd452fe9",
   "pins" : [
+    {
+      "identity" : "gzipswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/1024jp/GzipSwift",
+      "state" : {
+        "revision" : "56bf51fdd2fe4b2cf254b2cf34aede3d7caccc6c",
+        "version" : "6.1.0"
+      }
+    },
     {
       "identity" : "starscream",
       "kind" : "remoteSourceControl",

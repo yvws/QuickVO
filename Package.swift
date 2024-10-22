@@ -16,11 +16,20 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.8"),
         .package(url: "https://github.com/stasel/WebRTC", from: "129.0.0"),
-        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2")
+        .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2"),
+        .package(url: "https://github.com/1024jp/GzipSwift", from: "6.1.0")
+        
+        
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
-        .target(name: "QuickVOKit",dependencies: ["Starscream","WebRTC","QuickVO",.product(name: "SwiftProtobuf", package: "swift-protobuf")]),
+        .target(name: "QuickVOKit",dependencies: [
+            "Starscream",
+            "WebRTC",
+            "QuickVO",
+            .product(name: "SwiftProtobuf", package: "swift-protobuf"),
+            .product(name: "Gzip", package: "GzipSwift")
+        ]),
           
     ]
 
