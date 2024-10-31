@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "QuickVO",
-            targets: ["QuickVO"]),
+            targets: ["QuickVOKit","QuickVO"]),
     ],
     dependencies: [
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.8"),
