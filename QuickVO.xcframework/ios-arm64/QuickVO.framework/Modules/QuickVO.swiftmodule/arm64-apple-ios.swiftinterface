@@ -1,7 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickVO
+import AVFoundation
 import Accelerate
+import CoreImage.CIFilterBuiltins
 import Combine
 import CoreImage
 import CoreVideo
@@ -10,6 +12,8 @@ import Network
 @_exported import QuickVO
 import Swift
 import UIKit
+import Vision
+import VisionKit
 import WebRTC
 import _Concurrency
 import _StringProcessing
@@ -98,6 +102,10 @@ extension QuickVO.RTCRoomDelegate {
   public func updateAudioLevel(_ participant: [QuickVO.RTCParticipant])
 }
 @_hasMissingDesignatedInitializers final public class RTCEngine {
+  final public var netStatus: ((QuickVO.NetworkMotorStatus) -> Swift.Void)?
+  final public var netType: ((QuickVO.NetworkMotorType) -> Swift.Void)?
+  final public let statusSubject: Combine.PassthroughSubject<QuickVO.NetworkMotorStatus, Swift.Never>
+  final public let typeSubject: Combine.PassthroughSubject<QuickVO.NetworkMotorType, Swift.Never>
   final public var appId: Swift.String {
     get
   }
@@ -243,30 +251,24 @@ public struct RTCConfig {
   public init(socketURL: Foundation.URL, iceURL: [Swift.String])
 }
 public enum RTCParticipantAtion {
-  case audioEnable
-  case videoEnable
-  public static func == (a: QuickVO.RTCParticipantAtion, b: QuickVO.RTCParticipantAtion) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
+  case audioEnable(Swift.Bool)
+  case videoEnable(Swift.Bool)
 }
 public protocol RTCParticipantDelegate {
-  func addVideoTrack(_ track: QuickVO.RoomVideoTrack)
-  func addAuidoTrack(_ track: QuickVO.RoomAudioTrack)
-  func action(_ action: QuickVO.RTCParticipantAtion)
-  func speacking(_ speacking: Swift.Bool)
-  func network(_ net: QuickVO.NetMonitorValue)
+  func addVideoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomVideoTrack)
+  func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
+  func action(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.RTCParticipantAtion)
+  func speaking(_ participant: QuickVO.RTCParticipant, _ speaking: Swift.Bool)
+  func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
 }
 extension QuickVO.RTCParticipantDelegate {
-  public func addAuidoTrack(_ track: QuickVO.RoomAudioTrack)
-  public func action(_ action: QuickVO.RTCParticipantAtion)
-  public func speacking(_ speacking: Swift.Bool)
-  public func network(_ net: QuickVO.NetMonitorValue)
+  public func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
+  public func action(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.RTCParticipantAtion)
+  public func speaking(_ participant: QuickVO.RTCParticipant, _ speaking: Swift.Bool)
+  public func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
 }
-public class RTCParticipant {
+@_hasMissingDesignatedInitializers public class RTCParticipant {
   public var id: Swift.String
-  public init(id: Swift.String)
   public var delegate: (any QuickVO.RTCParticipantDelegate)?
   public var audioEnable: Swift.Bool {
     get
@@ -274,7 +276,7 @@ public class RTCParticipant {
   public var videoEnable: Swift.Bool {
     get
   }
-  public var isSpeacking: Swift.Bool {
+  public var isSpeaking: Swift.Bool {
     get
   }
   public var netMonitor: QuickVO.NetMonitorValue {
@@ -290,6 +292,9 @@ public class RTCParticipant {
   public var videoTracks: [QuickVO.RoomVideoTrack] {
     get
   }
+  public var joinTime: Swift.Int64 {
+    get
+  }
   @objc deinit
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
@@ -300,10 +305,14 @@ extension QuickVO.RoomError {
   }
 }
 public enum ConnectError : QuickVO.RoomError {
-  case requestError(Swift.Int32, _: Swift.String? = nil)
-  case requestTimeOut
+  case connectError(Swift.Int32, _: Swift.String? = nil)
+  case connectTimeOut
   case overTheLimit
   case disConnected
+  case roomClosed
+  case isConnecting
+  case publishStreamFailure
+  case subscribeStreamFailure([Swift.String])
   public var description: Swift.String {
     get
   }
@@ -336,31 +345,24 @@ public enum ConnectError : QuickVO.RoomError {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RTCNetworkMonitor {
-  public enum NetworkMotorStatus {
-    case reachable
-    case unReachable
-    public static func == (a: QuickVO.RTCNetworkMonitor.NetworkMotorStatus, b: QuickVO.RTCNetworkMonitor.NetworkMotorStatus) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
+public enum NetworkMotorStatus {
+  case reachable
+  case unReachable
+  public static func == (a: QuickVO.NetworkMotorStatus, b: QuickVO.NetworkMotorStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
   }
-  public enum NetworkMotorType {
-    case wifi
-    case cellular
-    case other
-    public static func == (a: QuickVO.RTCNetworkMonitor.NetworkMotorType, b: QuickVO.RTCNetworkMonitor.NetworkMotorType) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
+}
+public enum NetworkMotorType {
+  case wifi
+  case cellular
+  case other
+  public static func == (a: QuickVO.NetworkMotorType, b: QuickVO.NetworkMotorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
   }
-  final public var status: ((QuickVO.RTCNetworkMonitor.NetworkMotorStatus) -> Swift.Void)?
-  final public var type: ((QuickVO.RTCNetworkMonitor.NetworkMotorType) -> Swift.Void)?
-  final public func stopMonitor()
-  final public func startMonitor()
-  @objc deinit
 }
 extension QuickVO.RTCRoomConnect : Swift.Equatable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
@@ -371,9 +373,7 @@ extension QuickVO.RTCVideoMirror : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.Equatable {}
 extension QuickVO.RTCStatisLevel : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.RawRepresentable {}
-extension QuickVO.RTCParticipantAtion : Swift.Equatable {}
-extension QuickVO.RTCParticipantAtion : Swift.Hashable {}
-extension QuickVO.RTCNetworkMonitor.NetworkMotorStatus : Swift.Equatable {}
-extension QuickVO.RTCNetworkMonitor.NetworkMotorStatus : Swift.Hashable {}
-extension QuickVO.RTCNetworkMonitor.NetworkMotorType : Swift.Equatable {}
-extension QuickVO.RTCNetworkMonitor.NetworkMotorType : Swift.Hashable {}
+extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
+extension QuickVO.NetworkMotorStatus : Swift.Hashable {}
+extension QuickVO.NetworkMotorType : Swift.Equatable {}
+extension QuickVO.NetworkMotorType : Swift.Hashable {}

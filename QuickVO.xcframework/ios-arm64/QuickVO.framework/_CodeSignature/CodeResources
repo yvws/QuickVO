@@ -22,7 +22,7 @@
 		</data>
 		<key>Frameworks/gpupixel.framework/gpupixel</key>
 		<data>
-		KFfhx4uBawSVuMnBYydN7/O8UrM=
+		H8mcUDDiu7ajgvnDjzKTH4os64g=
 		</data>
 		<key>Frameworks/gpupixel.framework/lookup_custom.png</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/vnn_core_ios.framework/vnn_core_ios</key>
 		<data>
-		Kk4b5lr5/ZbDbsYlJp5FoQJ0CPE=
+		OSav2dnkUSANRxdsrR5JEVe8g6Q=
 		</data>
 		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/vnn_face_ios.framework/vnn_face_ios</key>
 		<data>
-		0I8tPqsziyWZzrjm4mDA3RxBrCI=
+		oWnHnnKnTUdR/NwnMuQd+UyLi0Q=
 		</data>
 		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Frameworks/vnn_kit_ios.framework/vnn_kit_ios</key>
 		<data>
-		FjUXsDoaaoXbzMYzJ+0Wtq4vqSY=
+		Up6AWwHNqSkzL3QsXmwmzUUH2Bw=
 		</data>
 		<key>Headers/QuickVO.h</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		hOckll5BSMw24nfjOhgCma6+c5w=
+		t0bUloQJz1g9LPjDwlaxwZfhjsU=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		bjM3IEuwuNMZDAexb4HvmOUMe6g=
+		AMRRAGCHqKnqr+cK0zIP+hlG2wg=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		qE6GYp1aVjp906tKJv0AdbMiiV4=
+		i32bouh2NA6EJtcLeh6Y1Sk8DwQ=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -114,11 +114,11 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		qE6GYp1aVjp906tKJv0AdbMiiV4=
+		i32bouh2NA6EJtcLeh6Y1Sk8DwQ=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		bqPKI+UIH3PbhCcy65meN2aOVCY=
+		Xe0zEOjYVWKTl7r8Sy6eqwISTHU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vJnckNSRD0DYkNOpbEAlDPOjhcnOXnFb/o9Bdx2BxtY=
+			cDU3WVTxAJ+ix/P1BhUZ1IccxY+jsiK8f49SrBzqS4E=
 			</data>
 		</dict>
 		<key>Frameworks/gpupixel.framework/lookup_custom.png</key>
@@ -222,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9pr5jdKJCzGNL3TgNUvC4pluhlrr95SVMKa+5lU3ydI=
+			SSSbqUJgxutOU4xTfpkPxUsuP2xq8GcWRDraV1XKvjk=
 			</data>
 		</dict>
 		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
@@ -243,7 +243,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wZSk/v4KFG97WfofQh5/ReobC5q1H0Mmo6AqmjHtFRA=
+			iI4alLR/14nZx+xaZsOMejQVpT5iQK4PDu2lO/DWdz4=
 			</data>
 		</dict>
 		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
@@ -264,7 +264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bUrTk0iOwn0XPKWpYtl5e1mVxkA7oHX4CK4/8DJDX2Q=
+			mVUIN7BM8lFUS4xJ/Z6V4V0FkD9diYydRfhh/1ZtZYc=
 			</data>
 		</dict>
 		<key>Headers/QuickVO.h</key>
@@ -285,21 +285,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bpAvPADN0gpo/+GuCQjUff1hXEUKWi4GDj3sxefaBIM=
+			Q9SRc9ktpu0Nd9kBl29+4acn0obyZxrx0Lz4y1JtWRs=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3Na50q6afqeFbijXD+h2Z4dHLmdAE1kmfCXOaSjpOE=
+			w5VGGLpvlXtDo9vvXa9oVKPahDW1JIHPgeKWpobQTHc=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			54wSYqKqbGQYJEMqG+BaCAsYusZirTGWi5CNkAbqSGk=
+			Nm7pdgM0axnk+J9H1Py9x6rfdjQLJ1fFwh9xC+XSnmk=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -313,14 +313,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			54wSYqKqbGQYJEMqG+BaCAsYusZirTGWi5CNkAbqSGk=
+			Nm7pdgM0axnk+J9H1Py9x6rfdjQLJ1fFwh9xC+XSnmk=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L1f5aPo3m5UOMFLOkHFZJFvQFE9uUmhpoTLhjQmaGQQ=
+			OLegxSzVf74ZN8rkUW/DrcrhPHjzMufSyy/fijhu6uU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
