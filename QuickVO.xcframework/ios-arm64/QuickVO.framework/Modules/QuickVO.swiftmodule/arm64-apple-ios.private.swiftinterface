@@ -48,7 +48,7 @@ public enum RTCCameraPosion {
     get
   }
 }
-public protocol RTCRoomDelegate {
+public protocol RTCRoomDelegate : AnyObject {
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomError(_ error: any Swift.Error)
   func tokenExpired()
@@ -73,7 +73,7 @@ public class RTCRoom {
   public var maximum: Swift.Int {
     get
   }
-  public var delegate: (any QuickVO.RTCRoomDelegate)?
+  weak public var delegate: (any QuickVO.RTCRoomDelegate)?
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
   @objc deinit
 }
@@ -133,7 +133,7 @@ public enum RTCVideoMirror {
     get
   }
 }
-public protocol RoomVideoDelegate {
+public protocol RoomVideoDelegate : AnyObject {
   func videoView(didChangeVideoSize size: CoreFoundation.CGSize)
   func renderFisrtFrame()
 }
@@ -142,7 +142,7 @@ extension QuickVO.RoomVideoDelegate {
   public func renderFisrtFrame()
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class RoomVideoView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency public var delegate: (any QuickVO.RoomVideoDelegate)?
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any QuickVO.RoomVideoDelegate)?
   @_Concurrency.MainActor @preconcurrency public var mirror: QuickVO.RTCVideoMirror {
     get
     set
@@ -254,7 +254,7 @@ public enum RTCParticipantAtion {
   case audioEnable(Swift.Bool)
   case videoEnable(Swift.Bool)
 }
-public protocol RTCParticipantDelegate {
+public protocol RTCParticipantDelegate : AnyObject {
   func addVideoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomVideoTrack)
   func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
   func action(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.RTCParticipantAtion)
@@ -269,7 +269,7 @@ extension QuickVO.RTCParticipantDelegate {
 }
 @_hasMissingDesignatedInitializers public class RTCParticipant {
   public var id: Swift.String
-  public var delegate: (any QuickVO.RTCParticipantDelegate)?
+  weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
   public var audioEnable: Swift.Bool {
     get
   }
