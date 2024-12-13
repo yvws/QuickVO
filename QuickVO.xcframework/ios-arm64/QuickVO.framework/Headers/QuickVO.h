@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 #import <QuickVO/RTCBeautyFilter.h>
+#import <QuickVO/VideoSampleBufferConverter.h>
+
 //! Project version number for QuickVO.
 FOUNDATION_EXPORT double QuickVOVersionNumber;
 
