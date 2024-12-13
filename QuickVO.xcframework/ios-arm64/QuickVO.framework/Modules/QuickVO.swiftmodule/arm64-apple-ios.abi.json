@@ -2738,8 +2738,8 @@
           },
           {
             "kind": "Function",
-            "name": "reveivePublished",
-            "printedName": "reveivePublished(_:_:)",
+            "name": "receivePublished",
+            "printedName": "receivePublished(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2782,8 +2782,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP16reveivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP16reveivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
+            "usr": "s:7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
             "moduleName": "QuickVO",
             "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
             "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
@@ -3002,8 +3002,8 @@
           },
           {
             "kind": "Function",
-            "name": "reveivePublished",
-            "printedName": "reveivePublished(_:_:)",
+            "name": "receivePublished",
+            "printedName": "receivePublished(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3046,8 +3046,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16reveivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16reveivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SDySSSayAA13RoomTrackTypeOGGtF",
             "moduleName": "QuickVO",
             "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
             "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
@@ -12794,7 +12794,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 1045,
+      "offset": 1013,
       "length": 1,
       "value": "0"
     },
