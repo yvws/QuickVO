@@ -13279,14 +13279,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 8717,
+      "offset": 8737,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 8737,
+      "offset": 8757,
       "length": 3,
       "value": "403"
     },
@@ -13419,7 +13419,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/ParticipantDataAdaptor.swift",
       "kind": "Dictionary",
-      "offset": 281,
+      "offset": 282,
       "length": 3,
       "value": "[]"
     },
@@ -13468,7 +13468,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7279,
+      "offset": 7281,
       "length": 5,
       "value": "false"
     },
@@ -15575,7 +15575,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
       "kind": "StringLiteral",
-      "offset": 8165,
+      "offset": 8167,
       "length": 6,
       "value": "\"SLog\""
     },

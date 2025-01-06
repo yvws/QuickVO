@@ -4,45 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/vnn_core_ios.framework/Info.plist</key>
+		<key>.DS_Store</key>
 		<data>
-		YMW7AHD3HxrKBh+j5gPX3jvL4Mk=
-		</data>
-		<key>Frameworks/vnn_core_ios.framework/_CodeSignature/CodeResources</key>
-		<data>
-		9cP57bY+cPIMmAm2YmF9iKLzAXk=
-		</data>
-		<key>Frameworks/vnn_core_ios.framework/vnn_core_ios</key>
-		<data>
-		2tAun5m/2aOt3kwwNYEuqc+kY74=
-		</data>
-		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
-		<data>
-		lzdzdeE/GjsMMVcFQsXeT9HnzDA=
-		</data>
-		<key>Frameworks/vnn_face_ios.framework/_CodeSignature/CodeResources</key>
-		<data>
-		z/2RDekBORBI2n8r2aJ/sJHQ804=
-		</data>
-		<key>Frameworks/vnn_face_ios.framework/vnn_face_ios</key>
-		<data>
-		clFqeTg7/l2Huid4bzgXtvjWpxA=
-		</data>
-		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
-		<data>
-		/yPPiCLHDUGmvCpw+QgtuAd7edY=
-		</data>
-		<key>Frameworks/vnn_kit_ios.framework/_CodeSignature/CodeResources</key>
-		<data>
-		DAItSQcRl9V/uvA6H4WY4akCh5U=
-		</data>
-		<key>Frameworks/vnn_kit_ios.framework/vnn_kit_ios</key>
-		<data>
-		YC3o9243rD3BQSzBdX5ltI7J7Qw=
+		xi+2/cVRVemI3lC5XoUc8QgTnuw=
 		</data>
 		<key>Headers/QuickVO.h</key>
 		<data>
-		Snu4aXiBq2bJd7SCciPdo9vBNng=
+		q7qv6CesVzMPBlaIDn3FJTr9NYk=
 		</data>
 		<key>Headers/RTCBeautyFilter.h</key>
 		<data>
@@ -58,11 +26,11 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		uINpuMpKYsp4G5esJy3lpaS+yLA=
+		YDRFc6WRFwIHMyYK/OYIyGNUnP8=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		3OYPIrLgt9fi5NnDGs+MOpgM03o=
+		f84musqzVOXuGoOqcRws9iLTEeY=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -78,7 +46,7 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		OEs7FGsyHdSQmY+ep8YSA6xBOgc=
+		fwfdJKJPZp8ccygcP6t2Db45W+8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,78 +55,23 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/vnn_core_ios.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			AK5OiDmvl5u85zD7Ee0npl9Z8DZKSIRAFM3RKrjO5II=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_core_ios.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NG8PyIfVGOqm+pqEyRTdyti07tdz0O4Lbtj49G9RyQk=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_core_ios.framework/vnn_core_ios</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TwZW6h4fh5fakprF/rszeJnQRKY9F69lz1Zy6Bg17wM=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_face_ios.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mw0LvIMpDIzHeoQuoMdA95m49DeM1Sp+ZE3j7JgqEZQ=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_face_ios.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ry4rafKDegR8QvV7m7YxXL7Dh9xiwYU77oqN2PU3DBc=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_face_ios.framework/vnn_face_ios</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			hdOycxY+2+P+r5vFaZbDRYWJYbprdFIIIcZBPMWZLd4=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_kit_ios.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			70jWJvcb6uF4Ukqx8bXEOhRiJZKZsb5EWQ0kpxaOsTY=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_kit_ios.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0ZSg00iPd5jgLZ2H//P+lixHqDPbCxbsDkaQoxV8mpo=
-			</data>
-		</dict>
-		<key>Frameworks/vnn_kit_ios.framework/vnn_kit_ios</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			w1CrwrZO54qFT1UPw1kqBfscEwIQHw8raFKQZqkW99w=
-			</data>
-		</dict>
 		<key>Headers/QuickVO.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			q7qv6CesVzMPBlaIDn3FJTr9NYk=
+			</data>
 			<key>hash2</key>
 			<data>
-			q0sgFcWhJO8MV6pe0qx+1KfAqWaRS6iFgtbUSQBs6hY=
+			evD/C8Vs+wh5UNkAxtwJZsh7lcl+UVJrMkUR/I+L5T8=
 			</data>
 		</dict>
 		<key>Headers/RTCBeautyFilter.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			GJr5u8FyZRRq5ZYJWK43jdv5i34=
+			</data>
 			<key>hash2</key>
 			<data>
 			lY9uSGlEjHQKS4OT8yCcFW3dPAsm85SdNVYzxMhDuhU=
@@ -166,6 +79,10 @@
 		</dict>
 		<key>Headers/VideoSampleBufferConverter.h</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			g8J84yZ1JekYiBos7uTaM/J2AsY=
+			</data>
 			<key>hash2</key>
 			<data>
 			YPTNMp4KLCQAuHRMNeStvzClucXcyvzAkwdIQWTHNnc=
@@ -173,20 +90,32 @@
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YDRFc6WRFwIHMyYK/OYIyGNUnP8=
+			</data>
 			<key>hash2</key>
 			<data>
-			hVb/vt//rsnB3jv/L8Zcr3HHtv2ZMZgFf1K7DH8YS60=
+			7lnVz/giKlaEfLtWnFe541cXhURosbTMNxtiLE9R1zw=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			f84musqzVOXuGoOqcRws9iLTEeY=
+			</data>
 			<key>hash2</key>
 			<data>
-			4CEZwSGj1FZSHKBZso82x9glAo5Qv8ZpF9vj//odJ/Q=
+			TGpjo+iiaLm7V15p7kLbW6BeQE3TL95Td9yzBUpTvq0=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3frgUQctA7b5BGlk5dpzj2FZj3s=
+			</data>
 			<key>hash2</key>
 			<data>
 			qfP54UVdCgR7056lqY3I7fFstGcrXsOk0RKQFcKF4sA=
@@ -194,6 +123,10 @@
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			UkF9jE48zkV++0uaaJHxOuwDJOc=
+			</data>
 			<key>hash2</key>
 			<data>
 			nMG+JHPRpCN999Q4C29gGpJU3gGRaSlxbHzDT2oCkY4=
@@ -201,6 +134,10 @@
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			3frgUQctA7b5BGlk5dpzj2FZj3s=
+			</data>
 			<key>hash2</key>
 			<data>
 			qfP54UVdCgR7056lqY3I7fFstGcrXsOk0RKQFcKF4sA=
@@ -208,13 +145,21 @@
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			fwfdJKJPZp8ccygcP6t2Db45W+8=
+			</data>
 			<key>hash2</key>
 			<data>
-			6C4jEu12JwAhfwEk0++CBh+CY0ZdUpHzmoSi6zAZl0w=
+			OrNRFW+6AiZYJb7urPs2VibIbu0FBSkBAZKbU8kavBw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			i5zmQJNFTa3xn1P2yiU/LJSdFeQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			JuDi0YA1W3sPwpMFHT2lfrRD1b9dpYuaARqpTwBzGJw=
