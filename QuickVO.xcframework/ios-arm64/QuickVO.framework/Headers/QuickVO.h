@@ -1,9 +1,4 @@
-//
-//  QuickVO.h
-//  QuickVO
-//
-//  Created by s-0523 on 2024/9/29.
-//
+
 
 #import <Foundation/Foundation.h>
 #import <QuickVO/RTCBeautyFilter.h>

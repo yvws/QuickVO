@@ -117,6 +117,7 @@ public enum ConnectError : QuickVO.RoomError {
   case subscribeStreamFailure([Swift.String : [QuickVO.RoomTrackType]])
   case startScreenShareWithoutGroupId
   case noAuth
+  case joined
   public var description: Swift.String {
     get
   }
@@ -212,6 +213,10 @@ public enum MultipathNetSeverType {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class TimeoutSubject {
+  public func setDataTimeOut(_ time: Swift.Int) async -> Swift.Bool
+  @objc deinit
+}
 extension Swift.Bool {
   public var int: Swift.Int {
     get
@@ -238,7 +243,7 @@ extension QuickVO.RoomVideoDelegate {
   public func videoView(didChangeVideoSize: QuickVO.RoomVideoView, size: CoreFoundation.CGSize)
   public func renderFisrtFrame(view: QuickVO.RoomVideoView)
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class RoomVideoView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RoomVideoView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any QuickVO.RoomVideoDelegate)?
   @_Concurrency.MainActor @preconcurrency public var mirror: QuickVO.RTCVideoMirror {
     get
@@ -261,6 +266,7 @@ extension QuickVO.RoomVideoDelegate {
     set
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 extension QuickVO.RoomVideoView : WebRTC.RTCVideoViewDelegate {
@@ -382,7 +388,7 @@ public enum RTCParticipantAtion {
   case videoEnable(Swift.Bool)
   case screenShare(Swift.Bool)
 }
-@_hasMissingDesignatedInitializers public class RTCParticipant {
+@_hasMissingDesignatedInitializers open class RTCParticipant {
   public var id: Swift.String
   weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
   public var audioEnable: Swift.Bool {
@@ -408,9 +414,6 @@ public enum RTCParticipantAtion {
     get
   }
   public var videoTracks: [QuickVO.RoomVideoTrack] {
-    get
-  }
-  public var haveTracks: Swift.Bool {
     get
   }
   public var joinTime: Swift.Int64 {
