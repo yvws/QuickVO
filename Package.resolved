@@ -1,13 +1,13 @@
 {
-  "originHash" : "19b7fd2601292cf170f3ab776231cb03d44d35d44a7d36cd60ab3208e0c0264f",
+  "originHash" : "a6d80db3063dbb6cca43f3a759b5ab86db69c168037756811ad281a7e9d6e6cc",
   "pins" : [
     {
       "identity" : "gpupixellib",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/motian30/GPUPixelLib.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "d5cbb5e88b2cf4c8c707d47efa49a535332be3f5"
+        "revision" : "d5cbb5e88b2cf4c8c707d47efa49a535332be3f5",
+        "version" : "1.0.0"
       }
     },
     {
