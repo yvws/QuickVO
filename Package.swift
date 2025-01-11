@@ -19,7 +19,7 @@ let package = Package(
         .package(url: "https://github.com/stasel/WebRTC", from: "128.0.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.1.0"),
-        .package(url: "https://github.com/motian30/GPUPixelLib.git", from: "1.0.0")
+        .package(url: "https://github.com/motian30/GPUPixelLib.git", exact: "1.0.0")
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
