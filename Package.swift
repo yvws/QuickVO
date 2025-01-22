@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -19,7 +19,7 @@ let package = Package(
         .package(url: "https://github.com/stasel/WebRTC", from: "128.0.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.1.0"),
-        .package(url: "https://github.com/motian30/GPUPixelLib.git", branch: "main")
+        .package(url: "https://github.com/motian30/GPUPixelLib.git", from: "1.0.1")
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
@@ -32,6 +32,7 @@ let package = Package(
             .product(name: "Gzip", package: "GzipSwift")
         ]),
           
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 
 )
