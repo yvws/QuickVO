@@ -2614,6 +2614,64 @@
           },
           {
             "kind": "Var",
+            "name": "unSubscribeStreamFailure",
+            "printedName": "unSubscribeStreamFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ConnectError.Type) -> ([Swift.String]) -> QuickVO.ConnectError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]) -> QuickVO.ConnectError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectError",
+                        "printedName": "QuickVO.ConnectError",
+                        "usr": "s:7QuickVO12ConnectErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ConnectError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectError",
+                        "printedName": "QuickVO.ConnectError",
+                        "usr": "s:7QuickVO12ConnectErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSaySSGcACmF",
+            "mangledName": "$s7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSaySSGcACmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
             "name": "startScreenShareWithoutGroupId",
             "printedName": "startScreenShareWithoutGroupId",
             "children": [
@@ -2829,6 +2887,23 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -3887,6 +3962,109 @@
         "children": [
           {
             "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any QuickVO.RTCRoomDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvp",
+            "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any QuickVO.RTCRoomDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCRoomDelegate",
+                        "printedName": "any QuickVO.RTCRoomDelegate",
+                        "usr": "s:7QuickVO15RTCRoomDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvg",
+                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any QuickVO.RTCRoomDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCRoomDelegate",
+                        "printedName": "any QuickVO.RTCRoomDelegate",
+                        "usr": "s:7QuickVO15RTCRoomDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvs",
+                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvM",
+                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "roomId",
             "printedName": "roomId",
             "children": [
@@ -4046,109 +4224,6 @@
                 "mangledName": "$s7QuickVO7RTCRoomC14localPartipantAA14RTCParticipantCSgvg",
                 "moduleName": "QuickVO",
                 "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any QuickVO.RTCRoomDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvp",
-            "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any QuickVO.RTCRoomDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RTCRoomDelegate",
-                        "printedName": "any QuickVO.RTCRoomDelegate",
-                        "usr": "s:7QuickVO15RTCRoomDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvg",
-                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvg",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any QuickVO.RTCRoomDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RTCRoomDelegate",
-                        "printedName": "any QuickVO.RTCRoomDelegate",
-                        "usr": "s:7QuickVO15RTCRoomDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvs",
-                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvs",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvM",
-                "mangledName": "$s7QuickVO7RTCRoomC8delegateAA0C8Delegate_pSgvM",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
@@ -4717,6 +4792,133 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isMultitaskingCameraAccessSupported",
+            "printedName": "isMultitaskingCameraAccessSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO7RTCRoomC35isMultitaskingCameraAccessSupportedSbvp",
+            "mangledName": "$s7QuickVO7RTCRoomC35isMultitaskingCameraAccessSupportedSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC35isMultitaskingCameraAccessSupportedSbvg",
+                "mangledName": "$s7QuickVO7RTCRoomC35isMultitaskingCameraAccessSupportedSbvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMultitaskingCameraAccessEnabled",
+            "printedName": "isMultitaskingCameraAccessEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvp",
+            "mangledName": "$s7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvg",
+                "mangledName": "$s7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvs",
+                "mangledName": "$s7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvs",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvM",
+                "mangledName": "$s7QuickVO7RTCRoomC33isMultitaskingCameraAccessEnabledSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -5722,6 +5924,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5896,6 +6105,974 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "QuickVO"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TaskActor",
+        "printedName": "TaskActor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(task:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TaskActor",
+                "printedName": "QuickVO.TaskActor<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7QuickVO9TaskActorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((τ_0_0) async -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) async -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO9TaskActorC4taskACyxGyxYacSg_tcfc",
+            "mangledName": "$s7QuickVO9TaskActorC4taskACyxGyxYacSg_tcfc",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "processing",
+                "printedName": "processing",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0> (QuickVO.TaskActor<τ_0_0>.State.Type) -> QuickVO.TaskActor<τ_0_0>.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                        "usr": "s:7QuickVO9TaskActorC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.TaskActor<τ_0_0>.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                            "usr": "s:7QuickVO9TaskActorC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO9TaskActorC5StateO10processingyAEyx_GAGmlF",
+                "mangledName": "$s7QuickVO9TaskActorC5StateO10processingyAEyx_GAGmlF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "paused",
+                "printedName": "paused",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0> (QuickVO.TaskActor<τ_0_0>.State.Type) -> QuickVO.TaskActor<τ_0_0>.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                        "usr": "s:7QuickVO9TaskActorC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.TaskActor<τ_0_0>.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                            "usr": "s:7QuickVO9TaskActorC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO9TaskActorC5StateO6pausedyAEyx_GAGmlF",
+                "mangledName": "$s7QuickVO9TaskActorC5StateO6pausedyAEyx_GAGmlF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                    "usr": "s:7QuickVO9TaskActorC5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "QuickVO.TaskActor<τ_0_0>.State",
+                    "usr": "s:7QuickVO9TaskActorC5StateO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO9TaskActorC5StateO2eeoiySbAEyx_G_AGtFZ",
+                "mangledName": "$s7QuickVO9TaskActorC5StateO2eeoiySbAEyx_G_AGtFZ",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO9TaskActorC5StateO9hashValueSivp",
+                "mangledName": "$s7QuickVO9TaskActorC5StateO9hashValueSivp",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO9TaskActorC5StateO9hashValueSivg",
+                    "mangledName": "$s7QuickVO9TaskActorC5StateO9hashValueSivg",
+                    "moduleName": "QuickVO",
+                    "genericSig": "<τ_0_0>",
+                    "sugared_genericSig": "<T>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO9TaskActorC5StateO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s7QuickVO9TaskActorC5StateO4hash4intoys6HasherVz_tF",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7QuickVO9TaskActorC5StateO",
+            "mangledName": "$s7QuickVO9TaskActorC5StateO",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO9TaskActorC15unownedExecutorScevp",
+            "mangledName": "$s7QuickVO9TaskActorC15unownedExecutorScevp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9TaskActorC15unownedExecutorScevg",
+                "mangledName": "$s7QuickVO9TaskActorC15unownedExecutorScevg",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "processTask",
+            "printedName": "processTask(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO9TaskActorC07processC0yyxYaF",
+            "mangledName": "$s7QuickVO9TaskActorC07processC0yyxYaF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO9TaskActorC5startyyYaF",
+            "mangledName": "$s7QuickVO9TaskActorC5startyyYaF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "puause",
+            "printedName": "puause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO9TaskActorC6puauseyyF",
+            "mangledName": "$s7QuickVO9TaskActorC6puauseyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO9TaskActorC4stopyyF",
+            "mangledName": "$s7QuickVO9TaskActorC4stopyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO9TaskActorC",
+        "mangledName": "$s7QuickVO9TaskActorC",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DetachedTaskActor",
+        "printedName": "DetachedTaskActor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(task:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DetachedTaskActor",
+                "printedName": "QuickVO.DetachedTaskActor<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7QuickVO17DetachedTaskActorC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((τ_0_0) async -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) async -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO17DetachedTaskActorC4taskACyxGyxYacSg_tcfc",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC4taskACyxGyxYacSg_tcfc",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "processing",
+                "printedName": "processing",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0> (QuickVO.DetachedTaskActor<τ_0_0>.State.Type) -> QuickVO.DetachedTaskActor<τ_0_0>.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                        "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                            "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO17DetachedTaskActorC5StateO10processingyAEyx_GAGmlF",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO10processingyAEyx_GAGmlF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "paused",
+                "printedName": "paused",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "GenericFunction",
+                    "printedName": "<τ_0_0> (QuickVO.DetachedTaskActor<τ_0_0>.State.Type) -> QuickVO.DetachedTaskActor<τ_0_0>.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                        "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                            "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO17DetachedTaskActorC5StateO6pausedyAEyx_GAGmlF",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO6pausedyAEyx_GAGmlF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                    "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "QuickVO.DetachedTaskActor<τ_0_0>.State",
+                    "usr": "s:7QuickVO17DetachedTaskActorC5StateO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO17DetachedTaskActorC5StateO2eeoiySbAEyx_G_AGtFZ",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO2eeoiySbAEyx_G_AGtFZ",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO17DetachedTaskActorC5StateO9hashValueSivp",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO9hashValueSivp",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO17DetachedTaskActorC5StateO9hashValueSivg",
+                    "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO9hashValueSivg",
+                    "moduleName": "QuickVO",
+                    "genericSig": "<τ_0_0>",
+                    "sugared_genericSig": "<T>",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO17DetachedTaskActorC5StateO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO4hash4intoys6HasherVz_tF",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7QuickVO17DetachedTaskActorC5StateO",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC5StateO",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO17DetachedTaskActorC15unownedExecutorScevp",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC15unownedExecutorScevp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO17DetachedTaskActorC15unownedExecutorScevg",
+                "mangledName": "$s7QuickVO17DetachedTaskActorC15unownedExecutorScevg",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "processTask",
+            "printedName": "processTask(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO17DetachedTaskActorC07processD0yyxYaF",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC07processD0yyxYaF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO17DetachedTaskActorC5startyyYaF",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC5startyyYaF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "puause",
+            "printedName": "puause()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO17DetachedTaskActorC6puauseyyF",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC6puauseyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO17DetachedTaskActorC4stopyyF",
+            "mangledName": "$s7QuickVO17DetachedTaskActorC4stopyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO17DetachedTaskActorC",
+        "mangledName": "$s7QuickVO17DetachedTaskActorC",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -6369,6 +7546,220 @@
         "name": "RoomVideoView",
         "printedName": "RoomVideoView",
         "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "VideoRenderMode",
+            "printedName": "VideoRenderMode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "MTL",
+                "printedName": "MTL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomVideoView.VideoRenderMode.Type) -> QuickVO.RoomVideoView.VideoRenderMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoRenderMode",
+                        "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                        "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomVideoView.VideoRenderMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoRenderMode",
+                            "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                            "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO3MTLyA2EmF",
+                "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO3MTLyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "sampleBuffer",
+                "printedName": "sampleBuffer",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomVideoView.VideoRenderMode.Type) -> QuickVO.RoomVideoView.VideoRenderMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VideoRenderMode",
+                        "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                        "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomVideoView.VideoRenderMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "VideoRenderMode",
+                            "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                            "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO12sampleBufferyA2EmF",
+                "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO12sampleBufferyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoRenderMode",
+                    "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                    "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoRenderMode",
+                    "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                    "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO2eeoiySbAE_AEtFZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO9hashValueSivp",
+                "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO9hashValueSivp",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO9hashValueSivg",
+                    "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO9hashValueSivg",
+                    "moduleName": "QuickVO",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO4hash4intoys6HasherVz_tF",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO",
+            "mangledName": "$s7QuickVO13RoomVideoViewC0D10RenderModeO",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "delegate",
@@ -6939,6 +8330,152 @@
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderMode",
+            "printedName": "renderMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VideoRenderMode",
+                "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovp",
+            "mangledName": "$s7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoRenderMode",
+                    "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                    "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovg",
+                "mangledName": "$s7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VideoRenderMode",
+                    "printedName": "QuickVO.RoomVideoView.VideoRenderMode",
+                    "usr": "s:7QuickVO13RoomVideoViewC0D10RenderModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovs",
+                "mangledName": "$s7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0Ovs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0OvM",
+                "mangledName": "$s7QuickVO13RoomVideoViewC10renderModeAC0d6RenderG0OvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sampleBufferDisplayLayer",
+            "printedName": "sampleBufferDisplayLayer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVFoundation.AVSampleBufferDisplayLayer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVSampleBufferDisplayLayer",
+                    "printedName": "AVFoundation.AVSampleBufferDisplayLayer",
+                    "usr": "c:objc(cs)AVSampleBufferDisplayLayer"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RoomVideoViewC24sampleBufferDisplayLayerSo08AVSampleghI0CSgvp",
+            "mangledName": "$s7QuickVO13RoomVideoViewC24sampleBufferDisplayLayerSo08AVSampleghI0CSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVFoundation.AVSampleBufferDisplayLayer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVSampleBufferDisplayLayer",
+                        "printedName": "AVFoundation.AVSampleBufferDisplayLayer",
+                        "usr": "c:objc(cs)AVSampleBufferDisplayLayer"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RoomVideoViewC24sampleBufferDisplayLayerSo08AVSampleghI0CSgvg",
+                "mangledName": "$s7QuickVO13RoomVideoViewC24sampleBufferDisplayLayerSo08AVSampleghI0CSgvg",
+                "moduleName": "QuickVO",
+                "accessorKind": "get"
               }
             ]
           },
@@ -7560,8 +9097,8 @@
           },
           {
             "kind": "Var",
-            "name": "defaultUseMicrophone",
-            "printedName": "defaultUseMicrophone",
+            "name": "defaultAuioSpeakerOn",
+            "printedName": "defaultAuioSpeakerOn",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7571,8 +9108,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvp",
-            "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvp",
+            "usr": "s:7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvp",
+            "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvp",
             "moduleName": "QuickVO",
             "declAttributes": [
               "HasStorage",
@@ -7593,8 +9130,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvg",
-                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvg",
+                "usr": "s:7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvg",
+                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvg",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "get"
@@ -7617,8 +9154,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvs",
-                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvs",
+                "usr": "s:7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvs",
+                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvs",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "set"
@@ -7635,8 +9172,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvM",
-                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultUseMicrophoneSbvM",
+                "usr": "s:7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvM",
+                "mangledName": "$s7QuickVO15RoomLocalOptionV20defaultAuioSpeakerOnSbvM",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -7901,7 +9438,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(userId:userFontCamera:defaultStartCamera:defaultUseMicrophone:subscribeType:publishType:scence:)",
+            "printedName": "init(userId:userFontCamera:defaultStartCamera:defaultAuioSpeakerOn:subscribeType:publishType:scence:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7959,8 +9496,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7QuickVO15RoomLocalOptionV6userId0F10FontCamera012defaultStartI00J13UseMicrophone13subscribeType07publishO06scenceACSS_S3bAA06StreamO0OAlA0C5SceneOtcfc",
-            "mangledName": "$s7QuickVO15RoomLocalOptionV6userId0F10FontCamera012defaultStartI00J13UseMicrophone13subscribeType07publishO06scenceACSS_S3bAA06StreamO0OAlA0C5SceneOtcfc",
+            "usr": "s:7QuickVO15RoomLocalOptionV6userId0F10FontCamera012defaultStartI00J13AuioSpeakerOn13subscribeType07publishP06scenceACSS_S3bAA06StreamP0OAlA0C5SceneOtcfc",
+            "mangledName": "$s7QuickVO15RoomLocalOptionV6userId0F10FontCamera012defaultStartI00J13AuioSpeakerOn13subscribeType07publishP06scenceACSS_S3bAA06StreamP0OAlA0C5SceneOtcfc",
             "moduleName": "QuickVO",
             "declAttributes": [
               "AccessControl"
@@ -11543,6 +13080,66 @@
             "moduleName": "QuickVO",
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomTrackType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomTrackType",
+                    "printedName": "QuickVO.RoomTrackType",
+                    "usr": "s:7QuickVO13RoomTrackTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RoomTrackTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s7QuickVO13RoomTrackTypeO8allCasesSayACGvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomTrackType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomTrackType",
+                        "printedName": "QuickVO.RoomTrackType",
+                        "usr": "s:7QuickVO13RoomTrackTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RoomTrackTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s7QuickVO13RoomTrackTypeO8allCasesSayACGvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -11581,6 +13178,36 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomTrackType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomTrackType",
+                        "printedName": "QuickVO.RoomTrackType",
+                        "usr": "s:7QuickVO13RoomTrackTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -13090,7 +14717,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoom+App.swift",
       "kind": "BooleanLiteral",
-      "offset": 1472,
+      "offset": 1484,
       "length": 5,
       "value": "false"
     },
@@ -13216,105 +14843,105 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14166,
+      "offset": 14221,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14195,
+      "offset": 14250,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14487,
+      "offset": 14542,
       "length": 13,
       "value": "\"inbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14524,
+      "offset": 14579,
       "length": 14,
       "value": "\"outbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14567,
+      "offset": 14622,
       "length": 20,
       "value": "\"remote-inbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14617,
+      "offset": 14672,
       "length": 21,
       "value": "\"remote-outbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14662,
+      "offset": 14717,
       "length": 14,
       "value": "\"media-source\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14701,
+      "offset": 14756,
       "length": 15,
       "value": "\"media-playout\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15107,
+      "offset": 15162,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15367,
+      "offset": 15422,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15394,
+      "offset": 15449,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15555,
+      "offset": 15610,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15582,
+      "offset": 15637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15622,
+      "offset": 15677,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15921,
+      "offset": 15976,
       "length": 1,
       "value": "0"
     },
@@ -13349,42 +14976,42 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 451,
+      "offset": 512,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 473,
+      "offset": 534,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 1204,
+      "offset": 632,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 8976,
+      "offset": 8173,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 8996,
+      "offset": 8193,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9020,
+      "offset": 8217,
       "length": 3,
       "value": "666"
     },
@@ -13431,37 +15058,23 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom.swift",
-      "kind": "BooleanLiteral",
-      "offset": 472,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom.swift",
-      "kind": "BooleanLiteral",
-      "offset": 514,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 270,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1044,
+      "offset": 1047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1128,
+      "offset": 1126,
       "length": 5,
       "value": "false"
     },
@@ -13517,7 +15130,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Broadcast\/VideoDefaults.swift",
       "kind": "BooleanLiteral",
-      "offset": 1822,
+      "offset": 2032,
       "length": 4,
       "value": "true"
     },
@@ -13537,50 +15150,64 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 588,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1389,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1416,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1443,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1470,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 6032,
+      "offset": 5744,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 7677,
+      "offset": 7392,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10149,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10176,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10203,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10231,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10259,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10288,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10324,
       "length": 5,
       "value": "false"
     },
@@ -13594,14 +15221,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/TaskActor.swift",
       "kind": "Array",
-      "offset": 1169,
+      "offset": 1182,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/TaskActor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1203,
+      "offset": 1216,
       "length": 5,
       "value": "false"
     },
@@ -15568,7 +17195,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Public\/RTCVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4030,
+      "offset": 4449,
       "length": 5,
       "value": "false"
     },
@@ -15590,104 +17217,104 @@
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 512,
-      "length": 4,
-      "value": "true"
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1670,
+      "offset": 1671,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2704,
+      "offset": 2705,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2723,
+      "offset": 2724,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2743,
+      "offset": 2744,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 2828,
+      "offset": 2829,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2942,
+      "offset": 2943,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3046,
+      "offset": 3047,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3149,
+      "offset": 3150,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3251,
+      "offset": 3252,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3358,
+      "offset": 3359,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3464,
+      "offset": 3465,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3568,
+      "offset": 3569,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3800,
       "length": 31,
       "value": "\"stun:stun.cloudflare.com:3478\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3853,
+      "offset": 3854,
       "length": 33,
       "value": "\"wss:\/\/demo.putplay.cc\/websocket\""
     },
@@ -15701,42 +17328,42 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1528,
+      "offset": 1534,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1562,
+      "offset": 1568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1777,
       "length": 8,
       "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2235,
+      "offset": 2236,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2255,
+      "offset": 2256,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2275,
+      "offset": 2276,
       "length": 4,
       "value": "true"
     },
@@ -15757,28 +17384,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 474,
+      "offset": 572,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 536,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 442,
+      "offset": 540,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Public\/RoomVideoTrack.swift",
       "kind": "StringLiteral",
-      "offset": 2744,
+      "offset": 2750,
       "length": 14,
       "value": "\"trackTimeout\""
     },
