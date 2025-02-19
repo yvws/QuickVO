@@ -6,12 +6,12 @@ import PackageDescription
 let package = Package(
     name: "QuickVO",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v13),
+        .macOS(.v11)
     ],
     products: [
         .library(
             name: "QuickVO",
-            
             targets: ["QuickVOKit","QuickVO"]),
     ],
     dependencies: [
@@ -27,9 +27,11 @@ let package = Package(
             "Starscream",
             "WebRTC",
             "QuickVO",
-            "GPUPixelLib",
+            .product(name: "GPUPixelLib", package: "GPUPixelLib", condition: .when(platforms: [.iOS])),
             .product(name: "SwiftProtobuf", package: "swift-protobuf"),
             .product(name: "Gzip", package: "GzipSwift")
+            
+
         ]),
           
     ],
