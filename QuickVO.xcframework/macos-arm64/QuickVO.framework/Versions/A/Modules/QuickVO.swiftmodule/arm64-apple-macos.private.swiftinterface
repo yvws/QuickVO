@@ -69,7 +69,7 @@ public enum RTCAudioRoute {
     get
   }
 }
-public enum RoomScene {
+public enum RoomScene : Swift.Sendable {
   case communication
   case meeting
   case live
@@ -79,7 +79,7 @@ public enum RoomScene {
     get
   }
 }
-public enum StreamType {
+public enum StreamType : Swift.Sendable {
   case auto
   case manual
   public static func == (a: QuickVO.StreamType, b: QuickVO.StreamType) -> Swift.Bool
@@ -270,9 +270,14 @@ extension Swift.Bool {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class TimeoutSubject {
-  public func setDataTimeOut(_ time: Swift.Int) async -> Swift.Bool
+@_hasMissingDesignatedInitializers public actor TimeoutSubject {
+  public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
+  public func cancel()
   @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 public enum RTCVideoMirror {
   case none
@@ -321,27 +326,27 @@ extension QuickVO.RoomVideoDelegate {
 extension QuickVO.RoomVideoView : WebRTC.RTCVideoViewDelegate {
   @objc nonisolated dynamic public func videoView(_ videoView: any WebRTC.RTCVideoRenderer, didChangeVideoSize size: CoreFoundation.CGSize)
 }
-public struct RoomLocalOption {
+public struct RoomLocalOption : Swift.Sendable {
   public var defaultStartCamera: Swift.Bool
   public var subscribeType: QuickVO.StreamType
   public var publishType: QuickVO.StreamType
-  public var scence: QuickVO.RoomScene
+  public var scene: QuickVO.RoomScene
   public init(userId: Swift.String, defaultStartCamera: Swift.Bool = true, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication)
 }
-public class RoomVideoCaptureConfig {
-  public var width: Swift.Int {
+final public class RoomVideoCaptureConfig {
+  final public var width: Swift.Int {
     get
     set
   }
-  public var height: Swift.Int {
+  final public var height: Swift.Int {
     get
     set
   }
-  public var fps: Swift.Int {
+  final public var fps: Swift.Int {
     get
     set
   }
-  public var degradation: QuickVO.RoomVideodegradation {
+  final public var degradation: QuickVO.RoomVideodegradation {
     get
     set
   }

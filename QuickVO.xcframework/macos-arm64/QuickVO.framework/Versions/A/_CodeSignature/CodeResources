@@ -37,33 +37,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B5tzkvDuAwBcNAhvTcIXjA2e8CM=
+			rDmHEYhfxuPQ2QVVb8vjyMAy03A=
 			</data>
 			<key>hash2</key>
 			<data>
-			6jrjQ2pKJiZh+hBppHproz7Uf4Lo75zMkLPruCLxes4=
+			L3qdKssmXvOtXEhq/QXmZQJqmwd1Cpa0T/Gs/ucKYXE=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-macos.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			equfrPbs8jJc2gQfLbDJXk8eAc4=
+			fK8u90xYzVS2dTYC5z7rF6rN8nw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XQ1f0F18GLZkjtIzKr6URuIL9jUodRLOC4ckwf5SHjA=
+			y36yXtcEz2eODte0GRuRZFNGBsYKB8/8HauQ9heb0MM=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-macos.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QqogGxv7TF/OuBWubOmS6IJIXEs=
+			JyHzZuN61IDvadz+xsFBa8pVEMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WaIgQsA2b/uhbBwYqXtIp8qITeGfU4XQdBw9zul/iiQ=
+			NqB66rjiyobQAsemNNWqo6SWiVP8Yl6vTuR9kaKk84E=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-macos.swiftdoc</key>
@@ -81,22 +81,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QqogGxv7TF/OuBWubOmS6IJIXEs=
+			JyHzZuN61IDvadz+xsFBa8pVEMY=
 			</data>
 			<key>hash2</key>
 			<data>
-			WaIgQsA2b/uhbBwYqXtIp8qITeGfU4XQdBw9zul/iiQ=
+			NqB66rjiyobQAsemNNWqo6SWiVP8Yl6vTuR9kaKk84E=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-macos.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MEi/nyzimXntFopt/g1ZC+mqWPc=
+			UQa7s1rsBZrRBTx8C+kOaK1S7iE=
 			</data>
 			<key>hash2</key>
 			<data>
-			9DjKYilrD992xl7M7n9J1TI1ybVeadinR06kYS3Mbh0=
+			IlR/hInrFAuJT+xBkzLgHPBtieR8aoeBsjmmfionrYw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
