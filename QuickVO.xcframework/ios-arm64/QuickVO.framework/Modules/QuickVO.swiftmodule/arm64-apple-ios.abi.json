@@ -1149,6 +1149,13 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -2331,6 +2338,39 @@
           },
           {
             "kind": "Function",
+            "name": "audioSessionInterrupt",
+            "printedName": "audioSessionInterrupt(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InterruptionType",
+                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
+                "usr": "c:@E@AVAudioSessionInterruptionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "roomStatus",
             "printedName": "roomStatus(_:)",
             "children": [
@@ -2615,6 +2655,38 @@
             "declKind": "Func",
             "usr": "s:7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
             "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioSessionInterrupt",
+            "printedName": "audioSessionInterrupt(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InterruptionType",
+                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
+                "usr": "c:@E@AVAudioSessionInterruptionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
             "moduleName": "QuickVO",
             "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
             "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
@@ -5473,6 +5545,57 @@
         "children": [
           {
             "kind": "Var",
+            "name": "engine",
+            "printedName": "engine",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCEngine",
+                "printedName": "QuickVO.RTCEngine",
+                "usr": "s:7QuickVO9RTCEngineC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO9RTCEngineC6engineACvpZ",
+            "mangledName": "$s7QuickVO9RTCEngineC6engineACvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCEngine",
+                    "printedName": "QuickVO.RTCEngine",
+                    "usr": "s:7QuickVO9RTCEngineC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC6engineACvgZ",
+                "mangledName": "$s7QuickVO9RTCEngineC6engineACvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "appId",
             "printedName": "appId",
             "children": [
@@ -6166,13 +6289,6 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -6296,6 +6412,517 @@
         "printedName": "os.lock",
         "declKind": "Import",
         "moduleName": "QuickVO"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Clamping",
+        "printedName": "Clamping",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Clamping",
+                "printedName": "QuickVO.Clamping<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7QuickVO8ClampingV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ClosedRange",
+                "printedName": "Swift.ClosedRange<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:SN"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO8ClampingV12wrappedValue_ACyxGx_SNyxGtcfc",
+            "mangledName": "$s7QuickVO8ClampingV12wrappedValue_ACyxGx_SNyxGtcfc",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+            "sugared_genericSig": "<WrappedValue where WrappedValue : Swift.Comparable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO8ClampingV12wrappedValuexvp",
+            "mangledName": "$s7QuickVO8ClampingV12wrappedValuexvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO8ClampingV12wrappedValuexvg",
+                "mangledName": "$s7QuickVO8ClampingV12wrappedValuexvg",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+                "sugared_genericSig": "<WrappedValue where WrappedValue : Swift.Comparable>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO8ClampingV12wrappedValuexvs",
+                "mangledName": "$s7QuickVO8ClampingV12wrappedValuexvs",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+                "sugared_genericSig": "<WrappedValue where WrappedValue : Swift.Comparable>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO8ClampingV12wrappedValuexvM",
+                "mangledName": "$s7QuickVO8ClampingV12wrappedValuexvM",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+                "sugared_genericSig": "<WrappedValue where WrappedValue : Swift.Comparable>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO8ClampingV",
+        "mangledName": "$s7QuickVO8ClampingV",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Comparable>",
+        "sugared_genericSig": "<WrappedValue where WrappedValue : Swift.Comparable>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NS_Lock",
+        "printedName": "NS_Lock",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NS_Lock",
+                "printedName": "QuickVO.NS_Lock<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7QuickVO7NS_LockV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO7NS_LockV12wrappedValueACyxGx_tcfc",
+            "mangledName": "$s7QuickVO7NS_LockV12wrappedValueACyxGx_tcfc",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<WrappedValue>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO7NS_LockV12wrappedValuexvp",
+            "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvg",
+                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvg",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<WrappedValue>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvs",
+                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvs",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<WrappedValue>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvM",
+                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvM",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<WrappedValue>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO7NS_LockV",
+        "mangledName": "$s7QuickVO7NS_LockV",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<WrappedValue>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Validated",
+        "printedName": "Validated",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:validator:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Validated",
+                "printedName": "QuickVO.Validated<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:7QuickVO9ValidatedV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> Swift.Bool",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO9ValidatedV12wrappedValue9validatorACyxGx_Sbxctcfc",
+            "mangledName": "$s7QuickVO9ValidatedV12wrappedValue9validatorACyxGx_Sbxctcfc",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<Value>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO9ValidatedV12wrappedValuexSgvp",
+            "mangledName": "$s7QuickVO9ValidatedV12wrappedValuexSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9ValidatedV12wrappedValuexSgvg",
+                "mangledName": "$s7QuickVO9ValidatedV12wrappedValuexSgvg",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9ValidatedV12wrappedValuexSgvs",
+                "mangledName": "$s7QuickVO9ValidatedV12wrappedValuexSgvs",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9ValidatedV12wrappedValuexSgvM",
+                "mangledName": "$s7QuickVO9ValidatedV12wrappedValuexSgvM",
+                "moduleName": "QuickVO",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Value>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO9ValidatedV",
+        "mangledName": "$s7QuickVO9ValidatedV",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Value>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -11825,6 +12452,20 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "WebRTC",
         "printedName": "WebRTC",
         "declKind": "Import",
@@ -14569,20 +15210,6 @@
       },
       {
         "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
         "name": "Network",
         "printedName": "Network",
         "declKind": "Import",
@@ -15818,49 +16445,56 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 417,
+      "offset": 422,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
+      "kind": "StringLiteral",
+      "offset": 520,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 561,
+      "offset": 594,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 583,
+      "offset": 616,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 615,
+      "offset": 648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 6563,
+      "offset": 6651,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 6583,
+      "offset": 6671,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 6607,
+      "offset": 6695,
       "length": 3,
       "value": "666"
     },
@@ -15909,21 +16543,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "StringLiteral",
-      "offset": 270,
+      "offset": 277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 816,
+      "offset": 823,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 895,
+      "offset": 902,
       "length": 5,
       "value": "false"
     },
@@ -15944,70 +16578,70 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1131,
+      "offset": 1150,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 6315,
+      "offset": 6402,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 8190,
+      "offset": 8277,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11298,
+      "offset": 10988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11325,
+      "offset": 11015,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11352,
+      "offset": 11042,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11384,
+      "offset": 11074,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11413,
+      "offset": 11103,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11440,
+      "offset": 11130,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 11466,
+      "offset": 11156,
       "length": 5,
       "value": "false"
     },
@@ -16063,7 +16697,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Property.swift",
       "kind": "StringLiteral",
-      "offset": 1090,
+      "offset": 1168,
       "length": 22,
       "value": "\"com.lock.serialQueue\""
     },
@@ -18196,6 +18830,111 @@
       "value": "\"wss:\/\/demo.putplay.cc\/websocket\""
     },
     {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 334,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2806,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2848,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2879,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2941,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3004,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3037,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3070,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "StringLiteral",
+      "offset": 3163,
+      "length": 10,
+      "value": "\"Slog.txt\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3524,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3529,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3534,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3603,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3752,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftLog.swift",
+      "kind": "StringLiteral",
+      "offset": 8265,
+      "length": 6,
+      "value": "\"SLog\""
+    },
+    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/AudioSession.swift",
       "kind": "StringLiteral",
       "offset": 417,
@@ -18292,111 +19031,6 @@
       "offset": 639,
       "length": 1,
       "value": "1"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 334,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2806,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2848,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2879,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2941,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3004,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3037,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3070,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "StringLiteral",
-      "offset": 3163,
-      "length": 10,
-      "value": "\"Slog.txt\""
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3524,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3529,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3534,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3603,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3752,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/SwiftLog.swift",
-      "kind": "StringLiteral",
-      "offset": 8274,
-      "length": 6,
-      "value": "\"SLog\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Net\/RTCNetworkMotor.swift",

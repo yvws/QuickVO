@@ -60,7 +60,7 @@ public enum RTCCameraPosion {
     get
   }
 }
-public enum RTCAudioRoute {
+public enum RTCAudioRoute : Swift.Sendable {
   case speaker
   case receiver
   case bluetooth
@@ -113,6 +113,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func didSubscribeed(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
+  func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
@@ -123,6 +124,7 @@ extension QuickVO.RTCRoomDelegate {
   public func didSubscribeed(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
   public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
+  public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
@@ -219,6 +221,7 @@ extension QuickVO.RTCRoom {
   }
 }
 @_hasMissingDesignatedInitializers final public class RTCEngine {
+  public static let engine: QuickVO.RTCEngine
   final public var appId: Swift.String {
     get
   }
@@ -235,6 +238,27 @@ extension QuickVO.RTCRoom {
 extension QuickVO.RTCEngine {
   public static func create(_ appId: Swift.String)
   public static func destroy()
+}
+@propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
+  public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
+  public var wrappedValue: WrappedValue {
+    get
+    set
+  }
+}
+@propertyWrapper public struct NS_Lock<WrappedValue> {
+  public init(wrappedValue value: WrappedValue)
+  public var wrappedValue: WrappedValue {
+    get
+    set
+  }
+}
+@propertyWrapper public struct Validated<Value> {
+  public init(wrappedValue: Value, validator: @escaping (Value) -> Swift.Bool)
+  public var wrappedValue: Value? {
+    get
+    set
+  }
 }
 public actor TaskActor<T> {
   public init(task: ((T) async -> Swift.Void)?)
