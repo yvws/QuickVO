@@ -10,6 +10,7 @@ import CoreFoundation
 import CoreImage
 import CoreMedia
 import CoreVideo
+import Darwin
 import Foundation
 import Metal
 import MetalKit
@@ -191,7 +192,8 @@ public class RTCRoom {
   @objc deinit
 }
 extension QuickVO.RTCRoom {
-  public func join(_ token: Swift.String, _ roomId: Swift.String? = nil, _ option: QuickVO.RoomLocalOption) async throws
+  public func connect() async throws
+  public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
   public func quit() async throws
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
   public func subscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws
@@ -252,6 +254,27 @@ extension QuickVO.RTCEngine {
     get
     set
   }
+}
+@propertyWrapper public struct QueueLock<WrappedValue> {
+  public init(wrappedValue value: WrappedValue)
+  public var wrappedValue: WrappedValue {
+    get
+    set
+  }
+}
+@propertyWrapper public struct UnfairLock<WrappedValue> {
+  public init(wrappedValue value: WrappedValue)
+  public var wrappedValue: WrappedValue {
+    mutating get
+    set
+  }
+}
+@propertyWrapper public struct Unique<T> where T : Swift.Equatable {
+  public var wrappedValue: T? {
+    get
+    set
+  }
+  public init(wrappedValue: T?)
 }
 @propertyWrapper public struct Validated<Value> {
   public init(wrappedValue: Value, validator: @escaping (Value) -> Swift.Bool)
@@ -488,6 +511,44 @@ public typealias RTCViewType = UIKit.UIView
   @_Concurrency.MainActor @preconcurrency open func performLayout()
   @objc deinit
 }
+public enum AudioError : Swift.Error {
+  case permissionDenied
+  case proceessError
+  public static func == (a: QuickVO.AudioError, b: QuickVO.AudioError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RoomAuidioTool : ObjectiveC.NSObject {
+  public func checkRecordAndPlay() async throws
+  public func checkMicrophonePermission() async throws
+  @objc deinit
+}
+extension QuickVO.RoomAuidioTool : AVFAudio.AVAudioPlayerDelegate {
+  @objc dynamic public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public actor RoomNetUtils {
+  public enum PingError : Swift.Error {
+    case alreadyPing
+    public static func == (a: QuickVO.RoomNetUtils.PingError, b: QuickVO.RoomNetUtils.PingError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct PingData {
+  }
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+extension QuickVO.RoomNetUtils {
+  public func startPing(_ time: Swift.UInt64? = 3) async throws -> QuickVO.RoomNetUtils.PingData
+  public func stopPing()
+}
 extension AVFoundation.AVCaptureDevice {
   public var devicePosition: AVFoundation.AVCaptureDevice.Position {
     get
@@ -653,6 +714,10 @@ extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Hashable {}
 extension QuickVO.RoomVideodegradation : Swift.Equatable {}
 extension QuickVO.RoomVideodegradation : Swift.Hashable {}
 extension QuickVO.RoomVideodegradation : Swift.RawRepresentable {}
+extension QuickVO.AudioError : Swift.Equatable {}
+extension QuickVO.AudioError : Swift.Hashable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
 extension QuickVO.RoomTrackType : Swift.Equatable {}
 extension QuickVO.RoomTrackType : Swift.Hashable {}
 extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
