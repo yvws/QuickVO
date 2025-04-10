@@ -115,6 +115,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
+  func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: [Swift.String])
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
@@ -126,6 +127,7 @@ extension QuickVO.RTCRoomDelegate {
   public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
+  public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: [Swift.String])
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
@@ -179,6 +181,7 @@ extension QuickVO.RTCRoomConfig {
 }
 public class RTCRoom {
   weak public var delegate: (any QuickVO.RTCRoomDelegate)?
+  weak public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
   public var roomId: Swift.String {
     get
   }
@@ -192,7 +195,6 @@ public class RTCRoom {
   @objc deinit
 }
 extension QuickVO.RTCRoom {
-  public func connect() async throws
   public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
   public func quit() async throws
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
@@ -438,14 +440,17 @@ final public class RoomVideoCaptureConfig {
   final public var filter: QuickVO.RoomVideoFilterConfig {
     get
   }
+  final public var crop: QuickVO.RoomVideoCropping {
+    get
+  }
   public init(width: Swift.Int, height: Swift.Int, fps: Swift.Int, filter: QuickVO.RoomVideoFilterConfig? = nil)
   @objc deinit
 }
-public class RoomAudioCaptureConfig {
-  public var echoCancellation: Swift.Bool
-  public var noiseSuppression: Swift.Bool
-  public var autoGainControl: Swift.Bool
-  public var audioLevelMonitor: Swift.Int?
+final public class RoomAudioCaptureConfig {
+  final public var echoCancellation: Swift.Bool
+  final public var noiseSuppression: Swift.Bool
+  final public var autoGainControl: Swift.Bool
+  final public var audioLevelMonitor: Swift.Int?
   public init(echoCancellation: Swift.Bool, noiseSuppression: Swift.Bool, autoGainControl: Swift.Bool)
   @objc deinit
 }
@@ -499,8 +504,22 @@ public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class RoomVideoCropping {
+  final public var aspectRatio: Swift.Float?
+  @QuickVO.Clamping final public var cropXRatio: Swift.Float {
+    get
+    set
+    _modify
+  }
+  @QuickVO.Clamping final public var cropYRatio: Swift.Float {
+    get
+    set
+    _modify
+  }
+  @objc deinit
+}
 public struct RTCConfig {
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String])
+  public init(socketURL: Foundation.URL, iceURL: [Swift.String]?)
 }
 public typealias RTCViewType = UIKit.UIView
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RTCView : QuickVO.RTCViewType {
@@ -561,6 +580,31 @@ extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable 
 extension WebRTC.RTCSessionDescription : @unchecked Swift.Sendable {
 }
 #endif
+public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
+  case _0
+  case _90
+  case _180
+  case _270
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RoomVideoRrocessMode {
+  case readOnly
+  case readWrite
+  public static func == (a: QuickVO.RoomVideoRrocessMode, b: QuickVO.RoomVideoRrocessMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RoomVideoCaptureDelegate : AnyObject {
+  func processMode() -> QuickVO.RoomVideoRrocessMode
+  func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
+  func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
+}
 @_hasMissingDesignatedInitializers open class RTCParticipant {
   weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
   public var id: Swift.String {
@@ -718,6 +762,11 @@ extension QuickVO.AudioError : Swift.Equatable {}
 extension QuickVO.AudioError : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
+extension QuickVO.RoomVideoRotation : Swift.Equatable {}
+extension QuickVO.RoomVideoRotation : Swift.Hashable {}
+extension QuickVO.RoomVideoRotation : Swift.RawRepresentable {}
+extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
+extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
 extension QuickVO.RoomTrackType : Swift.Equatable {}
 extension QuickVO.RoomTrackType : Swift.Hashable {}
 extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
