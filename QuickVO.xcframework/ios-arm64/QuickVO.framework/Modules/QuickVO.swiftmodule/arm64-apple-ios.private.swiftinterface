@@ -34,13 +34,14 @@ public protocol RTCParticipantDelegate : AnyObject {
   func action(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.RTCParticipantAtion)
   func speaking(_ participant: QuickVO.RTCParticipant, _ speaking: Swift.Bool)
   func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
+  func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
 }
 extension QuickVO.RTCParticipantDelegate {
   public func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
   public func action(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.RTCParticipantAtion)
   public func speaking(_ participant: QuickVO.RTCParticipant, _ speaking: Swift.Bool)
   public func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
-  public func debugInfo(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
+  public func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
 }
 public enum RTCRoomConnect {
   case disConnect
@@ -115,7 +116,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
-  func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: [Swift.String])
+  func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
@@ -127,7 +128,39 @@ extension QuickVO.RTCRoomDelegate {
   public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
-  public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: [Swift.String])
+  public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
+}
+public struct RoomLivePlaybackUrls : Swift.Sendable {
+  public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
+  public struct RoomLiveUrlData : Swift.Sendable {
+  }
+  public enum RoomLiveLocation : Swift.Int, Swift.CaseIterable, Swift.Sendable {
+    case chinaMainland
+    case global
+    case overseas
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum RoomLiveBilling : Swift.Int, Swift.CaseIterable, Swift.Sendable {
+    case flow
+    case time
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
@@ -214,6 +247,7 @@ extension QuickVO.RTCRoom {
   public func microphoneIsEnable() -> Swift.Bool
   public func startPreview(_ render: QuickVO.RoomVideoView)
   public func setRoomAudioVolume(_ volum: Swift.Double)
+  public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
 }
 extension QuickVO.RTCRoom {
   public var isMultitaskingCameraAccessSupported: Swift.Bool {
@@ -646,12 +680,24 @@ public protocol RoomVideoCaptureDelegate : AnyObject {
   }
   public func getTrack(type: QuickVO.RoomTrackType) -> QuickVO.RoomTrack?
   public func getTrackType() -> [QuickVO.RoomTrackType]
+  public var audioForbid: Swift.Bool {
+    get
+    set
+  }
+  public var videoForbid: Swift.Bool {
+    get
+    set
+  }
   @objc deinit
 }
 public enum RTCParticipantAtion {
   case audioEnable(Swift.Bool)
   case videoEnable(Swift.Bool)
   case screenShare(Swift.Bool)
+}
+public enum PaticipantForbidAction {
+  case audioForbid(Swift.Bool)
+  case videoForbid(Swift.Bool)
 }
 public protocol RTCTrackInfo {
   var trackId: Swift.String { get }
@@ -744,6 +790,12 @@ extension QuickVO.StreamType : Swift.Equatable {}
 extension QuickVO.StreamType : Swift.Hashable {}
 extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
 extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.Equatable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.Hashable {}
+extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.RawRepresentable {}
 extension QuickVO.RTCStatisLevel : Swift.Equatable {}
 extension QuickVO.RTCStatisLevel : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.RawRepresentable {}
