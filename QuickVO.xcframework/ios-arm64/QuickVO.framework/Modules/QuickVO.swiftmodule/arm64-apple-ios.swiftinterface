@@ -229,7 +229,7 @@ public class RTCRoom {
 }
 extension QuickVO.RTCRoom {
   public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  public func quit() async throws
+  public func quit() async
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
   public func subscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws
   public func unSubscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws

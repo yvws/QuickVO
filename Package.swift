@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.8"),
-        .package(url: "https://github.com/stasel/WebRTC", from: "128.0.0"),
+        .package(url: "https://github.com/stasel/WebRTC", from: "132.0.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.0.0"),
         .package(url: "https://github.com/motian30/GPUPixelLib.git", from: "1.0.1")
