@@ -228,6 +228,7 @@ public class RTCRoom {
   @objc deinit
 }
 extension QuickVO.RTCRoom {
+  public func connect() async throws
   public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
   public func quit() async
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
