@@ -44,6 +44,7 @@ extension QuickVO.RTCParticipantDelegate {
   public func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
 }
 public enum RTCRoomConnect {
+  case none
   case disConnect
   case connecting
   case connected
@@ -117,6 +118,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
+  func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
@@ -129,6 +131,7 @@ extension QuickVO.RTCRoomDelegate {
   public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
+  public func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
 }
 public struct RoomLivePlaybackUrls : Swift.Sendable {
   public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
@@ -171,7 +174,7 @@ extension QuickVO.RoomError {
 }
 public enum ConnectError : QuickVO.RoomError {
   case connectError(Swift.Int32, _: Swift.String? = nil)
-  case connectTimeOut
+  case connectTimeOut(_: Swift.String? = nil)
   case disConnected
   case isConnecting
   case publishStreamFailure([QuickVO.RoomTrackType])
@@ -229,6 +232,7 @@ public class RTCRoom {
 }
 extension QuickVO.RTCRoom {
   public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
+  public func join(_ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
   public func quit() async
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
   public func subscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws
@@ -239,7 +243,7 @@ extension QuickVO.RTCRoom {
 extension QuickVO.RTCRoom {
   public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
   public func enableSpeaker(_ enable: Swift.Bool)
-  public func speakerIsEnable() -> Swift.Bool
+  public func speakerIsEnable() async -> Swift.Bool
   public func camerPosion() -> QuickVO.RTCCameraPosion
   public func enableCamera(_ enable: Swift.Bool)
   public func enableMicrophone(_ enable: Swift.Bool)
@@ -362,8 +366,9 @@ public actor DetachedTaskActor<T> {
 extension QuickVO.DetachedTaskActor {
   public func processTask(_ value: T) async
   public func start() async
-  public func puause()
+  public func pause()
   public func stop()
+  public func reStart(_ value: T) async
 }
 extension Swift.Bool {
   public var int: Swift.Int {
