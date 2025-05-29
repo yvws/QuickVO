@@ -103,6 +103,16 @@ public enum MultipathNetSeverType {
     get
   }
 }
+public enum SimulcastType : Swift.Sendable {
+  case high
+  case medium
+  case low
+  public static func == (a: QuickVO.SimulcastType, b: QuickVO.SimulcastType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol RTCRoomDelegate : AnyObject {
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomError(_ error: any Swift.Error)
@@ -280,6 +290,8 @@ extension QuickVO.RTCRoom {
 extension QuickVO.RTCEngine {
   public static func create(_ appId: Swift.String)
   public static func destroy()
+}
+public struct RoomSubData {
 }
 @propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
   public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
@@ -795,6 +807,8 @@ extension QuickVO.StreamType : Swift.Equatable {}
 extension QuickVO.StreamType : Swift.Hashable {}
 extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
 extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
+extension QuickVO.SimulcastType : Swift.Equatable {}
+extension QuickVO.SimulcastType : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
