@@ -22,15 +22,15 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		koO4j4Kn6YI7xbLgLbNQhGCZQJ8=
+		imCvXRJP14ngZGD8daPhRlAz+yo=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		z5AJP2/jW4nF8/oZhN6TzQkxpw8=
+		Ci1i+MfsMQFksEP583v7eEJo7j0=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		axQMdrm0kN74dOYBvAhHlU7L5P8=
+		EesrNFltHGQtLKyLkaWm+2nPEEA=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		axQMdrm0kN74dOYBvAhHlU7L5P8=
+		EesrNFltHGQtLKyLkaWm+2nPEEA=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		lE2CqpoXs/er1GxKj4ZhnmLyD1Q=
+		2ynRSXF8a2O0EL194+cq5wNFY8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,33 +88,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			koO4j4Kn6YI7xbLgLbNQhGCZQJ8=
+			imCvXRJP14ngZGD8daPhRlAz+yo=
 			</data>
 			<key>hash2</key>
 			<data>
-			/Vwa8/iphrXSLLniYrPy9JVn4Le8PkBx9W7l17Zix2Q=
+			GPJL4Pl7SukpQBzKBoaHffBGyhkiipQoXmExq4S3AYI=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			z5AJP2/jW4nF8/oZhN6TzQkxpw8=
+			Ci1i+MfsMQFksEP583v7eEJo7j0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1oIyAdpm3Zaz5nBrTMIFkWa2GYYRUOsVnB9/GpEVhvo=
+			0vNIsgm6uHY7Lr2wWj+TxxHuUHrFc/pjJ+IJnKVIdzo=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			axQMdrm0kN74dOYBvAhHlU7L5P8=
+			EesrNFltHGQtLKyLkaWm+2nPEEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			uAIzhkK9KBbPgZxpdrabTpKQoSNX0FxBHfb6pMIfsiY=
+			2xZdsxZnZ4Mmj9rn/2Q3X/O0+1s9dSY5hIaFi04l1VY=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -132,22 +132,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			axQMdrm0kN74dOYBvAhHlU7L5P8=
+			EesrNFltHGQtLKyLkaWm+2nPEEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			uAIzhkK9KBbPgZxpdrabTpKQoSNX0FxBHfb6pMIfsiY=
+			2xZdsxZnZ4Mmj9rn/2Q3X/O0+1s9dSY5hIaFi04l1VY=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lE2CqpoXs/er1GxKj4ZhnmLyD1Q=
+			2ynRSXF8a2O0EL194+cq5wNFY8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			iUN75KgZjzVRv1OKwgJHf3YA3HRzRtv+LUY4CbK9yIA=
+			xiMM50ALRn8VWbHZEFQXvu5ZosdeNmUxnFW93G6UJMQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

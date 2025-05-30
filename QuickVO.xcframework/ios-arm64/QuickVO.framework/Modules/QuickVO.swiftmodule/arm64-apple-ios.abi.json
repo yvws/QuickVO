@@ -6262,6 +6262,28 @@
           },
           {
             "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC7connectyyYaKF",
+            "mangledName": "$s7QuickVO7RTCRoomC7connectyyYaKF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "join",
             "printedName": "join(_:_:_:)",
             "children": [
@@ -6362,6 +6384,28 @@
               "AccessControl"
             ],
             "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "quitStayConnected",
+            "printedName": "quitStayConnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC17quitStayConnectedyyYaKF",
+            "mangledName": "$s7QuickVO7RTCRoomC17quitStayConnectedyyYaKF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -20910,28 +20954,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9582,
+      "offset": 9576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9603,
+      "offset": 9597,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 9990,
+      "offset": 9984,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10226,
+      "offset": 10220,
       "length": 4,
       "value": "true"
     },
@@ -21057,14 +21101,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/TaskActor.swift",
       "kind": "Array",
-      "offset": 1306,
+      "offset": 1265,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/TaskActor.swift",
       "kind": "BooleanLiteral",
-      "offset": 1340,
+      "offset": 1299,
       "length": 5,
       "value": "false"
     },
