@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickVO
 import AVFoundation
 import Accelerate
@@ -15,7 +15,6 @@ import Foundation
 import Metal
 import MetalKit
 import Network
-import OSLog
 @_exported import QuickVO
 import ReplayKit
 import Swift
@@ -293,6 +292,9 @@ extension QuickVO.RTCEngine {
   public static func create(_ appId: Swift.String)
   public static func destroy()
 }
+extension Foundation.Data {
+  public mutating func append(_ string: Swift.String)
+}
 public struct RoomSubData {
 }
 @propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
@@ -336,6 +338,13 @@ public struct RoomSubData {
     get
     set
   }
+}
+@propertyWrapper public struct UserDfaultsWrapper<T> {
+  public var wrappedValue: T {
+    get
+    nonmutating set
+  }
+  public init(_ key: Swift.String, defaultV: T)
 }
 public actor TaskActor<T> {
   public init(task: ((T) async -> Swift.Void)?)

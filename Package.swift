@@ -19,7 +19,9 @@ let package = Package(
         .package(url: "https://github.com/stasel/WebRTC", from: "132.0.0"),
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.28.2"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.0.0"),
-        .package(url: "https://github.com/motian30/GPUPixelLib.git", from: "1.0.1")
+        .package(url: "https://github.com/motian30/GPUPixelLib.git", from: "1.0.1"),
+        .package(url: "https://github.com/SwiftyBeaver/SwiftyBeaver.git", from: "2.1.1")
+    
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
@@ -27,10 +29,10 @@ let package = Package(
             "Starscream",
             "WebRTC",
             "QuickVO",
+            "SwiftyBeaver",
             .product(name: "GPUPixelLib", package: "GPUPixelLib", condition: .when(platforms: [.iOS])),
             .product(name: "SwiftProtobuf", package: "swift-protobuf"),
-            .product(name: "Gzip", package: "GzipSwift")
-            
+            .product(name: "Gzip", package: "GzipSwift"),
 
         ]),
           

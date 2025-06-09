@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DuGngVEsgYpgNjW1ERxVqs2eOnk=
+		Qm7+4AmPqo8PvpSKsjJtqjkPTKc=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		imCvXRJP14ngZGD8daPhRlAz+yo=
+		0G/Q5+nf8HRJh/PgXBEtD2u5bpM=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Ci1i+MfsMQFksEP583v7eEJo7j0=
+		Cj/OM5zZxCFDhfmBlOtqahkDoqI=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		EesrNFltHGQtLKyLkaWm+2nPEEA=
+		NeRFXtpVZf8PKoFC/QtE8vt8dMc=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		UkF9jE48zkV++0uaaJHxOuwDJOc=
+		3INWj5XbcRHzxnFriUc887S6HUw=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EesrNFltHGQtLKyLkaWm+2nPEEA=
+		NeRFXtpVZf8PKoFC/QtE8vt8dMc=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		2ynRSXF8a2O0EL194+cq5wNFY8k=
+		PCVhURNg9trZvzkYY79/F9bXg18=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,66 +88,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			imCvXRJP14ngZGD8daPhRlAz+yo=
+			0G/Q5+nf8HRJh/PgXBEtD2u5bpM=
 			</data>
 			<key>hash2</key>
 			<data>
-			GPJL4Pl7SukpQBzKBoaHffBGyhkiipQoXmExq4S3AYI=
+			g2fnku5ryZtZLvgQlFvh7vxw67NJnCeRccqfBJoh2Kw=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ci1i+MfsMQFksEP583v7eEJo7j0=
+			Cj/OM5zZxCFDhfmBlOtqahkDoqI=
 			</data>
 			<key>hash2</key>
 			<data>
-			0vNIsgm6uHY7Lr2wWj+TxxHuUHrFc/pjJ+IJnKVIdzo=
+			CUZlImS+KsN75S6bNlcNMtYU2ZIezQcRAUoRr8O471c=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EesrNFltHGQtLKyLkaWm+2nPEEA=
+			NeRFXtpVZf8PKoFC/QtE8vt8dMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2xZdsxZnZ4Mmj9rn/2Q3X/O0+1s9dSY5hIaFi04l1VY=
+			WTAJtAFKMooZBAB0S52DvqRs7TaFMAiBri8/EIRcJZc=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UkF9jE48zkV++0uaaJHxOuwDJOc=
+			3INWj5XbcRHzxnFriUc887S6HUw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nMG+JHPRpCN999Q4C29gGpJU3gGRaSlxbHzDT2oCkY4=
+			dlclHIitACAd1CXXe8/STeQ62jCtGJ6uOt68DXeN4YQ=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EesrNFltHGQtLKyLkaWm+2nPEEA=
+			NeRFXtpVZf8PKoFC/QtE8vt8dMc=
 			</data>
 			<key>hash2</key>
 			<data>
-			2xZdsxZnZ4Mmj9rn/2Q3X/O0+1s9dSY5hIaFi04l1VY=
+			WTAJtAFKMooZBAB0S52DvqRs7TaFMAiBri8/EIRcJZc=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2ynRSXF8a2O0EL194+cq5wNFY8k=
+			PCVhURNg9trZvzkYY79/F9bXg18=
 			</data>
 			<key>hash2</key>
 			<data>
-			xiMM50ALRn8VWbHZEFQXvu5ZosdeNmUxnFW93G6UJMQ=
+			wA3RYZT/HvObfPrN1kvPHL6osMiXOBQMofdHArvauiE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
