@@ -16209,6 +16209,165 @@
         "moduleName": "QuickVO"
       },
       {
+        "kind": "TypeDecl",
+        "name": "ScreenRecorder",
+        "printedName": "ScreenRecorder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "startRecord",
+            "printedName": "startRecord()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14ScreenRecorderC11startRecordyyYaF",
+            "mangledName": "$s7QuickVO14ScreenRecorderC11startRecordyyYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecord",
+            "printedName": "stopRecord(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14ScreenRecorderC10stopRecordyy10Foundation3URLVYaKF",
+            "mangledName": "$s7QuickVO14ScreenRecorderC10stopRecordyy10Foundation3URLVYaKF",
+            "moduleName": "QuickVO",
+            "intro_iOS": "14.0",
+            "declAttributes": [
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopRecord",
+            "printedName": "stopRecord(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(ReplayKit.RPPreviewViewController?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "ReplayKit.RPPreviewViewController?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "RPPreviewViewController",
+                                "printedName": "ReplayKit.RPPreviewViewController",
+                                "usr": "c:objc(cs)RPPreviewViewController"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14ScreenRecorderC10stopRecordyyySo23RPPreviewViewControllerCSg_s5Error_pSgtcSgF",
+            "mangledName": "$s7QuickVO14ScreenRecorderC10stopRecordyyySo23RPPreviewViewControllerCSg_s5Error_pSgtcSgF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO14ScreenRecorderC",
+        "mangledName": "$s7QuickVO14ScreenRecorderC",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -21656,7 +21815,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6313,
+      "offset": 5879,
       "length": 9,
       "value": "\"RoomLog\""
     },
@@ -24540,119 +24699,119 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3734,
+      "offset": 3735,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3838,
+      "offset": 3840,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3941,
+      "offset": 3944,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4043,
+      "offset": 4047,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4150,
+      "offset": 4155,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4256,
+      "offset": 4262,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4360,
+      "offset": 4367,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4686,
+      "offset": 4700,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4644,
+      "offset": 4658,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4648,
+      "offset": 4662,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4746,
+      "offset": 4760,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4704,
+      "offset": 4718,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4708,
+      "offset": 4722,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4859,
+      "offset": 4884,
       "length": 33,
       "value": "\"wss:\/\/demo.putplay.cc\/websocket\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "Array",
-      "offset": 4917,
+      "offset": 4942,
       "length": 185,
       "value": "[\"stun:stun.cloudflare.com:3478\", \"stun:stun.cloudflare.com:53\", \"stun:stun.l.google.com:19302\", \"stun:stun1.l.google.com:19302\", \"stun:stun2.l.google.com:19302\"]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 386,
+      "offset": 381,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 458,
+      "offset": 453,
       "length": 5,
       "value": "false"
     },
@@ -24679,29 +24838,36 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1912,
+      "length": 8,
+      "value": "\"stream\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2327,
+      "offset": 2370,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2347,
+      "offset": 2390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2367,
+      "offset": 2410,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 18076,
+      "offset": 18119,
       "length": 8,
       "value": "\"stream\""
     },
@@ -24764,35 +24930,35 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/RTCCameraCature.swift",
       "kind": "BooleanLiteral",
-      "offset": 364,
+      "offset": 402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/RTCVideoFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 11661,
+      "offset": 11655,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/RTCVideoFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 11678,
+      "offset": 11672,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/RTCVideoFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 11697,
+      "offset": 11691,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/RTCVideoFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 11717,
+      "offset": 11711,
       "length": 3,
       "value": "270"
     },

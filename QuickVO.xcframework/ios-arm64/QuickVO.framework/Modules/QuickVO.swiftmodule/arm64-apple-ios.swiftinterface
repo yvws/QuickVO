@@ -630,6 +630,15 @@ extension QuickVO.RoomNetUtils {
   public func startPing(_ time: Swift.UInt64? = 3) async throws -> QuickVO.RoomNetUtils.PingData
   public func stopPing()
 }
+@_hasMissingDesignatedInitializers public class ScreenRecorder {
+  @objc deinit
+}
+extension QuickVO.ScreenRecorder {
+  public func startRecord() async
+  @available(iOS 14.0, *)
+  public func stopRecord(_ url: Foundation.URL) async throws
+  public func stopRecord(_ handle: ((ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> Swift.Void)? = nil)
+}
 extension AVFoundation.AVCaptureDevice {
   public var devicePosition: AVFoundation.AVCaptureDevice.Position {
     get
