@@ -185,7 +185,6 @@ public enum ConnectError : QuickVO.RoomError {
   case connectError(Swift.Int32, _: Swift.String? = nil)
   case connectTimeOut(_: Swift.String? = nil)
   case disConnected
-  case isConnecting
   case publishStreamFailure([QuickVO.RoomTrackType])
   case subscribeStreamFailure([Swift.String : [QuickVO.RoomTrackType]])
   case unSubscribeStreamFailure([Swift.String])
@@ -253,9 +252,11 @@ extension QuickVO.RTCRoom {
 }
 extension QuickVO.RTCRoom {
   public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  public func camerPosion() -> QuickVO.RTCCameraPosion
   public func enableSpeaker(_ enable: Swift.Bool)
   public func speakerIsEnable() async -> Swift.Bool
-  public func camerPosion() -> QuickVO.RTCCameraPosion
+  @discardableResult
+  public func switchSpeaker() async -> Swift.Bool
   public func enableCamera(_ enable: Swift.Bool)
   public func enableMicrophone(_ enable: Swift.Bool)
   public func cameraIsEnable() -> Swift.Bool
