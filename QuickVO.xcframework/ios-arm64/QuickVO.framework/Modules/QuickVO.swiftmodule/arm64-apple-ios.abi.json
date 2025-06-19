@@ -4420,12 +4420,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickVO.ConnectError.Type) -> ([Swift.String]) -> QuickVO.ConnectError",
+                "printedName": "(QuickVO.ConnectError.Type) -> ([QuickVO.RoomUserSubData]) -> QuickVO.ConnectError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "([Swift.String]) -> QuickVO.ConnectError",
+                    "printedName": "([QuickVO.RoomUserSubData]) -> QuickVO.ConnectError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -4436,13 +4436,13 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Array",
-                        "printedName": "[Swift.String]",
+                        "printedName": "[QuickVO.RoomUserSubData]",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
+                            "name": "RoomUserSubData",
+                            "printedName": "QuickVO.RoomUserSubData",
+                            "usr": "s:7QuickVO15RoomUserSubDataV"
                           }
                         ],
                         "usr": "s:Sa"
@@ -4466,8 +4466,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSaySSGcACmF",
-            "mangledName": "$s7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSaySSGcACmF",
+            "usr": "s:7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSayAA15RoomUserSubDataVGcACmF",
+            "mangledName": "$s7QuickVO12ConnectErrorO24unSubscribeStreamFailureyACSayAA15RoomUserSubDataVGcACmF",
             "moduleName": "QuickVO"
           },
           {
@@ -21281,21 +21281,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Delegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 2283,
+      "offset": 2288,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Delegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 2304,
+      "offset": 2309,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Delegate.swift",
       "kind": "IntegerLiteral",
-      "offset": 2415,
+      "offset": 2420,
       "length": 4,
       "value": "1"
     },
@@ -24914,7 +24914,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 17724,
+      "offset": 17763,
       "length": 8,
       "value": "\"stream\""
     },

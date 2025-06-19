@@ -189,7 +189,7 @@ public enum ConnectError : QuickVO.RoomError {
   case disConnected
   case publishStreamFailure([QuickVO.RoomTrackType])
   case subscribeStreamFailure([QuickVO.RoomUserSubData])
-  case unSubscribeStreamFailure([Swift.String])
+  case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
   case startScreenShareWithoutGroupId
   case noAuth
   case joined
