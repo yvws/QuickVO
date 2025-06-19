@@ -113,6 +113,8 @@ public enum SimulcastType : Swift.Sendable {
   }
 }
 public struct RoomUserSubData {
+  public var id: Swift.String
+  public var track: [QuickVO.RoomTrackType]
 }
 public protocol RTCRoomDelegate : AnyObject {
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
