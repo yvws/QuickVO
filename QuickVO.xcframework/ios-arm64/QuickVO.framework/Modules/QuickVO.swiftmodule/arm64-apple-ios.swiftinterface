@@ -112,6 +112,8 @@ public enum SimulcastType : Swift.Sendable {
     get
   }
 }
+public struct RoomUserSubData {
+}
 public protocol RTCRoomDelegate : AnyObject {
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomError(_ error: any Swift.Error)
@@ -121,8 +123,8 @@ public protocol RTCRoomDelegate : AnyObject {
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
   func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
-  func receivePublished(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
-  func didSubscribeed(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
+  func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
@@ -134,8 +136,8 @@ extension QuickVO.RTCRoomDelegate {
   public func roomError(_ error: any Swift.Error)
   public func tokenWillExpired()
   public func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
-  public func receivePublished(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
-  public func didSubscribeed(_ room: QuickVO.RTCRoom, _ participant: [Swift.String : [QuickVO.RoomTrackType]])
+  public func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  public func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
   public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
@@ -186,7 +188,7 @@ public enum ConnectError : QuickVO.RoomError {
   case connectTimeOut(_: Swift.String? = nil)
   case disConnected
   case publishStreamFailure([QuickVO.RoomTrackType])
-  case subscribeStreamFailure([Swift.String : [QuickVO.RoomTrackType]])
+  case subscribeStreamFailure([QuickVO.RoomUserSubData])
   case unSubscribeStreamFailure([Swift.String])
   case startScreenShareWithoutGroupId
   case noAuth
@@ -245,8 +247,8 @@ extension QuickVO.RTCRoom {
   public func quit() async
   public func quitStayConnected() async throws
   public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
-  public func subscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws
-  public func unSubscribe(_ participant: [Swift.String : [QuickVO.RoomTrackType]]) async throws
+  public func subscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
+  public func unSubscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
   public func publishStream() async throws
   public func startScreenShare(_ appGroup: Swift.String) async throws
 }
@@ -726,6 +728,9 @@ public protocol RoomVideoCaptureDelegate : AnyObject {
     get
     set
   }
+  public var isPublished: Swift.Bool {
+    get
+  }
   @objc deinit
 }
 public enum RTCParticipantAtion {
@@ -754,7 +759,7 @@ extension QuickVO.RoomTrack : Swift.Hashable, Swift.Equatable {
     get
   }
 }
-public enum RoomTrackType : Swift.CaseIterable {
+public enum RoomTrackType : Swift.CaseIterable, Swift.Hashable {
   case audio
   case camera
   case screen
@@ -859,8 +864,6 @@ extension QuickVO.RoomVideoRotation : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.RawRepresentable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
-extension QuickVO.RoomTrackType : Swift.Equatable {}
-extension QuickVO.RoomTrackType : Swift.Hashable {}
 extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
 extension QuickVO.NetworkMotorStatus : Swift.Hashable {}
 extension QuickVO.NetworkMotorType : Swift.Equatable {}
