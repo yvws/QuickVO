@@ -7873,6 +7873,102 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "uploadLog",
+            "printedName": "uploadLog",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO9RTCEngineC9uploadLogSbvp",
+            "mangledName": "$s7QuickVO9RTCEngineC9uploadLogSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC9uploadLogSbvg",
+                "mangledName": "$s7QuickVO9RTCEngineC9uploadLogSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC9uploadLogSbvs",
+                "mangledName": "$s7QuickVO9RTCEngineC9uploadLogSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC9uploadLogSbvM",
+                "mangledName": "$s7QuickVO9RTCEngineC9uploadLogSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "create",
             "printedName": "create(_:)",
@@ -10331,13 +10427,22 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftProtobuf",
         "printedName": "SwiftProtobuf",
         "declKind": "Import",
         "moduleName": "QuickVO",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ]
       },
       {
@@ -10552,6 +10657,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -18267,46 +18382,6 @@
                 "accessorKind": "_modify"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "isPublished",
-            "printedName": "isPublished",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO14RTCParticipantC11isPublishedSbvp",
-            "mangledName": "$s7QuickVO14RTCParticipantC11isPublishedSbvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO14RTCParticipantC11isPublishedSbvg",
-                "mangledName": "$s7QuickVO14RTCParticipantC11isPublishedSbvg",
-                "moduleName": "QuickVO",
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Class",
@@ -22013,6 +22088,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1275,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "Dictionary",
       "offset": 138,
@@ -22029,56 +22111,35 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 391,
+      "offset": 407,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 476,
+      "offset": 492,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5515,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6855,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6876,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6901,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 332,
+      "offset": 5560,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1262,
+      "offset": 348,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1278,
       "length": 1,
       "value": "1"
     },
@@ -22120,7 +22181,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 5940,
+      "offset": 6033,
       "length": 9,
       "value": "\"RoomLog\""
     },
@@ -22148,7 +22209,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/ParticipantDataAdaptor.swift",
       "kind": "Dictionary",
-      "offset": 323,
+      "offset": 369,
       "length": 3,
       "value": "[]"
     },
@@ -22162,35 +22223,35 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1095,
+      "offset": 1087,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10167,
+      "offset": 10262,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10188,
+      "offset": 10283,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10617,
+      "offset": 10712,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 10853,
+      "offset": 10948,
       "length": 4,
       "value": "true"
     },
@@ -22323,2354 +22384,2578 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 6944,
+      "offset": 7551,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 9495,
+      "offset": 10102,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 15770,
+      "offset": 16377,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 17331,
+      "offset": 17938,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 17725,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17755,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
-      "kind": "Array",
-      "offset": 19630,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
-      "kind": "Array",
-      "offset": 20030,
+      "offset": 18332,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 23515,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23541,
+      "offset": 18362,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 23927,
+      "offset": 20237,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "Array",
+      "offset": 20637,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24122,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 24148,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "Array",
+      "offset": 24534,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 25857,
+      "offset": 26464,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 25895,
+      "offset": 26502,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 25946,
+      "offset": 26553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 26297,
+      "offset": 26904,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 26673,
+      "offset": 27280,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 27089,
+      "offset": 27696,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 28776,
+      "offset": 29383,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 29239,
+      "offset": 29846,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "BooleanLiteral",
-      "offset": 30533,
+      "offset": 31140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 30961,
+      "offset": 31568,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 31356,
+      "offset": 31963,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 31747,
+      "offset": 32354,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Dictionary",
-      "offset": 32368,
+      "offset": 32975,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 34624,
+      "offset": 35231,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 35321,
+      "offset": 35928,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 35698,
+      "offset": 36305,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 36087,
+      "offset": 36694,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 36496,
+      "offset": 37103,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "Array",
-      "offset": 36857,
+      "offset": 37464,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40188,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40215,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 40238,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 40266,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "BooleanLiteral",
+      "offset": 40295,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37342,
+      "offset": 40477,
       "length": 23,
       "value": "\"com.quick.voice.proto\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37496,
+      "offset": 40631,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37512,
+      "offset": 40647,
       "length": 12,
       "value": "\"Microphone\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37531,
+      "offset": 40666,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37547,
+      "offset": 40682,
       "length": 8,
       "value": "\"Camera\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37562,
+      "offset": 40697,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37578,
+      "offset": 40713,
       "length": 8,
       "value": "\"Screen\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37593,
+      "offset": 40728,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37609,
+      "offset": 40744,
       "length": 13,
       "value": "\"SystemVoice\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37760,
+      "offset": 40895,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37776,
+      "offset": 40911,
       "length": 8,
       "value": "\"Normal\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37791,
+      "offset": 40926,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37807,
+      "offset": 40942,
       "length": 9,
       "value": "\"Meeting\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37823,
+      "offset": 40958,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 37839,
+      "offset": 40974,
       "length": 6,
       "value": "\"Live\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 37989,
+      "offset": 41124,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38005,
+      "offset": 41140,
       "length": 12,
       "value": "\"NormalQuit\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38024,
+      "offset": 41159,
       "length": 4,
       "value": "2011"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38043,
+      "offset": 41178,
       "length": 14,
       "value": "\"TokenExpired\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38064,
+      "offset": 41199,
       "length": 4,
       "value": "2021"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38083,
+      "offset": 41218,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38099,
+      "offset": 41234,
       "length": 4,
       "value": "2022"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38118,
+      "offset": 41253,
       "length": 9,
       "value": "\"KickOut\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38134,
+      "offset": 41269,
       "length": 4,
       "value": "2023"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38153,
+      "offset": 41288,
       "length": 7,
       "value": "\"EndPk\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38167,
+      "offset": 41302,
       "length": 4,
       "value": "2024"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38186,
+      "offset": 41321,
       "length": 9,
       "value": "\"EndLive\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38342,
+      "offset": 41477,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38358,
+      "offset": 41493,
       "length": 15,
       "value": "\"chinaMainland\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38380,
+      "offset": 41515,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38396,
+      "offset": 41531,
       "length": 8,
       "value": "\"global\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38411,
+      "offset": 41546,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38427,
+      "offset": 41562,
       "length": 10,
       "value": "\"overseas\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38579,
+      "offset": 41714,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38595,
+      "offset": 41730,
       "length": 6,
       "value": "\"flow\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38608,
+      "offset": 41743,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38624,
+      "offset": 41759,
       "length": 9,
       "value": "\"minutes\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 41913,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38829,
+      "offset": 41929,
+      "length": 11,
+      "value": "\"backAuido\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 42136,
       "length": 7,
       "value": "\".User\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38900,
+      "offset": 42207,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38916,
+      "offset": 42223,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38927,
+      "offset": 42234,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38943,
+      "offset": 42250,
       "length": 12,
       "value": "\"callAction\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38962,
+      "offset": 42269,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 38978,
+      "offset": 42285,
       "length": 11,
       "value": "\"callState\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 38996,
+      "offset": 42303,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39012,
+      "offset": 42319,
       "length": 10,
       "value": "\"joinTime\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 39029,
+      "offset": 42336,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39045,
+      "offset": 42352,
       "length": 8,
       "value": "\"tracks\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 39060,
+      "offset": 42367,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39076,
+      "offset": 42383,
       "length": 13,
       "value": "\"permissions\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 39096,
+      "offset": 42403,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39112,
+      "offset": 42419,
       "length": 13,
       "value": "\"isPublished\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 39132,
+      "offset": 42439,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39148,
+      "offset": 42455,
       "length": 10,
       "value": "\"behavior\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 39165,
+      "offset": 42472,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 39181,
+      "offset": 42488,
       "length": 14,
       "value": "\"channelCache\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 42720,
+      "offset": 46027,
       "length": 23,
       "value": "\".DataChannelCacheInfo\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 42807,
+      "offset": 46114,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 42823,
+      "offset": 46130,
       "length": 10,
       "value": "\"channels\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44038,
+      "offset": 47345,
       "length": 14,
       "value": "\".DataChannel\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44116,
+      "offset": 47423,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44132,
+      "offset": 47439,
       "length": 17,
       "value": "\"dataChannelName\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 44156,
+      "offset": 47463,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 44172,
+      "offset": 47479,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 45916,
+      "offset": 49223,
       "length": 8,
       "value": "\".Login\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 45988,
+      "offset": 49295,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46004,
+      "offset": 49311,
       "length": 7,
       "value": "\"appid\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46018,
+      "offset": 49325,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46034,
+      "offset": 49341,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 46049,
+      "offset": 49356,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 46065,
+      "offset": 49372,
       "length": 10,
       "value": "\"sdkToken\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47727,
+      "offset": 51034,
       "length": 8,
       "value": "\".Track\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47799,
+      "offset": 51106,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47815,
+      "offset": 51122,
       "length": 5,
       "value": "\"mid\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47827,
+      "offset": 51134,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47843,
+      "offset": 51150,
       "length": 11,
       "value": "\"trackName\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47861,
+      "offset": 51168,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47877,
+      "offset": 51184,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47894,
+      "offset": 51201,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47910,
+      "offset": 51217,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47925,
+      "offset": 51232,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47941,
+      "offset": 51248,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47954,
+      "offset": 51261,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47970,
+      "offset": 51277,
       "length": 6,
       "value": "\"desc\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 47983,
+      "offset": 51290,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 47999,
+      "offset": 51306,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 48012,
+      "offset": 51319,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 48028,
+      "offset": 51335,
       "length": 9,
       "value": "\"isValid\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 48044,
+      "offset": 51351,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 48060,
+      "offset": 51367,
       "length": 11,
       "value": "\"simulcast\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 51497,
+      "offset": 54804,
       "length": 10,
       "value": "\".JoinReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 51571,
+      "offset": 54878,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 51587,
+      "offset": 54894,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 51602,
+      "offset": 54909,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 51618,
+      "offset": 54925,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 51631,
+      "offset": 54938,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 51647,
+      "offset": 54954,
       "length": 10,
       "value": "\"callType\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 51664,
+      "offset": 54971,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 51680,
+      "offset": 54987,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 53885,
+      "offset": 57192,
       "length": 10,
       "value": "\".JoinRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 53959,
+      "offset": 57266,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 53975,
+      "offset": 57282,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 53990,
+      "offset": 57297,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 54006,
+      "offset": 57313,
       "length": 11,
       "value": "\"roomUsers\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 54024,
+      "offset": 57331,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 54040,
+      "offset": 57347,
       "length": 10,
       "value": "\"callType\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 55731,
+      "offset": 59038,
       "length": 13,
       "value": "\".JoinNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 55808,
+      "offset": 59115,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 55824,
+      "offset": 59131,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 55839,
+      "offset": 59146,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 55855,
+      "offset": 59162,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 57573,
+      "offset": 60880,
       "length": 15,
       "value": "\".ConnectCFReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 57652,
+      "offset": 60959,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 57668,
+      "offset": 60975,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 58836,
+      "offset": 62143,
       "length": 15,
       "value": "\".ConnectCFRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 58915,
+      "offset": 62222,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 58931,
+      "offset": 62238,
       "length": 11,
       "value": "\"remoteSdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 58949,
+      "offset": 62256,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 58965,
+      "offset": 62272,
       "length": 16,
       "value": "\"subscribeUsers\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 60459,
+      "offset": 63766,
       "length": 13,
       "value": "\".PublishReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 60536,
+      "offset": 63843,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 60552,
+      "offset": 63859,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 60564,
+      "offset": 63871,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 60580,
+      "offset": 63887,
       "length": 8,
       "value": "\"tracks\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 60595,
+      "offset": 63902,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 60611,
+      "offset": 63918,
       "length": 12,
       "value": "\"callAction\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 60630,
+      "offset": 63937,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 60646,
+      "offset": 63953,
       "length": 10,
       "value": "\"recreate\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 62867,
+      "offset": 66174,
       "length": 13,
       "value": "\".PublishRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 62944,
+      "offset": 66251,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 62960,
+      "offset": 66267,
       "length": 11,
       "value": "\"remoteSdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 64161,
+      "offset": 67468,
       "length": 16,
       "value": "\".PublishNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 64241,
+      "offset": 67548,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 64257,
+      "offset": 67564,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 64272,
+      "offset": 67579,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 64288,
+      "offset": 67595,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66012,
+      "offset": 69319,
       "length": 15,
       "value": "\".SubscribeReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 66091,
+      "offset": 69398,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 66107,
+      "offset": 69414,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67289,
+      "offset": 70596,
       "length": 15,
       "value": "\".SubscribeRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 67368,
+      "offset": 70675,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67384,
+      "offset": 70691,
       "length": 11,
       "value": "\"remoteSdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 67402,
+      "offset": 70709,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 67418,
+      "offset": 70725,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 68862,
+      "offset": 72169,
       "length": 17,
       "value": "\".RenegotiateReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 68943,
+      "offset": 72250,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 68959,
+      "offset": 72266,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 68974,
+      "offset": 72281,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 68990,
+      "offset": 72297,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 70402,
+      "offset": 73709,
       "length": 10,
       "value": "\".QuitReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 70476,
+      "offset": 73783,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 70492,
+      "offset": 73799,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 70507,
+      "offset": 73814,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 70523,
+      "offset": 73830,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 71942,
+      "offset": 75249,
       "length": 13,
       "value": "\".QuitNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72019,
+      "offset": 75326,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72035,
+      "offset": 75342,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72050,
+      "offset": 75357,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72066,
+      "offset": 75373,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72079,
+      "offset": 75386,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72095,
+      "offset": 75402,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 72108,
+      "offset": 75415,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 72124,
+      "offset": 75431,
       "length": 6,
       "value": "\"desc\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74325,
+      "offset": 77632,
       "length": 20,
       "value": "\".TokenExpireNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 74409,
+      "offset": 77716,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 74425,
+      "offset": 77732,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 75623,
+      "offset": 78930,
       "length": 17,
       "value": "\".UpdateTokenReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 75704,
+      "offset": 79011,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 75720,
+      "offset": 79027,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 75735,
+      "offset": 79042,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 75751,
+      "offset": 79058,
       "length": 10,
       "value": "\"sdkToken\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77202,
+      "offset": 80509,
       "length": 19,
       "value": "\".NetQualityChange\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77285,
+      "offset": 80592,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77301,
+      "offset": 80608,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77316,
+      "offset": 80623,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77332,
+      "offset": 80639,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77347,
+      "offset": 80654,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77363,
+      "offset": 80670,
       "length": 8,
       "value": "\"egress\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 77378,
+      "offset": 80685,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 77394,
+      "offset": 80701,
       "length": 9,
       "value": "\"ingress\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 79321,
+      "offset": 82628,
       "length": 19,
       "value": "\".NetQualityNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 79404,
+      "offset": 82711,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 79420,
+      "offset": 82727,
       "length": 11,
       "value": "\"qualities\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80632,
+      "offset": 83939,
       "length": 13,
       "value": "\".UpdateCall\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 80709,
+      "offset": 84016,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80725,
+      "offset": 84032,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 80740,
+      "offset": 84047,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 80756,
+      "offset": 84063,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82477,
+      "offset": 85784,
       "length": 18,
       "value": "\".SyncRoomInfoReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82559,
+      "offset": 85866,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82575,
+      "offset": 85882,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 82590,
+      "offset": 85897,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 82606,
+      "offset": 85913,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84337,
+      "offset": 87644,
       "length": 18,
       "value": "\".SyncRoomInfoRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84419,
+      "offset": 87726,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84435,
+      "offset": 87742,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84450,
+      "offset": 87757,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84466,
+      "offset": 87773,
       "length": 9,
       "value": "\"isValid\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84482,
+      "offset": 87789,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84498,
+      "offset": 87805,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 84512,
+      "offset": 87819,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 84528,
+      "offset": 87835,
       "length": 10,
       "value": "\"isActive\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 86459,
+      "offset": 89766,
       "length": 13,
       "value": "\".UpdateTime\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 86536,
+      "offset": 89843,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 86552,
+      "offset": 89859,
       "length": 6,
       "value": "\"time\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87717,
+      "offset": 91024,
       "length": 16,
       "value": "\".CloseTrackReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87797,
+      "offset": 91104,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87813,
+      "offset": 91120,
       "length": 5,
       "value": "\"sdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87825,
+      "offset": 91132,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87841,
+      "offset": 91148,
       "length": 8,
       "value": "\"tracks\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 87856,
+      "offset": 91163,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 87872,
+      "offset": 91179,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 89538,
+      "offset": 92845,
       "length": 16,
       "value": "\".CloseTrackRsp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 89618,
+      "offset": 92925,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 89634,
+      "offset": 92941,
       "length": 11,
       "value": "\"remoteSdp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 89652,
+      "offset": 92959,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 89668,
+      "offset": 92975,
       "length": 8,
       "value": "\"tracks\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91122,
+      "offset": 94429,
       "length": 19,
       "value": "\".CloseTrackNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 91205,
+      "offset": 94512,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 91221,
+      "offset": 94528,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 92711,
+      "offset": 96018,
       "length": 20,
       "value": "\".ToggleLiveRoomReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 92795,
+      "offset": 96102,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 92811,
+      "offset": 96118,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 94012,
+      "offset": 97319,
       "length": 20,
       "value": "\".ToggleLiveRoomRsq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 94096,
+      "offset": 97403,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 94112,
+      "offset": 97419,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 94127,
+      "offset": 97434,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 94143,
+      "offset": 97450,
       "length": 6,
       "value": "\"hash\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 94156,
+      "offset": 97463,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 94172,
+      "offset": 97479,
       "length": 11,
       "value": "\"roomUsers\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 95869,
+      "offset": 99176,
       "length": 16,
       "value": "\".ReportInfoReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 95949,
+      "offset": 99256,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 95965,
+      "offset": 99272,
       "length": 13,
       "value": "\"actionEvent\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 95985,
+      "offset": 99292,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 96001,
+      "offset": 99308,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 96016,
+      "offset": 99323,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 96032,
+      "offset": 99339,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 96049,
+      "offset": 99356,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 96065,
+      "offset": 99372,
       "length": 6,
       "value": "\"time\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 96078,
+      "offset": 99385,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 96094,
+      "offset": 99401,
       "length": 12,
       "value": "\"actionData\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 98310,
+      "offset": 101617,
       "length": 20,
       "value": "\".UpdatePermissions\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 98394,
+      "offset": 101701,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 98410,
+      "offset": 101717,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 98425,
+      "offset": 101732,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 98441,
+      "offset": 101748,
       "length": 6,
       "value": "\"user\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 100173,
+      "offset": 103480,
       "length": 15,
       "value": "\".UserBehavior\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 100252,
+      "offset": 103559,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 100268,
+      "offset": 103575,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 100281,
+      "offset": 103588,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 100297,
+      "offset": 103604,
       "length": 10,
       "value": "\"behavior\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 101727,
+      "offset": 105034,
       "length": 14,
       "value": "\".PreventUser\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 101805,
+      "offset": 105112,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 101821,
+      "offset": 105128,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 101832,
+      "offset": 105139,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 101848,
+      "offset": 105155,
       "length": 11,
       "value": "\"behaviors\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 103288,
+      "offset": 106595,
       "length": 26,
       "value": "\".PreventUsersBehaviorReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 103378,
+      "offset": 106685,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 103394,
+      "offset": 106701,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 103409,
+      "offset": 106716,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 103425,
+      "offset": 106732,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 104888,
+      "offset": 108195,
       "length": 29,
       "value": "\".PreventUsersBehaviorNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 104981,
+      "offset": 108288,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 104997,
+      "offset": 108304,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 105012,
+      "offset": 108319,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 105028,
+      "offset": 108335,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 106485,
+      "offset": 109792,
       "length": 17,
       "value": "\".BaseCDNAddress\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 106566,
+      "offset": 109873,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 106582,
+      "offset": 109889,
       "length": 6,
       "value": "\"area\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 106595,
+      "offset": 109902,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 106611,
+      "offset": 109918,
       "length": 11,
       "value": "\"countType\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 106629,
+      "offset": 109936,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 106645,
+      "offset": 109952,
       "length": 8,
       "value": "\"urlMap\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108523,
+      "offset": 111830,
       "length": 23,
       "value": "\".CDNPlayAddressNotify\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108610,
+      "offset": 111917,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108626,
+      "offset": 111933,
       "length": 8,
       "value": "\"roomId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108641,
+      "offset": 111948,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108657,
+      "offset": 111964,
       "length": 6,
       "value": "\"m3u8\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108670,
+      "offset": 111977,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108686,
+      "offset": 111993,
       "length": 6,
       "value": "\"rtmp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108699,
+      "offset": 112006,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108715,
+      "offset": 112022,
       "length": 5,
       "value": "\"flv\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108727,
+      "offset": 112034,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108743,
+      "offset": 112050,
       "length": 7,
       "value": "\"rtmps\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108757,
+      "offset": 112064,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108773,
+      "offset": 112080,
       "length": 10,
       "value": "\"mainLine\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 108790,
+      "offset": 112097,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 108806,
+      "offset": 112113,
       "length": 12,
       "value": "\"standLines\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 111792,
+      "offset": 115099,
       "length": 14,
       "value": "\".UserChannel\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 111870,
+      "offset": 115177,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 111886,
+      "offset": 115193,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 111901,
+      "offset": 115208,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 111917,
+      "offset": 115224,
       "length": 10,
       "value": "\"channels\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113365,
+      "offset": 116672,
       "length": 20,
       "value": "\".ChannelPublishReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 113449,
+      "offset": 116756,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 113465,
+      "offset": 116772,
       "length": 10,
       "value": "\"channels\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 114680,
+      "offset": 117987,
       "length": 20,
       "value": "\".ChannelPublishRsq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 114764,
+      "offset": 118071,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 114780,
+      "offset": 118087,
       "length": 10,
       "value": "\"channels\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 115997,
+      "offset": 119304,
       "length": 22,
       "value": "\".ChannelSubscribeReq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 116083,
+      "offset": 119390,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 116099,
+      "offset": 119406,
       "length": 7,
       "value": "\"users\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 117302,
+      "offset": 120609,
       "length": 22,
       "value": "\".ChannelSubscribeRsq\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "IntegerLiteral",
-      "offset": 117388,
+      "offset": 120695,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 117404,
+      "offset": 120711,
       "length": 10,
       "value": "\"channels\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
       "kind": "StringLiteral",
-      "offset": 118615,
+      "offset": 121922,
       "length": 12,
       "value": "\".NormalRsp\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 122657,
+      "length": 18,
+      "value": "\".DataChannelData\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 122739,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 122755,
+      "length": 8,
+      "value": "\"userId\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 122770,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 122786,
+      "length": 6,
+      "value": "\"type\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 122799,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 122815,
+      "length": 11,
+      "value": "\"audioData\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 124812,
+      "length": 23,
+      "value": "\".DataChannelAudioData\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 124899,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 124915,
+      "length": 6,
+      "value": "\"data\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 124928,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 124944,
+      "length": 8,
+      "value": "\"format\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 124959,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 124975,
+      "length": 6,
+      "value": "\"time\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 126957,
+      "length": 25,
+      "value": "\".DataChannelAudioFormat\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127046,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127062,
+      "length": 12,
+      "value": "\"sampleRate\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127081,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127097,
+      "length": 10,
+      "value": "\"channels\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127114,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127130,
+      "length": 7,
+      "value": "\"float\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127144,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127160,
+      "length": 7,
+      "value": "\"depth\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "IntegerLiteral",
+      "offset": 127174,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/Room.pb.swift",
+      "kind": "StringLiteral",
+      "offset": 127190,
+      "length": 13,
+      "value": "\"interleaved\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Third\/SwiftyPing.swift",

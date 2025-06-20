@@ -292,6 +292,7 @@ extension QuickVO.RTCRoom {
     get
     set
   }
+  final public var uploadLog: Swift.Bool
   @objc deinit
 }
 extension QuickVO.RTCEngine {
@@ -730,9 +731,6 @@ public protocol RoomVideoCaptureDelegate : AnyObject {
   public var videoForbid: Swift.Bool {
     get
     set
-  }
-  public var isPublished: Swift.Bool {
-    get
   }
   @objc deinit
 }
