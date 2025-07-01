@@ -433,6 +433,1766 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "BackgroundTasks",
+        "printedName": "BackgroundTasks",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RTCRoomDelegate",
+        "printedName": "RTCRoomDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "roomStatus",
+            "printedName": "roomStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoomConnect",
+                "printedName": "QuickVO.RTCRoomConnect",
+                "usr": "s:7QuickVO14RTCRoomConnectO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP10roomStatusyyAA0C7ConnectOF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP10roomStatusyyAA0C7ConnectOF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "roomError",
+            "printedName": "roomError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP9roomErroryys0F0_pF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP9roomErroryys0F0_pF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenExpired",
+            "printedName": "tokenExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP12tokenExpiredyyF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP12tokenExpiredyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenWillExpired",
+            "printedName": "tokenWillExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP16tokenWillExpiredyyF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP16tokenWillExpiredyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didJoin",
+            "printedName": "didJoin(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCParticipant",
+                "printedName": "QuickVO.RTCParticipant",
+                "usr": "s:7QuickVO14RTCParticipantC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP7didJoinyyAA0C0C_AA14RTCParticipantCtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP7didJoinyyAA0C0C_AA14RTCParticipantCtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didLeave",
+            "printedName": "didLeave(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCParticipant",
+                "printedName": "QuickVO.RTCParticipant",
+                "usr": "s:7QuickVO14RTCParticipantC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP8didLeaveyyAA0C0C_AA14RTCParticipantCtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP8didLeaveyyAA0C0C_AA14RTCParticipantCtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didClose",
+            "printedName": "didClose(_:_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP8didCloseyyAA0C0C_SiSgSSSgtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP8didCloseyyAA0C0C_SiSgSSSgtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didPublished",
+            "printedName": "didPublished(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomTrackType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomTrackType",
+                    "printedName": "QuickVO.RoomTrackType",
+                    "usr": "s:7QuickVO13RoomTrackTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receivePublished",
+            "printedName": "receivePublished(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomUserSubData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomUserSubData",
+                    "printedName": "QuickVO.RoomUserSubData",
+                    "usr": "s:7QuickVO15RoomUserSubDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didSubscribed",
+            "printedName": "didSubscribed(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomUserSubData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomUserSubData",
+                    "printedName": "QuickVO.RoomUserSubData",
+                    "usr": "s:7QuickVO15RoomUserSubDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateAudioLevel",
+            "printedName": "updateAudioLevel(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RTCParticipant]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCParticipant",
+                    "printedName": "QuickVO.RTCParticipant",
+                    "usr": "s:7QuickVO14RTCParticipantC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioSessionRouteChange",
+            "printedName": "audioSessionRouteChange(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioRoute",
+                "printedName": "QuickVO.RTCAudioRoute",
+                "usr": "s:7QuickVO13RTCAudioRouteO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioSessionInterrupt",
+            "printedName": "audioSessionInterrupt(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InterruptionType",
+                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
+                "usr": "c:@E@AVAudioSessionInterruptionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "liveDidSetPlaybackUrls",
+            "printedName": "liveDidSetPlaybackUrls(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RoomLivePlaybackUrls",
+                "printedName": "QuickVO.RoomLivePlaybackUrls",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disConnectWithoutRoom",
+            "printedName": "disConnectWithoutRoom(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegateP21disConnectWithoutRoomyyAA0C0CF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegateP21disConnectWithoutRoomyyAA0C0CF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "roomStatus",
+            "printedName": "roomStatus(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoomConnect",
+                "printedName": "QuickVO.RTCRoomConnect",
+                "usr": "s:7QuickVO14RTCRoomConnectO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE10roomStatusyyAA0C7ConnectOF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE10roomStatusyyAA0C7ConnectOF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "roomError",
+            "printedName": "roomError(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE9roomErroryys0F0_pF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE9roomErroryys0F0_pF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tokenWillExpired",
+            "printedName": "tokenWillExpired()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16tokenWillExpiredyyF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16tokenWillExpiredyyF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didPublished",
+            "printedName": "didPublished(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomTrackType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomTrackType",
+                    "printedName": "QuickVO.RoomTrackType",
+                    "usr": "s:7QuickVO13RoomTrackTypeO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receivePublished",
+            "printedName": "receivePublished(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomUserSubData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomUserSubData",
+                    "printedName": "QuickVO.RoomUserSubData",
+                    "usr": "s:7QuickVO15RoomUserSubDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didSubscribed",
+            "printedName": "didSubscribed(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomUserSubData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomUserSubData",
+                    "printedName": "QuickVO.RoomUserSubData",
+                    "usr": "s:7QuickVO15RoomUserSubDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "updateAudioLevel",
+            "printedName": "updateAudioLevel(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RTCParticipant]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCParticipant",
+                    "printedName": "QuickVO.RTCParticipant",
+                    "usr": "s:7QuickVO14RTCParticipantC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioSessionRouteChange",
+            "printedName": "audioSessionRouteChange(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioRoute",
+                "printedName": "QuickVO.RTCAudioRoute",
+                "usr": "s:7QuickVO13RTCAudioRouteO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "audioSessionInterrupt",
+            "printedName": "audioSessionInterrupt(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "InterruptionType",
+                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
+                "usr": "c:@E@AVAudioSessionInterruptionType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "liveDidSetPlaybackUrls",
+            "printedName": "liveDidSetPlaybackUrls(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RoomLivePlaybackUrls",
+                "printedName": "QuickVO.RoomLivePlaybackUrls",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disConnectWithoutRoom",
+            "printedName": "disConnectWithoutRoom(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCRoom",
+                "printedName": "QuickVO.RTCRoom",
+                "usr": "s:7QuickVO7RTCRoomC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RTCRoomDelegatePAAE21disConnectWithoutRoomyyAA0C0CF",
+            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE21disConnectWithoutRoomyyAA0C0CF",
+            "moduleName": "QuickVO",
+            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
+            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7QuickVO15RTCRoomDelegateP",
+        "mangledName": "$s7QuickVO15RTCRoomDelegateP",
+        "moduleName": "QuickVO",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomLivePlaybackUrls",
+        "printedName": "RoomLivePlaybackUrls",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "urls",
+            "printedName": "urls",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomLiveUrlData",
+                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
+                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvp",
+            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveUrlData",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvg",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveUrlData",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvs",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvM",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RoomLiveUrlData",
+            "printedName": "RoomLiveUrlData",
+            "declKind": "Struct",
+            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV",
+            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RoomLiveLocation",
+            "printedName": "RoomLiveLocation",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "chinaMainland",
+                "printedName": "chinaMainland",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveLocation",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveLocation",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO13chinaMainlandyA2EmF",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO13chinaMainlandyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "global",
+                "printedName": "global",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveLocation",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveLocation",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO6globalyA2EmF",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO6globalyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "overseas",
+                "printedName": "overseas",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveLocation",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveLocation",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8overseasyA2EmF",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8overseasyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveLocation",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueAESgSi_tcfc",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueAESgSi_tcfc",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivp",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivp",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivg",
+                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivg",
+                    "moduleName": "QuickVO",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveLocation",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvpZ",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvpZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveLocation",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvgZ",
+                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvgZ",
+                    "moduleName": "QuickVO",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO",
+            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveLocation",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RoomLiveBilling",
+            "printedName": "RoomLiveBilling",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "flow",
+                "printedName": "flow",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveBilling",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveBilling",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4flowyA2EmF",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4flowyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Var",
+                "name": "time",
+                "printedName": "time",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveBilling",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveBilling",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4timeyA2EmF",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4timeyA2EmF",
+                "moduleName": "QuickVO"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveBilling",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueAESgSi_tcfc",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueAESgSi_tcfc",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivp",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivp",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivg",
+                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivg",
+                    "moduleName": "QuickVO",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomLiveBilling",
+                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvpZ",
+                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvpZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Nonisolated"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveBilling",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvgZ",
+                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvgZ",
+                    "moduleName": "QuickVO",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO",
+            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RoomLiveBilling",
+                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
+                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV",
+        "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "RTCRoomConnect",
         "printedName": "RTCRoomConnect",
@@ -2485,1759 +4245,6 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RTCRoomDelegate",
-        "printedName": "RTCRoomDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "roomStatus",
-            "printedName": "roomStatus(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoomConnect",
-                "printedName": "QuickVO.RTCRoomConnect",
-                "usr": "s:7QuickVO14RTCRoomConnectO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP10roomStatusyyAA0C7ConnectOF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP10roomStatusyyAA0C7ConnectOF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "roomError",
-            "printedName": "roomError(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP9roomErroryys0F0_pF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP9roomErroryys0F0_pF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tokenExpired",
-            "printedName": "tokenExpired()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP12tokenExpiredyyF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP12tokenExpiredyyF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tokenWillExpired",
-            "printedName": "tokenWillExpired()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP16tokenWillExpiredyyF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP16tokenWillExpiredyyF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didJoin",
-            "printedName": "didJoin(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCParticipant",
-                "printedName": "QuickVO.RTCParticipant",
-                "usr": "s:7QuickVO14RTCParticipantC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP7didJoinyyAA0C0C_AA14RTCParticipantCtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP7didJoinyyAA0C0C_AA14RTCParticipantCtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didLeave",
-            "printedName": "didLeave(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCParticipant",
-                "printedName": "QuickVO.RTCParticipant",
-                "usr": "s:7QuickVO14RTCParticipantC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP8didLeaveyyAA0C0C_AA14RTCParticipantCtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP8didLeaveyyAA0C0C_AA14RTCParticipantCtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didClose",
-            "printedName": "didClose(_:_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP8didCloseyyAA0C0C_SiSgSSSgtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP8didCloseyyAA0C0C_SiSgSSSgtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didPublished",
-            "printedName": "didPublished(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomTrackType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomTrackType",
-                    "printedName": "QuickVO.RoomTrackType",
-                    "usr": "s:7QuickVO13RoomTrackTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "receivePublished",
-            "printedName": "receivePublished(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomUserSubData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomUserSubData",
-                    "printedName": "QuickVO.RoomUserSubData",
-                    "usr": "s:7QuickVO15RoomUserSubDataV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didSubscribed",
-            "printedName": "didSubscribed(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomUserSubData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomUserSubData",
-                    "printedName": "QuickVO.RoomUserSubData",
-                    "usr": "s:7QuickVO15RoomUserSubDataV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateAudioLevel",
-            "printedName": "updateAudioLevel(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RTCParticipant]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RTCParticipant",
-                    "printedName": "QuickVO.RTCParticipant",
-                    "usr": "s:7QuickVO14RTCParticipantC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "audioSessionRouteChange",
-            "printedName": "audioSessionRouteChange(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCAudioRoute",
-                "printedName": "QuickVO.RTCAudioRoute",
-                "usr": "s:7QuickVO13RTCAudioRouteO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "audioSessionInterrupt",
-            "printedName": "audioSessionInterrupt(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InterruptionType",
-                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
-                "usr": "c:@E@AVAudioSessionInterruptionType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "liveDidSetPlaybackUrls",
-            "printedName": "liveDidSetPlaybackUrls(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RoomLivePlaybackUrls",
-                "printedName": "QuickVO.RoomLivePlaybackUrls",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disConnectWithoutRoom",
-            "printedName": "disConnectWithoutRoom(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegateP21disConnectWithoutRoomyyAA0C0CF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegateP21disConnectWithoutRoomyyAA0C0CF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "roomStatus",
-            "printedName": "roomStatus(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoomConnect",
-                "printedName": "QuickVO.RTCRoomConnect",
-                "usr": "s:7QuickVO14RTCRoomConnectO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE10roomStatusyyAA0C7ConnectOF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE10roomStatusyyAA0C7ConnectOF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "roomError",
-            "printedName": "roomError(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE9roomErroryys0F0_pF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE9roomErroryys0F0_pF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "tokenWillExpired",
-            "printedName": "tokenWillExpired()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16tokenWillExpiredyyF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16tokenWillExpiredyyF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didPublished",
-            "printedName": "didPublished(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomTrackType]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomTrackType",
-                    "printedName": "QuickVO.RoomTrackType",
-                    "usr": "s:7QuickVO13RoomTrackTypeO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE12didPublishedyyAA0C0C_SayAA13RoomTrackTypeOGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "receivePublished",
-            "printedName": "receivePublished(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomUserSubData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomUserSubData",
-                    "printedName": "QuickVO.RoomUserSubData",
-                    "usr": "s:7QuickVO15RoomUserSubDataV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16receivePublishedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "didSubscribed",
-            "printedName": "didSubscribed(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomUserSubData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomUserSubData",
-                    "printedName": "QuickVO.RoomUserSubData",
-                    "usr": "s:7QuickVO15RoomUserSubDataV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE13didSubscribedyyAA0C0C_SayAA15RoomUserSubDataVGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "updateAudioLevel",
-            "printedName": "updateAudioLevel(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RTCParticipant]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RTCParticipant",
-                    "printedName": "QuickVO.RTCParticipant",
-                    "usr": "s:7QuickVO14RTCParticipantC"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE16updateAudioLevelyyAA0C0C_SayAA14RTCParticipantCGtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "audioSessionRouteChange",
-            "printedName": "audioSessionRouteChange(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCAudioRoute",
-                "printedName": "QuickVO.RTCAudioRoute",
-                "usr": "s:7QuickVO13RTCAudioRouteO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE23audioSessionRouteChangeyyAA0C0C_AA08RTCAudioG0OtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "audioSessionInterrupt",
-            "printedName": "audioSessionInterrupt(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "InterruptionType",
-                "printedName": "AVFAudio.AVAudioSession.InterruptionType",
-                "usr": "c:@E@AVAudioSessionInterruptionType"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE21audioSessionInterruptyyAA0C0C_So07AVAudioF16InterruptionTypeVtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "liveDidSetPlaybackUrls",
-            "printedName": "liveDidSetPlaybackUrls(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RoomLivePlaybackUrls",
-                "printedName": "QuickVO.RoomLivePlaybackUrls",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE22liveDidSetPlaybackUrlsyyAA0C0C_AA08RoomLivehI0VtF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disConnectWithoutRoom",
-            "printedName": "disConnectWithoutRoom(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RTCRoom",
-                "printedName": "QuickVO.RTCRoom",
-                "usr": "s:7QuickVO7RTCRoomC"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7QuickVO15RTCRoomDelegatePAAE21disConnectWithoutRoomyyAA0C0CF",
-            "mangledName": "$s7QuickVO15RTCRoomDelegatePAAE21disConnectWithoutRoomyyAA0C0CF",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0 where τ_0_0 : QuickVO.RTCRoomDelegate>",
-            "sugared_genericSig": "<Self where Self : QuickVO.RTCRoomDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:7QuickVO15RTCRoomDelegateP",
-        "mangledName": "$s7QuickVO15RTCRoomDelegateP",
-        "moduleName": "QuickVO",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RoomLivePlaybackUrls",
-        "printedName": "RoomLivePlaybackUrls",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "urls",
-            "printedName": "urls",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomLiveUrlData",
-                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
-                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvp",
-            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveUrlData",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvg",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvg",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveUrlData",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvs",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvs",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvM",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV4urlsSayAC0cD7UrlDataVGvM",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "RoomLiveUrlData",
-            "printedName": "RoomLiveUrlData",
-            "declKind": "Struct",
-            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV",
-            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7UrlDataV",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "RoomLiveLocation",
-            "printedName": "RoomLiveLocation",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "chinaMainland",
-                "printedName": "chinaMainland",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveLocation",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveLocation",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO13chinaMainlandyA2EmF",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO13chinaMainlandyA2EmF",
-                "moduleName": "QuickVO"
-              },
-              {
-                "kind": "Var",
-                "name": "global",
-                "printedName": "global",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveLocation",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveLocation",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO6globalyA2EmF",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO6globalyA2EmF",
-                "moduleName": "QuickVO"
-              },
-              {
-                "kind": "Var",
-                "name": "overseas",
-                "printedName": "overseas",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveLocation",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveLocation",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8overseasyA2EmF",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8overseasyA2EmF",
-                "moduleName": "QuickVO"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveLocation",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueAESgSi_tcfc",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueAESgSi_tcfc",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivp",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivp",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivg",
-                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8rawValueSivg",
-                    "moduleName": "QuickVO",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "allCases",
-                "printedName": "allCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveLocation",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvpZ",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvpZ",
-                "moduleName": "QuickVO",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Nonisolated"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveLocation",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvgZ",
-                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO8allCasesSayAEGvgZ",
-                    "moduleName": "QuickVO",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO",
-            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CaseIterable",
-                "printedName": "CaseIterable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "AllCases",
-                    "printedName": "AllCases",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveLocation",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveLocation",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD8LocationO"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:s12CaseIterableP",
-                "mangledName": "$ss12CaseIterableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "RoomLiveBilling",
-            "printedName": "RoomLiveBilling",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "flow",
-                "printedName": "flow",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveBilling",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveBilling",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4flowyA2EmF",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4flowyA2EmF",
-                "moduleName": "QuickVO"
-              },
-              {
-                "kind": "Var",
-                "name": "time",
-                "printedName": "time",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type) -> QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveBilling",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveBilling",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4timeyA2EmF",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO4timeyA2EmF",
-                "moduleName": "QuickVO"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveBilling",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueAESgSi_tcfc",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueAESgSi_tcfc",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivp",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivp",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivg",
-                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8rawValueSivg",
-                    "moduleName": "QuickVO",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "allCases",
-                "printedName": "allCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomLiveBilling",
-                        "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvpZ",
-                "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvpZ",
-                "moduleName": "QuickVO",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Nonisolated"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveBilling",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvgZ",
-                    "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO8allCasesSayAEGvgZ",
-                    "moduleName": "QuickVO",
-                    "static": true,
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO",
-            "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              },
-              {
-                "kind": "Conformance",
-                "name": "CaseIterable",
-                "printedName": "CaseIterable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "AllCases",
-                    "printedName": "AllCases",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "RoomLiveBilling",
-                            "printedName": "QuickVO.RoomLivePlaybackUrls.RoomLiveBilling",
-                            "usr": "s:7QuickVO20RoomLivePlaybackUrlsV0cD7BillingO"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:s12CaseIterableP",
-                "mangledName": "$ss12CaseIterableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Sendable",
-                "printedName": "Sendable",
-                "usr": "s:s8SendableP",
-                "mangledName": "$ss8SendableP"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7QuickVO20RoomLivePlaybackUrlsV",
-        "mangledName": "$s7QuickVO20RoomLivePlaybackUrlsV",
-        "moduleName": "QuickVO",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "BackgroundTasks",
-        "printedName": "BackgroundTasks",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
       },
       {
         "kind": "Import",
@@ -7045,6 +7052,33 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "setBackAudioVolume",
+            "printedName": "setBackAudioVolume(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC18setBackAudioVolumeyySfYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC18setBackAudioVolumeyySfYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Var",
             "name": "isMultitaskingCameraAccessSupported",
             "printedName": "isMultitaskingCameraAccessSupported",
@@ -7170,6 +7204,216 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "playAudio",
+            "printedName": "playAudio(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC9playAudioyy10Foundation3URLV_SitYaKF",
+            "mangledName": "$s7QuickVO7RTCRoomC9playAudioyy10Foundation3URLV_SitYaKF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resumeAudio",
+            "printedName": "resumeAudio()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC11resumeAudioyyYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC11resumeAudioyyYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pauseAudio",
+            "printedName": "pauseAudio()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC10pauseAudioyyYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC10pauseAudioyyYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopAudio",
+            "printedName": "stopAudio()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC9stopAudioyyYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC9stopAudioyyYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAudioVolume",
+            "printedName": "setAudioVolume(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC14setAudioVolumeyySfYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC14setAudioVolumeyySfYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "playEffect",
+            "printedName": "playEffect(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.URL]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC10playEffectyySay10Foundation3URLVG_SitYaKF",
+            "mangledName": "$s7QuickVO7RTCRoomC10playEffectyySay10Foundation3URLVG_SitYaKF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEffectVolume",
+            "printedName": "setEffectVolume(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO7RTCRoomC15setEffectVolumeyySf_10Foundation3URLVSgtYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC15setEffectVolumeyySf_10Foundation3URLVSgtYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -8056,10 +8300,30 @@
       },
       {
         "kind": "Import",
+        "name": "Opus",
+        "printedName": "Opus",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
         "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Opus",
+        "printedName": "Opus",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -21598,25 +21862,11 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
-      "kind": "StringLiteral",
-      "offset": 1161,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
-      "kind": "StringLiteral",
-      "offset": 1239,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
-      "kind": "Array",
-      "offset": 1268,
-      "length": 2,
-      "value": "[]"
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoom+App.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1378,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Delegate.swift",
@@ -21640,11 +21890,25 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoom+App.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1378,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 1161,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 1239,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom+Define.swift",
+      "kind": "Array",
+      "offset": 1268,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
@@ -21768,105 +22032,105 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 13653,
+      "offset": 13651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 13682,
+      "offset": 13680,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 13974,
+      "offset": 13972,
       "length": 13,
       "value": "\"inbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14011,
+      "offset": 14009,
       "length": 14,
       "value": "\"outbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14054,
+      "offset": 14052,
       "length": 20,
       "value": "\"remote-inbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14104,
+      "offset": 14102,
       "length": 21,
       "value": "\"remote-outbound-rtp\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14149,
+      "offset": 14147,
       "length": 14,
       "value": "\"media-source\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 14188,
+      "offset": 14186,
       "length": 15,
       "value": "\"media-playout\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14594,
+      "offset": 14592,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14875,
+      "offset": 14873,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14902,
+      "offset": 14900,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15064,
+      "offset": 15062,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15091,
+      "offset": 15089,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15131,
+      "offset": 15129,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 15451,
+      "offset": 15449,
       "length": 1,
       "value": "0"
     },
@@ -21971,35 +22235,35 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 5904,
+      "offset": 5898,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 5926,
+      "offset": 5920,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9066,
+      "offset": 9107,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9086,
+      "offset": 9127,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 9110,
+      "offset": 9151,
       "length": 3,
       "value": "666"
     },
@@ -22044,6 +22308,20 @@
       "offset": 792,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4490,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCRoom.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5034,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCEngine.swift",
@@ -22097,51 +22375,58 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "Dictionary",
-      "offset": 138,
+      "offset": 220,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "Array",
-      "offset": 183,
+      "offset": 265,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 407,
+      "offset": 299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 492,
+      "offset": 568,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/AuidioPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5560,
+      "offset": 6100,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 348,
+      "offset": 368,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1269,
       "length": 1,
-      "value": "1"
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/BackAudio\/RoomPlayer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1790,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+Push.swift",
@@ -22188,21 +22473,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+Forbid.swift",
       "kind": "StringLiteral",
-      "offset": 2321,
+      "offset": 2411,
       "length": 17,
       "value": "\"RoomForbidParti\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 3642,
+      "offset": 3658,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 4194,
+      "offset": 4210,
       "length": 5,
       "value": "false"
     },
@@ -22216,44 +22501,16 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "StringLiteral",
-      "offset": 455,
+      "offset": 559,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1087,
+      "offset": 1059,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10262,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10283,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10712,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10948,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Broadcast\/VideoDefaults.swift",
@@ -22307,56 +22564,63 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4088,
+      "offset": 4834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4115,
+      "offset": 4861,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4142,
+      "offset": 4888,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4176,
+      "offset": 4922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4207,
+      "offset": 4953,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4232,
+      "offset": 4978,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4261,
+      "offset": 5007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4287,
+      "offset": 5033,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5064,
       "length": 5,
       "value": "false"
     },
@@ -25098,53 +25362,95 @@
       "value": "5"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+AV.swift",
       "kind": "BooleanLiteral",
-      "offset": 3306,
+      "offset": 66,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+AV.swift",
       "kind": "BooleanLiteral",
-      "offset": 5214,
+      "offset": 87,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+AV.swift",
       "kind": "BooleanLiteral",
-      "offset": 5247,
+      "offset": 498,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+AV.swift",
+      "kind": "BooleanLiteral",
+      "offset": 734,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3228,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 5430,
+      "offset": 5136,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 6798,
+      "offset": 5169,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 7231,
+      "offset": 5352,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Extension.swift",
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
       "kind": "BooleanLiteral",
-      "offset": 7551,
+      "offset": 6720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7153,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7473,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+dc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2711,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Control\/RTCRoomControl+dc.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2882,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/pb\/BaseData.pb.swift",
@@ -25499,133 +25805,133 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3495,
+      "offset": 3494,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3514,
+      "offset": 3513,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 3534,
+      "offset": 3533,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3620,
+      "offset": 3619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3735,
+      "offset": 3734,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3840,
+      "offset": 3839,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3944,
+      "offset": 3943,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4047,
+      "offset": 4046,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4155,
+      "offset": 4154,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4262,
+      "offset": 4261,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4367,
+      "offset": 4366,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4700,
+      "offset": 4699,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4658,
+      "offset": 4657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4662,
+      "offset": 4661,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4760,
+      "offset": 4759,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4718,
+      "offset": 4717,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4722,
+      "offset": 4721,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4884,
+      "offset": 4883,
       "length": 33,
       "value": "\"wss:\/\/demo.putplay.cc\/websocket\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTCConfig.swift",
       "kind": "Array",
-      "offset": 4942,
+      "offset": 4941,
       "length": 185,
       "value": "[\"stun:stun.cloudflare.com:3478\", \"stun:stun.cloudflare.com:53\", \"stun:stun.l.google.com:19302\", \"stun:stun1.l.google.com:19302\", \"stun:stun2.l.google.com:19302\"]"
     },
@@ -25639,65 +25945,65 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 453,
+      "offset": 517,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1510,
+      "offset": 1771,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1543,
+      "offset": 1804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1577,
+      "offset": 1838,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 1951,
       "length": 8,
       "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1985,
+      "length": 11,
+      "value": "\"defaultDC\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2282,
+      "offset": 2504,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2302,
+      "offset": 2524,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2322,
+      "offset": 2544,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/RTC\/WebRTCClient.swift",
-      "kind": "StringLiteral",
-      "offset": 18067,
-      "length": 8,
-      "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Room\/Utils\/RoomAudioUtils.swift",
