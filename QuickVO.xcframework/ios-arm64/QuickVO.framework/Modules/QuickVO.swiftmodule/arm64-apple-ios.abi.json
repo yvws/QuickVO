@@ -26636,7 +26636,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 5883,
+      "offset": 5884,
       "length": 9,
       "value": "\"RoomLog\""
     },
@@ -27294,14 +27294,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+dc.swift",
       "kind": "IntegerLiteral",
-      "offset": 2711,
+      "offset": 2673,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+dc.swift",
       "kind": "IntegerLiteral",
-      "offset": 2882,
+      "offset": 2844,
       "length": 1,
       "value": "0"
     },
