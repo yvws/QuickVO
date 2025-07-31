@@ -1,11 +1,13 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name QuickVO
+import AVFAudio
 import AVFoundation
 import Accelerate
 import BackgroundTasks
 import CoreImage.CIFilterBuiltins
 import Combine
+import CoreAudioTypes
 import CoreFoundation
 import CoreImage
 import CoreMedia
@@ -205,7 +207,7 @@ public class RTCRoom {
   public var partipant: [Swift.String : QuickVO.RTCParticipant] {
     get
   }
-  public var localPartipant: QuickVO.RTCParticipant? {
+  public var localPartipant: QuickVO.LocalRTCParticipant {
     get
   }
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
@@ -224,39 +226,28 @@ extension QuickVO.RTCRoom {
   public func startScreenShare(_ appGroup: Swift.String) async throws
 }
 extension QuickVO.RTCRoom {
-  public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  public func camerPosion() -> QuickVO.RTCCameraPosion
-  public func enableSpeaker(_ enable: Swift.Bool)
-  public func speakerIsEnable() async -> Swift.Bool
-  @discardableResult
-  public func switchSpeaker() async -> Swift.Bool
-  public func enableCamera(_ enable: Swift.Bool)
-  public func enableMicrophone(_ enable: Swift.Bool)
-  public func cameraIsEnable() -> Swift.Bool
-  public func microphoneIsEnable() -> Swift.Bool
-  public func startPreview(_ render: QuickVO.RoomVideoView)
   public func setRoomAudioVolume(_ volum: Swift.Double)
   public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
-  public func setBackAudioVolume(_ volum: Swift.Float) async
+  public func startPreview(_ render: QuickVO.RoomVideoView) async
 }
 extension QuickVO.RTCRoom {
-  public var isMultitaskingCameraAccessSupported: Swift.Bool {
-    get
-  }
-  public var isMultitaskingCameraAccessEnabled: Swift.Bool {
-    get
-    set
-  }
-}
-extension QuickVO.RTCRoom {
-  public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
-  public func resumeAudio() async
-  public func pauseAudio() async
-  public func stopAudio() async
-  public func setAudioVolume(_ volume: Swift.Float) async
-  public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
-  public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
-  public func stopAll() async
+  @available(*, deprecated, renamed: "localPartipant.switchCamera", message: "Use localPartipant.switchCamera instead")
+  public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  @available(*, deprecated, renamed: "localPartipant.enableSpeaker", message: "Use localPartipant.enableSpeaker instead")
+  public func enableSpeaker(_ enable: Swift.Bool) async
+  @available(*, deprecated, renamed: "localPartipant.speakerIsEnable", message: "Use localPartipant.speakerIsEnable instead")
+  public func speakerIsEnable() async -> Swift.Bool
+  @discardableResult
+  @available(*, deprecated, renamed: "localPartipant.switchSpeaker", message: "Use localPartipant.switchSpeaker instead")
+  public func switchSpeaker() async -> Swift.Bool
+  @available(*, deprecated, renamed: "localPartipant.enableMicrophone", message: "Use localPartipant.enableMicrophone instead")
+  public func enableMicrophone(_ enable: Swift.Bool)
+  @available(*, deprecated, renamed: "localPartipant.microphoneIsEnable", message: "Use localPartipant.microphoneIsEnable instead")
+  public func microphoneIsEnable() -> Swift.Bool
+  @available(*, deprecated, renamed: "localPartipant.enableCamera", message: "Use localPartipant.enableCamera instead")
+  public func enableCamera(_ enable: Swift.Bool)
+  @available(*, deprecated, renamed: "localPartipant.cameraIsEnable", message: "Use localPartipant.cameraIsEnable instead")
+  public func cameraIsEnable() -> Swift.Bool
 }
 public protocol RTCTrackInfo {
   var trackId: Swift.String { get }
@@ -693,6 +684,10 @@ extension AVFoundation.AVCaptureDevice {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class LocalRTCParticipant : QuickVO.RTCParticipant, @unchecked Swift.Sendable {
+  public var publishAudio: Swift.Bool
+  @objc deinit
+}
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
 extension QuickVO.RoomError {
@@ -774,6 +769,36 @@ public struct RoomSubData {
   }
   @objc deinit
 }
+extension QuickVO.LocalRTCParticipant {
+  public func enableMicrophone(_ enable: Swift.Bool)
+  public func microphoneIsEnable() -> Swift.Bool
+  public func speakerIsEnable() async -> Swift.Bool
+  public func enableSpeaker(_ enable: Swift.Bool) async
+}
+extension QuickVO.LocalRTCParticipant {
+  public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
+  public func resumeAudio() async
+  public func pauseAudio() async
+  public func stopAudio() async
+  public func setAudioVolume(_ volume: Swift.Float) async
+  public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
+  public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
+  public func stopAll() async
+}
+extension QuickVO.LocalRTCParticipant {
+  public var isMultitaskingCameraAccessSupported: Swift.Bool {
+    get
+  }
+  public var isMultitaskingCameraAccessEnabled: Swift.Bool {
+    get
+    set
+  }
+  public func camerPosion() -> QuickVO.RTCCameraPosion
+  public func cameraIsEnable() -> Swift.Bool
+  public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  public func enableCamera(_ enable: Swift.Bool)
+  public func startPreview(_ render: QuickVO.RoomVideoView) async
+}
 public protocol RTCRoomDelegate : AnyObject {
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomError(_ error: any Swift.Error)
@@ -847,6 +872,19 @@ extension QuickVO.RTCRoomConfig {
   public static let defaultVideo: QuickVO.RoomVideoCaptureConfig
   public static let defaultAudio: QuickVO.RoomAudioCaptureConfig
 }
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Dispatch.DispatchTimeInterval : @retroactive Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+#else
+extension Dispatch.DispatchTimeInterval : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+#endif
 public enum NetworkMotorStatus : Swift.Sendable {
   case reachable
   case unReachable
