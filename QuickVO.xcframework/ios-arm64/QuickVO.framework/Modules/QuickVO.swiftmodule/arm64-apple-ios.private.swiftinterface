@@ -200,7 +200,6 @@ public struct RoomUserSubData {
 }
 public class RTCRoom {
   weak public var delegate: (any QuickVO.RTCRoomDelegate)?
-  weak public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
   public var roomId: Swift.String {
     get
   }
@@ -686,6 +685,7 @@ extension AVFoundation.AVCaptureDevice {
 }
 @_hasMissingDesignatedInitializers public class LocalRTCParticipant : QuickVO.RTCParticipant, @unchecked Swift.Sendable {
   public var publishAudio: Swift.Bool
+  weak public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
   @objc deinit
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {

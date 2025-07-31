@@ -4396,109 +4396,6 @@
           },
           {
             "kind": "Var",
-            "name": "videoCaptureDelegate",
-            "printedName": "videoCaptureDelegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvp",
-            "mangledName": "$s7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoCaptureDelegate",
-                        "printedName": "any QuickVO.RoomVideoCaptureDelegate",
-                        "usr": "s:7QuickVO24RoomVideoCaptureDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvg",
-                "mangledName": "$s7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvg",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoCaptureDelegate",
-                        "printedName": "any QuickVO.RoomVideoCaptureDelegate",
-                        "usr": "s:7QuickVO24RoomVideoCaptureDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvs",
-                "mangledName": "$s7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvs",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvM",
-                "mangledName": "$s7QuickVO7RTCRoomC20videoCaptureDelegateAA09RoomVideoeF0_pSgvM",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "roomId",
             "printedName": "roomId",
             "children": [
@@ -16755,6 +16652,109 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "videoCaptureDelegate",
+            "printedName": "videoCaptureDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvp",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoCaptureDelegate",
+                        "printedName": "any QuickVO.RoomVideoCaptureDelegate",
+                        "usr": "s:7QuickVO24RoomVideoCaptureDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvg",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any QuickVO.RoomVideoCaptureDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoCaptureDelegate",
+                        "printedName": "any QuickVO.RoomVideoCaptureDelegate",
+                        "usr": "s:7QuickVO24RoomVideoCaptureDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvs",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvM",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC20videoCaptureDelegateAA09RoomVideofG0_pSgvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "enableMicrophone",
             "printedName": "enableMicrophone(_:)",
@@ -26822,7 +26822,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1095,
       "length": 8,
       "value": "\"stream\""
     },
@@ -26850,7 +26850,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/LocalRTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 442,
+      "offset": 168,
       "length": 4,
       "value": "true"
     },
