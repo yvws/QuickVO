@@ -93,41 +93,6 @@
       },
       {
         "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Vision",
-        "printedName": "Vision",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "VisionKit",
-        "printedName": "VisionKit",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreImage.CIFilterBuiltins",
-        "printedName": "CoreImage.CIFilterBuiltins",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -14309,6 +14274,398 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreVideo",
+        "printedName": "CoreVideo",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "VisionKit",
+        "printedName": "VisionKit",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage.CIFilterBuiltins",
+        "printedName": "CoreImage.CIFilterBuiltins",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Accelerate",
+        "printedName": "Accelerate",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomVideoRotation",
+        "printedName": "RoomVideoRotation",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "_0",
+            "printedName": "_0",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVideoRotation",
+                    "printedName": "QuickVO.RoomVideoRotation",
+                    "usr": "s:7QuickVO17RoomVideoRotationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVideoRotation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoRotation",
+                        "printedName": "QuickVO.RoomVideoRotation",
+                        "usr": "s:7QuickVO17RoomVideoRotationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO17RoomVideoRotationO2_0yA2CmF",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO2_0yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "_90",
+            "printedName": "_90",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVideoRotation",
+                    "printedName": "QuickVO.RoomVideoRotation",
+                    "usr": "s:7QuickVO17RoomVideoRotationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVideoRotation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoRotation",
+                        "printedName": "QuickVO.RoomVideoRotation",
+                        "usr": "s:7QuickVO17RoomVideoRotationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO17RoomVideoRotationO3_90yA2CmF",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO3_90yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "_180",
+            "printedName": "_180",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVideoRotation",
+                    "printedName": "QuickVO.RoomVideoRotation",
+                    "usr": "s:7QuickVO17RoomVideoRotationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVideoRotation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoRotation",
+                        "printedName": "QuickVO.RoomVideoRotation",
+                        "usr": "s:7QuickVO17RoomVideoRotationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO17RoomVideoRotationO4_180yA2CmF",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO4_180yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "_270",
+            "printedName": "_270",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVideoRotation",
+                    "printedName": "QuickVO.RoomVideoRotation",
+                    "usr": "s:7QuickVO17RoomVideoRotationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVideoRotation.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVideoRotation",
+                        "printedName": "QuickVO.RoomVideoRotation",
+                        "usr": "s:7QuickVO17RoomVideoRotationO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO17RoomVideoRotationO4_270yA2CmF",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO4_270yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.RoomVideoRotation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVideoRotation",
+                    "printedName": "QuickVO.RoomVideoRotation",
+                    "usr": "s:7QuickVO17RoomVideoRotationO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO17RoomVideoRotationO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueACSgSi_tcfc",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO17RoomVideoRotationO8rawValueSivp",
+            "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO17RoomVideoRotationO8rawValueSivg",
+                "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO17RoomVideoRotationO",
+        "mangledName": "$s7QuickVO17RoomVideoRotationO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "WebRTC",
         "printedName": "WebRTC",
         "declKind": "Import",
@@ -16499,27 +16856,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "WebRTC",
-        "printedName": "WebRTC",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -18688,307 +19024,6 @@
       },
       {
         "kind": "Import",
-        "name": "Accelerate",
-        "printedName": "Accelerate",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RoomVideoRotation",
-        "printedName": "RoomVideoRotation",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "_0",
-            "printedName": "_0",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVideoRotation",
-                    "printedName": "QuickVO.RoomVideoRotation",
-                    "usr": "s:7QuickVO17RoomVideoRotationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVideoRotation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoRotation",
-                        "printedName": "QuickVO.RoomVideoRotation",
-                        "usr": "s:7QuickVO17RoomVideoRotationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO17RoomVideoRotationO2_0yA2CmF",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO2_0yA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "_90",
-            "printedName": "_90",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVideoRotation",
-                    "printedName": "QuickVO.RoomVideoRotation",
-                    "usr": "s:7QuickVO17RoomVideoRotationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVideoRotation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoRotation",
-                        "printedName": "QuickVO.RoomVideoRotation",
-                        "usr": "s:7QuickVO17RoomVideoRotationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO17RoomVideoRotationO3_90yA2CmF",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO3_90yA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "_180",
-            "printedName": "_180",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVideoRotation",
-                    "printedName": "QuickVO.RoomVideoRotation",
-                    "usr": "s:7QuickVO17RoomVideoRotationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVideoRotation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoRotation",
-                        "printedName": "QuickVO.RoomVideoRotation",
-                        "usr": "s:7QuickVO17RoomVideoRotationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO17RoomVideoRotationO4_180yA2CmF",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO4_180yA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "_270",
-            "printedName": "_270",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVideoRotation.Type) -> QuickVO.RoomVideoRotation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVideoRotation",
-                    "printedName": "QuickVO.RoomVideoRotation",
-                    "usr": "s:7QuickVO17RoomVideoRotationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVideoRotation.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVideoRotation",
-                        "printedName": "QuickVO.RoomVideoRotation",
-                        "usr": "s:7QuickVO17RoomVideoRotationO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO17RoomVideoRotationO4_270yA2CmF",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO4_270yA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "QuickVO.RoomVideoRotation?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVideoRotation",
-                    "printedName": "QuickVO.RoomVideoRotation",
-                    "usr": "s:7QuickVO17RoomVideoRotationO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7QuickVO17RoomVideoRotationO8rawValueACSgSi_tcfc",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueACSgSi_tcfc",
-            "moduleName": "QuickVO",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO17RoomVideoRotationO8rawValueSivp",
-            "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueSivp",
-            "moduleName": "QuickVO",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO17RoomVideoRotationO8rawValueSivg",
-                "mangledName": "$s7QuickVO17RoomVideoRotationO8rawValueSivg",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7QuickVO17RoomVideoRotationO",
-        "mangledName": "$s7QuickVO17RoomVideoRotationO",
-        "moduleName": "QuickVO",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19408,41 +19443,6 @@
         "kind": "Import",
         "name": "WebRTC",
         "printedName": "WebRTC",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "WebRTC",
-        "printedName": "WebRTC",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreImage",
-        "printedName": "CoreImage",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreVideo",
-        "printedName": "CoreVideo",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "Accelerate",
-        "printedName": "Accelerate",
         "declKind": "Import",
         "moduleName": "QuickVO"
       },
@@ -23411,27 +23411,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RoomVirtualBackground.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1013,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RoomVirtualBackground.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1054,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RoomVirtualBackground.swift",
-      "kind": "StringLiteral",
-      "offset": 1235,
-      "length": 15,
-      "value": "\"com.qv.vision\""
-    },
-    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomAPI.swift",
       "kind": "IntegerLiteral",
       "offset": 79,
@@ -26722,6 +26701,62 @@
       "value": "[\"stun:stun.cloudflare.com:3478\", \"stun:stun.cloudflare.com:53\", \"stun:stun.l.google.com:19302\", \"stun:stun1.l.google.com:19302\", \"stun:stun2.l.google.com:19302\"]"
     },
     {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RTCVideoFilter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 371,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RoomVirtualBackground.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1013,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RoomVirtualBackground.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1054,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RoomVirtualBackground.swift",
+      "kind": "StringLiteral",
+      "offset": 1235,
+      "length": 15,
+      "value": "\"com.qv.vision\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RTCVideoFilter+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5149,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RTCVideoFilter+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5166,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RTCVideoFilter+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5185,
+      "length": 3,
+      "value": "180"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RTCVideoFilter+extension.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5205,
+      "length": 3,
+      "value": "270"
+    },
+    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
       "offset": 671,
@@ -27140,34 +27175,6 @@
       "offset": 5884,
       "length": 9,
       "value": "\"RoomLog\""
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RTCVideoFilter+extension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5149,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RTCVideoFilter+extension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5166,
-      "length": 2,
-      "value": "90"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RTCVideoFilter+extension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5185,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RTCVideoFilter+extension.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5205,
-      "length": 3,
-      "value": "270"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/pb\/BaseData.pb.swift",
@@ -27735,13 +27742,6 @@
       "offset": 677,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/RTCVideoFilter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 371,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCRoom+Delegate.swift",

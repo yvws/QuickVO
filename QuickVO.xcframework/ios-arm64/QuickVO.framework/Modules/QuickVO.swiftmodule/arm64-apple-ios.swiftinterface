@@ -598,6 +598,17 @@ public struct RoomLocalOption : Swift.Sendable {
   public var defaultAuioSpeakerOn: Swift.Bool
   public init(userId: Swift.String, userFontCamera: Swift.Bool = true, defaultStartCamera: Swift.Bool = true, defaultAuioSpeakerOn: Swift.Bool = false, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication)
 }
+public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
+  case _0
+  case _90
+  case _180
+  case _270
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers open class RTCParticipant {
   weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
   public var id: Swift.String {
@@ -741,17 +752,6 @@ extension QuickVO.RoomNetUtils {
 }
 extension Foundation.Data {
   public mutating func append(_ string: Swift.String)
-}
-public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
-  case _0
-  case _90
-  case _180
-  case _270
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 public struct RoomSubData {
 }
@@ -939,11 +939,11 @@ extension QuickVO.RoomStyleFilter : Swift.Hashable {}
 extension QuickVO.RoomStyleFilter : Swift.RawRepresentable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
-extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
-extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.Equatable {}
 extension QuickVO.RoomVideoRotation : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.RawRepresentable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
