@@ -198,55 +198,57 @@ public struct RoomUserSubData {
   public var track: [QuickVO.RoomTrackType]
   public init(id: Swift.String = "", track: [QuickVO.RoomTrackType] = [])
 }
-public class RTCRoom {
-  weak public var delegate: (any QuickVO.RTCRoomDelegate)?
-  public var roomId: Swift.String {
+final public class RTCRoom {
+  weak final public var delegate: (any QuickVO.RTCRoomDelegate)?
+  final public var roomId: Swift.String {
     get
   }
-  public var partipant: [Swift.String : QuickVO.RTCParticipant] {
+  final public var partipant: [Swift.String : QuickVO.RTCParticipant] {
     get
   }
-  public var localPartipant: QuickVO.LocalRTCParticipant {
+  final public var localPartipant: QuickVO.LocalRTCParticipant {
     get
   }
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
   @objc deinit
 }
 extension QuickVO.RTCRoom {
-  public func connect() async throws
-  public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  public func join(_ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  public func quit() async
-  public func quitStayConnected() async throws
-  public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
-  public func subscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
-  public func unSubscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
-  public func publishStream() async throws
-  public func startScreenShare(_ appGroup: Swift.String) async throws
+  final public func connect() async throws
+  final public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
+  final public func join(_ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
+  final public func quit() async
+  final public func quitStayConnected() async throws
+  final public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
+  final public func subscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
+  final public func unSubscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
+  final public func publishStream() async throws
+  final public func startScreenShare(_ appGroup: Swift.String) async throws
 }
 extension QuickVO.RTCRoom {
-  public func setRoomAudioVolume(_ volum: Swift.Double)
-  public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
-  public func startPreview(_ render: QuickVO.RoomVideoView) async
+  final public func setRoomAudioVolume(_ volum: Swift.Double)
+  final public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
+  final public func startPreview(_ render: QuickVO.RoomVideoView) async
 }
 extension QuickVO.RTCRoom {
   @available(*, deprecated, renamed: "localPartipant.switchCamera", message: "Use localPartipant.switchCamera instead")
-  public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
   @available(*, deprecated, renamed: "localPartipant.enableSpeaker", message: "Use localPartipant.enableSpeaker instead")
-  public func enableSpeaker(_ enable: Swift.Bool) async
+  final public func enableSpeaker(_ enable: Swift.Bool)
   @available(*, deprecated, renamed: "localPartipant.speakerIsEnable", message: "Use localPartipant.speakerIsEnable instead")
-  public func speakerIsEnable() async -> Swift.Bool
+  final public func speakerIsEnable() async -> Swift.Bool
   @discardableResult
   @available(*, deprecated, renamed: "localPartipant.switchSpeaker", message: "Use localPartipant.switchSpeaker instead")
-  public func switchSpeaker() async -> Swift.Bool
+  final public func switchSpeaker() async -> Swift.Bool
   @available(*, deprecated, renamed: "localPartipant.enableMicrophone", message: "Use localPartipant.enableMicrophone instead")
-  public func enableMicrophone(_ enable: Swift.Bool)
+  final public func enableMicrophone(_ enable: Swift.Bool)
   @available(*, deprecated, renamed: "localPartipant.microphoneIsEnable", message: "Use localPartipant.microphoneIsEnable instead")
-  public func microphoneIsEnable() -> Swift.Bool
+  final public func microphoneIsEnable() -> Swift.Bool
   @available(*, deprecated, renamed: "localPartipant.enableCamera", message: "Use localPartipant.enableCamera instead")
-  public func enableCamera(_ enable: Swift.Bool)
+  final public func enableCamera(_ enable: Swift.Bool)
   @available(*, deprecated, renamed: "localPartipant.cameraIsEnable", message: "Use localPartipant.cameraIsEnable instead")
-  public func cameraIsEnable() -> Swift.Bool
+  final public func cameraIsEnable() -> Swift.Bool
+  @available(*, deprecated, renamed: "localPartipant.camerPosion", message: "Use localPartipant.camerPosion instead")
+  final public func camerPosion() -> QuickVO.RTCCameraPosion
 }
 public protocol RTCTrackInfo {
   var trackId: Swift.String { get }
@@ -676,8 +678,8 @@ public enum PaticipantForbidAction {
   }
   final public var netStatus: ((QuickVO.NetworkMotorStatus) -> Swift.Void)?
   final public var netType: ((QuickVO.NetworkMotorType) -> Swift.Void)?
-  final public let statusSubject: Combine.PassthroughSubject<QuickVO.NetworkMotorStatus, Swift.Never>
-  final public let typeSubject: Combine.PassthroughSubject<QuickVO.NetworkMotorType, Swift.Never>
+  final public let statusSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorStatus, Swift.Never>
+  final public let typeSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorType, Swift.Never>
   final public var netMultiPath: QuickVO.MultipathNetSeverType {
     get
     set
@@ -694,9 +696,9 @@ extension AVFoundation.AVCaptureDevice {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class LocalRTCParticipant : QuickVO.RTCParticipant, @unchecked Swift.Sendable {
-  public var publishAudio: Swift.Bool
-  weak public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
+@_hasMissingDesignatedInitializers final public class LocalRTCParticipant {
+  final public var publishAudio: Swift.Bool
+  weak final public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
   @objc deinit
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
@@ -770,40 +772,41 @@ public struct RoomSubData {
   @objc deinit
 }
 extension QuickVO.LocalRTCParticipant {
-  public func enableMicrophone(_ enable: Swift.Bool)
-  public func microphoneIsEnable() -> Swift.Bool
-  public func speakerIsEnable() async -> Swift.Bool
-  public func enableSpeaker(_ enable: Swift.Bool) async
+  final public func enableMicrophone(_ enable: Swift.Bool)
+  final public func microphoneIsEnable() -> Swift.Bool
+  final public func speakerIsEnable() async -> Swift.Bool
+  final public func enableSpeaker(_ enable: Swift.Bool) async
 }
 extension QuickVO.LocalRTCParticipant {
-  public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
-  public func resumeAudio() async
-  public func pauseAudio() async
-  public func stopAudio() async
-  public func setAudioVolume(_ volume: Swift.Float) async
-  public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
-  public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
-  public func stopAll() async
+  final public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
+  final public func resumeAudio() async
+  final public func pauseAudio() async
+  final public func stopAudio() async
+  final public func setAudioVolume(_ volume: Swift.Float) async
+  final public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
+  final public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
+  final public func stopAll() async
 }
 extension QuickVO.LocalRTCParticipant {
-  public var isMultitaskingCameraAccessSupported: Swift.Bool {
+  final public var isMultitaskingCameraAccessSupported: Swift.Bool {
     get
   }
-  public var isMultitaskingCameraAccessEnabled: Swift.Bool {
+  final public var isMultitaskingCameraAccessEnabled: Swift.Bool {
     get
     set
   }
-  public func camerPosion() -> QuickVO.RTCCameraPosion
-  public func cameraIsEnable() -> Swift.Bool
-  public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  public func enableCamera(_ enable: Swift.Bool)
-  public func startPreview(_ render: QuickVO.RoomVideoView) async
+  final public func camerPosion() -> QuickVO.RTCCameraPosion
+  final public func cameraIsEnable() -> Swift.Bool
+  final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  final public func enableCamera(_ enable: Swift.Bool)
+  final public func startPreview(_ render: QuickVO.RoomVideoView) async
 }
 public protocol RTCRoomDelegate : AnyObject {
-  func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomError(_ error: any Swift.Error)
   func tokenExpired()
   func tokenWillExpired()
+  func roomStatus(_ status: QuickVO.RTCRoomConnect)
+  func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
   func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
@@ -818,7 +821,9 @@ public protocol RTCRoomDelegate : AnyObject {
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
+  public func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
   public func roomError(_ error: any Swift.Error)
+  public func tokenExpired()
   public func tokenWillExpired()
   public func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
   public func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
@@ -861,10 +866,10 @@ public struct RoomLivePlaybackUrls : Swift.Sendable {
     }
   }
 }
-public class RTCRoomConfig {
+final public class RTCRoomConfig {
   public static let config: QuickVO.RTCRoomConfig
-  public var video: QuickVO.RoomVideoCaptureConfig
-  public var audio: QuickVO.RoomAudioCaptureConfig
+  final public var video: QuickVO.RoomVideoCaptureConfig
+  final public var audio: QuickVO.RoomAudioCaptureConfig
   public init(video: QuickVO.RoomVideoCaptureConfig? = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig? = RTCRoomConfig.defaultAudio)
   @objc deinit
 }
@@ -904,6 +909,11 @@ public enum NetworkMotorType : Swift.Sendable {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class RTCNetworkMonitor {
+  public func stopMonitor()
+  public func startMonitor()
+  @objc deinit
+}
 extension QuickVO.RTCRoomConnect : Swift.Equatable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
 extension QuickVO.RTCCameraPosion : Swift.Equatable {}
@@ -922,6 +932,8 @@ extension QuickVO.RTCVideoMirror : Swift.Equatable {}
 extension QuickVO.RTCVideoMirror : Swift.Hashable {}
 extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Equatable {}
 extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Hashable {}
+extension QuickVO.NetworkMotorType : Swift.Equatable {}
+extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.AudioError : Swift.Equatable {}
 extension QuickVO.AudioError : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.Equatable {}
@@ -952,5 +964,3 @@ extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.RawRepresentable {}
 extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
 extension QuickVO.NetworkMotorStatus : Swift.Hashable {}
-extension QuickVO.NetworkMotorType : Swift.Equatable {}
-extension QuickVO.NetworkMotorType : Swift.Hashable {}
