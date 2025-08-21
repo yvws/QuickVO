@@ -123,13 +123,13 @@ extension QuickVO.ScreenRecorder {
   }
   public init(_ key: Swift.String, defaultV: T)
 }
-public enum RTCRoomConnect {
+public enum RTCRoomConnect : Swift.Equatable {
   case none
   case disConnect
   case connecting
   case connected
-  public static func == (a: QuickVO.RTCRoomConnect, b: QuickVO.RTCRoomConnect) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: QuickVO.RTCRoomConnect, b: QuickVO.RTCRoomConnect) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
@@ -914,7 +914,6 @@ public enum NetworkMotorType : Swift.Sendable {
   public func startMonitor()
   @objc deinit
 }
-extension QuickVO.RTCRoomConnect : Swift.Equatable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
 extension QuickVO.RTCCameraPosion : Swift.Equatable {}
 extension QuickVO.RTCCameraPosion : Swift.Hashable {}
