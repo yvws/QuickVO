@@ -506,68 +506,10 @@ public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
   }
   @objc deinit
 }
-@_hasMissingDesignatedInitializers final public class RoomVideoFilterConfig {
-  final public var enable: Swift.Bool {
-    get
-    set
-  }
-  final public var buffing: Swift.Float {
-    get
-    set
-  }
-  final public var white: Swift.Float {
-    get
-    set
-  }
-  final public var thin: Swift.Float {
-    get
-    set
-  }
-  final public var eye: Swift.Float {
-    get
-    set
-  }
-  final public var lipstick: Swift.Float {
-    get
-    set
-  }
-  final public var blusher: Swift.Float {
-    get
-    set
-  }
-  final public var light: Swift.Float {
-    get
-    set
-  }
-  final public var style: QuickVO.RoomStyleFilter {
-    get
-    set
-  }
-  final public var virtualBackground: QuickVO.RoomVirtualBackgroundConfig {
-    get
-    set
-  }
-  @objc deinit
-}
-public enum RoomStyleFilter : Swift.Int, Swift.Sendable, Swift.CaseIterable {
-  case none
-  case white
-  case coldWhite
-  case oxygen
-  case tipsy
-  case firstLove
-  case innocence
-  case powderPorcelain
-  case japanese
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [QuickVO.RoomStyleFilter]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [QuickVO.RoomStyleFilter] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
+public protocol RoomVideoCaptureDelegate : AnyObject {
+  func processMode() -> QuickVO.RoomVideoRrocessMode
+  func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
+  func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
 }
 public enum RoomVideoRrocessMode {
   case readOnly
@@ -577,16 +519,6 @@ public enum RoomVideoRrocessMode {
   public var hashValue: Swift.Int {
     get
   }
-}
-public protocol RoomVideoCaptureDelegate : AnyObject {
-  func processMode() -> QuickVO.RoomVideoRrocessMode
-  func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
-  func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
-}
-public enum RoomVirtualBackgroundConfig : Swift.Sendable {
-  case none
-  case img(UIKit.UIImage?)
-  case blur
 }
 public struct RTCConfig {
   public init(socketURL: Foundation.URL, iceURL: [Swift.String]?)
@@ -771,6 +703,84 @@ public struct RoomSubData {
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers final public class RoomVideoFilterConfig {
+  final public var enable: Swift.Bool {
+    get
+    set
+  }
+  final public var face: QuickVO.RoomFaceFilter {
+    get
+    set
+  }
+  final public var style: QuickVO.RoomStyleFilter {
+    get
+    set
+  }
+  final public var virtualBackground: QuickVO.RoomVirtualBackgroundConfig {
+    get
+    set
+  }
+  @objc deinit
+}
+public enum RoomStyleFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case white
+  case coldWhite
+  case oxygen
+  case tipsy
+  case firstLove
+  case innocence
+  case powderPorcelain
+  case japanese
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [QuickVO.RoomStyleFilterCase]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [QuickVO.RoomStyleFilterCase] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RoomVirtualBackgroundConfig : Swift.Sendable {
+  case none
+  case img(UIKit.UIImage?)
+  case blur
+}
+@_hasMissingDesignatedInitializers public class RoomFaceFilter {
+  public var buffing: Swift.Float {
+    get
+    set
+  }
+  public var white: Swift.Float {
+    get
+    set
+  }
+  public var thin: Swift.Float {
+    get
+    set
+  }
+  public var eye: Swift.Float {
+    get
+    set
+  }
+  public var lipstick: Swift.Float {
+    get
+    set
+  }
+  public var blusher: Swift.Float {
+    get
+    set
+  }
+  public var light: Swift.Float {
+    get
+    set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RoomStyleFilter {
+  @objc deinit
+}
 extension QuickVO.LocalRTCParticipant {
   final public func enableMicrophone(_ enable: Swift.Bool)
   final public func microphoneIsEnable() -> Swift.Bool
@@ -931,8 +941,6 @@ extension QuickVO.RTCVideoMirror : Swift.Equatable {}
 extension QuickVO.RTCVideoMirror : Swift.Hashable {}
 extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Equatable {}
 extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Hashable {}
-extension QuickVO.NetworkMotorType : Swift.Equatable {}
-extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.AudioError : Swift.Equatable {}
 extension QuickVO.AudioError : Swift.Hashable {}
 extension QuickVO.RTCStatisLevel : Swift.Equatable {}
@@ -945,14 +953,16 @@ extension QuickVO.DetachedTaskActor.State : Swift.Hashable {}
 extension QuickVO.RoomVideodegradation : Swift.Equatable {}
 extension QuickVO.RoomVideodegradation : Swift.Hashable {}
 extension QuickVO.RoomVideodegradation : Swift.RawRepresentable {}
-extension QuickVO.RoomStyleFilter : Swift.Equatable {}
-extension QuickVO.RoomStyleFilter : Swift.Hashable {}
-extension QuickVO.RoomStyleFilter : Swift.RawRepresentable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.Equatable {}
 extension QuickVO.RoomVideoRotation : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.RawRepresentable {}
+extension QuickVO.RoomStyleFilterCase : Swift.Equatable {}
+extension QuickVO.RoomStyleFilterCase : Swift.Hashable {}
+extension QuickVO.RoomStyleFilterCase : Swift.RawRepresentable {}
+extension QuickVO.NetworkMotorType : Swift.Equatable {}
+extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
