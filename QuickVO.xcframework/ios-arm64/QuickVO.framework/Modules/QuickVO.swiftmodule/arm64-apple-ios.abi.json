@@ -17858,97 +17858,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "enable",
-            "printedName": "enable",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO21RoomVideoFilterConfigC6enableSbvp",
-            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6enableSbvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC6enableSbvg",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6enableSbvg",
-                "moduleName": "QuickVO",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC6enableSbvs",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6enableSbvs",
-                "moduleName": "QuickVO",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC6enableSbvM",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6enableSbvM",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "face",
             "printedName": "face",
             "children": [
@@ -18146,14 +18055,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "RoomVirtualBackgroundConfig",
-                "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                "name": "RoomVirtualBackFilter",
+                "printedName": "QuickVO.RoomVirtualBackFilter",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovp",
-            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovp",
+            "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvp",
+            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvp",
             "moduleName": "QuickVO",
             "declAttributes": [
               "HasInitialValue",
@@ -18170,14 +18079,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "RoomVirtualBackgroundConfig",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                    "name": "RoomVirtualBackFilter",
+                    "printedName": "QuickVO.RoomVirtualBackFilter",
+                    "usr": "s:7QuickVO21RoomVirtualBackFilterC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovg",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovg",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvg",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvg",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "declAttributes": [
@@ -18197,14 +18106,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "RoomVirtualBackgroundConfig",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                    "name": "RoomVirtualBackFilter",
+                    "printedName": "QuickVO.RoomVirtualBackFilter",
+                    "usr": "s:7QuickVO21RoomVirtualBackFilterC"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovs",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0Ovs",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvs",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0Cvs",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "declAttributes": [
@@ -18224,8 +18133,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0OvM",
-                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c7VirtualhF0OvM",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0CvM",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC17virtualBackgroundAA0c11VirtualBackE0CvM",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "declAttributes": [
@@ -18234,6 +18143,27 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO21RoomVideoFilterConfigC5resetyyF",
+            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -19007,6 +18937,112 @@
         "children": [
           {
             "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RoomFaceFilterC6enableSbvp",
+            "mangledName": "$s7QuickVO14RoomFaceFilterC6enableSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC6enableSbvg",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC6enableSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC6enableSbvs",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC6enableSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC6enableSbvM",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC6enableSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14RoomFaceFilterC5resetyyF",
+            "mangledName": "$s7QuickVO14RoomFaceFilterC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
             "name": "buffing",
             "printedName": "buffing",
             "children": [
@@ -19602,9 +19638,426 @@
         "kind": "TypeDecl",
         "name": "RoomStyleFilter",
         "printedName": "RoomStyleFilter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoomStyleFilterCase",
+                "printedName": "QuickVO.RoomStyleFilterCase",
+                "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvp",
+            "mangledName": "$s7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvg",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvs",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvM",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC5valueAA0cdE4CaseOvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO15RoomStyleFilterC6enableSbvp",
+            "mangledName": "$s7QuickVO15RoomStyleFilterC6enableSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC6enableSbvg",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC6enableSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC6enableSbvs",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC6enableSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15RoomStyleFilterC6enableSbvM",
+                "mangledName": "$s7QuickVO15RoomStyleFilterC6enableSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO15RoomStyleFilterC5resetyyF",
+            "mangledName": "$s7QuickVO15RoomStyleFilterC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Class",
         "usr": "s:7QuickVO15RoomStyleFilterC",
         "mangledName": "$s7QuickVO15RoomStyleFilterC",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomVirtualBackFilter",
+        "printedName": "RoomVirtualBackFilter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO21RoomVirtualBackFilterC6enableSbvp",
+            "mangledName": "$s7QuickVO21RoomVirtualBackFilterC6enableSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC6enableSbvg",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC6enableSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC6enableSbvs",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC6enableSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC6enableSbvM",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC6enableSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoomVirtualBackgroundConfig",
+                "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvp",
+            "mangledName": "$s7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVirtualBackgroundConfig",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvg",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVirtualBackgroundConfig",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvs",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvM",
+                "mangledName": "$s7QuickVO21RoomVirtualBackFilterC5valueAA0cD16BackgroundConfigOvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO21RoomVirtualBackFilterC5resetyyF",
+            "mangledName": "$s7QuickVO21RoomVirtualBackFilterC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO21RoomVirtualBackFilterC",
+        "mangledName": "$s7QuickVO21RoomVirtualBackFilterC",
         "moduleName": "QuickVO",
         "declAttributes": [
           "AccessControl"
@@ -27787,7 +28240,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/RoomVirtualBackground.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1245,
       "length": 15,
       "value": "\"com.qv.vision\""
     },
@@ -28837,28 +29290,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 7040,
+      "offset": 7050,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 7062,
+      "offset": 7072,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 10887,
+      "offset": 10926,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 10912,
+      "offset": 10951,
       "length": 4,
       "value": "4010"
     },
@@ -28893,182 +29346,189 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1285,
+      "offset": 1387,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1300,
+      "offset": 1402,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1319,
+      "offset": 1421,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1335,
+      "offset": 1437,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1350,
+      "offset": 1452,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1369,
+      "offset": 1471,
       "length": 9,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1388,
+      "offset": 1490,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1413,
+      "offset": 1515,
       "length": 8,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1672,
+      "offset": 1786,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3609,
+      "offset": 3904,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4206,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3795,
+      "offset": 4553,
       "length": 9,
       "value": "\"buffing\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3816,
+      "offset": 4574,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3871,
+      "offset": 4629,
       "length": 7,
       "value": "\"white\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3890,
+      "offset": 4648,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 3943,
+      "offset": 4701,
       "length": 6,
       "value": "\"thin\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 3961,
+      "offset": 4719,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4013,
+      "offset": 4771,
       "length": 5,
       "value": "\"eye\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4030,
+      "offset": 4788,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4081,
+      "offset": 4839,
       "length": 10,
       "value": "\"lipstick\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4103,
+      "offset": 4861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4157,
+      "offset": 4915,
       "length": 9,
       "value": "\"blusher\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4178,
+      "offset": 4936,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4231,
+      "offset": 4989,
       "length": 7,
       "value": "\"light\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4250,
+      "offset": 5008,
       "length": 4,
       "value": "0.02"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4304,
+      "offset": 5062,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4323,
+      "offset": 5081,
       "length": 1,
       "value": "0"
     },

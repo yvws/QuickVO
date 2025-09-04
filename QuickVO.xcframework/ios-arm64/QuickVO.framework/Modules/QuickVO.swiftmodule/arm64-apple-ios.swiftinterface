@@ -704,10 +704,6 @@ public struct RoomSubData {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class RoomVideoFilterConfig {
-  final public var enable: Swift.Bool {
-    get
-    set
-  }
   final public var face: QuickVO.RoomFaceFilter {
     get
     set
@@ -716,10 +712,11 @@ public struct RoomSubData {
     get
     set
   }
-  final public var virtualBackground: QuickVO.RoomVirtualBackgroundConfig {
+  final public var virtualBackground: QuickVO.RoomVirtualBackFilter {
     get
     set
   }
+  final public func reset()
   @objc deinit
 }
 public enum RoomStyleFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
@@ -748,6 +745,11 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
   case blur
 }
 @_hasMissingDesignatedInitializers public class RoomFaceFilter {
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public func reset()
   public var buffing: Swift.Float {
     get
     set
@@ -779,6 +781,27 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class RoomStyleFilter {
+  public var value: QuickVO.RoomStyleFilterCase {
+    get
+    set
+  }
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public func reset()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RoomVirtualBackFilter {
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public var value: QuickVO.RoomVirtualBackgroundConfig {
+    get
+    set
+  }
+  public func reset()
   @objc deinit
 }
 extension QuickVO.LocalRTCParticipant {
