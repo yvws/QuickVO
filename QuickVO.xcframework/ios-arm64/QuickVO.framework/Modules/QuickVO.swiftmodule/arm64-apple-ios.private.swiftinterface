@@ -65,6 +65,15 @@ extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable 
 extension WebRTC.RTCSessionDescription : @unchecked Swift.Sendable {
 }
 #endif
+@_hasMissingDesignatedInitializers public actor TimeoutSubject {
+  public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
+  public func cancel()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class ScreenRecorder {
   @objc deinit
 }
@@ -353,15 +362,6 @@ extension Swift.Bool {
     get
   }
 }
-@_hasMissingDesignatedInitializers public actor TimeoutSubject {
-  public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
-  public func cancel()
-  @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
-}
 public enum AudioError : Swift.Error {
   case permissionDenied
   case proceessError
@@ -629,8 +629,8 @@ extension AVFoundation.AVCaptureDevice {
   }
 }
 @_hasMissingDesignatedInitializers final public class LocalRTCParticipant {
-  final public var publishAudio: Swift.Bool
   weak final public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
+  final public var publishAudio: Swift.Bool
   @objc deinit
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
@@ -843,14 +843,14 @@ public protocol RTCRoomDelegate : AnyObject {
   func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
+  func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
   func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
   func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
   func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
-  func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
   func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
-  func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
+  func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
