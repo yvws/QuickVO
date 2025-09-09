@@ -808,7 +808,7 @@ extension QuickVO.LocalRTCParticipant {
   final public func enableMicrophone(_ enable: Swift.Bool)
   final public func microphoneIsEnable() -> Swift.Bool
   final public func speakerIsEnable() async -> Swift.Bool
-  final public func enableSpeaker(_ enable: Swift.Bool) async
+  final public func enableSpeaker(_ enable: Swift.Bool)
 }
 extension QuickVO.LocalRTCParticipant {
   final public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
