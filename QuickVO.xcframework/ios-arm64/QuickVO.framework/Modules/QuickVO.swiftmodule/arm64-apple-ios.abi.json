@@ -18152,6 +18152,198 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "effect",
+            "printedName": "effect",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoomEffectFilter",
+                "printedName": "QuickVO.RoomEffectFilter",
+                "usr": "s:7QuickVO16RoomEffectFilterC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvp",
+            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilter",
+                    "printedName": "QuickVO.RoomEffectFilter",
+                    "usr": "s:7QuickVO16RoomEffectFilterC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvg",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilter",
+                    "printedName": "QuickVO.RoomEffectFilter",
+                    "usr": "s:7QuickVO16RoomEffectFilterC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvs",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0Cvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0CvM",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC6effectAA0c6EffectE0CvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "quality",
+            "printedName": "quality",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoomQulityFilter",
+                "printedName": "QuickVO.RoomQulityFilter",
+                "usr": "s:7QuickVO16RoomQulityFilterC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvp",
+            "mangledName": "$s7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomQulityFilter",
+                    "printedName": "QuickVO.RoomQulityFilter",
+                    "usr": "s:7QuickVO16RoomQulityFilterC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvg",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomQulityFilter",
+                    "printedName": "QuickVO.RoomQulityFilter",
+                    "usr": "s:7QuickVO16RoomQulityFilterC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvs",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0Cvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0CvM",
+                "mangledName": "$s7QuickVO21RoomVideoFilterConfigC7qualityAA0c6QulityE0CvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "reset",
             "printedName": "reset()",
@@ -18196,744 +18388,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RoomStyleFilterCase",
-        "printedName": "RoomStyleFilterCase",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "none",
-            "printedName": "none",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO4noneyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO4noneyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "white",
-            "printedName": "white",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO5whiteyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO5whiteyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "coldWhite",
-            "printedName": "coldWhite",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO9coldWhiteyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9coldWhiteyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "oxygen",
-            "printedName": "oxygen",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO6oxygenyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO6oxygenyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "tipsy",
-            "printedName": "tipsy",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO5tipsyyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO5tipsyyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "firstLove",
-            "printedName": "firstLove",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO9firstLoveyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9firstLoveyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "innocence",
-            "printedName": "innocence",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO9innocenceyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9innocenceyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "powderPorcelain",
-            "printedName": "powderPorcelain",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO15powderPorcelainyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO15powderPorcelainyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "japanese",
-            "printedName": "japanese",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO8japaneseyA2CmF",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8japaneseyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "QuickVO.RoomStyleFilterCase?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueACSgSi_tcfc",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueACSgSi_tcfc",
-            "moduleName": "QuickVO",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueSivp",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueSivp",
-            "moduleName": "QuickVO",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueSivg",
-                "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueSivg",
-                "moduleName": "QuickVO",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "allCases",
-            "printedName": "allCases",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[QuickVO.RoomStyleFilterCase]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomStyleFilterCase",
-                    "printedName": "QuickVO.RoomStyleFilterCase",
-                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvpZ",
-            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvpZ",
-            "moduleName": "QuickVO",
-            "static": true,
-            "implicit": true,
-            "declAttributes": [
-              "Nonisolated"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomStyleFilterCase]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvgZ",
-                "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvgZ",
-                "moduleName": "QuickVO",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7QuickVO19RoomStyleFilterCaseO",
-        "mangledName": "$s7QuickVO19RoomStyleFilterCaseO",
-        "moduleName": "QuickVO",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CaseIterable",
-            "printedName": "CaseIterable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AllCases",
-                "printedName": "AllCases",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[QuickVO.RoomStyleFilterCase]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomStyleFilterCase",
-                        "printedName": "QuickVO.RoomStyleFilterCase",
-                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s12CaseIterableP",
-            "mangledName": "$ss12CaseIterableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "RoomVirtualBackgroundConfig",
-        "printedName": "RoomVirtualBackgroundConfig",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "none",
-            "printedName": "none",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> QuickVO.RoomVirtualBackgroundConfig",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVirtualBackgroundConfig",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVirtualBackgroundConfig",
-                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO4noneyA2CmF",
-            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO4noneyA2CmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "img",
-            "printedName": "img",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> (UIKit.UIImage?) -> QuickVO.RoomVirtualBackgroundConfig",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(UIKit.UIImage?) -> QuickVO.RoomVirtualBackgroundConfig",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVirtualBackgroundConfig",
-                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "UIKit.UIImage?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIImage",
-                            "printedName": "UIKit.UIImage",
-                            "usr": "c:objc(cs)UIImage"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVirtualBackgroundConfig",
-                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO3imgyACSo7UIImageCSgcACmF",
-            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO3imgyACSo7UIImageCSgcACmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "blur",
-            "printedName": "blur",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> QuickVO.RoomVirtualBackgroundConfig",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoomVirtualBackgroundConfig",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoomVirtualBackgroundConfig",
-                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
-                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO4bluryA2CmF",
-            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO4bluryA2CmF",
-            "moduleName": "QuickVO"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO",
-        "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO",
-        "moduleName": "QuickVO",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -19536,8 +18990,8 @@
           },
           {
             "kind": "Var",
-            "name": "light",
-            "printedName": "light",
+            "name": "sharpen",
+            "printedName": "sharpen",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19547,8 +19001,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7QuickVO14RoomFaceFilterC5lightSfvp",
-            "mangledName": "$s7QuickVO14RoomFaceFilterC5lightSfvp",
+            "usr": "s:7QuickVO14RoomFaceFilterC7sharpenSfvp",
+            "mangledName": "$s7QuickVO14RoomFaceFilterC7sharpenSfvp",
             "moduleName": "QuickVO",
             "declAttributes": [
               "AccessControl"
@@ -19567,8 +19021,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO14RoomFaceFilterC5lightSfvg",
-                "mangledName": "$s7QuickVO14RoomFaceFilterC5lightSfvg",
+                "usr": "s:7QuickVO14RoomFaceFilterC7sharpenSfvg",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC7sharpenSfvg",
                 "moduleName": "QuickVO",
                 "accessorKind": "get"
               },
@@ -19590,8 +19044,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO14RoomFaceFilterC5lightSfvs",
-                "mangledName": "$s7QuickVO14RoomFaceFilterC5lightSfvs",
+                "usr": "s:7QuickVO14RoomFaceFilterC7sharpenSfvs",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC7sharpenSfvs",
                 "moduleName": "QuickVO",
                 "accessorKind": "set"
               },
@@ -19607,8 +19061,89 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7QuickVO14RoomFaceFilterC5lightSfvM",
-                "mangledName": "$s7QuickVO14RoomFaceFilterC5lightSfvM",
+                "usr": "s:7QuickVO14RoomFaceFilterC7sharpenSfvM",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC7sharpenSfvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ruddy",
+            "printedName": "ruddy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RoomFaceFilterC5ruddySfvp",
+            "mangledName": "$s7QuickVO14RoomFaceFilterC5ruddySfvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC5ruddySfvg",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC5ruddySfvg",
+                "moduleName": "QuickVO",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC5ruddySfvs",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC5ruddySfvs",
+                "moduleName": "QuickVO",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RoomFaceFilterC5ruddySfvM",
+                "mangledName": "$s7QuickVO14RoomFaceFilterC5ruddySfvM",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19638,6 +19173,575 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomStyleFilterCase",
+        "printedName": "RoomStyleFilterCase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO4noneyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO4noneyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "white",
+            "printedName": "white",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO5whiteyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO5whiteyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "coldWhite",
+            "printedName": "coldWhite",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO9coldWhiteyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9coldWhiteyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "oxygen",
+            "printedName": "oxygen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO6oxygenyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO6oxygenyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "tipsy",
+            "printedName": "tipsy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO5tipsyyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO5tipsyyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "firstLove",
+            "printedName": "firstLove",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO9firstLoveyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9firstLoveyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "innocence",
+            "printedName": "innocence",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO9innocenceyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO9innocenceyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "powderPorcelain",
+            "printedName": "powderPorcelain",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO15powderPorcelainyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO15powderPorcelainyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "japanese",
+            "printedName": "japanese",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomStyleFilterCase.Type) -> QuickVO.RoomStyleFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomStyleFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO8japaneseyA2CmF",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8japaneseyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.RoomStyleFilterCase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueACSgSi_tcfc",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueSivp",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19RoomStyleFilterCaseO8rawValueSivg",
+                "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8rawValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomStyleFilterCase]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomStyleFilterCase",
+                    "printedName": "QuickVO.RoomStyleFilterCase",
+                    "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvpZ",
+            "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomStyleFilterCase]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvgZ",
+                "mangledName": "$s7QuickVO19RoomStyleFilterCaseO8allCasesSayACGvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO19RoomStyleFilterCaseO",
+        "mangledName": "$s7QuickVO19RoomStyleFilterCaseO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomStyleFilterCase]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomStyleFilterCase",
+                        "printedName": "QuickVO.RoomStyleFilterCase",
+                        "usr": "s:7QuickVO19RoomStyleFilterCaseO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -19866,6 +19970,175 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RoomVirtualBackgroundConfig",
+        "printedName": "RoomVirtualBackgroundConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> QuickVO.RoomVirtualBackgroundConfig",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVirtualBackgroundConfig",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVirtualBackgroundConfig",
+                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO4noneyA2CmF",
+            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO4noneyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "img",
+            "printedName": "img",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> (UIKit.UIImage?) -> QuickVO.RoomVirtualBackgroundConfig",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIImage?) -> QuickVO.RoomVirtualBackgroundConfig",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVirtualBackgroundConfig",
+                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIImage?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIImage",
+                            "printedName": "UIKit.UIImage",
+                            "usr": "c:objc(cs)UIImage"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVirtualBackgroundConfig",
+                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO3imgyACSo7UIImageCSgcACmF",
+            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO3imgyACSo7UIImageCSgcACmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "blur",
+            "printedName": "blur",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomVirtualBackgroundConfig.Type) -> QuickVO.RoomVirtualBackgroundConfig",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomVirtualBackgroundConfig",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                    "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomVirtualBackgroundConfig.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomVirtualBackgroundConfig",
+                        "printedName": "QuickVO.RoomVirtualBackgroundConfig",
+                        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO4bluryA2CmF",
+            "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO4bluryA2CmF",
+            "moduleName": "QuickVO"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO27RoomVirtualBackgroundConfigO",
+        "mangledName": "$s7QuickVO27RoomVirtualBackgroundConfigO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RoomVirtualBackFilter",
         "printedName": "RoomVirtualBackFilter",
         "children": [
@@ -20065,6 +20338,1544 @@
         "declKind": "Class",
         "usr": "s:7QuickVO21RoomVirtualBackFilterC",
         "mangledName": "$s7QuickVO21RoomVirtualBackFilterC",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomEffectFilterCase",
+        "printedName": "RoomEffectFilterCase",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO4noneyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO4noneyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Sepia",
+            "printedName": "Sepia",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO5SepiayA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO5SepiayA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "SoulOut",
+            "printedName": "SoulOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO7SoulOutyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO7SoulOutyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Shake",
+            "printedName": "Shake",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO5ShakeyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO5ShakeyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Shine",
+            "printedName": "Shine",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO5ShineyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO5ShineyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Glitch",
+            "printedName": "Glitch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO6GlitchyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO6GlitchyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Scale",
+            "printedName": "Scale",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO5ScaleyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO5ScaleyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "ZoomBlur",
+            "printedName": "ZoomBlur",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO8ZoomBluryA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8ZoomBluryA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Water",
+            "printedName": "Water",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO5WateryA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO5WateryA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Mosaic",
+            "printedName": "Mosaic",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO6MosaicyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO6MosaicyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Flip",
+            "printedName": "Flip",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO4FlipyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO4FlipyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Sketch",
+            "printedName": "Sketch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO6SketchyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO6SketchyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Toon",
+            "printedName": "Toon",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO4ToonyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO4ToonyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "SmoothToon",
+            "printedName": "SmoothToon",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO10SmoothToonyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO10SmoothToonyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "EdgeDetection",
+            "printedName": "EdgeDetection",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO13EdgeDetectionyA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO13EdgeDetectionyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Screen3",
+            "printedName": "Screen3",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO7Screen3yA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO7Screen3yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Screen4",
+            "printedName": "Screen4",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO7Screen4yA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO7Screen4yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Screen6",
+            "printedName": "Screen6",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO7Screen6yA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO7Screen6yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "Screen9",
+            "printedName": "Screen9",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RoomEffectFilterCase.Type) -> QuickVO.RoomEffectFilterCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RoomEffectFilterCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO7Screen9yA2CmF",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO7Screen9yA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.RoomEffectFilterCase?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO8rawValueACSgSi_tcfc",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8rawValueACSgSi_tcfc",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO8rawValueSivp",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8rawValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20RoomEffectFilterCaseO8rawValueSivg",
+                "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8rawValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO20RoomEffectFilterCaseO",
+        "mangledName": "$s7QuickVO20RoomEffectFilterCaseO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomEffectFilter",
+        "printedName": "RoomEffectFilter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomEffectFilterC6enableSbvp",
+            "mangledName": "$s7QuickVO16RoomEffectFilterC6enableSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC6enableSbvg",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC6enableSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC6enableSbvs",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC6enableSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC6enableSbvM",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC6enableSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoomEffectFilterCase",
+                "printedName": "QuickVO.RoomEffectFilterCase",
+                "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvp",
+            "mangledName": "$s7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvg",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvs",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvM",
+                "mangledName": "$s7QuickVO16RoomEffectFilterC5valueAA0cdE4CaseOvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO16RoomEffectFilterC5resetyyF",
+            "mangledName": "$s7QuickVO16RoomEffectFilterC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO16RoomEffectFilterC",
+        "mangledName": "$s7QuickVO16RoomEffectFilterC",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoomQulityFilter",
+        "printedName": "RoomQulityFilter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "enable",
+            "printedName": "enable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomQulityFilterC6enableSbvp",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC6enableSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6enableSbvg",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6enableSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6enableSbvs",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6enableSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6enableSbvM",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6enableSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO16RoomQulityFilterC5resetyyF",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC5resetyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "brightness",
+            "printedName": "brightness",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomQulityFilterC10brightnessSfvp",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC10brightnessSfvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10brightnessSfvg",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10brightnessSfvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10brightnessSfvs",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10brightnessSfvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10brightnessSfvM",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10brightnessSfvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shadow",
+            "printedName": "shadow",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomQulityFilterC6shadowSfvp",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC6shadowSfvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6shadowSfvg",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6shadowSfvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6shadowSfvs",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6shadowSfvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC6shadowSfvM",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC6shadowSfvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "highlights",
+            "printedName": "highlights",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomQulityFilterC10highlightsSfvp",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC10highlightsSfvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10highlightsSfvg",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10highlightsSfvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10highlightsSfvs",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10highlightsSfvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC10highlightsSfvM",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC10highlightsSfvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vignette",
+            "printedName": "vignette",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Float",
+                "printedName": "Swift.Float",
+                "usr": "s:Sf"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16RoomQulityFilterC8vignetteSfvp",
+            "mangledName": "$s7QuickVO16RoomQulityFilterC8vignetteSfvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC8vignetteSfvg",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC8vignetteSfvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC8vignetteSfvs",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC8vignetteSfvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16RoomQulityFilterC8vignetteSfvM",
+                "mangledName": "$s7QuickVO16RoomQulityFilterC8vignetteSfvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7QuickVO16RoomQulityFilterC",
+        "mangledName": "$s7QuickVO16RoomQulityFilterC",
         "moduleName": "QuickVO",
         "declAttributes": [
           "AccessControl"
@@ -24439,7 +26250,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5392,
+      "offset": 5372,
       "length": 5,
       "value": "false"
     },
@@ -28302,36 +30113,43 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1366,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 2984,
+      "offset": 3206,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3264,
+      "offset": 3486,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 3313,
+      "offset": 3535,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 3374,
+      "offset": 3596,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3684,
+      "offset": 3906,
       "length": 4,
       "value": "true"
     },
@@ -29359,190 +31177,428 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1879,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1387,
+      "offset": 4471,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1402,
+      "offset": 4486,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1421,
+      "offset": 4505,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1437,
+      "offset": 4521,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1452,
+      "offset": 4536,
       "length": 9,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1471,
+      "offset": 4555,
       "length": 9,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1490,
+      "offset": 4574,
       "length": 15,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 1515,
+      "offset": 4599,
       "length": 8,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1786,
+      "offset": 4873,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 3904,
+      "offset": 5232,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5558,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5573,
+      "length": 7,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5590,
+      "length": 5,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5605,
+      "length": 5,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5620,
+      "length": 6,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5636,
+      "length": 5,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5651,
+      "length": 8,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5669,
+      "length": 5,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5684,
+      "length": 6,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5700,
+      "length": 4,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5714,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5730,
+      "length": 4,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5744,
+      "length": 10,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5764,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5787,
+      "length": 7,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5804,
+      "length": 7,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5821,
+      "length": 7,
+      "value": "17"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5838,
+      "length": 7,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 4206,
+      "offset": 6377,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6634,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6596,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6600,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6756,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6722,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6726,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6881,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6843,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6847,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7004,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6968,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6972,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4553,
+      "offset": 7139,
       "length": 9,
       "value": "\"buffing\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4574,
+      "offset": 7160,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4629,
+      "offset": 7215,
       "length": 7,
       "value": "\"white\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4648,
+      "offset": 7234,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4701,
+      "offset": 7287,
       "length": 6,
       "value": "\"thin\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4719,
+      "offset": 7305,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4771,
+      "offset": 7357,
       "length": 5,
       "value": "\"eye\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 4788,
+      "offset": 7374,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4839,
+      "offset": 7425,
       "length": 10,
       "value": "\"lipstick\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4861,
+      "offset": 7447,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4915,
+      "offset": 7501,
       "length": 9,
       "value": "\"blusher\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 4936,
+      "offset": 7522,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
-      "length": 7,
-      "value": "\"light\""
+      "offset": 7575,
+      "length": 9,
+      "value": "\"sharpen\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 5008,
-      "length": 4,
-      "value": "0.02"
+      "offset": 7596,
+      "length": 3,
+      "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5062,
+      "offset": 7651,
+      "length": 7,
+      "value": "\"ruddy\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 7670,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 7733,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5081,
+      "offset": 7752,
       "length": 1,
       "value": "0"
     },
@@ -29709,85 +31765,92 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
+      "kind": "StringLiteral",
+      "offset": 788,
+      "length": 18,
+      "value": "\"audio.device.que\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 774,
+      "offset": 835,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 813,
+      "offset": 874,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 1088,
+      "offset": 1149,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 1196,
+      "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 1630,
+      "offset": 1691,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 1740,
+      "offset": 1801,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 12624,
+      "offset": 12809,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 12839,
+      "offset": 13024,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13222,
+      "offset": 13407,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13254,
+      "offset": 13439,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13466,
+      "offset": 13651,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13498,
+      "offset": 13683,
       "length": 1,
       "value": "2"
     },

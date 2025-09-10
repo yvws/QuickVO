@@ -716,33 +716,16 @@ public struct RoomSubData {
     get
     set
   }
+  final public var effect: QuickVO.RoomEffectFilter {
+    get
+    set
+  }
+  final public var quality: QuickVO.RoomQulityFilter {
+    get
+    set
+  }
   final public func reset()
   @objc deinit
-}
-public enum RoomStyleFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
-  case none
-  case white
-  case coldWhite
-  case oxygen
-  case tipsy
-  case firstLove
-  case innocence
-  case powderPorcelain
-  case japanese
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [QuickVO.RoomStyleFilterCase]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [QuickVO.RoomStyleFilterCase] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RoomVirtualBackgroundConfig : Swift.Sendable {
-  case none
-  case img(UIKit.UIImage?)
-  case blur
 }
 @_hasMissingDesignatedInitializers public class RoomFaceFilter {
   public var enable: Swift.Bool {
@@ -774,11 +757,35 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
     get
     set
   }
-  public var light: Swift.Float {
+  public var sharpen: Swift.Float {
+    get
+    set
+  }
+  public var ruddy: Swift.Float {
     get
     set
   }
   @objc deinit
+}
+public enum RoomStyleFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case white
+  case coldWhite
+  case oxygen
+  case tipsy
+  case firstLove
+  case innocence
+  case powderPorcelain
+  case japanese
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [QuickVO.RoomStyleFilterCase]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [QuickVO.RoomStyleFilterCase] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers public class RoomStyleFilter {
   public var value: QuickVO.RoomStyleFilterCase {
@@ -792,6 +799,11 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
   public func reset()
   @objc deinit
 }
+public enum RoomVirtualBackgroundConfig : Swift.Sendable {
+  case none
+  case img(UIKit.UIImage?)
+  case blur
+}
 @_hasMissingDesignatedInitializers public class RoomVirtualBackFilter {
   public var enable: Swift.Bool {
     get
@@ -802,6 +814,68 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
     set
   }
   public func reset()
+  @objc deinit
+}
+public enum RoomEffectFilterCase : Swift.Int {
+  case none
+  case Sepia
+  case SoulOut
+  case Shake
+  case Shine
+  case Glitch
+  case Scale
+  case ZoomBlur
+  case Water
+  case Mosaic
+  case Flip
+  case Sketch
+  case Toon
+  case SmoothToon
+  case EdgeDetection
+  case Screen3
+  case Screen4
+  case Screen6
+  case Screen9
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class RoomEffectFilter {
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public var value: QuickVO.RoomEffectFilterCase {
+    get
+    set
+  }
+  public func reset()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class RoomQulityFilter {
+  public var enable: Swift.Bool {
+    get
+    set
+  }
+  public func reset()
+  @QuickVO.Clamping public var brightness: Swift.Float {
+    get
+    set
+  }
+  @QuickVO.Clamping public var shadow: Swift.Float {
+    get
+    set
+  }
+  @QuickVO.Clamping public var highlights: Swift.Float {
+    get
+    set
+  }
+  @QuickVO.Clamping public var vignette: Swift.Float {
+    get
+    set
+  }
   @objc deinit
 }
 extension QuickVO.LocalRTCParticipant {
@@ -988,6 +1062,9 @@ extension QuickVO.NetworkMotorType : Swift.Equatable {}
 extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
+extension QuickVO.RoomEffectFilterCase : Swift.Equatable {}
+extension QuickVO.RoomEffectFilterCase : Swift.Hashable {}
+extension QuickVO.RoomEffectFilterCase : Swift.RawRepresentable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
