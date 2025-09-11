@@ -20,6 +20,7 @@ import Network
 @_exported import QuickVO
 import ReplayKit
 import Swift
+import Synchronization
 import UIKit
 import Vision
 import VisionKit
@@ -87,27 +88,6 @@ extension QuickVO.ScreenRecorder {
   public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
   public var wrappedValue: WrappedValue {
     get
-    set
-  }
-}
-@propertyWrapper public struct NS_Lock<WrappedValue> {
-  public init(wrappedValue value: WrappedValue)
-  public var wrappedValue: WrappedValue {
-    get
-    set
-  }
-}
-@propertyWrapper public struct QueueLock<WrappedValue> {
-  public init(wrappedValue value: WrappedValue)
-  public var wrappedValue: WrappedValue {
-    get
-    set
-  }
-}
-@propertyWrapper public struct UnfairLock<WrappedValue> {
-  public init(wrappedValue value: WrappedValue)
-  public var wrappedValue: WrappedValue {
-    mutating get
     set
   }
 }
@@ -816,7 +796,7 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
   public func reset()
   @objc deinit
 }
-public enum RoomEffectFilterCase : Swift.Int {
+public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case none
   case Sepia
   case SoulOut
@@ -837,7 +817,11 @@ public enum RoomEffectFilterCase : Swift.Int {
   case Screen6
   case Screen9
   public init?(rawValue: Swift.Int)
+  public typealias AllCases = [QuickVO.RoomEffectFilterCase]
   public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [QuickVO.RoomEffectFilterCase] {
+    get
+  }
   public var rawValue: Swift.Int {
     get
   }

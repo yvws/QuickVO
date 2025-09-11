@@ -21,8 +21,6 @@
 @property (nonatomic, assign) CGFloat eyeValue;
 @property (nonatomic, assign) CGFloat lipstickValue;
 @property (nonatomic, assign) CGFloat blusherValue;
-@property (nonatomic, assign) CGFloat lightValue;
-
 
 @property (nonatomic, assign) CGFloat contrastValue;
 @property (nonatomic, assign) CGFloat exposureValue;
@@ -35,6 +33,14 @@
 @property (nonatomic, assign) CGFloat temperature;
 
 @property (nonatomic, assign) NSInteger rotation;
+
+
+@property(nonatomic, assign) CGFloat sharpenValue;
+@property(nonatomic, assign) CGFloat ruddy;
+@property(nonatomic, assign) CGFloat shadowValue;
+@property(nonatomic, assign) CGFloat highlightsValue;
+@property(nonatomic, assign) CGFloat vignetValue;
+@property(nonatomic, assign) CGFloat brightnessValue;
 
 
 

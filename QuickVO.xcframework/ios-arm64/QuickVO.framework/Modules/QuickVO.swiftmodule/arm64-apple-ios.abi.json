@@ -1363,465 +1363,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "NS_Lock",
-        "printedName": "NS_Lock",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(wrappedValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NS_Lock",
-                "printedName": "QuickVO.NS_Lock<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:7QuickVO7NS_LockV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7QuickVO7NS_LockV12wrappedValueACyxGx_tcfc",
-            "mangledName": "$s7QuickVO7NS_LockV12wrappedValueACyxGx_tcfc",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<WrappedValue>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO7NS_LockV12wrappedValuexvp",
-            "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvg",
-                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvg",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvs",
-                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvs",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO7NS_LockV12wrappedValuexvM",
-                "mangledName": "$s7QuickVO7NS_LockV12wrappedValuexvM",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7QuickVO7NS_LockV",
-        "mangledName": "$s7QuickVO7NS_LockV",
-        "moduleName": "QuickVO",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<WrappedValue>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "QueueLock",
-        "printedName": "QueueLock",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(wrappedValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "QueueLock",
-                "printedName": "QuickVO.QueueLock<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:7QuickVO9QueueLockV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7QuickVO9QueueLockV12wrappedValueACyxGx_tcfc",
-            "mangledName": "$s7QuickVO9QueueLockV12wrappedValueACyxGx_tcfc",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<WrappedValue>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO9QueueLockV12wrappedValuexvp",
-            "mangledName": "$s7QuickVO9QueueLockV12wrappedValuexvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO9QueueLockV12wrappedValuexvg",
-                "mangledName": "$s7QuickVO9QueueLockV12wrappedValuexvg",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO9QueueLockV12wrappedValuexvs",
-                "mangledName": "$s7QuickVO9QueueLockV12wrappedValuexvs",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO9QueueLockV12wrappedValuexvM",
-                "mangledName": "$s7QuickVO9QueueLockV12wrappedValuexvM",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7QuickVO9QueueLockV",
-        "mangledName": "$s7QuickVO9QueueLockV",
-        "moduleName": "QuickVO",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<WrappedValue>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnfairLock",
-        "printedName": "UnfairLock",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(wrappedValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UnfairLock",
-                "printedName": "QuickVO.UnfairLock<τ_0_0>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "usr": "s:7QuickVO10UnfairLockV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7QuickVO10UnfairLockV12wrappedValueACyxGx_tcfc",
-            "mangledName": "$s7QuickVO10UnfairLockV12wrappedValueACyxGx_tcfc",
-            "moduleName": "QuickVO",
-            "genericSig": "<τ_0_0>",
-            "sugared_genericSig": "<WrappedValue>",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "wrappedValue",
-            "printedName": "wrappedValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7QuickVO10UnfairLockV12wrappedValuexvp",
-            "mangledName": "$s7QuickVO10UnfairLockV12wrappedValuexvp",
-            "moduleName": "QuickVO",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO10UnfairLockV12wrappedValuexvg",
-                "mangledName": "$s7QuickVO10UnfairLockV12wrappedValuexvg",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "declAttributes": [
-                  "Mutating"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "GenericTypeParam",
-                    "printedName": "τ_0_0"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO10UnfairLockV12wrappedValuexvs",
-                "mangledName": "$s7QuickVO10UnfairLockV12wrappedValuexvs",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7QuickVO10UnfairLockV12wrappedValuexvM",
-                "mangledName": "$s7QuickVO10UnfairLockV12wrappedValuexvM",
-                "moduleName": "QuickVO",
-                "genericSig": "<τ_0_0>",
-                "sugared_genericSig": "<WrappedValue>",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7QuickVO10UnfairLockV",
-        "mangledName": "$s7QuickVO10UnfairLockV",
-        "moduleName": "QuickVO",
-        "genericSig": "<τ_0_0>",
-        "sugared_genericSig": "<WrappedValue>",
-        "declAttributes": [
-          "AccessControl",
-          "PropertyWrapper"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "Unique",
         "printedName": "Unique",
         "children": [
@@ -6174,6 +5715,27 @@
             "mangledName": "$sSH"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Synchronization",
+        "printedName": "Synchronization",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
       },
       {
         "kind": "Import",
@@ -21139,6 +20701,66 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RoomEffectFilterCase]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoomEffectFilterCase",
+                    "printedName": "QuickVO.RoomEffectFilterCase",
+                    "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO20RoomEffectFilterCaseO8allCasesSayACGvpZ",
+            "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8allCasesSayACGvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomEffectFilterCase]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20RoomEffectFilterCaseO8allCasesSayACGvgZ",
+                "mangledName": "$s7QuickVO20RoomEffectFilterCaseO8allCasesSayACGvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -21199,6 +20821,43 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RoomEffectFilterCase]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoomEffectFilterCase",
+                        "printedName": "QuickVO.RoomEffectFilterCase",
+                        "usr": "s:7QuickVO20RoomEffectFilterCaseO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
           }
         ]
       },
@@ -25092,6 +24751,52 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "OSAllocatedUnfairLock",
+        "printedName": "OSAllocatedUnfairLock",
+        "declKind": "Struct",
+        "usr": "s:2os21OSAllocatedUnfairLockV",
+        "mangledName": "$s2os21OSAllocatedUnfairLockV",
+        "moduleName": "os",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<State>",
+        "intro_Macosx": "13.0",
+        "intro_iOS": "16.0",
+        "intro_tvOS": "16.0",
+        "intro_watchOS": "9.0",
+        "declAttributes": [
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Bool",
         "printedName": "Bool",
         "children": [
@@ -25324,6 +25029,28 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AtomicRepresentable",
+            "printedName": "AtomicRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AtomicRepresentation",
+                "printedName": "AtomicRepresentation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_Atomic8BitStorage",
+                    "printedName": "Synchronization._Atomic8BitStorage",
+                    "usr": "s:15Synchronization18_Atomic8BitStorageV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:15Synchronization19AtomicRepresentableP",
+            "mangledName": "$s15Synchronization19AtomicRepresentableP"
           },
           {
             "kind": "Conformance",
@@ -26185,13 +25912,6 @@
       "value": "true"
     },
     {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Property.swift",
-      "kind": "StringLiteral",
-      "offset": 1188,
-      "length": 22,
-      "value": "\"com.lock.serialQueue\""
-    },
-    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient+SDP.swift",
       "kind": "BooleanLiteral",
       "offset": 75,
@@ -26264,21 +25984,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "StringLiteral",
-      "offset": 565,
+      "offset": 571,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1063,
+      "offset": 1071,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1686,
+      "offset": 1692,
       "length": 3,
       "value": "[]"
     },
@@ -30092,64 +29812,85 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
+      "kind": "StringLiteral",
+      "offset": 899,
+      "length": 28,
+      "value": "\"speaking \""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
+      "kind": "StringLiteral",
+      "offset": 914,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
+      "kind": "StringLiteral",
+      "offset": 926,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 737,
+      "offset": 717,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 701,
+      "offset": 681,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 705,
+      "offset": 685,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 1366,
+      "offset": 1462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3206,
+      "offset": 3350,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3486,
+      "offset": 3629,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 3535,
+      "offset": 3703,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 3596,
+      "offset": 3843,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3906,
+      "offset": 4281,
       "length": 4,
       "value": "true"
     },
@@ -30289,28 +30030,35 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "Array",
-      "offset": 1708,
+      "offset": 1695,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1729,
       "length": 8,
       "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 11224,
+      "offset": 11644,
       "length": 5,
       "value": "\"sfu\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/ParticipantDataAdaptor.swift",
+      "kind": "StringLiteral",
+      "offset": 302,
+      "length": 25,
+      "value": "\"participant.state.queue\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/ParticipantDataAdaptor.swift",
       "kind": "Dictionary",
-      "offset": 368,
+      "offset": 419,
       "length": 3,
       "value": "[]"
     },
@@ -30520,84 +30268,84 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4450,
+      "offset": 4533,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4477,
+      "offset": 4560,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4510,
+      "offset": 4593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "Array",
-      "offset": 4551,
+      "offset": 4634,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4579,
+      "offset": 4662,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4604,
+      "offset": 4687,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4633,
+      "offset": 4716,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4660,
+      "offset": 4743,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4689,
+      "offset": 4772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5028,
+      "offset": 5111,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5076,
+      "offset": 5159,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5124,
+      "offset": 5207,
       "length": 11,
       "value": "10000000"
     },
@@ -31003,175 +30751,175 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 378,
+      "offset": 376,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 467,
+      "offset": 465,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 512,
+      "offset": 509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 565,
+      "offset": 561,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 594,
+      "offset": 590,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 622,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 751,
+      "offset": 746,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 841,
+      "offset": 836,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 862,
+      "offset": 857,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 927,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "BooleanLiteral",
-      "offset": 881,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "IntegerLiteral",
-      "offset": 961,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1030,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1064,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "IntegerLiteral",
-      "offset": 983,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1155,
+      "offset": 922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 6952,
+      "offset": 876,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 956,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1025,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1059,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 978,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1150,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7005,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 7299,
+      "offset": 7352,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 7321,
+      "offset": 7374,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 11151,
+      "offset": 11364,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 11176,
+      "offset": 11389,
       "length": 4,
       "value": "4010"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 4281,
+      "offset": 4398,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 5973,
+      "offset": 6090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 5996,
+      "offset": 6113,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 10338,
+      "offset": 10455,
       "length": 4,
       "value": "true"
     },
@@ -31255,357 +31003,357 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5558,
+      "offset": 5580,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5573,
+      "offset": 5595,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5590,
+      "offset": 5612,
       "length": 5,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5605,
+      "offset": 5627,
       "length": 5,
       "value": "4"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5620,
+      "offset": 5642,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5636,
+      "offset": 5658,
       "length": 5,
       "value": "6"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5651,
+      "offset": 5673,
       "length": 8,
       "value": "7"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5669,
+      "offset": 5691,
       "length": 5,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5684,
+      "offset": 5706,
       "length": 6,
       "value": "9"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5700,
+      "offset": 5722,
       "length": 4,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5714,
+      "offset": 5736,
       "length": 6,
       "value": "11"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5730,
+      "offset": 5752,
       "length": 4,
       "value": "12"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5744,
+      "offset": 5766,
       "length": 10,
       "value": "13"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5764,
+      "offset": 5786,
       "length": 13,
       "value": "14"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5787,
+      "offset": 5809,
       "length": 7,
       "value": "15"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5804,
+      "offset": 5826,
       "length": 7,
       "value": "16"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5821,
+      "offset": 5843,
       "length": 7,
       "value": "17"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 5838,
+      "offset": 5860,
       "length": 7,
       "value": "18"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 5987,
+      "offset": 6009,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 6377,
+      "offset": 6399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6634,
+      "offset": 6656,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6596,
+      "offset": 6618,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6600,
+      "offset": 6622,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6756,
+      "offset": 6778,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6722,
+      "offset": 6744,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6726,
+      "offset": 6748,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6881,
+      "offset": 6903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6843,
+      "offset": 6865,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6847,
+      "offset": 6869,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7004,
+      "offset": 7026,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6968,
+      "offset": 6990,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 6972,
+      "offset": 6994,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7139,
+      "offset": 7161,
       "length": 9,
       "value": "\"buffing\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7160,
+      "offset": 7182,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7215,
+      "offset": 7237,
       "length": 7,
       "value": "\"white\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7234,
+      "offset": 7256,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7287,
+      "offset": 7309,
       "length": 6,
       "value": "\"thin\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7305,
+      "offset": 7327,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7357,
+      "offset": 7379,
       "length": 5,
       "value": "\"eye\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7374,
+      "offset": 7396,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7425,
+      "offset": 7447,
       "length": 10,
       "value": "\"lipstick\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7447,
+      "offset": 7469,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7501,
+      "offset": 7523,
       "length": 9,
       "value": "\"blusher\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7522,
+      "offset": 7544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7575,
+      "offset": 7597,
       "length": 9,
       "value": "\"sharpen\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7596,
+      "offset": 7618,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7651,
+      "offset": 7673,
       "length": 7,
       "value": "\"ruddy\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 7670,
+      "offset": 7692,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 7733,
+      "offset": 7755,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 7752,
+      "offset": 7774,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Forbid.swift",
       "kind": "StringLiteral",
-      "offset": 2373,
+      "offset": 2666,
       "length": 17,
       "value": "\"RoomForbidParti\""
     },
