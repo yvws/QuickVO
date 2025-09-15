@@ -59,6 +59,10 @@ extension QuickVO.RTCParticipantDelegate {
   public func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
   public func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
 }
+public protocol RTCParticipantDebugDelegate : AnyObject {
+  func p2pChange(_ participant: QuickVO.RTCParticipant)
+  func debugInfo(_ participant: QuickVO.RTCParticipant)
+}
 #if compiler(>=5.3) && $RetroactiveAttribute
 extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable {
 }
@@ -375,6 +379,17 @@ public enum RTCStatisLevel : Swift.Int {
 public struct NetMonitorValue {
   public var up: QuickVO.RTCStatisLevel
   public var donw: QuickVO.RTCStatisLevel
+  public var netUp: Swift.Float?
+  public var netDown: Swift.Float?
+  public var lost: Swift.Double
+  public var downlost: Swift.Double
+  public var RoundTripTime: Swift.Float?
+  public var frameHeight: Swift.Int?
+  public var frameWith: Swift.Int?
+  public var fps: Swift.Int?
+  public var bitrate: Swift.Double?
+  public var codecA: Swift.String?
+  public var codecV: Swift.String?
 }
 public actor TaskActor<T> {
   public init(task: ((T) async -> Swift.Void)?)
@@ -525,6 +540,7 @@ public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers open class RTCParticipant {
   weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
+  weak public var debugDelegate: (any QuickVO.RTCParticipantDebugDelegate)?
   public var id: Swift.String {
     get
   }
@@ -545,6 +561,10 @@ public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
   }
   public var isSpeaking: Swift.Bool {
     get
+  }
+  public var net: QuickVO.NetMonitorValue {
+    get
+    set
   }
   public var netMonitor: QuickVO.NetMonitorValue {
     get
@@ -572,6 +592,8 @@ public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
     get
     set
   }
+  public var p2pRpnet: QuickVO.NetMonitorValue
+  public var p2pSnet: QuickVO.NetMonitorValue
   @objc deinit
 }
 public enum RTCParticipantAtion {
@@ -798,7 +820,6 @@ public enum RoomVirtualBackgroundConfig : Swift.Sendable {
 }
 public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable {
   case none
-  case Sepia
   case SoulOut
   case Shake
   case Shine
@@ -816,6 +837,7 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
   case Screen4
   case Screen6
   case Screen9
+  case Sepia
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [QuickVO.RoomEffectFilterCase]
   public typealias RawValue = Swift.Int
@@ -844,19 +866,19 @@ public enum RoomEffectFilterCase : Swift.Int, Swift.Sendable, Swift.CaseIterable
     set
   }
   public func reset()
-  @QuickVO.Clamping public var brightness: Swift.Float {
+  public var brightness: Swift.Float {
     get
     set
   }
-  @QuickVO.Clamping public var shadow: Swift.Float {
+  public var shadow: Swift.Float {
     get
     set
   }
-  @QuickVO.Clamping public var highlights: Swift.Float {
+  public var highlights: Swift.Float {
     get
     set
   }
-  @QuickVO.Clamping public var vignette: Swift.Float {
+  public var vignette: Swift.Float {
     get
     set
   }

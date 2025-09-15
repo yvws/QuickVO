@@ -48,4 +48,6 @@
 - (void)releaseInstance;
 - (void)processVideoFrame:(CVPixelBufferRef)imageBuffer rotation:(NSInteger) rotation;
 
+- (void)setSpecialEffectsSink:(NSInteger )index;
+
 @end
