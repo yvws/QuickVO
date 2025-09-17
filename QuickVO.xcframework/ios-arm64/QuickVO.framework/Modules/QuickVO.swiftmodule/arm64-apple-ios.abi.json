@@ -17948,6 +17948,43 @@
           },
           {
             "kind": "Var",
+            "name": "roomReleased",
+            "printedName": "roomReleased",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ConnectError.Type) -> QuickVO.ConnectError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ConnectError",
+                    "printedName": "QuickVO.ConnectError",
+                    "usr": "s:7QuickVO12ConnectErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ConnectError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ConnectError",
+                        "printedName": "QuickVO.ConnectError",
+                        "usr": "s:7QuickVO12ConnectErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO12ConnectErrorO12roomReleasedyA2CmF",
+            "mangledName": "$s7QuickVO12ConnectErrorO12roomReleasedyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -27581,28 +27618,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "StringLiteral",
-      "offset": 571,
+      "offset": 592,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1071,
+      "offset": 1092,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1692,
+      "offset": 1713,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2361,
+      "offset": 2382,
       "length": 5,
       "value": "false"
     },
@@ -31627,7 +31664,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 11635,
+      "offset": 11636,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -32474,14 +32511,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 11459,
+      "offset": 11458,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 11484,
+      "offset": 11483,
       "length": 4,
       "value": "4010"
     },
@@ -32733,184 +32770,184 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8090,
+      "offset": 8091,
       "length": 9,
       "value": "\"buffing\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8111,
+      "offset": 8112,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8166,
+      "offset": 8167,
       "length": 7,
       "value": "\"white\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8185,
+      "offset": 8186,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8238,
+      "offset": 8239,
       "length": 6,
       "value": "\"thin\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8256,
+      "offset": 8257,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8308,
+      "offset": 8309,
       "length": 5,
       "value": "\"eye\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8325,
+      "offset": 8326,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8376,
+      "offset": 8377,
       "length": 10,
       "value": "\"lipstick\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8398,
+      "offset": 8399,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8452,
+      "offset": 8453,
       "length": 9,
       "value": "\"blusher\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8473,
+      "offset": 8474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8526,
+      "offset": 8527,
       "length": 9,
       "value": "\"sharpen\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8547,
+      "offset": 8548,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8602,
+      "offset": 8603,
       "length": 7,
       "value": "\"ruddy\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 8621,
+      "offset": 8622,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8684,
+      "offset": 8685,
       "length": 7,
       "value": "\"style\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8703,
+      "offset": 8704,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8757,
+      "offset": 8758,
       "length": 12,
       "value": "\"brightness\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8781,
+      "offset": 8782,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8837,
+      "offset": 8838,
       "length": 8,
       "value": "\"shadow\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8857,
+      "offset": 8858,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8909,
+      "offset": 8910,
       "length": 12,
       "value": "\"highlights\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 8933,
+      "offset": 8934,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
       "kind": "StringLiteral",
-      "offset": 8989,
+      "offset": 8990,
       "length": 10,
       "value": "\"vignette\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/FilterConfig.swift",
-      "kind": "FloatLiteral",
-      "offset": 9011,
-      "length": 3,
-      "value": "0.5"
+      "kind": "IntegerLiteral",
+      "offset": 9012,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Forbid.swift",
