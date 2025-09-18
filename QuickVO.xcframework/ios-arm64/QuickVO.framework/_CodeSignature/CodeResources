@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		yedkMsn1tSBPwReWkPTs+2lp9dw=
-		</data>
 		<key>Headers/QuickVO.h</key>
 		<data>
 		yt081ZE0fMRnMkKph3XWnegD8Lg=
@@ -26,7 +22,7 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		SREo5nbCQTxdi7EVAbH8P+hlQA4=
+		HFWm3L4veTcdmgMNkM1DGZsj3ro=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -92,11 +88,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SREo5nbCQTxdi7EVAbH8P+hlQA4=
+			HFWm3L4veTcdmgMNkM1DGZsj3ro=
 			</data>
 			<key>hash2</key>
 			<data>
-			5zKHPiRwJu3rmIKpYoTGWv1/V1uDzk7OdtP/Uywbiqc=
+			R8STYe0kh7ak2vJIAjGn9KZjnzIALdhMP6Sn17PDKTI=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
