@@ -17997,8 +17997,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO19LocalRTCParticipantC13switchSpeakeryyF",
-            "mangledName": "$s7QuickVO19LocalRTCParticipantC13switchSpeakeryyF",
+            "usr": "s:7QuickVO19LocalRTCParticipantC13switchSpeakeryyYaF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC13switchSpeakeryyYaF",
             "moduleName": "QuickVO",
             "declAttributes": [
               "Final"
