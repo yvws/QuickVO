@@ -59,8 +59,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/motian30/WebRTC-iOS",
       "state" : {
-        "revision" : "7b92231a99844077496e37a2cc09dc5be1a3b545",
-        "version" : "137.0.1"
+        "revision" : "3480e28bd64a8e9e589bfcab7f6556703952a980",
+        "version" : "137.0.3"
       }
     }
   ],

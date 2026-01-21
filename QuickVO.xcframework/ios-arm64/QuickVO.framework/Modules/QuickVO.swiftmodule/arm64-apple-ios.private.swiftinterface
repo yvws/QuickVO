@@ -66,6 +66,15 @@ extension QuickVO.LocalPreviewView {
   @_Concurrency.MainActor @preconcurrency final public func stop()
   @_Concurrency.MainActor @preconcurrency final public func switchCamera()
 }
+public enum RTCParticipantAtion {
+  case audioEnable(Swift.Bool)
+  case videoEnable(Swift.Bool)
+  case screenShare(Swift.Bool)
+}
+public enum PaticipantForbidAction {
+  case audioForbid(Swift.Bool)
+  case videoForbid(Swift.Bool)
+}
 public protocol RTCParticipantDelegate : AnyObject {
   func addVideoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomVideoTrack)
   func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
@@ -660,15 +669,32 @@ public struct RoomSpeechOption : Swift.Sendable {
 extension QuickVO.RTCParticipant {
   public func getP2PRStatis() -> [QuickVO.NetMonitorValue]
   public func getP2PSStatis() -> [QuickVO.NetMonitorValue]
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var candidateProtocol: Swift.String? {
+    get
+  }
+  #endif
+  public var p2pConnectType: QuickVO.PeerConnectionType {
+    get
+  }
+  public var cameraP2P: Swift.Bool {
+    get
+  }
+  public var sceenP2P: Swift.Bool {
+    get
+  }
 }
-public enum RTCParticipantAtion {
-  case audioEnable(Swift.Bool)
-  case videoEnable(Swift.Bool)
-  case screenShare(Swift.Bool)
-}
-public enum PaticipantForbidAction {
-  case audioForbid(Swift.Bool)
-  case videoForbid(Swift.Bool)
+public enum PeerConnectionType : Swift.String {
+  case none
+  case p2p_ing
+  case p2p
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers final public class RTCEngine {
   public static let engine: QuickVO.RTCEngine
@@ -978,6 +1004,9 @@ extension QuickVO.RoomVideodegradation : Swift.Hashable {}
 extension QuickVO.RoomVideodegradation : Swift.RawRepresentable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
 extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
+extension QuickVO.PeerConnectionType : Swift.Equatable {}
+extension QuickVO.PeerConnectionType : Swift.Hashable {}
+extension QuickVO.PeerConnectionType : Swift.RawRepresentable {}
 extension QuickVO.NetworkMotorType : Swift.Equatable {}
 extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}

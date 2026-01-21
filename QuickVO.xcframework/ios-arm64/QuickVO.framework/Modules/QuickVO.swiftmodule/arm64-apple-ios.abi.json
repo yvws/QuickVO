@@ -1033,6 +1033,316 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RTCParticipantAtion",
+        "printedName": "RTCParticipantAtion",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioEnable",
+            "printedName": "audioEnable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RTCParticipantAtionO11audioEnableyACSbcACmF",
+            "mangledName": "$s7QuickVO19RTCParticipantAtionO11audioEnableyACSbcACmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "videoEnable",
+            "printedName": "videoEnable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RTCParticipantAtionO11videoEnableyACSbcACmF",
+            "mangledName": "$s7QuickVO19RTCParticipantAtionO11videoEnableyACSbcACmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "screenShare",
+            "printedName": "screenShare",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCParticipantAtion",
+                        "printedName": "QuickVO.RTCParticipantAtion",
+                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19RTCParticipantAtionO11screenShareyACSbcACmF",
+            "mangledName": "$s7QuickVO19RTCParticipantAtionO11screenShareyACSbcACmF",
+            "moduleName": "QuickVO"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO19RTCParticipantAtionO",
+        "mangledName": "$s7QuickVO19RTCParticipantAtionO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaticipantForbidAction",
+        "printedName": "PaticipantForbidAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "audioForbid",
+            "printedName": "audioForbid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.PaticipantForbidAction.Type) -> (Swift.Bool) -> QuickVO.PaticipantForbidAction",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> QuickVO.PaticipantForbidAction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaticipantForbidAction",
+                        "printedName": "QuickVO.PaticipantForbidAction",
+                        "usr": "s:7QuickVO22PaticipantForbidActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.PaticipantForbidAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaticipantForbidAction",
+                        "printedName": "QuickVO.PaticipantForbidAction",
+                        "usr": "s:7QuickVO22PaticipantForbidActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO22PaticipantForbidActionO05audioD0yACSbcACmF",
+            "mangledName": "$s7QuickVO22PaticipantForbidActionO05audioD0yACSbcACmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "videoForbid",
+            "printedName": "videoForbid",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.PaticipantForbidAction.Type) -> (Swift.Bool) -> QuickVO.PaticipantForbidAction",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> QuickVO.PaticipantForbidAction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaticipantForbidAction",
+                        "printedName": "QuickVO.PaticipantForbidAction",
+                        "usr": "s:7QuickVO22PaticipantForbidActionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.PaticipantForbidAction.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaticipantForbidAction",
+                        "printedName": "QuickVO.PaticipantForbidAction",
+                        "usr": "s:7QuickVO22PaticipantForbidActionO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO22PaticipantForbidActionO05videoD0yACSbcACmF",
+            "mangledName": "$s7QuickVO22PaticipantForbidActionO05videoD0yACSbcACmF",
+            "moduleName": "QuickVO"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO22PaticipantForbidActionO",
+        "mangledName": "$s7QuickVO22PaticipantForbidActionO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RTCParticipantDelegate",
         "printedName": "RTCParticipantDelegate",
         "children": [
@@ -16314,6 +16624,178 @@
             "moduleName": "QuickVO",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "candidateProtocol",
+            "printedName": "candidateProtocol",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCParticipantC17candidateProtocolSSSgvp",
+            "mangledName": "$s7QuickVO14RTCParticipantC17candidateProtocolSSSgvp",
+            "moduleName": "QuickVO",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCParticipantC17candidateProtocolSSSgvg",
+                "mangledName": "$s7QuickVO14RTCParticipantC17candidateProtocolSSSgvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "p2pConnectType",
+            "printedName": "p2pConnectType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PeerConnectionType",
+                "printedName": "QuickVO.PeerConnectionType",
+                "usr": "s:7QuickVO18PeerConnectionTypeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCParticipantC14p2pConnectTypeAA014PeerConnectionF0Ovp",
+            "mangledName": "$s7QuickVO14RTCParticipantC14p2pConnectTypeAA014PeerConnectionF0Ovp",
+            "moduleName": "QuickVO",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PeerConnectionType",
+                    "printedName": "QuickVO.PeerConnectionType",
+                    "usr": "s:7QuickVO18PeerConnectionTypeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCParticipantC14p2pConnectTypeAA014PeerConnectionF0Ovg",
+                "mangledName": "$s7QuickVO14RTCParticipantC14p2pConnectTypeAA014PeerConnectionF0Ovg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cameraP2P",
+            "printedName": "cameraP2P",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCParticipantC9cameraP2PSbvp",
+            "mangledName": "$s7QuickVO14RTCParticipantC9cameraP2PSbvp",
+            "moduleName": "QuickVO",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCParticipantC9cameraP2PSbvg",
+                "mangledName": "$s7QuickVO14RTCParticipantC9cameraP2PSbvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sceenP2P",
+            "printedName": "sceenP2P",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCParticipantC8sceenP2PSbvp",
+            "mangledName": "$s7QuickVO14RTCParticipantC8sceenP2PSbvp",
+            "moduleName": "QuickVO",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCParticipantC8sceenP2PSbvg",
+                "mangledName": "$s7QuickVO14RTCParticipantC8sceenP2PSbvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -16344,48 +16826,35 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RTCParticipantAtion",
-        "printedName": "RTCParticipantAtion",
+        "name": "PeerConnectionType",
+        "printedName": "PeerConnectionType",
         "children": [
           {
             "kind": "Var",
-            "name": "audioEnable",
-            "printedName": "audioEnable",
+            "name": "none",
+            "printedName": "none",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "printedName": "(QuickVO.PeerConnectionType.Type) -> QuickVO.PeerConnectionType",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "PeerConnectionType",
+                    "printedName": "QuickVO.PeerConnectionType",
+                    "usr": "s:7QuickVO18PeerConnectionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "printedName": "QuickVO.PeerConnectionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                        "name": "PeerConnectionType",
+                        "printedName": "QuickVO.PeerConnectionType",
+                        "usr": "s:7QuickVO18PeerConnectionTypeO"
                       }
                     ]
                   }
@@ -16393,49 +16862,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RTCParticipantAtionO11audioEnableyACSbcACmF",
-            "mangledName": "$s7QuickVO19RTCParticipantAtionO11audioEnableyACSbcACmF",
+            "usr": "s:7QuickVO18PeerConnectionTypeO4noneyA2CmF",
+            "mangledName": "$s7QuickVO18PeerConnectionTypeO4noneyA2CmF",
             "moduleName": "QuickVO"
           },
           {
             "kind": "Var",
-            "name": "videoEnable",
-            "printedName": "videoEnable",
+            "name": "p2p_ing",
+            "printedName": "p2p_ing",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "printedName": "(QuickVO.PeerConnectionType.Type) -> QuickVO.PeerConnectionType",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "PeerConnectionType",
+                    "printedName": "QuickVO.PeerConnectionType",
+                    "usr": "s:7QuickVO18PeerConnectionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "printedName": "QuickVO.PeerConnectionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                        "name": "PeerConnectionType",
+                        "printedName": "QuickVO.PeerConnectionType",
+                        "usr": "s:7QuickVO18PeerConnectionTypeO"
                       }
                     ]
                   }
@@ -16443,49 +16899,36 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RTCParticipantAtionO11videoEnableyACSbcACmF",
-            "mangledName": "$s7QuickVO19RTCParticipantAtionO11videoEnableyACSbcACmF",
+            "usr": "s:7QuickVO18PeerConnectionTypeO7p2p_ingyA2CmF",
+            "mangledName": "$s7QuickVO18PeerConnectionTypeO7p2p_ingyA2CmF",
             "moduleName": "QuickVO"
           },
           {
             "kind": "Var",
-            "name": "screenShare",
-            "printedName": "screenShare",
+            "name": "p2p",
+            "printedName": "p2p",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(QuickVO.RTCParticipantAtion.Type) -> (Swift.Bool) -> QuickVO.RTCParticipantAtion",
+                "printedName": "(QuickVO.PeerConnectionType.Type) -> QuickVO.PeerConnectionType",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> QuickVO.RTCParticipantAtion",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "PeerConnectionType",
+                    "printedName": "QuickVO.PeerConnectionType",
+                    "usr": "s:7QuickVO18PeerConnectionTypeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "QuickVO.RTCParticipantAtion.Type",
+                    "printedName": "QuickVO.PeerConnectionType.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "RTCParticipantAtion",
-                        "printedName": "QuickVO.RTCParticipantAtion",
-                        "usr": "s:7QuickVO19RTCParticipantAtionO"
+                        "name": "PeerConnectionType",
+                        "printedName": "QuickVO.PeerConnectionType",
+                        "usr": "s:7QuickVO18PeerConnectionTypeO"
                       }
                     ]
                   }
@@ -16493,18 +16936,91 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7QuickVO19RTCParticipantAtionO11screenShareyACSbcACmF",
-            "mangledName": "$s7QuickVO19RTCParticipantAtionO11screenShareyACSbcACmF",
+            "usr": "s:7QuickVO18PeerConnectionTypeO3p2pyA2CmF",
+            "mangledName": "$s7QuickVO18PeerConnectionTypeO3p2pyA2CmF",
             "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.PeerConnectionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PeerConnectionType",
+                    "printedName": "QuickVO.PeerConnectionType",
+                    "usr": "s:7QuickVO18PeerConnectionTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO18PeerConnectionTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s7QuickVO18PeerConnectionTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18PeerConnectionTypeO8rawValueSSvp",
+            "mangledName": "$s7QuickVO18PeerConnectionTypeO8rawValueSSvp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18PeerConnectionTypeO8rawValueSSvg",
+                "mangledName": "$s7QuickVO18PeerConnectionTypeO8rawValueSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
-        "usr": "s:7QuickVO19RTCParticipantAtionO",
-        "mangledName": "$s7QuickVO19RTCParticipantAtionO",
+        "usr": "s:7QuickVO18PeerConnectionTypeO",
+        "mangledName": "$s7QuickVO18PeerConnectionTypeO",
         "moduleName": "QuickVO",
         "declAttributes": [
           "AccessControl"
         ],
+        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -16519,136 +17035,42 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PaticipantForbidAction",
-        "printedName": "PaticipantForbidAction",
-        "children": [
+          },
           {
-            "kind": "Var",
-            "name": "audioForbid",
-            "printedName": "audioForbid",
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.PaticipantForbidAction.Type) -> (Swift.Bool) -> QuickVO.PaticipantForbidAction",
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> QuickVO.PaticipantForbidAction",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaticipantForbidAction",
-                        "printedName": "QuickVO.PaticipantForbidAction",
-                        "usr": "s:7QuickVO22PaticipantForbidActionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  },
-                  {
                     "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.PaticipantForbidAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaticipantForbidAction",
-                        "printedName": "QuickVO.PaticipantForbidAction",
-                        "usr": "s:7QuickVO22PaticipantForbidActionO"
-                      }
-                    ]
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ]
               }
             ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO22PaticipantForbidActionO05audioD0yACSbcACmF",
-            "mangledName": "$s7QuickVO22PaticipantForbidActionO05audioD0yACSbcACmF",
-            "moduleName": "QuickVO"
-          },
-          {
-            "kind": "Var",
-            "name": "videoForbid",
-            "printedName": "videoForbid",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(QuickVO.PaticipantForbidAction.Type) -> (Swift.Bool) -> QuickVO.PaticipantForbidAction",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> QuickVO.PaticipantForbidAction",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaticipantForbidAction",
-                        "printedName": "QuickVO.PaticipantForbidAction",
-                        "usr": "s:7QuickVO22PaticipantForbidActionO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "QuickVO.PaticipantForbidAction.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaticipantForbidAction",
-                        "printedName": "QuickVO.PaticipantForbidAction",
-                        "usr": "s:7QuickVO22PaticipantForbidActionO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:7QuickVO22PaticipantForbidActionO05videoD0yACSbcACmF",
-            "mangledName": "$s7QuickVO22PaticipantForbidActionO05videoD0yACSbcACmF",
-            "moduleName": "QuickVO"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:7QuickVO22PaticipantForbidActionO",
-        "mangledName": "$s7QuickVO22PaticipantForbidActionO",
-        "moduleName": "QuickVO",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -30091,98 +30513,98 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 724,
+      "offset": 721,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 667,
+      "offset": 664,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 671,
+      "offset": 668,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 1350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3350,
+      "offset": 3269,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3568,
+      "offset": 3474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3615,
+      "offset": 3521,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 3831,
+      "offset": 3737,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 3888,
+      "offset": 3794,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3922,
+      "offset": 3878,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4004,
+      "offset": 3960,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4060,
+      "offset": 4016,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4200,
+      "offset": 4156,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 4660,
+      "offset": 4565,
       "length": 4,
       "value": "true"
     },
@@ -30413,7 +30835,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 353,
+      "offset": 352,
       "length": 5,
       "value": "false"
     },
