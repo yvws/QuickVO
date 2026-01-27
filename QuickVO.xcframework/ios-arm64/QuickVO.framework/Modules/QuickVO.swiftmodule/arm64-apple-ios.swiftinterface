@@ -263,10 +263,12 @@ extension QuickVO.RTCRoom {
   final public func unSubscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
   final public func publishStream() async throws
   final public func startScreenShare(_ appGroup: Swift.String) async throws
+  final public func unsubscribeP2P(_ user: Swift.String) async throws
 }
 extension QuickVO.RTCRoom {
   final public func setRoomAudioVolume(_ volum: Swift.Double)
   final public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
+  final public func updateSpeech(_ option: QuickVO.RoomSpeechOption) async
 }
 extension QuickVO.RTCRoom {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -603,8 +605,10 @@ public struct RoomLocalOption : Swift.Sendable {
 public struct RoomSpeechOption : Swift.Sendable {
   public var open: Swift.Bool
   public var lang: Swift.String?
+  public var targetLang: Swift.String?
+  public var translate: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(open: Swift.Bool? = false, lang: Swift.String? = nil)
+  public init(open: Swift.Bool? = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool? = false)
   #endif
 }
 @_hasMissingDesignatedInitializers open class RTCParticipant {
