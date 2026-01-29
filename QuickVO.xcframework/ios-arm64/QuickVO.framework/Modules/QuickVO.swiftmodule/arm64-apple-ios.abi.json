@@ -7157,6 +7157,43 @@
             "moduleName": "QuickVO"
           },
           {
+            "kind": "Var",
+            "name": "auto",
+            "printedName": "auto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCVideoMirror.Type) -> QuickVO.RTCVideoMirror",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCVideoMirror",
+                    "printedName": "QuickVO.RTCVideoMirror",
+                    "usr": "s:7QuickVO14RTCVideoMirrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCVideoMirror.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCVideoMirror",
+                        "printedName": "QuickVO.RTCVideoMirror",
+                        "usr": "s:7QuickVO14RTCVideoMirrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14RTCVideoMirrorO4autoyA2CmF",
+            "mangledName": "$s7QuickVO14RTCVideoMirrorO4autoyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -18706,6 +18743,27 @@
           },
           {
             "kind": "Function",
+            "name": "restartAudio",
+            "printedName": "restartAudio()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO19LocalRTCParticipantC12restartAudioyyF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC12restartAudioyyF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "playAudio",
             "printedName": "playAudio(_:_:)",
             "children": [
@@ -26435,7 +26493,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RoomVideoTrack.swift",
       "kind": "BooleanLiteral",
-      "offset": 801,
+      "offset": 269,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RoomVideoTrack.swift",
+      "kind": "BooleanLiteral",
+      "offset": 839,
       "length": 5,
       "value": "false"
     },
@@ -26526,7 +26591,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCVideoView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5286,
+      "offset": 5341,
       "length": 5,
       "value": "false"
     },
@@ -30810,77 +30875,77 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 552,
-      "length": 4,
-      "value": "true"
+      "offset": 548,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 733,
+      "offset": 730,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2213,
+      "offset": 2210,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2232,
+      "offset": 2229,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2252,
+      "offset": 2249,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2397,
+      "offset": 2394,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2355,
+      "offset": 2352,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2359,
+      "offset": 2356,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2457,
+      "offset": 2454,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2415,
+      "offset": 2412,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2419,
+      "offset": 2416,
       "length": 1,
       "value": "1"
     },
