@@ -613,7 +613,10 @@ public struct RoomSpeechOption : Swift.Sendable {
   #endif
 }
 @_hasMissingDesignatedInitializers open class RTCParticipant {
-  weak public var delegate: (any QuickVO.RTCParticipantDelegate)?
+  weak public var delegate: (any QuickVO.RTCParticipantDelegate)? {
+    get
+    set
+  }
   weak public var debugDelegate: (any QuickVO.RTCParticipantDebugDelegate)?
   public var id: Swift.String {
     get
