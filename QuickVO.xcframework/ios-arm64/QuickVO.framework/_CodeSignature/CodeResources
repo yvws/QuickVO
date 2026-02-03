@@ -10,15 +10,15 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		cWXRuo4DHCOdNCzELVc+VUm2hUs=
+		PzCM8WW2yGQJwif0cTmlW7wLljc=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		d27LoQOO3gPzgMal89MykwWcf2U=
+		Uqg+JJyzkPLhgp2tvy2x4rUzvCA=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Ib4yxVE49mJc1onZwyHKVjtEdGQ=
+		SmEO5hz7gIoBKfptUEINnS6/Oek=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Ib4yxVE49mJc1onZwyHKVjtEdGQ=
+		SmEO5hz7gIoBKfptUEINnS6/Oek=
 		</data>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4VvbD/5kTKVbFwFuOMq/FoxmRAc=
+		nV5sNoYxbZdBpgQgvKBycpyYOkY=
 		</data>
 		<key>default.metallib</key>
 		<data>
@@ -43,21 +43,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hgPveR1fvq6qSAAYyvygD3LLcSkT0OjN4x3qjX5E368=
+			0KhT5G74Qe0iM5gJf0rMUMe3UvS0WfM0rCjWuQl4eH0=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			khbyn5J2p0H7n6jKMPBqKHGRgIWqeTcSuXrxF3zfoyg=
+			x0sd556VsSZHvZC4sH8auJ3CZKOZ8KV3RDW6mq+lA7s=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGIx+2v+ojx+YBlqF/unKKgrQrW6J2ychdt7O2heUKM=
+			hwf8cRqZI71ApGT5CLxNwUlVJQzwCT5HB031eHlBVP4=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -71,14 +71,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGIx+2v+ojx+YBlqF/unKKgrQrW6J2ychdt7O2heUKM=
+			hwf8cRqZI71ApGT5CLxNwUlVJQzwCT5HB031eHlBVP4=
 			</data>
 		</dict>
 		<key>Modules/QuickVO.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RyC72IEFvl/9t4gT9B4DYSbVZtZLeGJGvfiwF8AQUPA=
+			oGWk9BQ1YeaX0xIZ6/UloOdkknWl6hGbDJAwrxvo6S0=
 			</data>
 		</dict>
 		<key>default.metallib</key>

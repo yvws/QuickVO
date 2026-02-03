@@ -264,6 +264,7 @@ extension QuickVO.RTCRoom {
   final public func publishStream() async throws
   final public func startScreenShare(_ appGroup: Swift.String) async throws
   final public func unsubscribeP2P(_ user: Swift.String) async throws
+  final public func resetConfig(config: QuickVO.RTCConfig)
 }
 extension QuickVO.RTCRoom {
   final public func setRoomAudioVolume(_ volum: Swift.Double)
@@ -589,7 +590,7 @@ public enum RoomVideoRrocessMode {
 }
 public struct RTCConfig {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String]?)
+  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil)
   #endif
 }
 public struct RoomLocalOption : Swift.Sendable {
@@ -740,6 +741,7 @@ extension QuickVO.RoomError {
 }
 public enum ConnectError : QuickVO.RoomError {
   case connectError(Swift.Int32, _: Swift.String? = nil)
+  case connectFailure(Swift.Int32)
   case connectTimeOut(_: Swift.String? = nil)
   case disConnected
   case publishStreamFailure([QuickVO.RoomTrackType])
