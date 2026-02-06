@@ -26704,28 +26704,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 1076,
+      "offset": 1080,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1697,
+      "offset": 1701,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2458,
+      "offset": 2462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+P2P.swift",
       "kind": "BooleanLiteral",
-      "offset": 9628,
+      "offset": 9636,
       "length": 4,
       "value": "true"
     },
@@ -27103,56 +27103,56 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 4538,
+      "offset": 4510,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5566,
+      "offset": 5538,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5943,
+      "offset": 5915,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 6020,
+      "offset": 5992,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 6025,
+      "offset": 5997,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9290,
+      "offset": 9262,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9728,
+      "offset": 9700,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9747,
+      "offset": 9719,
       "length": 2,
       "value": "10"
     },
@@ -31765,63 +31765,42 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4469,
+      "offset": 4559,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4496,
+      "offset": 4586,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4529,
+      "offset": 4619,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "Array",
-      "offset": 4570,
+      "offset": 4660,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4598,
+      "offset": 4688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4623,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4652,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4679,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4708,
+      "offset": 4713,
       "length": 5,
       "value": "false"
     },
@@ -31835,35 +31814,63 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4774,
+      "offset": 4769,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 4808,
+      "offset": 4798,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4827,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4854,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4883,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5273,
+      "offset": 5396,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5321,
+      "offset": 5444,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5369,
+      "offset": 5492,
       "length": 11,
       "value": "10000000"
     },
@@ -32421,30 +32428,37 @@
       "value": "4010"
     },
     {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11857,
+      "length": 4,
+      "value": "2116"
+    },
+    {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 4599,
+      "offset": 4755,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 5957,
+      "offset": 6113,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 5980,
+      "offset": 6136,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 10799,
+      "offset": 10955,
       "length": 4,
       "value": "true"
     },
