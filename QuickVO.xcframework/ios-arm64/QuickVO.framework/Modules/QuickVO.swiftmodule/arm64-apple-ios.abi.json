@@ -26844,252 +26844,252 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1831,
+      "offset": 1872,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1858,
+      "offset": 1899,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2018,
+      "offset": 2059,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2045,
+      "offset": 2086,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2081,
+      "offset": 2122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2478,
+      "offset": 2519,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 2652,
+      "offset": 2693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2718,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2753,
+      "offset": 2794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2780,
+      "offset": 2821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 2916,
+      "offset": 2957,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 2943,
+      "offset": 2984,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 2969,
+      "offset": 3010,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 2999,
+      "offset": 3040,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3031,
+      "offset": 3072,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3061,
+      "offset": 3102,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3097,
+      "offset": 3138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3129,
+      "offset": 3170,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3155,
+      "offset": 3196,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3183,
+      "offset": 3224,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3304,
+      "offset": 3345,
       "length": 59,
       "value": "\"handleNet value \""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3330,
+      "offset": 3371,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3340,
+      "offset": 3381,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3349,
+      "offset": 3390,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3362,
+      "offset": 3403,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3419,
+      "offset": 3460,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3430,
+      "offset": 3471,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3438,
+      "offset": 3479,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3451,
+      "offset": 3492,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3479,
+      "offset": 3520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3553,
+      "offset": 3594,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3560,
+      "offset": 3601,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3564,
+      "offset": 3605,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3605,
-      "length": 1,
-      "value": "3"
+      "kind": "FloatLiteral",
+      "offset": 3646,
+      "length": 3,
+      "value": "3.3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3628,
+      "offset": 3671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3676,
+      "offset": 3719,
       "length": 4,
       "value": "true"
     },
@@ -27137,50 +27137,71 @@
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "StringLiteral",
+      "offset": 4584,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "StringLiteral",
+      "offset": 4630,
+      "length": 54,
+      "value": "\"qualityLimitationReason \""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "StringLiteral",
+      "offset": 4683,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5538,
+      "offset": 5724,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5915,
+      "offset": 6101,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5992,
+      "offset": 6178,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 5997,
+      "offset": 6183,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9262,
+      "offset": 9448,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10232,
+      "offset": 10418,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10251,
+      "offset": 10437,
       "length": 2,
       "value": "10"
     },
@@ -31240,105 +31261,105 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 1022,
+      "offset": 1025,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 965,
+      "offset": 968,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 969,
+      "offset": 972,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 1651,
+      "offset": 1654,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3570,
+      "offset": 3573,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3775,
+      "offset": 3778,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 3822,
+      "offset": 3825,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 4038,
+      "offset": 4041,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 4095,
+      "offset": 4098,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 4179,
+      "offset": 4182,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4261,
+      "offset": 4264,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4317,
+      "offset": 4322,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4457,
+      "offset": 4462,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 4551,
+      "offset": 4556,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 4906,
+      "offset": 4922,
       "length": 4,
       "value": "true"
     },
@@ -31555,28 +31576,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 6069,
+      "offset": 6129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 8833,
+      "offset": 8814,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 12045,
+      "offset": 12026,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 14834,
+      "offset": 14815,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -32465,28 +32486,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 4755,
+      "offset": 4914,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 6113,
+      "offset": 6272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 6136,
+      "offset": 6295,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 10955,
+      "offset": 11117,
       "length": 4,
       "value": "true"
     },
