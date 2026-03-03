@@ -156,6 +156,17 @@ extension QuickVO.ScreenRecorder {
   }
   public init(_ key: Swift.String, defaultV: T)
 }
+@propertyWrapper public struct RoundedTwoDecimal<Value> where Value : Swift.BinaryFloatingPoint {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(wrappedValue: Value?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var wrappedValue: Value? {
+    get
+    set
+  }
+  #endif
+}
 public enum RTCRoomConnect : Swift.Equatable {
   case none
   case disConnect
@@ -439,8 +450,20 @@ public enum RTCStatisLevel : Swift.Int {
 public struct NetMonitorValue {
   public var up: QuickVO.RTCStatisLevel
   public var donw: QuickVO.RTCStatisLevel
-  public var netUp: Swift.Float?
-  public var netDown: Swift.Float?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @QuickVO.RoundedTwoDecimal public var netUp: Swift.Float? {
+    get
+    set
+    _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @QuickVO.RoundedTwoDecimal public var netDown: Swift.Float? {
+    get
+    set
+    _modify
+  }
+  #endif
   public var lost: Swift.Double
   public var downlost: Swift.Double
   public var RoundTripTime: Swift.Float?
@@ -610,7 +633,7 @@ public struct RoomSpeechOption : Swift.Sendable {
   public var targetLang: Swift.String?
   public var translate: Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(open: Swift.Bool? = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool? = false)
+  public init(open: Swift.Bool = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool = false)
   #endif
 }
 @_hasMissingDesignatedInitializers open class RTCParticipant {
@@ -784,9 +807,7 @@ public typealias RTCViewType = UIKit.UIView
   }
 }
 extension QuickVO.RoomNetUtils {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func startPing(_ time: Swift.UInt64? = 3) async throws -> QuickVO.RoomNetUtils.PingData
-  #endif
+  public func startPing(_ time: Swift.UInt64 = 3) async throws -> QuickVO.RoomNetUtils.PingData
   public func stopPing()
 }
 extension Foundation.Data {
@@ -946,9 +967,7 @@ final public class RTCRoomConfig {
   public static let config: QuickVO.RTCRoomConfig
   final public var video: QuickVO.RoomVideoCaptureConfig
   final public var audio: QuickVO.RoomAudioCaptureConfig
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(video: QuickVO.RoomVideoCaptureConfig? = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig? = RTCRoomConfig.defaultAudio)
-  #endif
+  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio)
   @objc deinit
 }
 extension QuickVO.RTCRoomConfig {
