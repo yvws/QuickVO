@@ -17670,6 +17670,523 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "RTCLogLevel",
+        "printedName": "RTCLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO7verboseyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO7verboseyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO5debugyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO5debugyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO4infoyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO4infoyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "critical",
+            "printedName": "critical",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO8criticalyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO8criticalyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO7warningyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO7warningyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO5erroryA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO5erroryA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "fault",
+            "printedName": "fault",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCLogLevel.Type) -> QuickVO.RTCLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogLevel",
+                        "printedName": "QuickVO.RTCLogLevel",
+                        "usr": "s:7QuickVO11RTCLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO11RTCLogLevelO5faultyA2CmF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO5faultyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCLogLevel",
+                "printedName": "QuickVO.RTCLogLevel",
+                "usr": "s:7QuickVO11RTCLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCLogLevel",
+                "printedName": "QuickVO.RTCLogLevel",
+                "usr": "s:7QuickVO11RTCLogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO11RTCLogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7QuickVO11RTCLogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO11RTCLogLevelO9hashValueSivp",
+            "mangledName": "$s7QuickVO11RTCLogLevelO9hashValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO11RTCLogLevelO9hashValueSivg",
+                "mangledName": "$s7QuickVO11RTCLogLevelO9hashValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO11RTCLogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7QuickVO11RTCLogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO11RTCLogLevelO",
+        "mangledName": "$s7QuickVO11RTCLogLevelO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RTCLogEntry",
+        "printedName": "RTCLogEntry",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "level",
+            "printedName": "level",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCLogLevel",
+                "printedName": "QuickVO.RTCLogLevel",
+                "usr": "s:7QuickVO11RTCLogLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO11RTCLogEntryV5levelAA0C5LevelOvp",
+            "mangledName": "$s7QuickVO11RTCLogEntryV5levelAA0C5LevelOvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCLogLevel",
+                    "printedName": "QuickVO.RTCLogLevel",
+                    "usr": "s:7QuickVO11RTCLogLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO11RTCLogEntryV5levelAA0C5LevelOvg",
+                "mangledName": "$s7QuickVO11RTCLogEntryV5levelAA0C5LevelOvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO11RTCLogEntryV7messageSSvp",
+            "mangledName": "$s7QuickVO11RTCLogEntryV7messageSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO11RTCLogEntryV7messageSSvg",
+                "mangledName": "$s7QuickVO11RTCLogEntryV7messageSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO11RTCLogEntryV",
+        "mangledName": "$s7QuickVO11RTCLogEntryV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "RTCEngine",
         "printedName": "RTCEngine",
         "children": [
@@ -17765,6 +18282,162 @@
                   "Final"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onLog",
+            "printedName": "onLog",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((QuickVO.RTCLogEntry) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RTCLogEntry) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCLogEntry",
+                        "printedName": "QuickVO.RTCLogEntry",
+                        "usr": "s:7QuickVO11RTCLogEntryV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvp",
+            "mangledName": "$s7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((QuickVO.RTCLogEntry) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickVO.RTCLogEntry) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RTCLogEntry",
+                            "printedName": "QuickVO.RTCLogEntry",
+                            "usr": "s:7QuickVO11RTCLogEntryV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvg",
+                "mangledName": "$s7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((QuickVO.RTCLogEntry) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(QuickVO.RTCLogEntry) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "RTCLogEntry",
+                            "printedName": "QuickVO.RTCLogEntry",
+                            "usr": "s:7QuickVO11RTCLogEntryV"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvs",
+                "mangledName": "$s7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvM",
+                "mangledName": "$s7QuickVO9RTCEngineC5onLogyAA11RTCLogEntryVcSgvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -26850,28 +27523,28 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1710,
+      "offset": 1697,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2158,
+      "offset": 2191,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2653,
+      "offset": 2686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+P2P.swift",
       "kind": "BooleanLiteral",
-      "offset": 9808,
+      "offset": 9783,
       "length": 4,
       "value": "true"
     },
@@ -27298,21 +27971,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9480,
+      "offset": 9471,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10450,
+      "offset": 10441,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10469,
+      "offset": 10460,
       "length": 2,
       "value": "10"
     },
@@ -31141,63 +31814,63 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2172,
+      "offset": 2211,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2191,
+      "offset": 2230,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2211,
+      "offset": 2250,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2356,
+      "offset": 2395,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2314,
+      "offset": 2353,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2318,
+      "offset": 2357,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "FloatLiteral",
-      "offset": 2416,
+      "offset": 2455,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2374,
+      "offset": 2413,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Config\/AudioVideoConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 2378,
+      "offset": 2417,
       "length": 1,
       "value": "1"
     },
@@ -31491,63 +32164,63 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "StringLiteral",
-      "offset": 306,
+      "offset": 542,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 937,
+      "offset": 1273,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1328,
+      "offset": 1664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1360,
+      "offset": 1696,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1393,
+      "offset": 1729,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1436,
+      "offset": 1772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1456,
+      "offset": 1792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1477,
+      "offset": 1813,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RoomEngine\/RTCEngine.swift",
       "kind": "BooleanLiteral",
-      "offset": 1504,
+      "offset": 1840,
       "length": 5,
       "value": "false"
     },
@@ -31687,21 +32360,21 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11369,
+      "offset": 11361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 14884,
+      "offset": 14876,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 17728,
+      "offset": 17720,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -31918,154 +32591,154 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5020,
+      "offset": 5028,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5047,
+      "offset": 5055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5080,
+      "offset": 5088,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "Array",
-      "offset": 5121,
+      "offset": 5129,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5149,
+      "offset": 5157,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5174,
+      "offset": 5182,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5203,
+      "offset": 5211,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5230,
+      "offset": 5238,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5259,
+      "offset": 5267,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5288,
+      "offset": 5296,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5315,
+      "offset": 5323,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5344,
+      "offset": 5352,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5368,
+      "offset": 5376,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5399,
+      "offset": 5407,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5906,
+      "offset": 5932,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5954,
+      "offset": 5980,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6002,
+      "offset": 6028,
       "length": 11,
       "value": "10000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 340,
+      "offset": 1603,
       "length": 6,
       "value": "\".log\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 379,
+      "offset": 1642,
       "length": 4,
       "value": "\"qv\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 769,
+      "offset": 2032,
       "length": 4,
       "value": "\"qv\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "BooleanLiteral",
-      "offset": 799,
+      "offset": 2062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Utils\/Third\/Log.swift",
       "kind": "StringLiteral",
-      "offset": 6044,
+      "offset": 7350,
       "length": 9,
       "value": "\"RoomLog\""
     },
@@ -32548,42 +33221,42 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 8110,
+      "offset": 8123,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 8452,
+      "offset": 8465,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 8474,
+      "offset": 8487,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 12690,
+      "offset": 12974,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 12715,
+      "offset": 12999,
       "length": 4,
       "value": "4010"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 12742,
+      "offset": 13026,
       "length": 4,
       "value": "2116"
     },
@@ -32611,7 +33284,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 11300,
+      "offset": 11322,
       "length": 4,
       "value": "true"
     },
@@ -32821,7 +33494,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+Forbid.swift",
       "kind": "StringLiteral",
-      "offset": 2609,
+      "offset": 2611,
       "length": 17,
       "value": "\"RoomForbidParti\""
     },
@@ -33080,49 +33753,49 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13250,
+      "offset": 13242,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13465,
+      "offset": 13457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13848,
+      "offset": 13840,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13880,
+      "offset": 13872,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14092,
+      "offset": 14084,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14124,
+      "offset": 14116,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "StringLiteral",
-      "offset": 16227,
+      "offset": 16210,
       "length": 25,
       "value": "\"rtc.recorded.pcm.buffer\""
     },
@@ -33192,7 +33865,7 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RoomControl+NetEvent.swift",
       "kind": "Dictionary",
-      "offset": 13452,
+      "offset": 13433,
       "length": 3,
       "value": "[]"
     }

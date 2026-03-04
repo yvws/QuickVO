@@ -728,10 +728,32 @@ public enum PeerConnectionType : Swift.String {
     get
   }
 }
+public enum RTCLogLevel {
+  case verbose
+  case debug
+  case info
+  case critical
+  case warning
+  case error
+  case fault
+  public static func == (a: QuickVO.RTCLogLevel, b: QuickVO.RTCLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RTCLogEntry {
+  public let level: QuickVO.RTCLogLevel
+  public let message: Swift.String
+}
 @_hasMissingDesignatedInitializers final public class RTCEngine {
   public static let engine: QuickVO.RTCEngine
   final public var appId: Swift.String {
     get
+  }
+  final public var onLog: ((QuickVO.RTCLogEntry) -> Swift.Void)? {
+    get
+    set
   }
   final public var netStatus: ((QuickVO.NetworkMotorStatus) -> Swift.Void)?
   final public var netType: ((QuickVO.NetworkMotorType) -> Swift.Void)?
@@ -1037,6 +1059,8 @@ extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
 extension QuickVO.PeerConnectionType : Swift.Equatable {}
 extension QuickVO.PeerConnectionType : Swift.Hashable {}
 extension QuickVO.PeerConnectionType : Swift.RawRepresentable {}
+extension QuickVO.RTCLogLevel : Swift.Equatable {}
+extension QuickVO.RTCLogLevel : Swift.Hashable {}
 extension QuickVO.NetworkMotorType : Swift.Equatable {}
 extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
