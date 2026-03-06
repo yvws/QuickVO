@@ -796,6 +796,7 @@ public enum ConnectError : QuickVO.RoomError {
   case noAuth
   case joined
   case roomReleased
+  case trackNotPublished([QuickVO.RoomUserSubData])
   public var description: Swift.String {
     get
   }
