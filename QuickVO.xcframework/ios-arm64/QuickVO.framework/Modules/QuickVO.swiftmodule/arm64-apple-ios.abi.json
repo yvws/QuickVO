@@ -32466,14 +32466,14 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 15711,
+      "offset": 15350,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 18555,
+      "offset": 19115,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -32774,35 +32774,42 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 5240,
+      "offset": 5248,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5272,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5271,
+      "offset": 5303,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5796,
+      "offset": 5860,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5844,
+      "offset": 5908,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5892,
+      "offset": 5956,
       "length": 11,
       "value": "10000000"
     },
@@ -33852,49 +33859,49 @@
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13385,
+      "offset": 13576,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13600,
+      "offset": 13791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13983,
+      "offset": 14174,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14015,
+      "offset": 14206,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14227,
+      "offset": 14418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14259,
+      "offset": 14450,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-0523\/Desktop\/QuickVO\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "StringLiteral",
-      "offset": 16353,
+      "offset": 16544,
       "length": 25,
       "value": "\"rtc.recorded.pcm.buffer\""
     },
