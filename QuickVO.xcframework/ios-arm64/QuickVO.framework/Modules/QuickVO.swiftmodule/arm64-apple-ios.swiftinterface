@@ -74,6 +74,7 @@ public enum RTCParticipantAtion {
 public enum PaticipantForbidAction {
   case audioForbid(Swift.Bool)
   case videoForbid(Swift.Bool)
+  case screenForbid(Swift.Bool)
 }
 public protocol RTCParticipantDelegate : AnyObject {
   func addVideoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomVideoTrack)
@@ -83,6 +84,7 @@ public protocol RTCParticipantDelegate : AnyObject {
   func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
   func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
   func speechString(_ participant: QuickVO.RTCParticipant, _ string: QuickVO.RoomSpeechData)
+  func permissionsChanged(_ participant: QuickVO.RTCParticipant)
 }
 extension QuickVO.RTCParticipantDelegate {
   public func addAuidoTrack(_ participant: QuickVO.RTCParticipant, _ track: QuickVO.RoomAudioTrack)
@@ -91,6 +93,7 @@ extension QuickVO.RTCParticipantDelegate {
   public func network(_ participant: QuickVO.RTCParticipant, _ net: QuickVO.NetMonitorValue)
   public func forbid(_ participant: QuickVO.RTCParticipant, _ action: QuickVO.PaticipantForbidAction)
   public func speechString(_ participant: QuickVO.RTCParticipant, _ string: QuickVO.RoomSpeechData)
+  public func permissionsChanged(_ participant: QuickVO.RTCParticipant)
 }
 public protocol RTCParticipantDebugDelegate : AnyObject {
   func p2pChange(_ participant: QuickVO.RTCParticipant)
@@ -208,6 +211,16 @@ public enum RoomScene : Swift.Sendable {
     get
   }
 }
+public enum RoomForbid : Swift.Sendable, Swift.Hashable {
+  case audio
+  case video
+  case screen
+  public static func == (a: QuickVO.RoomForbid, b: QuickVO.RoomForbid) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum StreamType : Swift.Sendable {
   case auto
   case manual
@@ -255,6 +268,9 @@ final public class RTCRoom {
   }
   final public var localPartipant: QuickVO.LocalRTCParticipant {
     get
+  }
+  final public var total: Swift.Int {
+    get async
   }
   #if compiler(>=5.3) && $NonescapableTypes
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
@@ -696,6 +712,10 @@ public struct RoomSpeechOption : Swift.Sendable {
     get
     set
   }
+  public var screenForbid: Swift.Bool {
+    get
+    set
+  }
   @objc deinit
 }
 extension QuickVO.RTCParticipant {
@@ -793,6 +813,7 @@ public enum ConnectError : QuickVO.RoomError {
   case subscribeStreamFailure([QuickVO.RoomUserSubData])
   case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
   case startScreenShareWithoutGroupId
+  case screenForbid
   case noAuth
   case joined
   case roomReleased
@@ -921,6 +942,8 @@ public protocol RTCRoomDelegate : AnyObject {
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
+  func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ added: Swift.Set<QuickVO.RoomForbid>, _ removed: Swift.Set<QuickVO.RoomForbid>)
+  func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
@@ -936,6 +959,8 @@ extension QuickVO.RTCRoomDelegate {
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
   public func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
+  public func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ added: Swift.Set<QuickVO.RoomForbid>, _ removed: Swift.Set<QuickVO.RoomForbid>)
+  public func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
 }
 public struct RoomLivePlaybackUrls : Swift.Sendable {
   public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
