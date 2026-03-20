@@ -211,11 +211,15 @@ public enum RoomScene : Swift.Sendable {
     get
   }
 }
-public enum RoomForbid : Swift.Sendable, Swift.Hashable {
+public enum RoomForbid : Swift.Sendable, Swift.Hashable, Swift.CaseIterable {
   case audio
   case video
   case screen
   public static func == (a: QuickVO.RoomForbid, b: QuickVO.RoomForbid) -> Swift.Bool
+  public typealias AllCases = [QuickVO.RoomForbid]
+  nonisolated public static var allCases: [QuickVO.RoomForbid] {
+    get
+  }
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -923,12 +927,19 @@ extension QuickVO.LocalRTCParticipant {
   final public func enableCamera(_ enable: Swift.Bool)
   final public func startPreview(_ render: QuickVO.RoomVideoView) async
 }
+public struct RoomForbidLatestAction : Swift.Sendable {
+  public let action: QuickVO.RoomForbid
+  public let forbid: Swift.Bool
+  public init(action: QuickVO.RoomForbid, forbid: Swift.Bool)
+}
 public protocol RTCRoomDelegate : AnyObject {
   func roomError(_ error: any Swift.Error)
   func tokenExpired()
   func tokenWillExpired()
   func roomStatus(_ status: QuickVO.RTCRoomConnect)
   func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
+  func didJoinBootTime(_ bootTime: Swift.String)
+  func didQuitBootTime(_ bootTime: Swift.String)
   func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   #if compiler(>=5.3) && $NonescapableTypes
@@ -942,13 +953,15 @@ public protocol RTCRoomDelegate : AnyObject {
   func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
   func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
-  func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ added: Swift.Set<QuickVO.RoomForbid>, _ removed: Swift.Set<QuickVO.RoomForbid>)
+  func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
   func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
 }
 extension QuickVO.RTCRoomDelegate {
   public func roomStatus(_ status: QuickVO.RTCRoomConnect)
   public func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
   public func roomError(_ error: any Swift.Error)
+  public func didJoinBootTime(_ bootTime: Swift.String)
+  public func didQuitBootTime(_ bootTime: Swift.String)
   public func tokenExpired()
   public func tokenWillExpired()
   public func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
@@ -959,7 +972,7 @@ extension QuickVO.RTCRoomDelegate {
   public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
   public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
   public func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
-  public func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ added: Swift.Set<QuickVO.RoomForbid>, _ removed: Swift.Set<QuickVO.RoomForbid>)
+  public func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
   public func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
 }
 public struct RoomLivePlaybackUrls : Swift.Sendable {
