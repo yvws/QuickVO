@@ -1,9 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
-import AVFAudio
-import AVFoundation
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+@preconcurrency import AVFAudio
+@preconcurrency import AVFoundation
 import Accelerate
 import AudioToolbox
 import BackgroundTasks
@@ -19,13 +19,14 @@ import Foundation
 import Metal
 import MetalKit
 import Network
+@_exported import QuickVO
 import ReplayKit
 import Swift
 import Synchronization
 import UIKit
 import Vision
 import VisionKit
-import WebRTC
+@preconcurrency import WebRTC
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -52,9 +53,7 @@ public protocol LocalPreviewViewDelegate : AnyObject {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class LocalPreviewView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any QuickVO.LocalPreviewViewDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension QuickVO.LocalPreviewView {
@@ -104,9 +103,7 @@ public struct RoomSpeechData {
 extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable {
 }
 @_hasMissingDesignatedInitializers public actor TimeoutSubject {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
-  #endif
   public func cancel()
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -121,9 +118,7 @@ extension QuickVO.ScreenRecorder {
   public func startRecord() async
   @available(iOS 14.0, *)
   public func stopRecord(_ url: Foundation.URL) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   public func stopRecord(_ handle: ((ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
 }
 @propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
   public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
@@ -133,24 +128,18 @@ extension QuickVO.ScreenRecorder {
   }
 }
 @propertyWrapper public struct Unique<T> where T : Swift.Equatable {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var wrappedValue: T? {
     get
     set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(wrappedValue: T?)
-  #endif
 }
 @propertyWrapper public struct Validated<Value> {
   public init(wrappedValue: Value, validator: @escaping (Value) -> Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   public var wrappedValue: Value? {
     get
     set
   }
-  #endif
 }
 @propertyWrapper public struct UserDfaultsWrapper<T> {
   public var wrappedValue: T {
@@ -160,15 +149,11 @@ extension QuickVO.ScreenRecorder {
   public init(_ key: Swift.String, defaultV: T)
 }
 @propertyWrapper public struct RoundedTwoDecimal<Value> where Value : Swift.BinaryFloatingPoint {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(wrappedValue: Value?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var wrappedValue: Value? {
     get
     set
   }
-  #endif
 }
 public enum RTCRoomConnect : Swift.Equatable {
   case none
@@ -258,9 +243,7 @@ public struct RoomUserSubData {
   public var id: Swift.String
   public var track: [QuickVO.RoomTrackType]
   public var simucast: QuickVO.SimulcastType?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String = "", track: [QuickVO.RoomTrackType] = [], simucast: QuickVO.SimulcastType? = nil)
-  #endif
 }
 final public class RTCRoom {
   weak final public var delegate: (any QuickVO.RTCRoomDelegate)?
@@ -276,16 +259,12 @@ final public class RTCRoom {
   final public var total: Swift.Int {
     get async
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
-  #endif
   @objc deinit
 }
 extension QuickVO.RTCRoom {
   final public func connect() async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  #endif
   final public func join(_ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
   final public func quit() async
   final public func quitStayConnected() async throws
@@ -303,10 +282,8 @@ extension QuickVO.RTCRoom {
   final public func updateSpeech(_ option: QuickVO.RoomSpeechOption) async
 }
 extension QuickVO.RTCRoom {
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, renamed: "localPartipant.switchCamera", message: "Use localPartipant.switchCamera instead")
   final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  #endif
   @available(*, deprecated, renamed: "localPartipant.enableSpeaker", message: "Use localPartipant.enableSpeaker instead")
   final public func enableSpeaker(_ enable: Swift.Bool)
   @available(*, deprecated, renamed: "localPartipant.speakerIsEnable", message: "Use localPartipant.speakerIsEnable instead")
@@ -389,12 +366,10 @@ extension QuickVO.RoomVideoDelegate {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public var backgroundColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
-  #endif
   @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool {
     get
     set
@@ -403,25 +378,19 @@ extension QuickVO.RoomVideoDelegate {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var rotationOverride: Foundation.NSValue? {
     get
     set
   }
-  #endif
   @_Concurrency.MainActor @preconcurrency public var renderMode: QuickVO.RoomVideoView.VideoRenderMode {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public var sampleBufferDisplayLayer: AVFoundation.AVSampleBufferDisplayLayer? {
     get
   }
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension QuickVO.RoomVideoView : WebRTC.RTCVideoViewDelegate {
@@ -459,9 +428,7 @@ public enum RTCStatisLevel : Swift.Int {
   case generally
   case good
   case veryGood
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -470,20 +437,16 @@ public enum RTCStatisLevel : Swift.Int {
 public struct NetMonitorValue {
   public var up: QuickVO.RTCStatisLevel
   public var donw: QuickVO.RTCStatisLevel
-  #if compiler(>=5.3) && $NonescapableTypes
-  @QuickVO.RoundedTwoDecimal public var netUp: Swift.Float? {
+  @QuickVO.RoundedTwoDecimal<Swift.Float> public var netUp: Swift.Float? {
     get
     set
     _modify
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @QuickVO.RoundedTwoDecimal public var netDown: Swift.Float? {
+  @QuickVO.RoundedTwoDecimal<Swift.Float> public var netDown: Swift.Float? {
     get
     set
     _modify
   }
-  #endif
   public var lost: Swift.Double
   public var downlost: Swift.Double
   public var RoundTripTime: Swift.Float?
@@ -496,9 +459,7 @@ public struct NetMonitorValue {
   public var mid: Swift.String?
 }
 public actor TaskActor<T> {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(task: ((T) async -> Swift.Void)?)
-  #endif
   public enum State : Swift.Sendable {
     case processing
     case paused
@@ -521,9 +482,7 @@ extension QuickVO.TaskActor {
   public func stop()
 }
 public actor DetachedTaskActor<T> {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(task: ((T) async -> Swift.Void)?)
-  #endif
   public enum State : Swift.Sendable {
     case processing
     case paused
@@ -589,9 +548,7 @@ public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
   case framerate
   case resolution
   case balanced
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [QuickVO.RoomVideodegradation]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [QuickVO.RoomVideodegradation] {
@@ -603,12 +560,12 @@ public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
 }
 @_hasMissingDesignatedInitializers final public class RoomVideoCropping {
   final public var aspectRatio: Swift.Float?
-  @QuickVO.Clamping final public var cropXRatio: Swift.Float {
+  @QuickVO.Clamping<Swift.Float> final public var cropXRatio: Swift.Float {
     get
     set
     _modify
   }
-  @QuickVO.Clamping final public var cropYRatio: Swift.Float {
+  @QuickVO.Clamping<Swift.Float> final public var cropYRatio: Swift.Float {
     get
     set
     _modify
@@ -618,9 +575,7 @@ public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
 public protocol RoomVideoCaptureDelegate : AnyObject {
   func processMode() -> QuickVO.RoomVideoRrocessMode
   func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
-  #if compiler(>=5.3) && $NonescapableTypes
   func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
-  #endif
 }
 public enum RoomVideoRrocessMode {
   case readOnly
@@ -632,9 +587,7 @@ public enum RoomVideoRrocessMode {
   }
 }
 public struct RTCConfig {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil)
-  #endif
 }
 public struct RoomLocalOption : Swift.Sendable {
   public var defaultStartCamera: Swift.Bool
@@ -652,9 +605,7 @@ public struct RoomSpeechOption : Swift.Sendable {
   public var lang: Swift.String?
   public var targetLang: Swift.String?
   public var translate: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(open: Swift.Bool = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool = false)
-  #endif
 }
 @_hasMissingDesignatedInitializers open class RTCParticipant {
   weak public var delegate: (any QuickVO.RTCParticipantDelegate)? {
@@ -671,7 +622,7 @@ public struct RoomSpeechOption : Swift.Sendable {
   public var videoTracks: [QuickVO.RoomVideoTrack] {
     get
   }
-  @QuickVO.Clamping public var audiollevel: Swift.Float {
+  @QuickVO.Clamping<Swift.Float> public var audiollevel: Swift.Float {
     get
   }
   public var audioEnable: Swift.Bool {
@@ -689,12 +640,10 @@ public struct RoomSpeechOption : Swift.Sendable {
   public var netMonitor: QuickVO.NetMonitorValue {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var volume: Swift.Double? {
     get
     set
   }
-  #endif
   public var joinTime: Swift.Int64 {
     get
   }
@@ -704,9 +653,7 @@ public struct RoomSpeechOption : Swift.Sendable {
   public var subscribeAuth: Swift.Bool {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getTrack(type: QuickVO.RoomTrackType) -> QuickVO.RoomTrack?
-  #endif
   public func getTrackType() -> [QuickVO.RoomTrackType]
   public var audioForbid: Swift.Bool {
     get
@@ -725,11 +672,9 @@ public struct RoomSpeechOption : Swift.Sendable {
 extension QuickVO.RTCParticipant {
   public func getP2PRStatis() -> [QuickVO.NetMonitorValue]
   public func getP2PSStatis() -> [QuickVO.NetMonitorValue]
-  #if compiler(>=5.3) && $NonescapableTypes
   public var candidateProtocol: Swift.String? {
     get
   }
-  #endif
   public var p2pConnectType: QuickVO.PeerConnectionType {
     get
   }
@@ -744,9 +689,7 @@ public enum PeerConnectionType : Swift.String {
   case none
   case p2p_ing
   case p2p
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -802,11 +745,9 @@ extension QuickVO.RTCEngine {
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
 extension QuickVO.RoomError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
 }
 public enum ConnectError : QuickVO.RoomError {
   case connectError(Swift.Int32, _: Swift.String? = nil)
@@ -829,10 +770,8 @@ public enum ConnectError : QuickVO.RoomError {
 public typealias RTCViewType = UIKit.UIView
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RTCView : QuickVO.RTCViewType {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, unavailable)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
   @_Concurrency.MainActor @preconcurrency open func performLayout()
   @objc deinit
@@ -887,9 +826,7 @@ public struct RoomAudioLevel {
   public func rmsLevelValue() -> Swift.Float
 }
 extension AVFAudio.AVAudioPCMBuffer {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func audioLevel() -> QuickVO.RoomAudioLevel?
-  #endif
 }
 extension QuickVO.LocalRTCParticipant {
   final public func enableMicrophone(_ enable: Swift.Bool)
@@ -906,9 +843,7 @@ extension QuickVO.LocalRTCParticipant {
   final public func stopAudio() async
   final public func setAudioVolume(_ volume: Swift.Float) async
   final public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
-  #endif
   final public func stopAll() async
 }
 extension QuickVO.LocalRTCParticipant {
@@ -921,9 +856,7 @@ extension QuickVO.LocalRTCParticipant {
   }
   final public func camerPosion() -> QuickVO.RTCCameraPosion
   final public func cameraIsEnable() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  #endif
   final public func enableCamera(_ enable: Swift.Bool)
   final public func startPreview(_ render: QuickVO.RoomVideoView) async
 }
@@ -942,9 +875,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func didQuitBootTime(_ bootTime: Swift.String)
   func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
-  #if compiler(>=5.3) && $NonescapableTypes
   func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
-  #endif
   func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
   func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
   func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
@@ -983,9 +914,7 @@ public struct RoomLivePlaybackUrls : Swift.Sendable {
     case chinaMainland
     case global
     case overseas
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]
     public typealias RawValue = Swift.Int
     nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation] {
@@ -998,9 +927,7 @@ public struct RoomLivePlaybackUrls : Swift.Sendable {
   public enum RoomLiveBilling : Swift.Int, Swift.CaseIterable, Swift.Sendable {
     case flow
     case time
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
-    #endif
     public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]
     public typealias RawValue = Swift.Int
     nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling] {
@@ -1016,9 +943,7 @@ public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
   case _90
   case _180
   case _270
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

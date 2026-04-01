@@ -12,7 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "QuickVO",
-            targets: ["QuickVOKit","QuickVO"]),
+            targets: ["QuickVOKit", "QuickVOFramework"]),
     ],
     dependencies: [
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.8"),
@@ -24,10 +24,10 @@ let package = Package(
         .package(url: "https://github.com/quickvo/gpupixel-iOS.git", .upToNextMinor(from: "1.2.0")),
     ],
     targets: [
-        .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
+        .binaryTarget(name: "QuickVOFramework", path: "QuickVOFramework.xcframework"),
         .target(name: "QuickVOKit",dependencies: [
             "Starscream",
-            "QuickVO",
+            "QuickVOFramework",
             "SwiftyBeaver",
             "SwiftNATDetector",
             .product(name: "SwiftProtobuf", package: "swift-protobuf"),
