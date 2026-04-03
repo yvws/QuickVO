@@ -117,6 +117,23 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -9373,6 +9390,16 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -10199,6 +10226,1123 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DCTrackStats",
+        "printedName": "DCTrackStats",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO12DCTrackStatsV4typeSSvp",
+            "mangledName": "$s7QuickVO12DCTrackStatsV4typeSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV4typeSSvg",
+                "mangledName": "$s7QuickVO12DCTrackStatsV4typeSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV4typeSSvs",
+                "mangledName": "$s7QuickVO12DCTrackStatsV4typeSSvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV4typeSSvM",
+                "mangledName": "$s7QuickVO12DCTrackStatsV4typeSSvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bandwidth",
+            "printedName": "bandwidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO12DCTrackStatsV9bandwidthSdvp",
+            "mangledName": "$s7QuickVO12DCTrackStatsV9bandwidthSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV9bandwidthSdvg",
+                "mangledName": "$s7QuickVO12DCTrackStatsV9bandwidthSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV9bandwidthSdvs",
+                "mangledName": "$s7QuickVO12DCTrackStatsV9bandwidthSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV9bandwidthSdvM",
+                "mangledName": "$s7QuickVO12DCTrackStatsV9bandwidthSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jitter",
+            "printedName": "jitter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO12DCTrackStatsV6jitterSdvp",
+            "mangledName": "$s7QuickVO12DCTrackStatsV6jitterSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV6jitterSdvg",
+                "mangledName": "$s7QuickVO12DCTrackStatsV6jitterSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV6jitterSdvs",
+                "mangledName": "$s7QuickVO12DCTrackStatsV6jitterSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV6jitterSdvM",
+                "mangledName": "$s7QuickVO12DCTrackStatsV6jitterSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "packetsLostRate",
+            "printedName": "packetsLostRate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO12DCTrackStatsV15packetsLostRateSdvp",
+            "mangledName": "$s7QuickVO12DCTrackStatsV15packetsLostRateSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV15packetsLostRateSdvg",
+                "mangledName": "$s7QuickVO12DCTrackStatsV15packetsLostRateSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV15packetsLostRateSdvs",
+                "mangledName": "$s7QuickVO12DCTrackStatsV15packetsLostRateSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO12DCTrackStatsV15packetsLostRateSdvM",
+                "mangledName": "$s7QuickVO12DCTrackStatsV15packetsLostRateSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO12DCTrackStatsV",
+        "mangledName": "$s7QuickVO12DCTrackStatsV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DCRemoteStats",
+        "printedName": "DCRemoteStats",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "userId",
+            "printedName": "userId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV6userIdSSvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV6userIdSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6userIdSSvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6userIdSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6userIdSSvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6userIdSSvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6userIdSSvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6userIdSSvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roundTripTime",
+            "printedName": "roundTripTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV13roundTripTimeSdvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV13roundTripTimeSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV13roundTripTimeSdvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV13roundTripTimeSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV13roundTripTimeSdvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV13roundTripTimeSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV13roundTripTimeSdvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV13roundTripTimeSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upQualityScore",
+            "printedName": "upQualityScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV14upQualityScoreSdvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV14upQualityScoreSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV14upQualityScoreSdvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV14upQualityScoreSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV14upQualityScoreSdvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV14upQualityScoreSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV14upQualityScoreSdvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV14upQualityScoreSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "downQualityScore",
+            "printedName": "downQualityScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV16downQualityScoreSdvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV16downQualityScoreSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV16downQualityScoreSdvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV16downQualityScoreSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV16downQualityScoreSdvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV16downQualityScoreSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV16downQualityScoreSdvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV16downQualityScoreSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "upLevel",
+            "printedName": "upLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCStatisLevel",
+                "printedName": "QuickVO.RTCStatisLevel",
+                "usr": "s:7QuickVO14RTCStatisLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCStatisLevel",
+                    "printedName": "QuickVO.RTCStatisLevel",
+                    "usr": "s:7QuickVO14RTCStatisLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCStatisLevel",
+                    "printedName": "QuickVO.RTCStatisLevel",
+                    "usr": "s:7QuickVO14RTCStatisLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0Ovs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0OvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV7upLevelAA09RTCStatisF0OvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "downLevel",
+            "printedName": "downLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCStatisLevel",
+                "printedName": "QuickVO.RTCStatisLevel",
+                "usr": "s:7QuickVO14RTCStatisLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCStatisLevel",
+                    "printedName": "QuickVO.RTCStatisLevel",
+                    "usr": "s:7QuickVO14RTCStatisLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCStatisLevel",
+                    "printedName": "QuickVO.RTCStatisLevel",
+                    "usr": "s:7QuickVO14RTCStatisLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0Ovs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0OvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9downLevelAA09RTCStatisF0OvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "statsTime",
+            "printedName": "statsTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9statsTimes5Int64Vvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV9statsTimes5Int64VvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV9statsTimes5Int64VvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tracks",
+            "printedName": "tracks",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.DCTrackStats]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DCTrackStats",
+                    "printedName": "QuickVO.DCTrackStats",
+                    "usr": "s:7QuickVO12DCTrackStatsV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvp",
+            "mangledName": "$s7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.DCTrackStats]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DCTrackStats",
+                        "printedName": "QuickVO.DCTrackStats",
+                        "usr": "s:7QuickVO12DCTrackStatsV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvg",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.DCTrackStats]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DCTrackStats",
+                        "printedName": "QuickVO.DCTrackStats",
+                        "usr": "s:7QuickVO12DCTrackStatsV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvs",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvM",
+                "mangledName": "$s7QuickVO13DCRemoteStatsV6tracksSayAA07DCTrackD0VGvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO13DCRemoteStatsV",
+        "mangledName": "$s7QuickVO13DCRemoteStatsV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NetMonitorValue",
         "printedName": "NetMonitorValue",
         "children": [
@@ -10866,6 +12010,228 @@
                 "declKind": "Accessor",
                 "usr": "s:7QuickVO15NetMonitorValueV13RoundTripTimeSfSgvM",
                 "mangledName": "$s7QuickVO15NetMonitorValueV13RoundTripTimeSfSgvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uplinkDelayMs",
+            "printedName": "uplinkDelayMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvp",
+            "mangledName": "$s7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvg",
+                "mangledName": "$s7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvs",
+                "mangledName": "$s7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvM",
+                "mangledName": "$s7QuickVO15NetMonitorValueV13uplinkDelayMsSfSgvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "downlinkDelayMs",
+            "printedName": "downlinkDelayMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvp",
+            "mangledName": "$s7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvg",
+                "mangledName": "$s7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Float?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Float",
+                        "printedName": "Swift.Float",
+                        "usr": "s:Sf"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvs",
+                "mangledName": "$s7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvM",
+                "mangledName": "$s7QuickVO15NetMonitorValueV15downlinkDelayMsSfSgvM",
                 "moduleName": "QuickVO",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -11648,7 +13014,8 @@
         "mangledName": "$s7QuickVO15NetMonitorValueV",
         "moduleName": "QuickVO",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -12725,6 +14092,16 @@
         "printedName": "WebRTC",
         "declKind": "Import",
         "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftProtobuf",
+        "printedName": "SwiftProtobuf",
+        "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -17759,6 +19136,73 @@
             "moduleName": "QuickVO",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "dcRemoteStats",
+            "printedName": "dcRemoteStats",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : QuickVO.DCRemoteStats]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DCRemoteStats",
+                    "printedName": "QuickVO.DCRemoteStats",
+                    "usr": "s:7QuickVO13DCRemoteStatsV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCParticipantC13dcRemoteStatsSDySSAA08DCRemoteF0VGvp",
+            "mangledName": "$s7QuickVO14RTCParticipantC13dcRemoteStatsSDySSAA08DCRemoteF0VGvp",
+            "moduleName": "QuickVO",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : QuickVO.DCRemoteStats]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DCRemoteStats",
+                        "printedName": "QuickVO.DCRemoteStats",
+                        "usr": "s:7QuickVO13DCRemoteStatsV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCParticipantC13dcRemoteStatsSDySSAA08DCRemoteF0VGvg",
+                "mangledName": "$s7QuickVO14RTCParticipantC13dcRemoteStatsSDySSAA08DCRemoteF0VGvg",
+                "moduleName": "QuickVO",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -26374,6 +27818,13 @@
       },
       {
         "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftProtobuf",
         "printedName": "SwiftProtobuf",
         "declKind": "Import",
@@ -26384,22 +27835,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "WebRTC",
-        "printedName": "WebRTC",
-        "declKind": "Import",
-        "moduleName": "QuickVO"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftProtobuf",
-        "printedName": "SwiftProtobuf",
+        "name": "Gzip",
+        "printedName": "Gzip",
         "declKind": "Import",
         "moduleName": "QuickVO",
         "declAttributes": [
@@ -28576,14 +30013,14 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 8828,
+      "offset": 8995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomAPI.swift",
       "kind": "IntegerLiteral",
-      "offset": 9158,
+      "offset": 9325,
       "length": 1,
       "value": "0"
     },
@@ -28765,21 +30202,35 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 3236,
+      "offset": 3206,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3741,
+      "offset": 3395,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3590,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4592,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+P2P.swift",
       "kind": "BooleanLiteral",
-      "offset": 10472,
+      "offset": 10525,
       "length": 4,
       "value": "true"
     },
@@ -28834,337 +30285,442 @@
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "StringLiteral",
+      "offset": 272,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 481,
+      "offset": 310,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 517,
+      "offset": 447,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 490,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 557,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 599,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 641,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 685,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "Array",
+      "offset": 859,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1560,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1596,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "StringLiteral",
+      "offset": 2274,
       "length": 13,
       "value": "\"inbound-rtp\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 880,
+      "offset": 2311,
       "length": 14,
       "value": "\"outbound-rtp\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 923,
+      "offset": 2354,
       "length": 20,
       "value": "\"remote-inbound-rtp\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 973,
+      "offset": 2404,
       "length": 21,
       "value": "\"remote-outbound-rtp\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 2449,
       "length": 14,
       "value": "\"media-source\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 1057,
+      "offset": 2488,
       "length": 15,
       "value": "\"media-playout\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1461,
+      "offset": 2892,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1491,
+      "offset": 2922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1953,
+      "offset": 3384,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1980,
+      "offset": 3511,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2140,
+      "offset": 3671,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2167,
+      "offset": 3791,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2203,
+      "offset": 3949,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2427,
+      "offset": 4173,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2634,
+      "offset": 4380,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 2803,
+      "offset": 4549,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 2828,
+      "offset": 4574,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2904,
+      "offset": 4650,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2931,
+      "offset": 4751,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3067,
+      "offset": 4887,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3094,
+      "offset": 4914,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3120,
+      "offset": 4944,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3150,
+      "offset": 4970,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3188,
+      "offset": 5000,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3230,
+      "offset": 5038,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5076,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5108,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "FloatLiteral",
+      "offset": 5138,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3260,
+      "offset": 5168,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3296,
+      "offset": 5305,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3328,
+      "offset": 5339,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3354,
+      "offset": 5371,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3382,
+      "offset": 5397,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3546,
+      "offset": 5425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3557,
+      "offset": 5517,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3565,
+      "offset": 5681,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3578,
+      "offset": 5692,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5700,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5713,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3606,
+      "offset": 5741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3680,
+      "offset": 5815,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3687,
+      "offset": 5822,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "IntegerLiteral",
-      "offset": 3691,
+      "offset": 5826,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "FloatLiteral",
-      "offset": 3732,
+      "offset": 5867,
       "length": 3,
       "value": "3.3"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3761,
+      "offset": 5896,
       "length": 59,
       "value": "\"handleNet value \""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3787,
+      "offset": 5922,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3797,
+      "offset": 5932,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3806,
+      "offset": 5941,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "StringLiteral",
-      "offset": 3819,
+      "offset": 5954,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3841,
+      "offset": 5976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatisData.swift",
       "kind": "BooleanLiteral",
-      "offset": 3889,
+      "offset": 6024,
       "length": 4,
       "value": "true"
     },
@@ -29204,6 +30760,13 @@
       "value": "500"
     },
     {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatsUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7431,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Utils\/TaskActor.swift",
       "kind": "Array",
       "offset": 1259,
@@ -29220,42 +30783,84 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 129,
+      "offset": 159,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 166,
+      "offset": 196,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 697,
+      "offset": 727,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 9450,
+      "offset": 928,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 978,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1250,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1266,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1345,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1361,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12975,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10431,
+      "offset": 13956,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 10449,
+      "offset": 13974,
       "length": 2,
       "value": "10"
     },
@@ -33854,14 +35459,14 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 2741,
+      "offset": 3710,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Turn.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 144,
       "length": 2,
       "value": "60"
     },
@@ -34148,91 +35753,91 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 3943,
+      "offset": 4136,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 4148,
+      "offset": 4409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 4195,
+      "offset": 4456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 4411,
+      "offset": 4672,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Dictionary",
-      "offset": 4468,
+      "offset": 4729,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "IntegerLiteral",
-      "offset": 4560,
+      "offset": 4821,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4642,
+      "offset": 4903,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4700,
+      "offset": 4961,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4840,
+      "offset": 5101,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4889,
+      "offset": 5150,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "Array",
-      "offset": 4947,
+      "offset": 5208,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 5041,
+      "offset": 5302,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Public\/RTCParticipant.swift",
       "kind": "BooleanLiteral",
-      "offset": 6731,
+      "offset": 6992,
       "length": 4,
       "value": "true"
     },
@@ -34427,50 +36032,71 @@
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4026,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "Array",
-      "offset": 4832,
+      "offset": 4096,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "Array",
-      "offset": 5004,
+      "offset": 4951,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
+      "kind": "Array",
+      "offset": 5123,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 5120,
+      "offset": 5239,
       "length": 8,
       "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11650,
+      "offset": 12674,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 14359,
+      "offset": 18509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 17484,
+      "offset": 24661,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 21260,
+      "offset": 28437,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -34533,21 +36159,21 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Utils\/RoomNetUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
+      "offset": 389,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Utils\/RoomNetUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 427,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Utils\/RoomNetUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 505,
       "length": 1,
       "value": "3"
     },
@@ -35366,91 +36992,91 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 8605,
+      "offset": 8802,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 8995,
+      "offset": 9192,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 9017,
+      "offset": 9214,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 13576,
+      "offset": 13773,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 13603,
+      "offset": 13800,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 13675,
+      "offset": 13872,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 13700,
+      "offset": 13897,
       "length": 4,
       "value": "4010"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 13727,
+      "offset": 13924,
       "length": 4,
       "value": "2116"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 6067,
+      "offset": 6190,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 7828,
+      "offset": 8655,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 7851,
+      "offset": 8678,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 9585,
+      "offset": 10567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 13301,
+      "offset": 14607,
       "length": 4,
       "value": "true"
     },
@@ -36311,14 +37937,14 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RoomControl+NetEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 15180,
+      "offset": 15686,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RoomControl+NetEvent.swift",
       "kind": "Dictionary",
-      "offset": 19714,
+      "offset": 20220,
       "length": 3,
       "value": "[]"
     },
