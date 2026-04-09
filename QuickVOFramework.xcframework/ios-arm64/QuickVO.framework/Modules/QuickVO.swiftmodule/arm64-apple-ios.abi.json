@@ -30814,7 +30814,7 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatsUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 7431,
+      "offset": 7290,
       "length": 5,
       "value": "false"
     },
@@ -30835,84 +30835,91 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 159,
+      "offset": 238,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 196,
+      "offset": 378,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "StringLiteral",
-      "offset": 727,
+      "offset": 909,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 928,
+      "offset": 1110,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 978,
+      "offset": 1160,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 1250,
+      "offset": 1432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 1266,
+      "offset": 1448,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1527,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 1361,
+      "offset": 1543,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 13010,
+      "offset": 13297,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 13991,
+      "offset": 14278,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
       "kind": "IntegerLiteral",
-      "offset": 14009,
+      "offset": 14296,
       "length": 2,
       "value": "10"
     },
