@@ -605,7 +605,8 @@ public enum RoomVideoRrocessMode {
   }
 }
 public struct RTCConfig {
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil)
+  public let rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
+  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil, rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = 1)
 }
 public struct RoomLocalOption : Swift.Sendable {
   public var defaultStartCamera: Swift.Bool
