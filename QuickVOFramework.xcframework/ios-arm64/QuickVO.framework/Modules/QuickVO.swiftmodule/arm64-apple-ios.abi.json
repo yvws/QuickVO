@@ -117,6 +117,13 @@
       },
       {
         "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftProtobuf",
         "printedName": "SwiftProtobuf",
         "declKind": "Import",
@@ -30225,64 +30232,78 @@
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1460,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1711,
+      "offset": 1851,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2273,
+      "offset": 2413,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 2366,
+      "offset": 2506,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 2431,
+      "offset": 2571,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 3206,
+      "offset": 3346,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3395,
+      "offset": 3535,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3590,
+      "offset": 3730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3899,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6356,
+      "offset": 6661,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+P2P.swift",
       "kind": "BooleanLiteral",
-      "offset": 10525,
+      "offset": 10526,
       "length": 4,
       "value": "true"
     },
@@ -30831,6 +30852,13 @@
       "offset": 1293,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/ControlSubTask.swift",
+      "kind": "Dictionary",
+      "offset": 718,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCStatis.swift",
@@ -35546,21 +35574,21 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 123,
+      "offset": 471,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 831,
+      "offset": 1790,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 3710,
+      "offset": 6098,
       "length": 5,
       "value": "false"
     },
@@ -36224,8 +36252,22 @@
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/CFCononectTaskData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 614,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/CFCononectTaskData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 949,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/CFCononectTaskData.swift",
       "kind": "BooleanLiteral",
-      "offset": 814,
+      "offset": 1631,
       "length": 5,
       "value": "false"
     },
@@ -37156,35 +37198,35 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 6190,
+      "offset": 9395,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 8655,
+      "offset": 11860,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 8678,
+      "offset": 11883,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 10567,
+      "offset": 13772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 14607,
+      "offset": 18310,
       "length": 4,
       "value": "true"
     },
@@ -38029,14 +38071,14 @@
       "value": "\"NetworkMonitorQueue\""
     },
     {
-      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RoomControl+NetEvent.swift",
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+NetEvent.swift",
       "kind": "BooleanLiteral",
       "offset": 15831,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RoomControl+NetEvent.swift",
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+NetEvent.swift",
       "kind": "Dictionary",
       "offset": 20365,
       "length": 3,
