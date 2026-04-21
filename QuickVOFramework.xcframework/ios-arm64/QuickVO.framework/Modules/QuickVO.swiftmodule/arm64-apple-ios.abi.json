@@ -35588,7 +35588,7 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 6098,
+      "offset": 7965,
       "length": 5,
       "value": "false"
     },
@@ -36274,9 +36274,44 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 352,
+      "offset": 950,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "BooleanLiteral",
+      "offset": 988,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1409,
+      "length": 11,
+      "value": "561017449"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "Array",
+      "offset": 1684,
+      "length": 20,
+      "value": "[120, 250, 500, 900]"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "Array",
+      "offset": 2104,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "Array",
+      "offset": 2336,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/LocalRTCParticipant.swift",
@@ -36484,154 +36519,154 @@
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5833,
+      "offset": 6482,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5838,
+      "offset": 6487,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 5893,
+      "offset": 6542,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6314,
+      "offset": 6963,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6341,
+      "offset": 6990,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6374,
+      "offset": 7023,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "Array",
-      "offset": 6415,
+      "offset": 7064,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6443,
+      "offset": 7092,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6468,
+      "offset": 7117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6497,
+      "offset": 7146,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6524,
+      "offset": 7173,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6553,
+      "offset": 7202,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6582,
+      "offset": 7231,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6609,
+      "offset": 7258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6638,
+      "offset": 7287,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6670,
+      "offset": 7319,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6694,
+      "offset": 7343,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 6735,
+      "offset": 7384,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6766,
+      "offset": 7415,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 7431,
+      "offset": 8080,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 7479,
+      "offset": 8128,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/molly\/Documents\/halo\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 7527,
+      "offset": 8176,
       "length": 11,
       "value": "10000000"
     },
