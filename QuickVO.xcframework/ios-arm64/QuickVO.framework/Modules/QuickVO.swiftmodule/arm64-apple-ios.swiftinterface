@@ -19,6 +19,7 @@ import Foundation
 import Metal
 import MetalKit
 import Network
+@_exported import QuickVO
 import ReplayKit
 import Swift
 import Synchronization
@@ -467,6 +468,22 @@ public enum RTCStatisLevel : Swift.Int {
     get
   }
 }
+public struct DCTrackStats {
+  public var type: Swift.String
+  public var bandwidth: Swift.Double
+  public var jitter: Swift.Double
+  public var packetsLostRate: Swift.Double
+}
+public struct DCRemoteStats {
+  public var userId: Swift.String
+  public var roundTripTime: Swift.Double
+  public var upQualityScore: Swift.Double
+  public var downQualityScore: Swift.Double
+  public var upLevel: QuickVO.RTCStatisLevel
+  public var downLevel: QuickVO.RTCStatisLevel
+  public var statsTime: Swift.Int64
+  public var tracks: [QuickVO.DCTrackStats]
+}
 public struct NetMonitorValue {
   public var up: QuickVO.RTCStatisLevel
   public var donw: QuickVO.RTCStatisLevel
@@ -487,6 +504,8 @@ public struct NetMonitorValue {
   public var lost: Swift.Double
   public var downlost: Swift.Double
   public var RoundTripTime: Swift.Float?
+  public var uplinkDelayMs: Swift.Float?
+  public var downlinkDelayMs: Swift.Float?
   public var frameHeight: Swift.Int?
   public var frameWith: Swift.Int?
   public var fps: Swift.Int?
@@ -632,8 +651,9 @@ public enum RoomVideoRrocessMode {
   }
 }
 public struct RTCConfig {
+  public let rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil)
+  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil, rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = 1)
   #endif
 }
 public struct RoomLocalOption : Swift.Sendable {
@@ -643,9 +663,13 @@ public struct RoomLocalOption : Swift.Sendable {
   public var scene: QuickVO.RoomScene
   public var enalbleSimulcast: Swift.Bool
   public var serverSpeech: QuickVO.RoomSpeechOption
+  public var prePublishAuthToken: Swift.String?
+  public var prePublishBaseURL: Foundation.URL?
   public var userFontCamera: Swift.Bool
   public var defaultAuioSpeakerOn: Swift.Bool
-  public init(userId: Swift.String, userFontCamera: Swift.Bool = true, defaultStartCamera: Swift.Bool = true, defaultAuioSpeakerOn: Swift.Bool = false, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication, enalbleSimulcast: Swift.Bool = false, serverSpeech: QuickVO.RoomSpeechOption = RoomSpeechOption())
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(userId: Swift.String, userFontCamera: Swift.Bool = true, defaultStartCamera: Swift.Bool = true, defaultAuioSpeakerOn: Swift.Bool = false, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication, enalbleSimulcast: Swift.Bool = false, serverSpeech: QuickVO.RoomSpeechOption = RoomSpeechOption(), prePublishAuthToken: Swift.String? = nil, prePublishBaseURL: Foundation.URL? = nil)
+  #endif
 }
 public struct RoomSpeechOption : Swift.Sendable {
   public var open: Swift.Bool
@@ -725,6 +749,9 @@ public struct RoomSpeechOption : Swift.Sendable {
 extension QuickVO.RTCParticipant {
   public func getP2PRStatis() -> [QuickVO.NetMonitorValue]
   public func getP2PSStatis() -> [QuickVO.NetMonitorValue]
+  public var dcRemoteStats: [Swift.String : QuickVO.DCRemoteStats] {
+    get
+  }
   #if compiler(>=5.3) && $NonescapableTypes
   public var candidateProtocol: Swift.String? {
     get

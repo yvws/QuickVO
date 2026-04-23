@@ -1,6 +1,0 @@
-framework module QuickVO {
-  umbrella header "QuickVO.h"
-  export *
-
-  module * { export * }
-}
