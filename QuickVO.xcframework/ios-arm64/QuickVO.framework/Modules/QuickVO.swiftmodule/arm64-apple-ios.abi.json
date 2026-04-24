@@ -36576,42 +36576,42 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 950,
+      "offset": 949,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 988,
+      "offset": 987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 1409,
+      "offset": 1408,
       "length": 11,
       "value": "561017449"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 1684,
+      "offset": 1669,
       "length": 20,
       "value": "[120, 250, 500, 900]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 2104,
+      "offset": 1819,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 2336,
+      "offset": 1878,
       "length": 2,
       "value": "[]"
     },
