@@ -37367,7 +37367,7 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomHTTP.swift",
       "kind": "StringLiteral",
-      "offset": 5707,
+      "offset": 5797,
       "length": 10,
       "value": "\"sdp_type\""
     },
