@@ -28230,6 +28230,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "QuickVO"
       },
       {
@@ -30552,8 +30562,15 @@
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
+      "kind": "Array",
+      "offset": 4055,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6661,
+      "offset": 6818,
       "length": 5,
       "value": "false"
     },
@@ -37342,8 +37359,15 @@
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomHTTP.swift",
+      "kind": "IntegerLiteral",
+      "offset": 972,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomHTTP.swift",
       "kind": "StringLiteral",
-      "offset": 5360,
+      "offset": 5454,
       "length": 10,
       "value": "\"sdp_type\""
     },
@@ -38141,28 +38165,28 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/RTCVideoExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5105,
+      "offset": 5138,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/RTCVideoExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5122,
+      "offset": 5155,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/RTCVideoExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5141,
+      "offset": 5174,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/RTCVideoExtension.swift",
       "kind": "IntegerLiteral",
-      "offset": 5161,
+      "offset": 5194,
       "length": 3,
       "value": "270"
     },
@@ -38398,6 +38422,20 @@
       "value": "180"
     },
     {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/LocalBufferConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 157,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/LocalBufferConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 189,
+      "length": 3,
+      "value": "240"
+    },
+    {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/Utils.swift",
       "kind": "IntegerLiteral",
       "offset": 3054,
@@ -38421,14 +38459,14 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+NetEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 15990,
+      "offset": 17022,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+NetEvent.swift",
       "kind": "Dictionary",
-      "offset": 20524,
+      "offset": 21556,
       "length": 3,
       "value": "[]"
     },
