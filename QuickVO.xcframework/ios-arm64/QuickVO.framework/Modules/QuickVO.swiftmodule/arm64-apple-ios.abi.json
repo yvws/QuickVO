@@ -36520,21 +36520,21 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 18509,
+      "offset": 18588,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 24661,
+      "offset": 24740,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 28437,
+      "offset": 28516,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -37367,7 +37367,7 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomHTTP.swift",
       "kind": "StringLiteral",
-      "offset": 5454,
+      "offset": 5707,
       "length": 10,
       "value": "\"sdp_type\""
     },
