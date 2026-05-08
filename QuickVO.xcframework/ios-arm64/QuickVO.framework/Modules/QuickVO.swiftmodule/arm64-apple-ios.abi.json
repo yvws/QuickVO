@@ -124,6 +124,20 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftProtobuf",
         "printedName": "SwiftProtobuf",
         "declKind": "Import",
@@ -5904,6 +5918,27 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
       },
       {
         "kind": "Import",
@@ -24819,6 +24854,2481 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "WebRTC",
+        "printedName": "WebRTC",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "QuickVOFeatureConfig",
+        "printedName": "QuickVOFeatureConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "reconnectEnabled",
+            "printedName": "reconnectEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvp",
+            "mangledName": "$s7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvg",
+                "mangledName": "$s7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvs",
+                "mangledName": "$s7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvM",
+                "mangledName": "$s7QuickVO0A15VOFeatureConfigV16reconnectEnabledSbvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(reconnectEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QuickVOFeatureConfig",
+                "printedName": "QuickVO.QuickVOFeatureConfig",
+                "usr": "s:7QuickVO0A15VOFeatureConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO0A15VOFeatureConfigV16reconnectEnabledACSb_tcfc",
+            "mangledName": "$s7QuickVO0A15VOFeatureConfigV16reconnectEnabledACSb_tcfc",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO0A15VOFeatureConfigV",
+        "mangledName": "$s7QuickVO0A15VOFeatureConfigV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RTCReconnectPolicy",
+        "printedName": "RTCReconnectPolicy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "gracePeriodSeconds",
+            "printedName": "gracePeriodSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV18gracePeriodSecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "quickRecoverTimeoutSeconds",
+            "printedName": "quickRecoverTimeoutSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26quickRecoverTimeoutSecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iceConnectedTimeoutSeconds",
+            "printedName": "iceConnectedTimeoutSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV26iceConnectedTimeoutSecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxRebuildCount",
+            "printedName": "maxRebuildCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxRebuildCountSivM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "baseDelaySeconds",
+            "printedName": "baseDelaySeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV16baseDelaySecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxDelaySeconds",
+            "printedName": "maxDelaySeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV15maxDelaySecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "backoffMultiplier",
+            "printedName": "backoffMultiplier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV17backoffMultiplierSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "jitterFactor",
+            "printedName": "jitterFactor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV12jitterFactorSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV12jitterFactorSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV12jitterFactorSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV12jitterFactorSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV12jitterFactorSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV12jitterFactorSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV12jitterFactorSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV12jitterFactorSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relayTimeoutSeconds",
+            "printedName": "relayTimeoutSeconds",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvp",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvg",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvs",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvM",
+                "mangledName": "$s7QuickVO18RTCReconnectPolicyV19relayTimeoutSecondsSdvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(gracePeriodSeconds:quickRecoverTimeoutSeconds:iceConnectedTimeoutSeconds:maxRebuildCount:baseDelaySeconds:maxDelaySeconds:backoffMultiplier:jitterFactor:relayTimeoutSeconds:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCReconnectPolicy",
+                "printedName": "QuickVO.RTCReconnectPolicy",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV18gracePeriodSeconds019quickRecoverTimeoutG0012iceConnectedjG015maxRebuildCount09baseDelayG00mqG017backoffMultiplier12jitterFactor05relayjG0ACSd_S2dSiS5dtcfc",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV18gracePeriodSeconds019quickRecoverTimeoutG0012iceConnectedjG015maxRebuildCount09baseDelayG00mqG017backoffMultiplier12jitterFactor05relayjG0ACSd_S2dSiS5dtcfc",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "backoffDelay",
+            "printedName": "backoffDelay(attempt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO18RTCReconnectPolicyV12backoffDelay7attemptSdSi_tF",
+            "mangledName": "$s7QuickVO18RTCReconnectPolicyV12backoffDelay7attemptSdSi_tF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO18RTCReconnectPolicyV",
+        "mangledName": "$s7QuickVO18RTCReconnectPolicyV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReconnectState",
+        "printedName": "ReconnectState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idle",
+            "printedName": "idle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectState",
+                    "printedName": "QuickVO.ReconnectState",
+                    "usr": "s:7QuickVO14ReconnectStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO4idleyA2CmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO4idleyA2CmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "graceTimer",
+            "printedName": "graceTimer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> (Swift.UInt64) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt64) -> QuickVO.ReconnectState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(graceStartMs: Swift.UInt64)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO10graceTimeryACs6UInt64V_tcACmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO10graceTimeryACs6UInt64V_tcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "quickRecover",
+            "printedName": "quickRecover",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> (Swift.UInt64) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt64) -> QuickVO.ReconnectState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(quickRecoverStartMs: Swift.UInt64)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO12quickRecoveryACs6UInt64V_tcACmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO12quickRecoveryACs6UInt64V_tcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rebuild",
+            "printedName": "rebuild",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> (Swift.UInt64, Swift.Int) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt64, Swift.Int) -> QuickVO.ReconnectState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(rebuildStartMs: Swift.UInt64, attempt: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO7rebuildyACs6UInt64V_SitcACmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO7rebuildyACs6UInt64V_SitcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "relayOnly",
+            "printedName": "relayOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> (Swift.UInt64) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.UInt64) -> QuickVO.ReconnectState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(relayStartMs: Swift.UInt64)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO9relayOnlyyACs6UInt64V_tcACmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO9relayOnlyyACs6UInt64V_tcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectState.Type) -> QuickVO.ReconnectState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectState",
+                    "printedName": "QuickVO.ReconnectState",
+                    "usr": "s:7QuickVO14ReconnectStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectState",
+                        "printedName": "QuickVO.ReconnectState",
+                        "usr": "s:7QuickVO14ReconnectStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO14ReconnectStateO6failedyA2CmF",
+            "mangledName": "$s7QuickVO14ReconnectStateO6failedyA2CmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO14ReconnectStateO",
+        "mangledName": "$s7QuickVO14ReconnectStateO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReconnectFailReason",
+        "printedName": "ReconnectFailReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "turnTimeout",
+            "printedName": "turnTimeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO11turnTimeoutyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO11turnTimeoutyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "dtlsFailed",
+            "printedName": "dtlsFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO10dtlsFailedyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO10dtlsFailedyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "iceTimeout",
+            "printedName": "iceTimeout",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO10iceTimeoutyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO10iceTimeoutyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "dcNoResponse",
+            "printedName": "dcNoResponse",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO12dcNoResponseyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO12dcNoResponseyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "audioSessionFailed",
+            "printedName": "audioSessionFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO18audioSessionFailedyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO18audioSessionFailedyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "relayTimeout40s",
+            "printedName": "relayTimeout40s",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO15relayTimeout40syA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO15relayTimeout40syA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "signalSessionStale",
+            "printedName": "signalSessionStale",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO18signalSessionStaleyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO18signalSessionStaleyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectFailReason.Type) -> QuickVO.ReconnectFailReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectFailReason",
+                    "printedName": "QuickVO.ReconnectFailReason",
+                    "usr": "s:7QuickVO19ReconnectFailReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectFailReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectFailReason",
+                        "printedName": "QuickVO.ReconnectFailReason",
+                        "usr": "s:7QuickVO19ReconnectFailReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO19ReconnectFailReasonO7unknownyA2CmF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO7unknownyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectFailReason",
+                "printedName": "QuickVO.ReconnectFailReason",
+                "usr": "s:7QuickVO19ReconnectFailReasonO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectFailReason",
+                "printedName": "QuickVO.ReconnectFailReason",
+                "usr": "s:7QuickVO19ReconnectFailReasonO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO19ReconnectFailReasonO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO2eeoiySbAC_ACtFZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19ReconnectFailReasonO9hashValueSivp",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO9hashValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19ReconnectFailReasonO9hashValueSivg",
+                "mangledName": "$s7QuickVO19ReconnectFailReasonO9hashValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO19ReconnectFailReasonO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7QuickVO19ReconnectFailReasonO4hash4intoys6HasherVz_tF",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO19ReconnectFailReasonO",
+        "mangledName": "$s7QuickVO19ReconnectFailReasonO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReconnectNetworkType",
+        "printedName": "ReconnectNetworkType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "wifi",
+            "printedName": "wifi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectNetworkType.Type) -> QuickVO.ReconnectNetworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectNetworkType",
+                    "printedName": "QuickVO.ReconnectNetworkType",
+                    "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectNetworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectNetworkType",
+                        "printedName": "QuickVO.ReconnectNetworkType",
+                        "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO4wifiyA2CmF",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO4wifiyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "cellular",
+            "printedName": "cellular",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectNetworkType.Type) -> QuickVO.ReconnectNetworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectNetworkType",
+                    "printedName": "QuickVO.ReconnectNetworkType",
+                    "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectNetworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectNetworkType",
+                        "printedName": "QuickVO.ReconnectNetworkType",
+                        "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO8cellularyA2CmF",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO8cellularyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectNetworkType.Type) -> QuickVO.ReconnectNetworkType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectNetworkType",
+                    "printedName": "QuickVO.ReconnectNetworkType",
+                    "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectNetworkType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectNetworkType",
+                        "printedName": "QuickVO.ReconnectNetworkType",
+                        "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO5otheryA2CmF",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO5otheryA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectNetworkType",
+                "printedName": "QuickVO.ReconnectNetworkType",
+                "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkMotorType",
+                "printedName": "QuickVO.NetworkMotorType",
+                "usr": "s:7QuickVO16NetworkMotorTypeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO4fromAcA0d5MotorE0O_tcfc",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO4fromAcA0d5MotorE0O_tcfc",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectNetworkType",
+                "printedName": "QuickVO.ReconnectNetworkType",
+                "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectNetworkType",
+                "printedName": "QuickVO.ReconnectNetworkType",
+                "usr": "s:7QuickVO20ReconnectNetworkTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO9hashValueSivp",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO9hashValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO20ReconnectNetworkTypeO9hashValueSivg",
+                "mangledName": "$s7QuickVO20ReconnectNetworkTypeO9hashValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO20ReconnectNetworkTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7QuickVO20ReconnectNetworkTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO20ReconnectNetworkTypeO",
+        "mangledName": "$s7QuickVO20ReconnectNetworkTypeO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReconnectTrigger",
+        "printedName": "ReconnectTrigger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "iceDisconnected",
+            "printedName": "iceDisconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectTrigger.Type) -> QuickVO.ReconnectTrigger",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectTrigger",
+                    "printedName": "QuickVO.ReconnectTrigger",
+                    "usr": "s:7QuickVO16ReconnectTriggerO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectTrigger.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectTrigger",
+                        "printedName": "QuickVO.ReconnectTrigger",
+                        "usr": "s:7QuickVO16ReconnectTriggerO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO16ReconnectTriggerO15iceDisconnectedyA2CmF",
+            "mangledName": "$s7QuickVO16ReconnectTriggerO15iceDisconnectedyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "iceFailed",
+            "printedName": "iceFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.ReconnectTrigger.Type) -> QuickVO.ReconnectTrigger",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectTrigger",
+                    "printedName": "QuickVO.ReconnectTrigger",
+                    "usr": "s:7QuickVO16ReconnectTriggerO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.ReconnectTrigger.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectTrigger",
+                        "printedName": "QuickVO.ReconnectTrigger",
+                        "usr": "s:7QuickVO16ReconnectTriggerO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO16ReconnectTriggerO9iceFailedyA2CmF",
+            "mangledName": "$s7QuickVO16ReconnectTriggerO9iceFailedyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectTrigger",
+                "printedName": "QuickVO.ReconnectTrigger",
+                "usr": "s:7QuickVO16ReconnectTriggerO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectTrigger",
+                "printedName": "QuickVO.ReconnectTrigger",
+                "usr": "s:7QuickVO16ReconnectTriggerO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO16ReconnectTriggerO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7QuickVO16ReconnectTriggerO2eeoiySbAC_ACtFZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO16ReconnectTriggerO9hashValueSivp",
+            "mangledName": "$s7QuickVO16ReconnectTriggerO9hashValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO16ReconnectTriggerO9hashValueSivg",
+                "mangledName": "$s7QuickVO16ReconnectTriggerO9hashValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO16ReconnectTriggerO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7QuickVO16ReconnectTriggerO4hash4intoys6HasherVz_tF",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO16ReconnectTriggerO",
+        "mangledName": "$s7QuickVO16ReconnectTriggerO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "Vision",
         "printedName": "Vision",
         "declKind": "Import",
@@ -27917,9 +30427,201 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "featureConfig",
+            "printedName": "featureConfig",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "QuickVOFeatureConfig",
+                "printedName": "QuickVO.QuickVOFeatureConfig",
+                "usr": "s:7QuickVO0A15VOFeatureConfigV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvp",
+            "mangledName": "$s7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickVOFeatureConfig",
+                    "printedName": "QuickVO.QuickVOFeatureConfig",
+                    "usr": "s:7QuickVO0A15VOFeatureConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvg",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "QuickVOFeatureConfig",
+                    "printedName": "QuickVO.QuickVOFeatureConfig",
+                    "usr": "s:7QuickVO0A15VOFeatureConfigV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvs",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0Vvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0VvM",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC07featureD0AA0a9VOFeatureD0VvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reconnectPolicy",
+            "printedName": "reconnectPolicy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCReconnectPolicy",
+                "printedName": "QuickVO.RTCReconnectPolicy",
+                "usr": "s:7QuickVO18RTCReconnectPolicyV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvp",
+            "mangledName": "$s7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCReconnectPolicy",
+                    "printedName": "QuickVO.RTCReconnectPolicy",
+                    "usr": "s:7QuickVO18RTCReconnectPolicyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvg",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCReconnectPolicy",
+                    "printedName": "QuickVO.RTCReconnectPolicy",
+                    "usr": "s:7QuickVO18RTCReconnectPolicyV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvs",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0Vvs",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0VvM",
+                "mangledName": "$s7QuickVO13RTCRoomConfigC15reconnectPolicyAA012RTCReconnectF0VvM",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(video:audio:)",
+            "printedName": "init(video:audio:featureConfig:reconnectPolicy:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -27940,11 +30642,25 @@
                 "printedName": "QuickVO.RoomAudioCaptureConfig",
                 "hasDefaultArg": true,
                 "usr": "s:7QuickVO22RoomAudioCaptureConfigC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "QuickVOFeatureConfig",
+                "printedName": "QuickVO.QuickVOFeatureConfig",
+                "hasDefaultArg": true,
+                "usr": "s:7QuickVO0A15VOFeatureConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCReconnectPolicy",
+                "printedName": "QuickVO.RTCReconnectPolicy",
+                "hasDefaultArg": true,
+                "usr": "s:7QuickVO18RTCReconnectPolicyV"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:7QuickVO13RTCRoomConfigC5video5audioAcA016RoomVideoCaptureD0C_AA0g5AudioiD0Ctcfc",
-            "mangledName": "$s7QuickVO13RTCRoomConfigC5video5audioAcA016RoomVideoCaptureD0C_AA0g5AudioiD0Ctcfc",
+            "usr": "s:7QuickVO13RTCRoomConfigC5video5audio07featureD015reconnectPolicyAcA016RoomVideoCaptureD0C_AA0j5AudiolD0CAA0a9VOFeatureD0VAA012RTCReconnectI0Vtcfc",
+            "mangledName": "$s7QuickVO13RTCRoomConfigC5video5audio07featureD015reconnectPolicyAcA016RoomVideoCaptureD0C_AA0j5AudiolD0CAA0a9VOFeatureD0VAA012RTCReconnectI0Vtcfc",
             "moduleName": "QuickVO",
             "declAttributes": [
               "AccessControl"
@@ -30500,77 +33216,77 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 1460,
+      "offset": 1573,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 1851,
+      "offset": 1964,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2413,
+      "offset": 2526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 2506,
+      "offset": 2619,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Dictionary",
-      "offset": 2571,
+      "offset": 2684,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 3346,
+      "offset": 3459,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3535,
+      "offset": 3648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 3730,
+      "offset": 3843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "IntegerLiteral",
-      "offset": 3899,
+      "offset": 4012,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "Array",
-      "offset": 4055,
+      "offset": 4523,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl.swift",
       "kind": "BooleanLiteral",
-      "offset": 6818,
+      "offset": 7464,
       "length": 5,
       "value": "false"
     },
@@ -35876,21 +38592,21 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 819,
+      "offset": 1029,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 2138,
+      "offset": 2348,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Push.swift",
       "kind": "BooleanLiteral",
-      "offset": 8305,
+      "offset": 8515,
       "length": 5,
       "value": "false"
     },
@@ -36485,56 +39201,56 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "Array",
-      "offset": 4951,
+      "offset": 4935,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "Array",
-      "offset": 5123,
+      "offset": 5099,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 5239,
+      "offset": 5207,
       "length": 8,
       "value": "\"stream\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 12674,
+      "offset": 12634,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 15800,
+      "offset": 15760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 18588,
+      "offset": 18548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 24740,
+      "offset": 24700,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/WebRTCClient.swift",
       "kind": "StringLiteral",
-      "offset": 28516,
+      "offset": 28476,
       "length": 5,
       "value": "\"sfu\""
     },
@@ -36576,42 +39292,42 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 949,
+      "offset": 950,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 987,
+      "offset": 988,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 1408,
+      "offset": 1409,
       "length": 11,
       "value": "561017449"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 1669,
+      "offset": 1684,
       "length": 20,
       "value": "[120, 250, 500, 900]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 1819,
+      "offset": 2104,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 1878,
+      "offset": 2336,
       "length": 2,
       "value": "[]"
     },
@@ -37506,99 +40222,106 @@
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
+      "kind": "Dictionary",
+      "offset": 1763,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 5064,
+      "offset": 5298,
       "length": 5,
       "value": "20000"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 10433,
+      "offset": 10409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 10993,
+      "offset": 10969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "StringLiteral",
-      "offset": 11015,
+      "offset": 10991,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "BooleanLiteral",
-      "offset": 18612,
+      "offset": 18668,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 18639,
+      "offset": 18695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 18711,
+      "offset": 18767,
       "length": 3,
       "value": "666"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 18736,
+      "offset": 18792,
       "length": 4,
       "value": "4010"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Server\/RTCRoomNet.swift",
       "kind": "IntegerLiteral",
-      "offset": 18763,
+      "offset": 18819,
       "length": 4,
       "value": "2116"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "IntegerLiteral",
-      "offset": 9395,
+      "offset": 9619,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 11860,
+      "offset": 12084,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 11883,
+      "offset": 12107,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 13772,
+      "offset": 13996,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+Sub.swift",
       "kind": "BooleanLiteral",
-      "offset": 18310,
+      "offset": 18534,
       "length": 4,
       "value": "true"
     },
@@ -38107,6 +40830,90 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 533,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1821,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "BooleanLiteral",
+      "offset": 227,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1668,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1718,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1768,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1804,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1842,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1881,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1923,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 1959,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/RTCReconnectPolicy.swift",
+      "kind": "FloatLiteral",
+      "offset": 2002,
+      "length": 4,
+      "value": "40.0"
+    },
+    {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+ScreenShare.swift",
       "kind": "BooleanLiteral",
       "offset": 2654,
@@ -38200,42 +41007,42 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 1187,
       "length": 4,
       "value": "1280"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 606,
+      "offset": 1201,
       "length": 3,
       "value": "720"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 616,
+      "offset": 1211,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 698,
+      "offset": 1293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 722,
+      "offset": 1317,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/RoomConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 745,
+      "offset": 1340,
       "length": 5,
       "value": "false"
     },
@@ -38333,14 +41140,7 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 13647,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13862,
+      "offset": 14030,
       "length": 1,
       "value": "0"
     },
@@ -38354,28 +41154,35 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14277,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14489,
+      "offset": 14628,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "IntegerLiteral",
-      "offset": 14521,
+      "offset": 14660,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14872,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14904,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RTC\/audio\/RTCAudioDevice.swift",
       "kind": "StringLiteral",
-      "offset": 16651,
+      "offset": 17034,
       "length": 25,
       "value": "\"rtc.recorded.pcm.buffer\""
     },

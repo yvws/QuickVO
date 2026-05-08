@@ -918,6 +918,66 @@ extension AVFAudio.AVAudioPCMBuffer {
   public func audioLevel() -> QuickVO.RoomAudioLevel?
   #endif
 }
+public struct QuickVOFeatureConfig : Swift.Sendable {
+  public var reconnectEnabled: Swift.Bool
+  public init(reconnectEnabled: Swift.Bool = true)
+}
+public struct RTCReconnectPolicy : Swift.Sendable {
+  public var gracePeriodSeconds: Swift.Double
+  public var quickRecoverTimeoutSeconds: Swift.Double
+  public var iceConnectedTimeoutSeconds: Swift.Double
+  public var maxRebuildCount: Swift.Int
+  public var baseDelaySeconds: Swift.Double
+  public var maxDelaySeconds: Swift.Double
+  public var backoffMultiplier: Swift.Double
+  public var jitterFactor: Swift.Double
+  public var relayTimeoutSeconds: Swift.Double
+  public init(gracePeriodSeconds: Swift.Double = 3.0, quickRecoverTimeoutSeconds: Swift.Double = 5.0, iceConnectedTimeoutSeconds: Swift.Double = 5.0, maxRebuildCount: Swift.Int = 1, baseDelaySeconds: Swift.Double = 1.0, maxDelaySeconds: Swift.Double = 30.0, backoffMultiplier: Swift.Double = 2.0, jitterFactor: Swift.Double = 0.3, relayTimeoutSeconds: Swift.Double = 40.0)
+  public func backoffDelay(attempt: Swift.Int) -> Swift.Double
+}
+public enum ReconnectState : Swift.Sendable {
+  case idle
+  case graceTimer(graceStartMs: Swift.UInt64)
+  case quickRecover(quickRecoverStartMs: Swift.UInt64)
+  case rebuild(rebuildStartMs: Swift.UInt64, attempt: Swift.Int)
+  case relayOnly(relayStartMs: Swift.UInt64)
+  case failed
+}
+public enum ReconnectFailReason : Swift.Sendable {
+  case turnTimeout
+  case dtlsFailed
+  case iceTimeout
+  case dcNoResponse
+  case audioSessionFailed
+  case relayTimeout40s
+  case signalSessionStale
+  case unknown
+  public static func == (a: QuickVO.ReconnectFailReason, b: QuickVO.ReconnectFailReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReconnectNetworkType : Swift.Sendable {
+  case wifi
+  case cellular
+  case other
+  public init(from motorType: QuickVO.NetworkMotorType)
+  public static func == (a: QuickVO.ReconnectNetworkType, b: QuickVO.ReconnectNetworkType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReconnectTrigger : Swift.Sendable {
+  case iceDisconnected
+  case iceFailed
+  public static func == (a: QuickVO.ReconnectTrigger, b: QuickVO.ReconnectTrigger) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 extension QuickVO.LocalRTCParticipant {
   final public func enableMicrophone(_ enable: Swift.Bool)
   final public func microphoneIsEnable() -> Swift.Bool
@@ -1055,7 +1115,9 @@ final public class RTCRoomConfig {
   public static let config: QuickVO.RTCRoomConfig
   final public var video: QuickVO.RoomVideoCaptureConfig
   final public var audio: QuickVO.RoomAudioCaptureConfig
-  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio)
+  final public var featureConfig: QuickVO.QuickVOFeatureConfig
+  final public var reconnectPolicy: QuickVO.RTCReconnectPolicy
+  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, featureConfig: QuickVO.QuickVOFeatureConfig = QuickVOFeatureConfig(), reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy())
   @objc deinit
 }
 extension QuickVO.RTCRoomConfig {
@@ -1131,6 +1193,12 @@ extension QuickVO.NetworkMotorType : Swift.Equatable {}
 extension QuickVO.NetworkMotorType : Swift.Hashable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
 extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
+extension QuickVO.ReconnectFailReason : Swift.Equatable {}
+extension QuickVO.ReconnectFailReason : Swift.Hashable {}
+extension QuickVO.ReconnectNetworkType : Swift.Equatable {}
+extension QuickVO.ReconnectNetworkType : Swift.Hashable {}
+extension QuickVO.ReconnectTrigger : Swift.Equatable {}
+extension QuickVO.ReconnectTrigger : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
