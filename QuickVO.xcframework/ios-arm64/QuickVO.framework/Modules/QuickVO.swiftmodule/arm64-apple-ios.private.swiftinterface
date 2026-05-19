@@ -30,7 +30,6 @@ import WebRTC
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-import gpupixel
 import os.lock
 import os
 @_hasMissingDesignatedInitializers public class RoomVideoTrack : QuickVO.RoomTrack, QuickVO.RTCTrackInfo {
@@ -206,6 +205,7 @@ public enum RoomScene : Swift.Sendable {
   case communication
   case meeting
   case live
+  case conference
   public static func == (a: QuickVO.RoomScene, b: QuickVO.RoomScene) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
