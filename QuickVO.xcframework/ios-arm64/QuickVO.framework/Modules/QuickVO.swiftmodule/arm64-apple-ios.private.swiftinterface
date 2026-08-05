@@ -1,9 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
-import AVFAudio
-import AVFoundation
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+@preconcurrency import AVFAudio
+@preconcurrency import AVFoundation
 import Accelerate
 import AudioToolbox
 import BackgroundTasks
@@ -19,32 +19,337 @@ import Foundation
 import Metal
 import MetalKit
 import Network
+import QVReplayKit
 @_exported import QuickVO
 import ReplayKit
 import Swift
+import SwiftProtobuf
 import Synchronization
 import UIKit
 import Vision
 import VisionKit
-import WebRTC
+@preconcurrency import WebRTC
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import gpupixel
 import os.lock
 import os
-@_hasMissingDesignatedInitializers public class RoomVideoTrack : QuickVO.RoomTrack, QuickVO.RTCTrackInfo {
-  public var trackId: Swift.String {
-    get
-  }
-  public var isEnabled: Swift.Bool {
+final public class RoomVideoCaptureConfig {
+  final public var width: Swift.Int {
     get
     set
   }
-  public var render: QuickVO.RoomVideoView? {
+  final public var height: Swift.Int {
     get
     set
+  }
+  final public var fps: Swift.Int {
+    get
+    set
+  }
+  final public var mirror: Swift.Bool
+  final public var degradation: QuickVO.RoomVideodegradation {
+    get
+    set
+  }
+  final public var filter: Swift.Bool
+  final public var crop: QuickVO.RoomVideoCropping {
+    get
+  }
+  public init(width: Swift.Int, height: Swift.Int, fps: Swift.Int)
+  @objc deinit
+}
+final public class RoomAudioCaptureConfig {
+  final public var echoCancellation: Swift.Bool
+  final public var noiseSuppression: Swift.Bool
+  final public var autoGainControl: Swift.Bool
+  final public var audioLevelMonitor: Swift.Int?
+  public init(echoCancellation: Swift.Bool, noiseSuppression: Swift.Bool, autoGainControl: Swift.Bool)
+  @objc deinit
+}
+public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
+  case disabled
+  case framerate
+  case resolution
+  case balanced
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [QuickVO.RoomVideodegradation]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [QuickVO.RoomVideodegradation] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers final public class RoomVideoCropping {
+  final public var aspectRatio: Swift.Float?
+  @QuickVO.Clamping<Swift.Float> final public var cropXRatio: Swift.Float {
+    get
+    set
+    _modify
+  }
+  @QuickVO.Clamping<Swift.Float> final public var cropYRatio: Swift.Float {
+    get
+    set
+    _modify
   }
   @objc deinit
+}
+public protocol RoomVideoCaptureDelegate : AnyObject {
+  func processMode() -> QuickVO.RoomVideoRrocessMode
+  func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
+  func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
+}
+public enum RoomVideoRrocessMode {
+  case readOnly
+  case readWrite
+  public static func == (a: QuickVO.RoomVideoRrocessMode, b: QuickVO.RoomVideoRrocessMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated public struct Board_Ws_V1_WireRow : Swift.Sendable {
+  public var code: Swift.Int32
+  public var payloadJsonUtf8: Foundation.Data
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_ImagePayload : Swift.Sendable {
+  public var zlibCompressed: Swift.Bool
+  public var data: Foundation.Data
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_CanvasEventBody : Swift.Sendable {
+  public var wireVersion: Swift.UInt32
+  public var rows: [QuickVO.Board_Ws_V1_WireRow]
+  public var imageBlobs: [QuickVO.Board_Ws_V1_ImagePayload]
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_ClientMsg : Swift.Sendable {
+  nonisolated public var receiverID: Swift.String {
+    get
+    set
+  }
+  nonisolated public var hasReceiverID: Swift.Bool {
+    get
+  }
+  nonisolated public mutating func clearReceiverID()
+  nonisolated public var canvas: QuickVO.Board_Ws_V1_CanvasEventBody {
+    get
+    set
+  }
+  nonisolated public var hasCanvas: Swift.Bool {
+    get
+  }
+  nonisolated public mutating func clearCanvas()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_JoinNotice : Swift.Sendable {
+  public var remoteUserID: Swift.String
+  public var nickname: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_QuitNotice : Swift.Sendable {
+  public var remoteUserID: Swift.String
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_RelayMsg : Swift.Sendable {
+  public var senderUserID: Swift.String
+  nonisolated public var canvas: QuickVO.Board_Ws_V1_CanvasEventBody {
+    get
+    set
+  }
+  nonisolated public var hasCanvas: Swift.Bool {
+    get
+  }
+  nonisolated public mutating func clearCanvas()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_UpdateSdkToken : Swift.Sendable {
+  public var sdkToken: Swift.String
+  nonisolated public var success: Swift.Bool {
+    get
+    set
+  }
+  nonisolated public var hasSuccess: Swift.Bool {
+    get
+  }
+  nonisolated public mutating func clearSuccess()
+  nonisolated public var desc: Swift.String {
+    get
+    set
+  }
+  nonisolated public var hasDesc: Swift.Bool {
+    get
+  }
+  nonisolated public mutating func clearDesc()
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_SdkTokenWillExpireNotice : Swift.Sendable {
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public init()
+}
+nonisolated public struct Board_Ws_V1_BoardWsFrame : Swift.Sendable {
+  public var envelope: QuickVO.Board_Ws_V1_BoardWsFrame.OneOf_Envelope?
+  nonisolated public var clientMsg: QuickVO.Board_Ws_V1_ClientMsg {
+    get
+    set
+  }
+  nonisolated public var join: QuickVO.Board_Ws_V1_JoinNotice {
+    get
+    set
+  }
+  nonisolated public var quit: QuickVO.Board_Ws_V1_QuitNotice {
+    get
+    set
+  }
+  nonisolated public var relayMsg: QuickVO.Board_Ws_V1_RelayMsg {
+    get
+    set
+  }
+  nonisolated public var updateSdkToken: QuickVO.Board_Ws_V1_UpdateSdkToken {
+    get
+    set
+  }
+  nonisolated public var sdkTokenWillExpire: QuickVO.Board_Ws_V1_SdkTokenWillExpireNotice {
+    get
+    set
+  }
+  public var unknownFields: SwiftProtobuf.UnknownStorage
+  nonisolated public enum OneOf_Envelope : Swift.Equatable, Swift.Sendable {
+    case clientMsg(QuickVO.Board_Ws_V1_ClientMsg)
+    case join(QuickVO.Board_Ws_V1_JoinNotice)
+    case quit(QuickVO.Board_Ws_V1_QuitNotice)
+    case relayMsg(QuickVO.Board_Ws_V1_RelayMsg)
+    case updateSdkToken(QuickVO.Board_Ws_V1_UpdateSdkToken)
+    case sdkTokenWillExpire(QuickVO.Board_Ws_V1_SdkTokenWillExpireNotice)
+    public static func == (a: QuickVO.Board_Ws_V1_BoardWsFrame.OneOf_Envelope, b: QuickVO.Board_Ws_V1_BoardWsFrame.OneOf_Envelope) -> Swift.Bool
+  }
+  nonisolated public init()
+}
+nonisolated extension QuickVO.Board_Ws_V1_WireRow : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_WireRow, rhs: QuickVO.Board_Ws_V1_WireRow) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_ImagePayload : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_ImagePayload, rhs: QuickVO.Board_Ws_V1_ImagePayload) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_CanvasEventBody : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_CanvasEventBody, rhs: QuickVO.Board_Ws_V1_CanvasEventBody) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_ClientMsg : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_ClientMsg, rhs: QuickVO.Board_Ws_V1_ClientMsg) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_JoinNotice : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_JoinNotice, rhs: QuickVO.Board_Ws_V1_JoinNotice) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_QuitNotice : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_QuitNotice, rhs: QuickVO.Board_Ws_V1_QuitNotice) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_RelayMsg : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_RelayMsg, rhs: QuickVO.Board_Ws_V1_RelayMsg) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_UpdateSdkToken : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_UpdateSdkToken, rhs: QuickVO.Board_Ws_V1_UpdateSdkToken) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_SdkTokenWillExpireNotice : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_SdkTokenWillExpireNotice, rhs: QuickVO.Board_Ws_V1_SdkTokenWillExpireNotice) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+nonisolated extension QuickVO.Board_Ws_V1_BoardWsFrame : SwiftProtobuf.Message, SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: Swift.String
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap
+  nonisolated public mutating func decodeMessage<D>(decoder: inout D) throws where D : SwiftProtobuf.Decoder
+  nonisolated public func traverse<V>(visitor: inout V) throws where V : SwiftProtobuf.Visitor
+  public static func == (lhs: QuickVO.Board_Ws_V1_BoardWsFrame, rhs: QuickVO.Board_Ws_V1_BoardWsFrame) -> Swift.Bool
+  nonisolated public var hashValue: Swift.Int {
+    get
+  }
+}
+public actor HeartbeatManager {
+  public init()
+  public func configure(onHeartbeat: @escaping (Swift.Int) -> Swift.Void, onSendPing: @escaping () -> Swift.Void)
+  public func start()
+  public func stop()
+  public var count: Swift.Int {
+    get
+  }
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
 }
 public protocol LocalPreviewViewDelegate : AnyObject {
   func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
@@ -52,9 +357,7 @@ public protocol LocalPreviewViewDelegate : AnyObject {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class LocalPreviewView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any QuickVO.LocalPreviewViewDelegate)?
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 extension QuickVO.LocalPreviewView {
@@ -65,6 +368,379 @@ extension QuickVO.LocalPreviewView {
   @_Concurrency.MainActor @preconcurrency final public func start()
   @_Concurrency.MainActor @preconcurrency final public func stop()
   @_Concurrency.MainActor @preconcurrency final public func switchCamera()
+}
+extension QuickVO.LocalRTCParticipant {
+  final public func enableMicrophone(_ enable: Swift.Bool)
+  final public func microphoneIsEnable() -> Swift.Bool
+  final public func speakerIsEnable() async -> Swift.Bool
+  final public func enableSpeaker(_ enable: Swift.Bool)
+  final public func switchSpeaker() async
+  final public func restartAudio() async
+}
+extension QuickVO.LocalRTCParticipant {
+  final public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
+  final public func resumeAudio() async
+  final public func pauseAudio() async
+  final public func stopAudio() async
+  final public func setAudioVolume(_ volume: Swift.Float) async
+  final public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
+  final public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
+  final public func stopAll() async
+}
+extension QuickVO.LocalRTCParticipant {
+  final public var isMultitaskingCameraAccessSupported: Swift.Bool {
+    get
+  }
+  final public var isMultitaskingCameraAccessEnabled: Swift.Bool {
+    get
+    set
+  }
+  final public func camerPosion() -> QuickVO.RTCCameraPosion
+  final public func cameraIsEnable() -> Swift.Bool
+  final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
+  final public func enableCamera(_ enable: Swift.Bool)
+  final public func startPreview(_ render: QuickVO.RoomVideoView) async
+}
+@_hasMissingDesignatedInitializers final public class LocalRTCParticipant {
+  weak final public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
+  final public var publishAudio: Swift.Bool
+  @objc deinit
+}
+extension Foundation.Data {
+  public mutating func append(_ string: Swift.String)
+}
+public enum NetworkState : Swift.Sendable, Swift.CustomStringConvertible {
+  case healthy
+  case recovering(QuickVO.RecoveryTier)
+  case failed(QuickVO.ReconnectFailReason)
+  public var description: Swift.String {
+    get
+  }
+}
+public enum RecoveryTier : Swift.Sendable, Swift.CustomStringConvertible {
+  case waiting
+  case quick
+  case rebuild(attempt: Swift.Int)
+  case relay
+  case socketOnly
+  public var description: Swift.String {
+    get
+  }
+}
+public struct ConnectionHealth : Swift.Sendable, Swift.Equatable {
+  public var ice: QuickVO.IceHealth
+  public var socket: QuickVO.SocketHealth
+  public init(ice: QuickVO.IceHealth = .connected, socket: QuickVO.SocketHealth = .connected)
+  public var isFullyHealthy: Swift.Bool {
+    get
+  }
+  public var isIceHealthy: Swift.Bool {
+    get
+  }
+  public var isSocketHealthy: Swift.Bool {
+    get
+  }
+  public var isBothUnhealthy: Swift.Bool {
+    get
+  }
+  public static func == (a: QuickVO.ConnectionHealth, b: QuickVO.ConnectionHealth) -> Swift.Bool
+}
+public enum IceHealth : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case connected
+  case connecting
+  case disconnected
+  case failed
+  case closed
+  public var description: Swift.String {
+    get
+  }
+  public init(from rtcState: WebRTC.RTCIceConnectionState)
+  public static func == (a: QuickVO.IceHealth, b: QuickVO.IceHealth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum SocketHealth : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case connected
+  case disconnected
+  case connecting
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.SocketHealth, b: QuickVO.SocketHealth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReconnectFailReason : Swift.Sendable, Swift.CustomStringConvertible {
+  case relayTimeout
+  case socketTimeout
+  case iceClosed
+  case episodeTimeout
+  case unknown
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.ReconnectFailReason, b: QuickVO.ReconnectFailReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReconnectEvent : Swift.Sendable {
+  case ice(WebRTC.RTCIceConnectionState)
+  case socket(QuickVO.SocketHealth)
+  case networkType(QuickVO.ReconnectNetworkType)
+  case heartbeat
+}
+public enum ReconnectNetworkType : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case wifi
+  case cellular
+  case other
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.ReconnectNetworkType, b: QuickVO.ReconnectNetworkType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
+  public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
+  public var wrappedValue: WrappedValue {
+    get
+    set
+  }
+}
+@propertyWrapper public struct Unique<T> where T : Swift.Equatable {
+  public var wrappedValue: T? {
+    get
+    set
+  }
+  public init(wrappedValue: T?)
+}
+@propertyWrapper public struct Validated<Value> {
+  public init(wrappedValue: Value, validator: @escaping (Value) -> Swift.Bool)
+  public var wrappedValue: Value? {
+    get
+    set
+  }
+}
+@propertyWrapper public struct UserDfaultsWrapper<T> {
+  public var wrappedValue: T {
+    get
+    nonmutating set
+  }
+  public init(_ key: Swift.String, defaultV: T)
+}
+@propertyWrapper public struct RoundedTwoDecimal<Value> where Value : Swift.BinaryFloatingPoint {
+  public init(wrappedValue: Value?)
+  public var wrappedValue: Value? {
+    get
+    set
+  }
+}
+extension AVFoundation.AVCaptureDevice {
+  public var devicePosition: AVFoundation.AVCaptureDevice.Position {
+    get
+  }
+}
+public struct RTCConfig {
+  public let rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
+  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil, rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = 1)
+}
+public struct RoomLocalOption : Swift.Sendable {
+  public var defaultStartCamera: Swift.Bool
+  public var subscribeType: QuickVO.StreamType
+  public var publishType: QuickVO.StreamType
+  public var scene: QuickVO.RoomScene
+  public var enalbleSimulcast: Swift.Bool
+  public var serverSpeech: QuickVO.RoomSpeechOption
+  public var prePublishAuthToken: Swift.String?
+  public var prePublishBaseURL: Foundation.URL?
+  public var userFontCamera: Swift.Bool
+  public var defaultAuioSpeakerOn: Swift.Bool
+  public init(userId: Swift.String, userFontCamera: Swift.Bool = true, defaultStartCamera: Swift.Bool = true, defaultAuioSpeakerOn: Swift.Bool = false, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication, enalbleSimulcast: Swift.Bool = false, serverSpeech: QuickVO.RoomSpeechOption = RoomSpeechOption(), prePublishAuthToken: Swift.String? = nil, prePublishBaseURL: Foundation.URL? = nil)
+}
+public struct RoomSpeechOption : Swift.Sendable {
+  @available(*, deprecated, message: "Ignored. Use RTCRoom.setLocalSpeechRecognition(_:) to turn speech recognition on or off.")
+  public var open: Swift.Bool {
+    get
+    set
+  }
+  public var lang: Swift.String?
+  public var targetLang: Swift.String?
+  public var translate: Swift.Bool
+  public init(open: Swift.Bool = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool = false)
+}
+public enum RTCLogLevel {
+  case verbose
+  case debug
+  case info
+  case critical
+  case warning
+  case error
+  case fault
+  public static func == (a: QuickVO.RTCLogLevel, b: QuickVO.RTCLogLevel) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RTCLogEntry {
+  public let level: QuickVO.RTCLogLevel
+  public let message: Swift.String
+}
+@_hasMissingDesignatedInitializers final public class RTCEngine {
+  public static let engine: QuickVO.RTCEngine
+  final public var appId: Swift.String {
+    get
+  }
+  final public var onLog: ((QuickVO.RTCLogEntry) -> Swift.Void)? {
+    get
+    set
+  }
+  final public var netStatus: ((QuickVO.NetworkMotorStatus) -> Swift.Void)?
+  final public var netType: ((QuickVO.NetworkMotorType) -> Swift.Void)?
+  final public let statusSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorStatus, Swift.Never>
+  final public let typeSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorType, Swift.Never>
+  final public var netMultiPath: QuickVO.MultipathNetSeverType {
+    get
+    set
+  }
+  final public var uploadLog: Swift.Bool
+  @objc deinit
+}
+extension QuickVO.RTCEngine {
+  public static func create(_ appId: Swift.String)
+  public static func destroy()
+}
+public enum QuitIntent {
+  case handoff
+  case terminal
+  public static func == (a: QuickVO.QuitIntent, b: QuickVO.QuitIntent) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkMotorStatus : Swift.Sendable {
+  case reachable
+  case unReachable
+  public static func == (a: QuickVO.NetworkMotorStatus, b: QuickVO.NetworkMotorStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkMotorType : Swift.Sendable {
+  case wifi
+  case cellular
+  case other
+  public static func == (a: QuickVO.NetworkMotorType, b: QuickVO.NetworkMotorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class RTCNetworkMonitor {
+  public func stopMonitor()
+  public func startMonitor()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class RTCParticipant {
+  weak public var delegate: (any QuickVO.RTCParticipantDelegate)? {
+    get
+    set
+  }
+  weak public var debugDelegate: (any QuickVO.RTCParticipantDebugDelegate)?
+  public var id: Swift.String {
+    get
+  }
+  public var audioTracks: [QuickVO.RoomAudioTrack] {
+    get
+  }
+  public var videoTracks: [QuickVO.RoomVideoTrack] {
+    get
+  }
+  @QuickVO.Clamping<Swift.Float> public var audiollevel: Swift.Float {
+    get
+  }
+  public var audioEnable: Swift.Bool {
+    get
+  }
+  public var videoEnable: Swift.Bool {
+    get
+  }
+  public var screenEnable: Swift.Bool {
+    get
+  }
+  public var isSpeaking: Swift.Bool {
+    get
+  }
+  public var netMonitor: QuickVO.NetMonitorValue {
+    get
+  }
+  public var volume: Swift.Double? {
+    get
+    set
+  }
+  public var joinTime: Swift.Int64 {
+    get
+  }
+  public var publishAuth: Swift.Bool {
+    get
+  }
+  public var subscribeAuth: Swift.Bool {
+    get
+  }
+  public func getTrack(type: QuickVO.RoomTrackType) -> QuickVO.RoomTrack?
+  public func getTrackType() -> [QuickVO.RoomTrackType]
+  public var audioForbid: Swift.Bool {
+    get
+    set
+  }
+  public var videoForbid: Swift.Bool {
+    get
+    set
+  }
+  public var screenForbid: Swift.Bool {
+    get
+    set
+  }
+  @objc deinit
+}
+extension QuickVO.RTCParticipant {
+  public func getP2PRStatis() -> [QuickVO.NetMonitorValue]
+  public func getP2PSStatis() -> [QuickVO.NetMonitorValue]
+  public var dcRemoteStats: [Swift.String : QuickVO.DCRemoteStats] {
+    get
+  }
+  public var candidateProtocol: Swift.String? {
+    get
+  }
+  public var p2pConnectType: QuickVO.PeerConnectionType {
+    get
+  }
+  public var cameraP2P: Swift.Bool {
+    get
+  }
+  public var sceenP2P: Swift.Bool {
+    get
+  }
+}
+public enum PeerConnectionType : Swift.String {
+  case none
+  case p2p_ing
+  case p2p
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 public enum RTCParticipantAtion {
   case audioEnable(Swift.Bool)
@@ -100,75 +776,30 @@ public protocol RTCParticipantDebugDelegate : AnyObject {
   func debugInfo(_ participant: QuickVO.RTCParticipant)
 }
 public struct RoomSpeechData {
+  public var string: Swift.String
+  public var time: Swift.Int64
+  public var translate: Swift.String?
 }
-extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable {
-}
-@_hasMissingDesignatedInitializers public actor TimeoutSubject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
-  #endif
-  public func cancel()
-  @objc deinit
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers public class ScreenRecorder {
-  @objc deinit
-}
-extension QuickVO.ScreenRecorder {
-  public func startRecord() async
-  @available(iOS 14.0, *)
-  public func stopRecord(_ url: Foundation.URL) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func stopRecord(_ handle: ((ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> Swift.Void)? = nil)
-  #endif
-}
-@propertyWrapper public struct Clamping<WrappedValue> where WrappedValue : Swift.Comparable {
-  public init(wrappedValue value: WrappedValue, _ range: Swift.ClosedRange<WrappedValue>)
-  public var wrappedValue: WrappedValue {
-    get
-    set
-  }
-}
-@propertyWrapper public struct Unique<T> where T : Swift.Equatable {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var wrappedValue: T? {
-    get
-    set
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(wrappedValue: T?)
-  #endif
-}
-@propertyWrapper public struct Validated<Value> {
-  public init(wrappedValue: Value, validator: @escaping (Value) -> Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var wrappedValue: Value? {
-    get
-    set
-  }
-  #endif
-}
-@propertyWrapper public struct UserDfaultsWrapper<T> {
-  public var wrappedValue: T {
-    get
-    nonmutating set
-  }
-  public init(_ key: Swift.String, defaultV: T)
-}
-@propertyWrapper public struct RoundedTwoDecimal<Value> where Value : Swift.BinaryFloatingPoint {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(wrappedValue: Value?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var wrappedValue: Value? {
-    get
-    set
-  }
-  #endif
+public struct RTCReconnectPolicy : Swift.Sendable {
+  public var gracePeriodSeconds: Swift.Double
+  public var quickRecoverTimeoutSeconds: Swift.Double
+  public var rebuildTimeoutSeconds: Swift.Double
+  public var relayTimeoutSeconds: Swift.Double
+  public var maxRebuildAttempts: Swift.Int
+  public var rebuildDeadlineSeconds: Swift.Double
+  public var socketReadyTimeoutSeconds: Swift.Double
+  public var subscribeRetryMaxAttempts: Swift.Int
+  public var subscribeRetryBackoffSeconds: [Swift.Double]
+  public var socketPongTimeoutMisses: Swift.Int
+  public var socketReconnectBackoffSeconds: [Swift.Double]
+  public var socketReconnectTimeoutSeconds: Swift.Double
+  public var relayFirstOnNetworkChange: Swift.Bool
+  public var episodeMaxSeconds: Swift.Double
+  public var socketConnectTimeoutSeconds: Swift.Double
+  public var suspensionGapSeconds: Swift.Double
+  public init(gracePeriodSeconds: Swift.Double = 3.0, quickRecoverTimeoutSeconds: Swift.Double = 5.0, rebuildTimeoutSeconds: Swift.Double = 5.0, relayTimeoutSeconds: Swift.Double = 40.0, maxRebuildAttempts: Swift.Int = 1, rebuildDeadlineSeconds: Swift.Double = 40.0, socketReadyTimeoutSeconds: Swift.Double = 5.0, subscribeRetryMaxAttempts: Swift.Int = 3, subscribeRetryBackoffSeconds: [Swift.Double] = [1, 2, 4], socketPongTimeoutMisses: Swift.Int = 3, socketReconnectBackoffSeconds: [Swift.Double] = [0, 1, 2, 4, 8], socketReconnectTimeoutSeconds: Swift.Double = 41.0, relayFirstOnNetworkChange: Swift.Bool = false, socketConnectTimeoutSeconds: Swift.Double = 10.0, episodeMaxSeconds: Swift.Double = 40.0, suspensionGapSeconds: Swift.Double = 5.0)
+  public func socketReconnectBackoff(forAttempt attempt: Swift.Int) -> Swift.Double
+  public func subscribeRetryBackoff(forAttempt attempt: Swift.Int) -> Swift.Double
 }
 public enum RTCRoomConnect : Swift.Equatable {
   case none
@@ -259,9 +890,87 @@ public struct RoomUserSubData {
   public var id: Swift.String
   public var track: [QuickVO.RoomTrackType]
   public var simucast: QuickVO.SimulcastType?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String = "", track: [QuickVO.RoomTrackType] = [], simucast: QuickVO.SimulcastType? = nil)
-  #endif
+}
+public struct RoomForbidLatestAction : Swift.Sendable {
+  public let action: QuickVO.RoomForbid
+  public let forbid: Swift.Bool
+  public init(action: QuickVO.RoomForbid, forbid: Swift.Bool)
+}
+public protocol RTCRoomDelegate : AnyObject {
+  func roomError(_ error: any Swift.Error)
+  func tokenExpired()
+  func tokenWillExpired()
+  func roomStatus(_ status: QuickVO.RTCRoomConnect)
+  func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
+  func didJoinBootTime(_ bootTime: Swift.String)
+  func didQuitBootTime(_ bootTime: Swift.String)
+  func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
+  func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
+  func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
+  func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
+  func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
+  func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
+  func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
+  func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
+  func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
+  func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
+  func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
+  func whiteboardStateChanged(_ room: QuickVO.RTCRoom, _ whiteboardId: Swift.String)
+}
+extension QuickVO.RTCRoomDelegate {
+  public func roomStatus(_ status: QuickVO.RTCRoomConnect)
+  public func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
+  public func roomError(_ error: any Swift.Error)
+  public func didJoinBootTime(_ bootTime: Swift.String)
+  public func didQuitBootTime(_ bootTime: Swift.String)
+  public func tokenExpired()
+  public func tokenWillExpired()
+  public func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
+  public func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  public func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
+  public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
+  public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
+  public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
+  public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
+  public func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
+  public func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
+  public func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
+  public func whiteboardStateChanged(_ room: QuickVO.RTCRoom, _ whiteboardId: Swift.String)
+}
+public struct RoomLivePlaybackUrls : Swift.Sendable {
+  public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
+  public struct RoomLiveUrlData : Swift.Sendable {
+  }
+  public enum RoomLiveLocation : Swift.Int, Swift.CaseIterable, Swift.Sendable {
+    case chinaMainland
+    case global
+    case overseas
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum RoomLiveBilling : Swift.Int, Swift.CaseIterable, Swift.Sendable {
+    case flow
+    case time
+    public init?(rawValue: Swift.Int)
+    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
 }
 final public class RTCRoom {
   weak final public var delegate: (any QuickVO.RTCRoomDelegate)?
@@ -274,22 +983,22 @@ final public class RTCRoom {
   final public var localPartipant: QuickVO.LocalRTCParticipant {
     get
   }
+  final public var whiteboardId: Swift.String {
+    get
+  }
+  final public var whiteboardURL: Swift.String {
+    get
+  }
   final public var total: Swift.Int {
     get async
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
-  #endif
   @objc deinit
 }
 extension QuickVO.RTCRoom {
-  final public func connect() async throws
-  #if compiler(>=5.3) && $NonescapableTypes
   final public func join(_ token: Swift.String? = nil, _ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  #endif
   final public func join(_ roomId: Swift.String, _ option: QuickVO.RoomLocalOption) async throws
-  final public func quit() async
-  final public func quitStayConnected() async throws
+  final public func quit(intent: QuickVO.QuitIntent = .terminal) async
   final public func updateToken(_ roomId: Swift.String, _ token: Swift.String) async throws
   final public func subscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
   final public func unSubscribe(_ userData: [QuickVO.RoomUserSubData]) async throws
@@ -301,13 +1010,20 @@ extension QuickVO.RTCRoom {
 extension QuickVO.RTCRoom {
   final public func setRoomAudioVolume(_ volum: Swift.Double)
   final public func forbidWith(_ action: [QuickVO.PaticipantForbidAction]) async throws
-  final public func updateSpeech(_ option: QuickVO.RoomSpeechOption) async
+  final public func updateSpeech(_ option: QuickVO.RoomSpeechOption) async throws
+  final public func setLocalSpeechRecognition(_ enabled: Swift.Bool) async throws
+  final public func createWhiteboard(_ id: Swift.String) async throws
+  final public func destroyWhiteboard(_ id: Swift.String) async throws
+  final public func joinWhiteboard(_ id: Swift.String) async throws
+  final public func quitWhiteboard(_ id: Swift.String) async throws
 }
 extension QuickVO.RTCRoom {
-  #if compiler(>=5.3) && $NonescapableTypes
+  final public func simulcast(_ userData: [QuickVO.RoomUserSubData]) async throws
+  final public func simulcastDiag(_ userData: [QuickVO.RoomUserSubData]) -> Swift.String
+}
+extension QuickVO.RTCRoom {
   @available(*, deprecated, renamed: "localPartipant.switchCamera", message: "Use localPartipant.switchCamera instead")
   final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  #endif
   @available(*, deprecated, renamed: "localPartipant.enableSpeaker", message: "Use localPartipant.enableSpeaker instead")
   final public func enableSpeaker(_ enable: Swift.Bool)
   @available(*, deprecated, renamed: "localPartipant.speakerIsEnable", message: "Use localPartipant.speakerIsEnable instead")
@@ -324,6 +1040,537 @@ extension QuickVO.RTCRoom {
   final public func camerPosion() -> QuickVO.RTCCameraPosion
   @available(*, deprecated, renamed: "localPartipant.startPreview", message: "Use localPartipant.startPreview instead")
   final public func startPreview(_ render: QuickVO.RoomVideoView) async
+}
+public struct RoomSubData {
+}
+extension WebRTC.RTCSessionDescription : @unchecked @retroactive Swift.Sendable {
+}
+public enum RTCStatisLevel : Swift.Int {
+  case none
+  case veryBad
+  case bad
+  case generally
+  case good
+  case veryGood
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct DCTrackStats {
+  public var type: Swift.String
+  public var bandwidth: Swift.Double
+  public var jitter: Swift.Double
+  public var packetsLostRate: Swift.Double
+}
+public struct DCRemoteStats {
+  public var userId: Swift.String
+  public var roundTripTime: Swift.Double
+  public var upQualityScore: Swift.Double
+  public var downQualityScore: Swift.Double
+  public var upLevel: QuickVO.RTCStatisLevel
+  public var downLevel: QuickVO.RTCStatisLevel
+  public var statsTime: Swift.Int64
+  public var tracks: [QuickVO.DCTrackStats]
+}
+public struct NetMonitorValue {
+  public var up: QuickVO.RTCStatisLevel
+  public var donw: QuickVO.RTCStatisLevel
+  @QuickVO.RoundedTwoDecimal<Swift.Float> public var netUp: Swift.Float? {
+    get
+    set
+    _modify
+  }
+  @QuickVO.RoundedTwoDecimal<Swift.Float> public var netDown: Swift.Float? {
+    get
+    set
+    _modify
+  }
+  public var lost: Swift.Double
+  public var downlost: Swift.Double
+  public var RoundTripTime: Swift.Float?
+  public var uplinkDelayMs: Swift.Float?
+  public var downlinkDelayMs: Swift.Float?
+  public var frameHeight: Swift.Int?
+  public var frameWith: Swift.Int?
+  public var fps: Swift.Int?
+  public var bitrate: Swift.Double?
+  public var codecA: Swift.String?
+  public var codecV: Swift.String?
+  public var mid: Swift.String?
+}
+public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
+  case _0
+  case _90
+  case _180
+  case _270
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum RTCVideoMirror {
+  case none
+  case mirror
+  case auto
+  public static func == (a: QuickVO.RTCVideoMirror, b: QuickVO.RTCVideoMirror) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol RoomVideoDelegate : AnyObject {
+  func videoView(didChangeVideoSize: QuickVO.RoomVideoView, size: CoreFoundation.CGSize)
+  func renderFisrtFrame(view: QuickVO.RoomVideoView)
+}
+extension QuickVO.RoomVideoDelegate {
+  public func videoView(didChangeVideoSize: QuickVO.RoomVideoView, size: CoreFoundation.CGSize)
+  public func renderFisrtFrame(view: QuickVO.RoomVideoView)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RoomVideoView : QuickVO.RTCView {
+  public enum VideoRenderMode {
+    case MTL
+    case sampleBuffer
+    public static func == (a: QuickVO.RoomVideoView.VideoRenderMode, b: QuickVO.RoomVideoView.VideoRenderMode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any QuickVO.RoomVideoDelegate)?
+  @_Concurrency.MainActor @preconcurrency public var onFrameResumed: (() -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency public func rearmFirstFrame()
+  @_Concurrency.MainActor @preconcurrency public var mirror: QuickVO.RTCVideoMirror {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var backgroundColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var videoContentMode: UIKit.UIView.ContentMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var rotationOverride: Foundation.NSValue? {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var renderMode: QuickVO.RoomVideoView.VideoRenderMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var sampleBufferDisplayLayer: AVFoundation.AVSampleBufferDisplayLayer? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency required public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension QuickVO.RoomVideoView : WebRTC.RTCVideoViewDelegate {
+  @objc nonisolated dynamic public func videoView(_ videoView: any WebRTC.RTCVideoRenderer, didChangeVideoSize size: CoreFoundation.CGSize)
+}
+public typealias RTCViewType = UIKit.UIView
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RTCView : QuickVO.RTCViewType {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @available(*, unavailable)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency open func performLayout()
+  @objc deinit
+}
+public protocol ReconnectEffectExecutor : AnyObject, Swift.Sendable {
+  func execute(_ effect: QuickVO.ReconnectEffect, emit: @escaping @Sendable (QuickVO.CoreEventKind) -> Swift.Void) async
+}
+public enum ReconnectMonotonicClock {
+  public static func nowMs() -> Swift.UInt64
+}
+public actor ReconnectCoreDriver {
+  public enum Mode : Swift.String, Swift.Sendable {
+    case shadow, authoritative
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(config: QuickVO.ReconnectCoreConfig, mode: QuickVO.ReconnectCoreDriver.Mode, executor: any QuickVO.ReconnectEffectExecutor, initialState: QuickVO.ReconnectState = ReconnectState(), onDecision: (@Sendable (QuickVO.CoreEvent, QuickVO.ReconnectState, [QuickVO.ReconnectEffect]) -> Swift.Void)? = nil)
+  public func start()
+  public func stop()
+  nonisolated public func ingest(_ kind: QuickVO.CoreEventKind)
+  public func currentState() -> QuickVO.ReconnectState
+  public func currentMode() -> QuickVO.ReconnectCoreDriver.Mode
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+final public class DryRunEffectExecutor : QuickVO.ReconnectEffectExecutor {
+  public init()
+  final public func execute(_ effect: QuickVO.ReconnectEffect, emit: @escaping @Sendable (QuickVO.CoreEventKind) -> Swift.Void) async
+  @objc deinit
+}
+public enum CoreIceSignal : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case connected
+  case connecting
+  case disconnected
+  case failed
+  case closed
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreIceSignal, b: QuickVO.CoreIceSignal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CoreSocketSignal : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case connected
+  case disconnected
+  case connecting
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreSocketSignal, b: QuickVO.CoreSocketSignal) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CoreNetworkType : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case wifi
+  case cellular
+  case other
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreNetworkType, b: QuickVO.CoreNetworkType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum CoreFailReason : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case episodeTimeout
+  case iceClosed
+  case relayTimeout
+  case unknown
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreFailReason, b: QuickVO.CoreFailReason) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ResourceHealth : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case establishing
+  case up
+  case down
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.ResourceHealth, b: QuickVO.ResourceHealth) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct EffectStamp : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public var episodeGeneration: Swift.UInt64
+  public var effectSeq: Swift.UInt64
+  public init(episodeGeneration: Swift.UInt64, effectSeq: Swift.UInt64)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.EffectStamp, b: QuickVO.EffectStamp) -> Swift.Bool
+}
+public enum ProbePurpose : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case confirmSocketOnly
+  case verifyAfterRecovery
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.ProbePurpose, b: QuickVO.ProbePurpose) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ReconnectEffect : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case signalIceRestart(QuickVO.EffectStamp)
+  case rebuildSFU(QuickVO.EffectStamp, attempt: Swift.Int)
+  case forceRelay(QuickVO.EffectStamp)
+  case connectSocket(QuickVO.EffectStamp)
+  case probeSession(QuickVO.EffectStamp, purpose: QuickVO.ProbePurpose)
+  case closeRoom(QuickVO.CoreFailReason)
+  case recoverySucceeded(QuickVO.EffectStamp, didRebuildSfu: Swift.Bool)
+  case armDeadline(QuickVO.EffectStamp, fireAtMs: Swift.UInt64)
+  case cancelInFlightAction
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.ReconnectEffect, b: QuickVO.ReconnectEffect) -> Swift.Bool
+}
+public enum CoreEventKind : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case ice(QuickVO.CoreIceSignal)
+  case socket(QuickVO.CoreSocketSignal)
+  case networkType(QuickVO.CoreNetworkType)
+  case tick
+  case sessionProbeResult(QuickVO.EffectStamp, purpose: QuickVO.ProbePurpose, valid: Swift.Bool)
+  case effectCompleted(QuickVO.EffectStamp, ok: Swift.Bool)
+  case serverError(code: Swift.Int)
+  case subscribeFailed
+  case turnFailed
+  case cancel
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreEventKind, b: QuickVO.CoreEventKind) -> Swift.Bool
+}
+public struct CoreEvent : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public var seq: Swift.UInt64
+  public var nowMs: Swift.UInt64
+  public var kind: QuickVO.CoreEventKind
+  public init(seq: Swift.UInt64, nowMs: Swift.UInt64, kind: QuickVO.CoreEventKind)
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreEvent, b: QuickVO.CoreEvent) -> Swift.Bool
+}
+public enum CoreTier : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  case waiting
+  case quick
+  case rebuild(attempt: Swift.Int)
+  case relay
+  case socketOnly
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: QuickVO.CoreTier, b: QuickVO.CoreTier) -> Swift.Bool
+}
+public struct Episode : Swift.Sendable, Swift.Equatable {
+  public var generation: Swift.UInt64
+  public var startMs: Swift.UInt64
+  public var deadlineMs: Swift.UInt64
+  public var tier: QuickVO.CoreTier
+  public var tierStartMs: Swift.UInt64
+  public var rebuildAttempts: Swift.Int
+  public var didRebuildSfu: Swift.Bool
+  public var awaitingSessionConfirm: Swift.Bool
+  public var networkTypeAtDisconnect: QuickVO.CoreNetworkType
+  public var ladderRestartType: QuickVO.CoreNetworkType?
+  public var socketReconnectAttempt: Swift.Int
+  public var lastSocketAttemptMs: Swift.UInt64
+  public init(generation: Swift.UInt64, startMs: Swift.UInt64, deadlineMs: Swift.UInt64, tier: QuickVO.CoreTier, tierStartMs: Swift.UInt64, rebuildAttempts: Swift.Int = 0, didRebuildSfu: Swift.Bool = false, awaitingSessionConfirm: Swift.Bool = false, networkTypeAtDisconnect: QuickVO.CoreNetworkType, ladderRestartType: QuickVO.CoreNetworkType? = nil, socketReconnectAttempt: Swift.Int = 0, lastSocketAttemptMs: Swift.UInt64 = 0)
+  public static func == (a: QuickVO.Episode, b: QuickVO.Episode) -> Swift.Bool
+}
+public struct ReconnectState : Swift.Sendable, Swift.Equatable {
+  public enum Phase : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+    case healthy
+    case recovering(QuickVO.Episode)
+    case failed(QuickVO.CoreFailReason)
+    public var description: Swift.String {
+      get
+    }
+    public var isRecovering: Swift.Bool {
+      get
+    }
+    public static func == (a: QuickVO.ReconnectState.Phase, b: QuickVO.ReconnectState.Phase) -> Swift.Bool
+  }
+  public var phase: QuickVO.ReconnectState.Phase
+  public var ice: QuickVO.ResourceHealth
+  public var socket: QuickVO.ResourceHealth
+  public var iceEverUp: Swift.Bool
+  public var socketEverUp: Swift.Bool
+  public var networkType: QuickVO.CoreNetworkType
+  public var episodeGeneration: Swift.UInt64
+  public var effectSeq: Swift.UInt64
+  public var cancelled: Swift.Bool
+  public var closeRequested: Swift.Bool
+  public init(phase: QuickVO.ReconnectState.Phase = .healthy, ice: QuickVO.ResourceHealth = .establishing, socket: QuickVO.ResourceHealth = .establishing, iceEverUp: Swift.Bool = false, socketEverUp: Swift.Bool = false, networkType: QuickVO.CoreNetworkType = .other, episodeGeneration: Swift.UInt64 = 0, effectSeq: Swift.UInt64 = 0, cancelled: Swift.Bool = false, closeRequested: Swift.Bool = false)
+  public var episode: QuickVO.Episode? {
+    get
+  }
+  public var isTerminal: Swift.Bool {
+    get
+  }
+  public static func == (a: QuickVO.ReconnectState, b: QuickVO.ReconnectState) -> Swift.Bool
+}
+public struct ReconnectCoreConfig : Swift.Sendable, Swift.Equatable {
+  public var gracePeriodMs: Swift.UInt64
+  public var quickTimeoutMs: Swift.UInt64
+  public var rebuildTimeoutMs: Swift.UInt64
+  public var episodeMaxMs: Swift.UInt64
+  public var maxRebuildAttempts: Swift.Int
+  public var socketReconnectBackoffMs: [Swift.UInt64]
+  public var relayFirstOnNetworkChange: Swift.Bool
+  public init(gracePeriodMs: Swift.UInt64 = 3000, quickTimeoutMs: Swift.UInt64 = 5000, rebuildTimeoutMs: Swift.UInt64 = 5000, episodeMaxMs: Swift.UInt64 = 40000, maxRebuildAttempts: Swift.Int = 1, socketReconnectBackoffMs: [Swift.UInt64] = [0, 1000, 2000, 4000, 8000], relayFirstOnNetworkChange: Swift.Bool = false)
+  public func socketBackoffMs(forAttempt attempt: Swift.Int) -> Swift.UInt64
+  public static func == (a: QuickVO.ReconnectCoreConfig, b: QuickVO.ReconnectCoreConfig) -> Swift.Bool
+}
+public struct ReconnectReduction : Swift.Sendable, Swift.Equatable {
+  public var state: QuickVO.ReconnectState
+  public var effects: [QuickVO.ReconnectEffect]
+  public init(state: QuickVO.ReconnectState, effects: [QuickVO.ReconnectEffect])
+  public static func == (a: QuickVO.ReconnectReduction, b: QuickVO.ReconnectReduction) -> Swift.Bool
+}
+public struct ReconnectReducer : Swift.Sendable {
+  public let config: QuickVO.ReconnectCoreConfig
+  public static let sessionInvalidErrorCode: Swift.Int
+  public init(config: QuickVO.ReconnectCoreConfig)
+  public func reduce(_ state: QuickVO.ReconnectState, _ event: QuickVO.CoreEvent) -> QuickVO.ReconnectReduction
+}
+public enum AudioError : Swift.Error {
+  case permissionDenied
+  case proceessError
+  public static func == (a: QuickVO.AudioError, b: QuickVO.AudioError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RoomAuidioTool : ObjectiveC.NSObject {
+  public func checkRecordAndPlay() async throws
+  public func checkMicrophonePermission() async throws
+  @objc deinit
+}
+extension QuickVO.RoomAuidioTool : AVFAudio.AVAudioPlayerDelegate {
+  @objc dynamic public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class RoomAudioTrack : QuickVO.RoomTrack, QuickVO.RTCTrackInfo {
+  public var trackId: Swift.String {
+    get
+  }
+  public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  public var volume: Swift.Double {
+    get
+    set
+  }
+  public var renderBuffer: ((AVFAudio.AVAudioPCMBuffer) -> Swift.Void)? {
+    get
+    set
+  }
+  @objc deinit
+}
+public struct RoomAudioLevel {
+  public let rms: Swift.Float
+  public let peak: Swift.Float
+  public func rmsLevelValue() -> Swift.Float
+}
+extension AVFAudio.AVAudioPCMBuffer {
+  public func audioLevel() -> QuickVO.RoomAudioLevel?
+}
+final public class RTCRoomConfig {
+  public static let config: QuickVO.RTCRoomConfig
+  final public var video: QuickVO.RoomVideoCaptureConfig
+  final public var audio: QuickVO.RoomAudioCaptureConfig
+  final public var reconnectPolicy: QuickVO.RTCReconnectPolicy
+  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy())
+  @objc deinit
+}
+extension QuickVO.RTCRoomConfig {
+  public static let defaultVideo: QuickVO.RoomVideoCaptureConfig
+  public static let defaultAudio: QuickVO.RoomAudioCaptureConfig
+}
+public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
+}
+extension QuickVO.RoomError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public enum ConnectError : QuickVO.RoomError {
+  case connectError(Swift.Int32, _: Swift.String? = nil)
+  case connectFailure(Swift.Int32)
+  case connectTimeOut(_: Swift.String? = nil)
+  case disConnected
+  case publishStreamFailure([QuickVO.RoomTrackType])
+  case subscribeStreamFailure([QuickVO.RoomUserSubData])
+  case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
+  case startScreenShareWithoutGroupId
+  case screenForbid
+  case noAuth
+  case joined
+  case notInRoom
+  case roomReleased
+  case trackNotPublished([QuickVO.RoomUserSubData])
+  case simulcastNoSFUTrack
+  public var description: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public actor RoomNetUtils {
+  public enum PingError : Swift.Error {
+    case alreadyPing
+    public static func == (a: QuickVO.RoomNetUtils.PingError, b: QuickVO.RoomNetUtils.PingError) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct PingData {
+  }
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+extension QuickVO.RoomNetUtils {
+  public func startPing(_ time: Swift.UInt64 = 3) async throws -> QuickVO.RoomNetUtils.PingData
+  public func stopPing()
+}
+public enum RoomSpeechLanguage : Swift.String, Swift.CaseIterable, Swift.Sendable {
+  case zh
+  case en
+  case yue
+  case ja
+  case ko
+  case fr
+  case de
+  case es
+  case it
+  case ru
+  case pt
+  case hi
+  case ar
+  case th
+  case vi
+  case nl
+  case sv
+  case fi
+  case pl
+  case tr
+  public var displayName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [QuickVO.RoomSpeechLanguage]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [QuickVO.RoomSpeechLanguage] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct RoomSpeechLanguages {
+  public static var all: [QuickVO.RoomSpeechLanguage] {
+    get
+  }
 }
 public protocol RTCTrackInfo {
   var trackId: Swift.String { get }
@@ -357,167 +1604,34 @@ public enum RoomTrackType : Swift.CaseIterable, Swift.Hashable, Swift.Sendable {
     get
   }
 }
-public enum RTCVideoMirror {
-  case none
-  case mirror
-  case auto
-  public static func == (a: QuickVO.RTCVideoMirror, b: QuickVO.RTCVideoMirror) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+@_hasMissingDesignatedInitializers public class RoomVideoTrack : QuickVO.RoomTrack, QuickVO.RTCTrackInfo {
+  public var trackId: Swift.String {
     get
   }
-}
-public protocol RoomVideoDelegate : AnyObject {
-  func videoView(didChangeVideoSize: QuickVO.RoomVideoView, size: CoreFoundation.CGSize)
-  func renderFisrtFrame(view: QuickVO.RoomVideoView)
-}
-extension QuickVO.RoomVideoDelegate {
-  public func videoView(didChangeVideoSize: QuickVO.RoomVideoView, size: CoreFoundation.CGSize)
-  public func renderFisrtFrame(view: QuickVO.RoomVideoView)
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RoomVideoView : QuickVO.RTCView {
-  public enum VideoRenderMode {
-    case MTL
-    case sampleBuffer
-    public static func == (a: QuickVO.RoomVideoView.VideoRenderMode, b: QuickVO.RoomVideoView.VideoRenderMode) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  @_Concurrency.MainActor @preconcurrency weak public var delegate: (any QuickVO.RoomVideoDelegate)?
-  @_Concurrency.MainActor @preconcurrency public var mirror: QuickVO.RTCVideoMirror {
+  public var isEnabled: Swift.Bool {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public var backgroundColor: UIKit.UIColor? {
-    @objc get
-    @objc set
-  }
-  #endif
-  @_Concurrency.MainActor @preconcurrency public var isEnabled: Swift.Bool {
+  public var render: QuickVO.RoomVideoView? {
     get
     set
   }
-  @_Concurrency.MainActor @preconcurrency public var videoContentMode: UIKit.UIView.ContentMode {
-    get
-    set
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public var rotationOverride: Foundation.NSValue? {
-    get
-    set
-  }
-  #endif
-  @_Concurrency.MainActor @preconcurrency public var renderMode: QuickVO.RoomVideoView.VideoRenderMode {
-    get
-    set
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency public var sampleBufferDisplayLayer: AVFoundation.AVSampleBufferDisplayLayer? {
-    get
-  }
-  #endif
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency required public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
-extension QuickVO.RoomVideoView : WebRTC.RTCVideoViewDelegate {
-  @objc nonisolated dynamic public func videoView(_ videoView: any WebRTC.RTCVideoRenderer, didChangeVideoSize size: CoreFoundation.CGSize)
+extension QuickVO.RoomVideoTrack {
+  public static func applyRenders(_ bindings: [(track: QuickVO.RoomVideoTrack?, view: QuickVO.RoomVideoView?)])
 }
-extension Swift.Bool {
-  public var int: Swift.Int {
-    get
-  }
-  public var string: Swift.String {
-    get
-  }
-}
-public enum AudioError : Swift.Error {
-  case permissionDenied
-  case proceessError
-  public static func == (a: QuickVO.AudioError, b: QuickVO.AudioError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class RoomAuidioTool : ObjectiveC.NSObject {
-  public func checkRecordAndPlay() async throws
-  public func checkMicrophonePermission() async throws
+@_hasMissingDesignatedInitializers public class ScreenRecorder {
   @objc deinit
 }
-extension QuickVO.RoomAuidioTool : AVFAudio.AVAudioPlayerDelegate {
-  @objc dynamic public func audioPlayerDidFinishPlaying(_ player: AVFAudio.AVAudioPlayer, successfully flag: Swift.Bool)
-}
-public enum RTCStatisLevel : Swift.Int {
-  case none
-  case veryBad
-  case bad
-  case generally
-  case good
-  case veryGood
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public struct DCTrackStats {
-  public var type: Swift.String
-  public var bandwidth: Swift.Double
-  public var jitter: Swift.Double
-  public var packetsLostRate: Swift.Double
-}
-public struct DCRemoteStats {
-  public var userId: Swift.String
-  public var roundTripTime: Swift.Double
-  public var upQualityScore: Swift.Double
-  public var downQualityScore: Swift.Double
-  public var upLevel: QuickVO.RTCStatisLevel
-  public var downLevel: QuickVO.RTCStatisLevel
-  public var statsTime: Swift.Int64
-  public var tracks: [QuickVO.DCTrackStats]
-}
-public struct NetMonitorValue {
-  public var up: QuickVO.RTCStatisLevel
-  public var donw: QuickVO.RTCStatisLevel
-  #if compiler(>=5.3) && $NonescapableTypes
-  @QuickVO.RoundedTwoDecimal public var netUp: Swift.Float? {
-    get
-    set
-    _modify
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @QuickVO.RoundedTwoDecimal public var netDown: Swift.Float? {
-    get
-    set
-    _modify
-  }
-  #endif
-  public var lost: Swift.Double
-  public var downlost: Swift.Double
-  public var RoundTripTime: Swift.Float?
-  public var uplinkDelayMs: Swift.Float?
-  public var downlinkDelayMs: Swift.Float?
-  public var frameHeight: Swift.Int?
-  public var frameWith: Swift.Int?
-  public var fps: Swift.Int?
-  public var bitrate: Swift.Double?
-  public var codecA: Swift.String?
-  public var codecV: Swift.String?
-  public var mid: Swift.String?
+extension QuickVO.ScreenRecorder {
+  public func startRecord() async
+  @available(iOS 14.0, *)
+  public func stopRecord(_ url: Foundation.URL) async throws
+  public func stopRecord(_ handle: ((ReplayKit.RPPreviewViewController?, (any Swift.Error)?) -> Swift.Void)? = nil)
 }
 public actor TaskActor<T> {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(task: ((T) async -> Swift.Void)?)
-  #endif
   public enum State : Swift.Sendable {
     case processing
     case paused
@@ -540,9 +1654,7 @@ extension QuickVO.TaskActor {
   public func stop()
 }
 public actor DetachedTaskActor<T> {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(task: ((T) async -> Swift.Void)?)
-  #endif
   public enum State : Swift.Sendable {
     case processing
     case paused
@@ -565,594 +1677,89 @@ extension QuickVO.DetachedTaskActor {
   public func stop()
   public func reStart(_ value: T) async
 }
-extension AVFoundation.AVCaptureDevice {
-  public var devicePosition: AVFoundation.AVCaptureDevice.Position {
-    get
-  }
-}
-final public class RoomVideoCaptureConfig {
-  final public var width: Swift.Int {
-    get
-    set
-  }
-  final public var height: Swift.Int {
-    get
-    set
-  }
-  final public var fps: Swift.Int {
-    get
-    set
-  }
-  final public var mirror: Swift.Bool
-  final public var degradation: QuickVO.RoomVideodegradation {
-    get
-    set
-  }
-  final public var filter: Swift.Bool
-  final public var crop: QuickVO.RoomVideoCropping {
-    get
-  }
-  public init(width: Swift.Int, height: Swift.Int, fps: Swift.Int)
-  @objc deinit
-}
-final public class RoomAudioCaptureConfig {
-  final public var echoCancellation: Swift.Bool
-  final public var noiseSuppression: Swift.Bool
-  final public var autoGainControl: Swift.Bool
-  final public var audioLevelMonitor: Swift.Int?
-  public init(echoCancellation: Swift.Bool, noiseSuppression: Swift.Bool, autoGainControl: Swift.Bool)
-  @objc deinit
-}
-public enum RoomVideodegradation : Swift.Int, Swift.CaseIterable {
-  case disabled
-  case framerate
-  case resolution
-  case balanced
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias AllCases = [QuickVO.RoomVideodegradation]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [QuickVO.RoomVideodegradation] {
-    get
-  }
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers final public class RoomVideoCropping {
-  final public var aspectRatio: Swift.Float?
-  @QuickVO.Clamping final public var cropXRatio: Swift.Float {
-    get
-    set
-    _modify
-  }
-  @QuickVO.Clamping final public var cropYRatio: Swift.Float {
-    get
-    set
-    _modify
-  }
-  @objc deinit
-}
-public protocol RoomVideoCaptureDelegate : AnyObject {
-  func processMode() -> QuickVO.RoomVideoRrocessMode
-  func getCaputureBuffer(buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)
-  #if compiler(>=5.3) && $NonescapableTypes
-  func setCaputureBuffer() -> (buffer: CoreVideo.CVPixelBuffer, rotation: QuickVO.RoomVideoRotation)?
-  #endif
-}
-public enum RoomVideoRrocessMode {
-  case readOnly
-  case readWrite
-  public static func == (a: QuickVO.RoomVideoRrocessMode, b: QuickVO.RoomVideoRrocessMode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct RTCConfig {
-  public let rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil, rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = 1)
-  #endif
-}
-public struct RoomLocalOption : Swift.Sendable {
-  public var defaultStartCamera: Swift.Bool
-  public var subscribeType: QuickVO.StreamType
-  public var publishType: QuickVO.StreamType
-  public var scene: QuickVO.RoomScene
-  public var enalbleSimulcast: Swift.Bool
-  public var serverSpeech: QuickVO.RoomSpeechOption
-  public var prePublishAuthToken: Swift.String?
-  public var prePublishBaseURL: Foundation.URL?
-  public var userFontCamera: Swift.Bool
-  public var defaultAuioSpeakerOn: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(userId: Swift.String, userFontCamera: Swift.Bool = true, defaultStartCamera: Swift.Bool = true, defaultAuioSpeakerOn: Swift.Bool = false, subscribeType: QuickVO.StreamType = .auto, publishType: QuickVO.StreamType = .auto, scence: QuickVO.RoomScene = .communication, enalbleSimulcast: Swift.Bool = false, serverSpeech: QuickVO.RoomSpeechOption = RoomSpeechOption(), prePublishAuthToken: Swift.String? = nil, prePublishBaseURL: Foundation.URL? = nil)
-  #endif
-}
-public struct RoomSpeechOption : Swift.Sendable {
-  public var open: Swift.Bool
-  public var lang: Swift.String?
-  public var targetLang: Swift.String?
-  public var translate: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(open: Swift.Bool = false, lang: Swift.String? = nil, targetLang: Swift.String? = nil, translate: Swift.Bool = false)
-  #endif
-}
-@_hasMissingDesignatedInitializers open class RTCParticipant {
-  weak public var delegate: (any QuickVO.RTCParticipantDelegate)? {
-    get
-    set
-  }
-  weak public var debugDelegate: (any QuickVO.RTCParticipantDebugDelegate)?
-  public var id: Swift.String {
-    get
-  }
-  public var audioTracks: [QuickVO.RoomAudioTrack] {
-    get
-  }
-  public var videoTracks: [QuickVO.RoomVideoTrack] {
-    get
-  }
-  @QuickVO.Clamping public var audiollevel: Swift.Float {
-    get
-  }
-  public var audioEnable: Swift.Bool {
-    get
-  }
-  public var videoEnable: Swift.Bool {
-    get
-  }
-  public var screenEnable: Swift.Bool {
-    get
-  }
-  public var isSpeaking: Swift.Bool {
-    get
-  }
-  public var netMonitor: QuickVO.NetMonitorValue {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var volume: Swift.Double? {
-    get
-    set
-  }
-  #endif
-  public var joinTime: Swift.Int64 {
-    get
-  }
-  public var publishAuth: Swift.Bool {
-    get
-  }
-  public var subscribeAuth: Swift.Bool {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getTrack(type: QuickVO.RoomTrackType) -> QuickVO.RoomTrack?
-  #endif
-  public func getTrackType() -> [QuickVO.RoomTrackType]
-  public var audioForbid: Swift.Bool {
-    get
-    set
-  }
-  public var videoForbid: Swift.Bool {
-    get
-    set
-  }
-  public var screenForbid: Swift.Bool {
-    get
-    set
-  }
-  @objc deinit
-}
-extension QuickVO.RTCParticipant {
-  public func getP2PRStatis() -> [QuickVO.NetMonitorValue]
-  public func getP2PSStatis() -> [QuickVO.NetMonitorValue]
-  public var dcRemoteStats: [Swift.String : QuickVO.DCRemoteStats] {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var candidateProtocol: Swift.String? {
-    get
-  }
-  #endif
-  public var p2pConnectType: QuickVO.PeerConnectionType {
-    get
-  }
-  public var cameraP2P: Swift.Bool {
-    get
-  }
-  public var sceenP2P: Swift.Bool {
-    get
-  }
-}
-public enum PeerConnectionType : Swift.String {
-  case none
-  case p2p_ing
-  case p2p
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum RTCLogLevel {
-  case verbose
-  case debug
-  case info
-  case critical
-  case warning
-  case error
-  case fault
-  public static func == (a: QuickVO.RTCLogLevel, b: QuickVO.RTCLogLevel) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct RTCLogEntry {
-  public let level: QuickVO.RTCLogLevel
-  public let message: Swift.String
-}
-@_hasMissingDesignatedInitializers final public class RTCEngine {
-  public static let engine: QuickVO.RTCEngine
-  final public var appId: Swift.String {
-    get
-  }
-  final public var onLog: ((QuickVO.RTCLogEntry) -> Swift.Void)? {
-    get
-    set
-  }
-  final public var netStatus: ((QuickVO.NetworkMotorStatus) -> Swift.Void)?
-  final public var netType: ((QuickVO.NetworkMotorType) -> Swift.Void)?
-  final public let statusSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorStatus, Swift.Never>
-  final public let typeSubject: Combine.CurrentValueSubject<QuickVO.NetworkMotorType, Swift.Never>
-  final public var netMultiPath: QuickVO.MultipathNetSeverType {
-    get
-    set
-  }
-  final public var uploadLog: Swift.Bool
-  @objc deinit
-}
-extension QuickVO.RTCEngine {
-  public static func create(_ appId: Swift.String)
-  public static func destroy()
-}
-@_hasMissingDesignatedInitializers final public class LocalRTCParticipant {
-  weak final public var videoCaptureDelegate: (any QuickVO.RoomVideoCaptureDelegate)?
-  final public var publishAudio: Swift.Bool
-  @objc deinit
-}
-public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
-}
-extension QuickVO.RoomError {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var errorDescription: Swift.String? {
-    get
-  }
-  #endif
-}
-public enum ConnectError : QuickVO.RoomError {
-  case connectError(Swift.Int32, _: Swift.String? = nil)
-  case connectFailure(Swift.Int32)
-  case connectTimeOut(_: Swift.String? = nil)
-  case disConnected
-  case publishStreamFailure([QuickVO.RoomTrackType])
-  case subscribeStreamFailure([QuickVO.RoomUserSubData])
-  case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
-  case startScreenShareWithoutGroupId
-  case screenForbid
-  case noAuth
-  case joined
-  case roomReleased
-  case trackNotPublished([QuickVO.RoomUserSubData])
-  public var description: Swift.String {
-    get
-  }
-}
-public typealias RTCViewType = UIKit.UIView
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class RTCView : QuickVO.RTCViewType {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, unavailable)
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder _: Foundation.NSCoder)
-  #endif
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor @preconcurrency open func performLayout()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public actor RoomNetUtils {
-  public enum PingError : Swift.Error {
-    case alreadyPing
-    public static func == (a: QuickVO.RoomNetUtils.PingError, b: QuickVO.RoomNetUtils.PingError) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct PingData {
-  }
+@_hasMissingDesignatedInitializers public actor TimeoutSubject {
+  public func setTimeOut(_ time: Swift.Int, _ recalculate: Swift.Bool? = true) async -> Swift.Bool
+  public func cancel()
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
   }
 }
-extension QuickVO.RoomNetUtils {
-  public func startPing(_ time: Swift.UInt64 = 3) async throws -> QuickVO.RoomNetUtils.PingData
-  public func stopPing()
+extension Swift.Bool {
+  public var int: Swift.Int {
+    get
+  }
+  public var string: Swift.String {
+    get
+  }
 }
-extension Foundation.Data {
-  public mutating func append(_ string: Swift.String)
-}
-public struct RoomSubData {
-}
-@_hasMissingDesignatedInitializers public class RoomAudioTrack : QuickVO.RoomTrack, QuickVO.RTCTrackInfo {
-  public var trackId: Swift.String {
+@_hasMissingDesignatedInitializers public actor UnifiedReconnectMachine {
+  public var isActive: Swift.Bool {
     get
   }
-  public var isEnabled: Swift.Bool {
-    get
-    set
+  public func handle(_ event: QuickVO.ReconnectEvent)
+  public func cancel()
+  public func isManagingConnection() -> Swift.Bool
+  public func isProbeStale(forEpisodeGeneration gen: Swift.UInt64) -> Swift.Bool
+  public func confirmSocketSession(valid: Swift.Bool, episodeGeneration gen: Swift.UInt64)
+  public enum RebuildSlot : Swift.Equatable {
+    case proceed(attempt: Swift.Int)
+    case exhausted(QuickVO.UnifiedReconnectMachine.RebuildExhaustReason)
+    public static func == (a: QuickVO.UnifiedReconnectMachine.RebuildSlot, b: QuickVO.UnifiedReconnectMachine.RebuildSlot) -> Swift.Bool
   }
-  public var volume: Swift.Double {
-    get
-    set
+  public enum RebuildExhaustReason : Swift.Equatable {
+    case attempts
+    case deadline
+    public static func == (a: QuickVO.UnifiedReconnectMachine.RebuildExhaustReason, b: QuickVO.UnifiedReconnectMachine.RebuildExhaustReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
   }
-  public var renderBuffer: ((AVFAudio.AVAudioPCMBuffer) -> Swift.Void)? {
-    get
-    set
-  }
+  public func requestRebuildSlot() -> QuickVO.UnifiedReconnectMachine.RebuildSlot
+  public func beginRebuildEpisodeIfNeeded()
+  public func remainingRebuildDeadlineMs() -> Swift.UInt64
+  public func socketReadyWaitMs() -> Swift.UInt64
+  public func resetRebuildEpisode()
+  public func handleIceStateChanged(_ rtcState: WebRTC.RTCIceConnectionState)
+  public func handleSocketStateChanged(_ socketHealth: QuickVO.SocketHealth)
+  public func handleNetworkTypeChanged(_ newType: QuickVO.ReconnectNetworkType)
+  public func onHeartbeat()
   @objc deinit
-}
-public struct RoomAudioLevel {
-  public let rms: Swift.Float
-  public let peak: Swift.Float
-  public func rmsLevelValue() -> Swift.Float
-}
-extension AVFAudio.AVAudioPCMBuffer {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func audioLevel() -> QuickVO.RoomAudioLevel?
-  #endif
-}
-public struct QuickVOFeatureConfig : Swift.Sendable {
-  public var reconnectEnabled: Swift.Bool
-  public init(reconnectEnabled: Swift.Bool = true)
-}
-public struct RTCReconnectPolicy : Swift.Sendable {
-  public var gracePeriodSeconds: Swift.Double
-  public var quickRecoverTimeoutSeconds: Swift.Double
-  public var iceConnectedTimeoutSeconds: Swift.Double
-  public var maxRebuildCount: Swift.Int
-  public var baseDelaySeconds: Swift.Double
-  public var maxDelaySeconds: Swift.Double
-  public var backoffMultiplier: Swift.Double
-  public var jitterFactor: Swift.Double
-  public var relayTimeoutSeconds: Swift.Double
-  public init(gracePeriodSeconds: Swift.Double = 3.0, quickRecoverTimeoutSeconds: Swift.Double = 5.0, iceConnectedTimeoutSeconds: Swift.Double = 5.0, maxRebuildCount: Swift.Int = 1, baseDelaySeconds: Swift.Double = 1.0, maxDelaySeconds: Swift.Double = 30.0, backoffMultiplier: Swift.Double = 2.0, jitterFactor: Swift.Double = 0.3, relayTimeoutSeconds: Swift.Double = 40.0)
-  public func backoffDelay(attempt: Swift.Int) -> Swift.Double
-}
-public enum ReconnectState : Swift.Sendable {
-  case idle
-  case graceTimer(graceStartMs: Swift.UInt64)
-  case quickRecover(quickRecoverStartMs: Swift.UInt64)
-  case rebuild(rebuildStartMs: Swift.UInt64, attempt: Swift.Int)
-  case relayOnly(relayStartMs: Swift.UInt64)
-  case failed
-}
-public enum ReconnectFailReason : Swift.Sendable {
-  case turnTimeout
-  case dtlsFailed
-  case iceTimeout
-  case dcNoResponse
-  case audioSessionFailed
-  case relayTimeout40s
-  case signalSessionStale
-  case unknown
-  public static func == (a: QuickVO.ReconnectFailReason, b: QuickVO.ReconnectFailReason) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
   }
-}
-public enum ReconnectNetworkType : Swift.Sendable {
-  case wifi
-  case cellular
-  case other
-  public init(from motorType: QuickVO.NetworkMotorType)
-  public static func == (a: QuickVO.ReconnectNetworkType, b: QuickVO.ReconnectNetworkType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum ReconnectTrigger : Swift.Sendable {
-  case iceDisconnected
-  case iceFailed
-  public static func == (a: QuickVO.ReconnectTrigger, b: QuickVO.ReconnectTrigger) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-extension QuickVO.LocalRTCParticipant {
-  final public func enableMicrophone(_ enable: Swift.Bool)
-  final public func microphoneIsEnable() -> Swift.Bool
-  final public func speakerIsEnable() async -> Swift.Bool
-  final public func enableSpeaker(_ enable: Swift.Bool)
-  final public func switchSpeaker() async
-  final public func restartAudio() async
-}
-extension QuickVO.LocalRTCParticipant {
-  final public func playAudio(_ url: Foundation.URL, _ loop: Swift.Int = 0) async throws
-  final public func resumeAudio() async
-  final public func pauseAudio() async
-  final public func stopAudio() async
-  final public func setAudioVolume(_ volume: Swift.Float) async
-  final public func playEffect(_ url: [Foundation.URL], _ loop: Swift.Int = 0) async throws
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func setEffectVolume(_ volume: Swift.Float, _ url: Foundation.URL? = nil) async
-  #endif
-  final public func stopAll() async
-}
-extension QuickVO.LocalRTCParticipant {
-  final public var isMultitaskingCameraAccessSupported: Swift.Bool {
-    get
-  }
-  final public var isMultitaskingCameraAccessEnabled: Swift.Bool {
-    get
-    set
-  }
-  final public func camerPosion() -> QuickVO.RTCCameraPosion
-  final public func cameraIsEnable() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
-  #endif
-  final public func enableCamera(_ enable: Swift.Bool)
-  final public func startPreview(_ render: QuickVO.RoomVideoView) async
-}
-public struct RoomForbidLatestAction : Swift.Sendable {
-  public let action: QuickVO.RoomForbid
-  public let forbid: Swift.Bool
-  public init(action: QuickVO.RoomForbid, forbid: Swift.Bool)
-}
-public protocol RTCRoomDelegate : AnyObject {
-  func roomError(_ error: any Swift.Error)
-  func tokenExpired()
-  func tokenWillExpired()
-  func roomStatus(_ status: QuickVO.RTCRoomConnect)
-  func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
-  func didJoinBootTime(_ bootTime: Swift.String)
-  func didQuitBootTime(_ bootTime: Swift.String)
-  func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
-  func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
-  #if compiler(>=5.3) && $NonescapableTypes
-  func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
-  #endif
-  func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
-  func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
-  func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
-  func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
-  func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
-  func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
-  func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
-  func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
-  func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
-  func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
-}
-extension QuickVO.RTCRoomDelegate {
-  public func roomStatus(_ status: QuickVO.RTCRoomConnect)
-  public func roomDetailStatus(_ room: QuickVO.RTCRoom, _ status: (server: QuickVO.RTCRoomConnect, rtc: QuickVO.RTCRoomConnect))
-  public func roomError(_ error: any Swift.Error)
-  public func didJoinBootTime(_ bootTime: Swift.String)
-  public func didQuitBootTime(_ bootTime: Swift.String)
-  public func tokenExpired()
-  public func tokenWillExpired()
-  public func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
-  public func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
-  public func didSubscribed(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
-  public func updateAudioLevel(_ room: QuickVO.RTCRoom, _ participant: [QuickVO.RTCParticipant])
-  public func audioSessionRouteChange(_ room: QuickVO.RTCRoom, _ route: QuickVO.RTCAudioRoute)
-  public func audioSessionInterrupt(_ room: QuickVO.RTCRoom, _ type: AVFAudio.AVAudioSession.InterruptionType)
-  public func liveDidSetPlaybackUrls(_ room: QuickVO.RTCRoom, _ urls: QuickVO.RoomLivePlaybackUrls)
-  public func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
-  public func roomForbidSetDidChange(_ room: QuickVO.RTCRoom, _ current: Swift.Set<QuickVO.RoomForbid>, _ latestActions: [QuickVO.RoomForbidLatestAction])
-  public func roomAdminDidChange(_ room: QuickVO.RTCRoom, _ admin: [Swift.String])
-}
-public struct RoomLivePlaybackUrls : Swift.Sendable {
-  public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
-  public struct RoomLiveUrlData : Swift.Sendable {
-  }
-  public enum RoomLiveLocation : Swift.Int, Swift.CaseIterable, Swift.Sendable {
-    case chinaMainland
-    case global
-    case overseas
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.Int)
-    #endif
-    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation]
-    public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveLocation] {
-      get
-    }
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-  public enum RoomLiveBilling : Swift.Int, Swift.CaseIterable, Swift.Sendable {
-    case flow
-    case time
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.Int)
-    #endif
-    public typealias AllCases = [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling]
-    public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [QuickVO.RoomLivePlaybackUrls.RoomLiveBilling] {
-      get
-    }
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-}
-public enum RoomVideoRotation : Swift.Int, Swift.Sendable {
-  case _0
-  case _90
-  case _180
-  case _270
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-final public class RTCRoomConfig {
-  public static let config: QuickVO.RTCRoomConfig
-  final public var video: QuickVO.RoomVideoCaptureConfig
-  final public var audio: QuickVO.RoomAudioCaptureConfig
-  final public var featureConfig: QuickVO.QuickVOFeatureConfig
-  final public var reconnectPolicy: QuickVO.RTCReconnectPolicy
-  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, featureConfig: QuickVO.QuickVOFeatureConfig = QuickVOFeatureConfig(), reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy())
-  @objc deinit
-}
-extension QuickVO.RTCRoomConfig {
-  public static let defaultVideo: QuickVO.RoomVideoCaptureConfig
-  public static let defaultAudio: QuickVO.RoomAudioCaptureConfig
 }
 extension Dispatch.DispatchTimeInterval : @retroactive Swift.CustomDebugStringConvertible {
   public var debugDescription: Swift.String {
     get
   }
 }
-public enum NetworkMotorStatus : Swift.Sendable {
-  case reachable
-  case unReachable
-  public static func == (a: QuickVO.NetworkMotorStatus, b: QuickVO.NetworkMotorStatus) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum NetworkMotorType : Swift.Sendable {
-  case wifi
-  case cellular
-  case other
-  public static func == (a: QuickVO.NetworkMotorType, b: QuickVO.NetworkMotorType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers public class RTCNetworkMonitor {
-  public func stopMonitor()
-  public func startMonitor()
-  @objc deinit
-}
+extension QuickVO.RoomVideodegradation : Swift.Equatable {}
+extension QuickVO.RoomVideodegradation : Swift.Hashable {}
+extension QuickVO.RoomVideodegradation : Swift.RawRepresentable {}
+extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
+extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
+extension QuickVO.IceHealth : Swift.Hashable {}
+extension QuickVO.SocketHealth : Swift.Hashable {}
+extension QuickVO.ReconnectFailReason : Swift.Equatable {}
+extension QuickVO.ReconnectFailReason : Swift.Hashable {}
+extension QuickVO.ReconnectNetworkType : Swift.Hashable {}
+extension QuickVO.RTCLogLevel : Swift.Equatable {}
+extension QuickVO.RTCLogLevel : Swift.Hashable {}
+extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
+extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
+extension QuickVO.QuitIntent : Swift.Equatable {}
+extension QuickVO.QuitIntent : Swift.Hashable {}
+extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
+extension QuickVO.NetworkMotorStatus : Swift.Hashable {}
+extension QuickVO.NetworkMotorType : Swift.Equatable {}
+extension QuickVO.NetworkMotorType : Swift.Hashable {}
+extension QuickVO.PeerConnectionType : Swift.Equatable {}
+extension QuickVO.PeerConnectionType : Swift.Hashable {}
+extension QuickVO.PeerConnectionType : Swift.RawRepresentable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
 extension QuickVO.RTCCameraPosion : Swift.Equatable {}
 extension QuickVO.RTCCameraPosion : Swift.Hashable {}
@@ -1162,51 +1769,42 @@ extension QuickVO.RoomScene : Swift.Equatable {}
 extension QuickVO.RoomScene : Swift.Hashable {}
 extension QuickVO.StreamType : Swift.Equatable {}
 extension QuickVO.StreamType : Swift.Hashable {}
-extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
-extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
 extension QuickVO.SimulcastType : Swift.Equatable {}
 extension QuickVO.SimulcastType : Swift.Hashable {}
-extension QuickVO.RTCVideoMirror : Swift.Equatable {}
-extension QuickVO.RTCVideoMirror : Swift.Hashable {}
-extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Equatable {}
-extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Hashable {}
-extension QuickVO.AudioError : Swift.Equatable {}
-extension QuickVO.AudioError : Swift.Hashable {}
-extension QuickVO.RTCStatisLevel : Swift.Equatable {}
-extension QuickVO.RTCStatisLevel : Swift.Hashable {}
-extension QuickVO.RTCStatisLevel : Swift.RawRepresentable {}
-extension QuickVO.TaskActor.State : Swift.Equatable {}
-extension QuickVO.TaskActor.State : Swift.Hashable {}
-extension QuickVO.DetachedTaskActor.State : Swift.Equatable {}
-extension QuickVO.DetachedTaskActor.State : Swift.Hashable {}
-extension QuickVO.RoomVideodegradation : Swift.Equatable {}
-extension QuickVO.RoomVideodegradation : Swift.Hashable {}
-extension QuickVO.RoomVideodegradation : Swift.RawRepresentable {}
-extension QuickVO.RoomVideoRrocessMode : Swift.Equatable {}
-extension QuickVO.RoomVideoRrocessMode : Swift.Hashable {}
-extension QuickVO.PeerConnectionType : Swift.Equatable {}
-extension QuickVO.PeerConnectionType : Swift.Hashable {}
-extension QuickVO.PeerConnectionType : Swift.RawRepresentable {}
-extension QuickVO.RTCLogLevel : Swift.Equatable {}
-extension QuickVO.RTCLogLevel : Swift.Hashable {}
-extension QuickVO.NetworkMotorType : Swift.Equatable {}
-extension QuickVO.NetworkMotorType : Swift.Hashable {}
-extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
-extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
-extension QuickVO.ReconnectFailReason : Swift.Equatable {}
-extension QuickVO.ReconnectFailReason : Swift.Hashable {}
-extension QuickVO.ReconnectNetworkType : Swift.Equatable {}
-extension QuickVO.ReconnectNetworkType : Swift.Hashable {}
-extension QuickVO.ReconnectTrigger : Swift.Equatable {}
-extension QuickVO.ReconnectTrigger : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveBilling : Swift.RawRepresentable {}
+extension QuickVO.RTCStatisLevel : Swift.Equatable {}
+extension QuickVO.RTCStatisLevel : Swift.Hashable {}
+extension QuickVO.RTCStatisLevel : Swift.RawRepresentable {}
 extension QuickVO.RoomVideoRotation : Swift.Equatable {}
 extension QuickVO.RoomVideoRotation : Swift.Hashable {}
 extension QuickVO.RoomVideoRotation : Swift.RawRepresentable {}
-extension QuickVO.NetworkMotorStatus : Swift.Equatable {}
-extension QuickVO.NetworkMotorStatus : Swift.Hashable {}
+extension QuickVO.RTCVideoMirror : Swift.Equatable {}
+extension QuickVO.RTCVideoMirror : Swift.Hashable {}
+extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Equatable {}
+extension QuickVO.RoomVideoView.VideoRenderMode : Swift.Hashable {}
+extension QuickVO.ReconnectCoreDriver.Mode : Swift.Equatable {}
+extension QuickVO.ReconnectCoreDriver.Mode : Swift.Hashable {}
+extension QuickVO.ReconnectCoreDriver.Mode : Swift.RawRepresentable {}
+extension QuickVO.CoreIceSignal : Swift.Hashable {}
+extension QuickVO.CoreSocketSignal : Swift.Hashable {}
+extension QuickVO.CoreNetworkType : Swift.Hashable {}
+extension QuickVO.CoreFailReason : Swift.Hashable {}
+extension QuickVO.ResourceHealth : Swift.Hashable {}
+extension QuickVO.ProbePurpose : Swift.Hashable {}
+extension QuickVO.AudioError : Swift.Equatable {}
+extension QuickVO.AudioError : Swift.Hashable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Equatable {}
+extension QuickVO.RoomNetUtils.PingError : Swift.Hashable {}
+extension QuickVO.RoomSpeechLanguage : Swift.Equatable {}
+extension QuickVO.RoomSpeechLanguage : Swift.Hashable {}
+extension QuickVO.RoomSpeechLanguage : Swift.RawRepresentable {}
+extension QuickVO.TaskActor.State : Swift.Equatable {}
+extension QuickVO.TaskActor.State : Swift.Hashable {}
+extension QuickVO.DetachedTaskActor.State : Swift.Equatable {}
+extension QuickVO.DetachedTaskActor.State : Swift.Hashable {}
+extension QuickVO.UnifiedReconnectMachine.RebuildExhaustReason : Swift.Hashable {}

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/quickvo/gpupixel-iOS.git",
       "state" : {
-        "revision" : "69f38a9bff24cabdc3d340c8e4d3db09b09f5167",
-        "version" : "1.2.0"
+        "revision" : "df727de5d5cd063dead2fa863b8f0c492fd05b14",
+        "version" : "1.2.3"
       }
     },
     {
@@ -39,28 +39,19 @@
     {
       "identity" : "swiftnatdetector",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/motian30/SwiftNATDetector.git",
+      "location" : "https://github.com/quickvo/SwiftNATDetector",
       "state" : {
-        "revision" : "db132f35743c604167fc325b4c4bd956435b4915",
-        "version" : "1.0.1"
-      }
-    },
-    {
-      "identity" : "swiftybeaver",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
-      "state" : {
-        "revision" : "8cba041db09596183331d123f337d0eb2e6e8e91",
-        "version" : "2.1.1"
+        "revision" : "aa612807a96f43f8dffc2d4b9ce7aa5d8896f06d",
+        "version" : "0.0.1"
       }
     },
     {
       "identity" : "webrtc-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/motian30/WebRTC-iOS",
+      "location" : "https://github.com/quickvo/WebRTC-iOS.git",
       "state" : {
-        "revision" : "96ca75647beaee38de5aa7b71f609133c2a11f5f",
-        "version" : "137.0.4"
+        "revision" : "e1c6becda2de175a301d4ae37b12eafa5406d20e",
+        "version" : "0.0.1"
       }
     }
   ],
