@@ -30,6 +30,13 @@
       },
       {
         "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "QuickVO"
+      },
+      {
+        "kind": "Import",
         "name": "WebRTC",
         "printedName": "WebRTC",
         "declKind": "Import",
@@ -10797,6 +10804,280 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Var",
+            "name": "availableAudioRoutes",
+            "printedName": "availableAudioRoutes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[QuickVO.RTCAudioOutput]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19LocalRTCParticipantC20availableAudioRoutesSayAA14RTCAudioOutputVGvp",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC20availableAudioRoutesSayAA14RTCAudioOutputVGvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QuickVO.RTCAudioOutput]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioOutput",
+                        "printedName": "QuickVO.RTCAudioOutput",
+                        "usr": "s:7QuickVO14RTCAudioOutputV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC20availableAudioRoutesSayAA14RTCAudioOutputVGvg",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC20availableAudioRoutesSayAA14RTCAudioOutputVGvg",
+                "moduleName": "QuickVO",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "currentAudioRoute",
+            "printedName": "currentAudioRoute",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.RTCAudioOutput?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19LocalRTCParticipantC17currentAudioRouteAA14RTCAudioOutputVSgvp",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC17currentAudioRouteAA14RTCAudioOutputVSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuickVO.RTCAudioOutput?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioOutput",
+                        "printedName": "QuickVO.RTCAudioOutput",
+                        "usr": "s:7QuickVO14RTCAudioOutputV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC17currentAudioRouteAA14RTCAudioOutputVSgvg",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC17currentAudioRouteAA14RTCAudioOutputVSgvg",
+                "moduleName": "QuickVO",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "desiredAudioRoute",
+            "printedName": "desiredAudioRoute",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QuickVO.RTCAudioOutput?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO19LocalRTCParticipantC17desiredAudioRouteAA14RTCAudioOutputVSgvp",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC17desiredAudioRouteAA14RTCAudioOutputVSgvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QuickVO.RTCAudioOutput?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioOutput",
+                        "printedName": "QuickVO.RTCAudioOutput",
+                        "usr": "s:7QuickVO14RTCAudioOutputV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO19LocalRTCParticipantC17desiredAudioRouteAA14RTCAudioOutputVSgvg",
+                "mangledName": "$s7QuickVO19LocalRTCParticipantC17desiredAudioRouteAA14RTCAudioOutputVSgvg",
+                "moduleName": "QuickVO",
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setAudioRoute",
+            "printedName": "setAudioRoute(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<QuickVO.RTCAudioOutput, QuickVO.RTCAudioRouteError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRouteError",
+                    "printedName": "QuickVO.RTCAudioRouteError",
+                    "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO19LocalRTCParticipantC13setAudioRouteys6ResultOyAA14RTCAudioOutputVAA0iG5ErrorOGAHYaF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC13setAudioRouteys6ResultOyAA14RTCAudioOutputVAA0iG5ErrorOGAHYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAudioRoute",
+            "printedName": "setAudioRoute(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<QuickVO.RTCAudioOutput, QuickVO.RTCAudioRouteError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRouteError",
+                    "printedName": "QuickVO.RTCAudioRouteError",
+                    "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioRoute",
+                "printedName": "QuickVO.RTCAudioRoute",
+                "usr": "s:7QuickVO13RTCAudioRouteO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO19LocalRTCParticipantC13setAudioRouteys6ResultOyAA14RTCAudioOutputVAA0iG5ErrorOGAA0iG0OYaF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC13setAudioRouteys6ResultOyAA14RTCAudioOutputVAA0iG5ErrorOGAA0iG0OYaF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Function",
             "name": "speakerIsEnable",
             "printedName": "speakerIsEnable()",
@@ -10813,7 +11094,8 @@
             "mangledName": "$s7QuickVO19LocalRTCParticipantC15speakerIsEnableSbyYaF",
             "moduleName": "QuickVO",
             "declAttributes": [
-              "Final"
+              "Final",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -10825,8 +11107,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
                 "kind": "TypeNominal",
@@ -10836,11 +11119,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO19LocalRTCParticipantC13enableSpeakeryySbF",
-            "mangledName": "$s7QuickVO19LocalRTCParticipantC13enableSpeakeryySbF",
+            "usr": "s:7QuickVO19LocalRTCParticipantC13enableSpeakeryS2bYaF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC13enableSpeakeryS2bYaF",
             "moduleName": "QuickVO",
             "declAttributes": [
-              "Final"
+              "Final",
+              "DiscardableResult",
+              "RawDocComment"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -10852,16 +11137,18 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO19LocalRTCParticipantC13switchSpeakeryyYaF",
-            "mangledName": "$s7QuickVO19LocalRTCParticipantC13switchSpeakeryyYaF",
+            "usr": "s:7QuickVO19LocalRTCParticipantC13switchSpeakerSbyYaF",
+            "mangledName": "$s7QuickVO19LocalRTCParticipantC13switchSpeakerSbyYaF",
             "moduleName": "QuickVO",
             "declAttributes": [
-              "Final"
+              "Final",
+              "DiscardableResult"
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -24610,6 +24897,158 @@
             "moduleName": "QuickVO"
           },
           {
+            "kind": "Var",
+            "name": "carAudio",
+            "printedName": "carAudio",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRoute.Type) -> QuickVO.RTCAudioRoute",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRoute",
+                    "printedName": "QuickVO.RTCAudioRoute",
+                    "usr": "s:7QuickVO13RTCAudioRouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRoute.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRoute",
+                        "printedName": "QuickVO.RTCAudioRoute",
+                        "usr": "s:7QuickVO13RTCAudioRouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO13RTCAudioRouteO8carAudioyA2CmF",
+            "mangledName": "$s7QuickVO13RTCAudioRouteO8carAudioyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "usb",
+            "printedName": "usb",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRoute.Type) -> QuickVO.RTCAudioRoute",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRoute",
+                    "printedName": "QuickVO.RTCAudioRoute",
+                    "usr": "s:7QuickVO13RTCAudioRouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRoute.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRoute",
+                        "printedName": "QuickVO.RTCAudioRoute",
+                        "usr": "s:7QuickVO13RTCAudioRouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO13RTCAudioRouteO3usbyA2CmF",
+            "mangledName": "$s7QuickVO13RTCAudioRouteO3usbyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "airPlay",
+            "printedName": "airPlay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRoute.Type) -> QuickVO.RTCAudioRoute",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRoute",
+                    "printedName": "QuickVO.RTCAudioRoute",
+                    "usr": "s:7QuickVO13RTCAudioRouteO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRoute.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRoute",
+                        "printedName": "QuickVO.RTCAudioRoute",
+                        "usr": "s:7QuickVO13RTCAudioRouteO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO13RTCAudioRouteO7airPlayyA2CmF",
+            "mangledName": "$s7QuickVO13RTCAudioRouteO7airPlayyA2CmF",
+            "moduleName": "QuickVO"
+          },
+          {
+            "kind": "Var",
+            "name": "isExternal",
+            "printedName": "isExternal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO13RTCAudioRouteO10isExternalSbvp",
+            "mangledName": "$s7QuickVO13RTCAudioRouteO10isExternalSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO13RTCAudioRouteO10isExternalSbvg",
+                "mangledName": "$s7QuickVO13RTCAudioRouteO10isExternalSbvg",
+                "moduleName": "QuickVO",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "==",
             "printedName": "==(_:_:)",
@@ -24711,7 +25150,8 @@
         "mangledName": "$s7QuickVO13RTCAudioRouteO",
         "moduleName": "QuickVO",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -24737,10 +25177,744 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RTCAudioOutput",
+        "printedName": "RTCAudioOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "route",
+            "printedName": "route",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioRoute",
+                "printedName": "QuickVO.RTCAudioRoute",
+                "usr": "s:7QuickVO13RTCAudioRouteO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV5routeAA0C5RouteOvp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV5routeAA0C5RouteOvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioRoute",
+                    "printedName": "QuickVO.RTCAudioRoute",
+                    "usr": "s:7QuickVO13RTCAudioRouteO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV5routeAA0C5RouteOvg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV5routeAA0C5RouteOvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV4nameSSvp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV4nameSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV4nameSSvg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV4nameSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uid",
+            "printedName": "uid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV3uidSSvp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV3uidSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV3uidSSvg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV3uidSSvg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV2idSSvp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV2idSSvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV2idSSvg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV2idSSvg",
+                "moduleName": "QuickVO",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isExternal",
+            "printedName": "isExternal",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV10isExternalSbvp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV10isExternalSbvp",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV10isExternalSbvg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV10isExternalSbvg",
+                "moduleName": "QuickVO",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(route:name:uid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioRoute",
+                "printedName": "QuickVO.RTCAudioRoute",
+                "usr": "s:7QuickVO13RTCAudioRouteO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7QuickVO14RTCAudioOutputV5route4name3uidAcA0C5RouteO_S2Stcfc",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV5route4name3uidAcA0C5RouteO_S2Stcfc",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "builtInReceiver",
+            "printedName": "builtInReceiver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV15builtInReceiverACvpZ",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV15builtInReceiverACvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV15builtInReceiverACvgZ",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV15builtInReceiverACvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "builtInSpeaker",
+            "printedName": "builtInSpeaker",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV14builtInSpeakerACvpZ",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV14builtInSpeakerACvpZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RTCAudioOutput",
+                    "printedName": "QuickVO.RTCAudioOutput",
+                    "usr": "s:7QuickVO14RTCAudioOutputV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV14builtInSpeakerACvgZ",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV14builtInSpeakerACvgZ",
+                "moduleName": "QuickVO",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7QuickVO14RTCAudioOutputV9hashValueSivp",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV9hashValueSivp",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7QuickVO14RTCAudioOutputV9hashValueSivg",
+                "mangledName": "$s7QuickVO14RTCAudioOutputV9hashValueSivg",
+                "moduleName": "QuickVO",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14RTCAudioOutputV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV4hash4intoys6HasherVz_tF",
+            "moduleName": "QuickVO",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RTCAudioOutput",
+                "printedName": "QuickVO.RTCAudioOutput",
+                "usr": "s:7QuickVO14RTCAudioOutputV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7QuickVO14RTCAudioOutputV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s7QuickVO14RTCAudioOutputV2eeoiySbAC_ACtFZ",
+            "moduleName": "QuickVO",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7QuickVO14RTCAudioOutputV",
+        "mangledName": "$s7QuickVO14RTCAudioOutputV",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RTCAudioRouteError",
+        "printedName": "RTCAudioRouteError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "routeUnavailable",
+            "printedName": "routeUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRouteError.Type) -> (QuickVO.RTCAudioRoute) -> QuickVO.RTCAudioRouteError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RTCAudioRoute) -> QuickVO.RTCAudioRouteError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRoute",
+                        "printedName": "QuickVO.RTCAudioRoute",
+                        "usr": "s:7QuickVO13RTCAudioRouteO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRouteError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO18RTCAudioRouteErrorO16routeUnavailableyAcA0cD0OcACmF",
+            "mangledName": "$s7QuickVO18RTCAudioRouteErrorO16routeUnavailableyAcA0cD0OcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sessionFailed",
+            "printedName": "sessionFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRouteError.Type) -> (any Swift.Error) -> QuickVO.RTCAudioRouteError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> QuickVO.RTCAudioRouteError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRouteError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO18RTCAudioRouteErrorO13sessionFailedyACs0E0_pcACmF",
+            "mangledName": "$s7QuickVO18RTCAudioRouteErrorO13sessionFailedyACs0E0_pcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "settledElsewhere",
+            "printedName": "settledElsewhere",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QuickVO.RTCAudioRouteError.Type) -> (QuickVO.RTCAudioOutput) -> QuickVO.RTCAudioRouteError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(QuickVO.RTCAudioOutput) -> QuickVO.RTCAudioRouteError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioOutput",
+                        "printedName": "QuickVO.RTCAudioOutput",
+                        "usr": "s:7QuickVO14RTCAudioOutputV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "QuickVO.RTCAudioRouteError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RTCAudioRouteError",
+                        "printedName": "QuickVO.RTCAudioRouteError",
+                        "usr": "s:7QuickVO18RTCAudioRouteErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7QuickVO18RTCAudioRouteErrorO16settledElsewhereyAcA0C6OutputVcACmF",
+            "mangledName": "$s7QuickVO18RTCAudioRouteErrorO16settledElsewhereyAcA0C6OutputVcACmF",
+            "moduleName": "QuickVO",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7QuickVO18RTCAudioRouteErrorO",
+        "mangledName": "$s7QuickVO18RTCAudioRouteErrorO",
+        "moduleName": "QuickVO",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -30127,8 +31301,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7QuickVO7RTCRoomC13enableSpeakeryySbF",
-            "mangledName": "$s7QuickVO7RTCRoomC13enableSpeakeryySbF",
+            "usr": "s:7QuickVO7RTCRoomC13enableSpeakeryySbYaF",
+            "mangledName": "$s7QuickVO7RTCRoomC13enableSpeakeryySbYaF",
             "moduleName": "QuickVO",
             "deprecated": true,
             "declAttributes": [
@@ -54783,44 +55957,44 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "BooleanLiteral",
-      "offset": 950,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 988,
+      "offset": 1781,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "IntegerLiteral",
-      "offset": 1409,
+      "offset": 2202,
       "length": 11,
       "value": "561017449"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 1684,
+      "offset": 2477,
       "length": 20,
       "value": "[120, 250, 500, 900]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 2104,
+      "offset": 2897,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
       "kind": "Array",
-      "offset": 2336,
+      "offset": 3129,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Local\/AudioSession.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9972,
+      "length": 3,
+      "value": "120"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Config\/AudioVideoConfig.swift",
@@ -56218,21 +57392,49 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
       "kind": "StringLiteral",
-      "offset": 1668,
+      "offset": 2003,
+      "length": 10,
+      "value": "\"Receiver\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 2075,
+      "length": 26,
+      "value": "\"quickvo.builtin.receiver\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 2234,
+      "length": 9,
+      "value": "\"Speaker\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 2304,
+      "length": 25,
+      "value": "\"quickvo.builtin.speaker\""
+    },
+    {
+      "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
+      "kind": "StringLiteral",
+      "offset": 4454,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
       "kind": "StringLiteral",
-      "offset": 1791,
+      "offset": 4577,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/RoomEngine\/RTCRoom+Define.swift",
       "kind": "Array",
-      "offset": 1820,
+      "offset": 4606,
       "length": 2,
       "value": "[]"
     },
@@ -56330,147 +57532,147 @@
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 8435,
+      "offset": 8773,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 8440,
+      "offset": 8778,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 8495,
+      "offset": 8833,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9507,
+      "offset": 9845,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9761,
+      "offset": 10099,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9788,
+      "offset": 10126,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9821,
+      "offset": 10159,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "Array",
-      "offset": 9862,
+      "offset": 10200,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9890,
+      "offset": 10228,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 9915,
+      "offset": 10253,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10042,
+      "offset": 10380,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10071,
+      "offset": 10409,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10100,
+      "offset": 10438,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10127,
+      "offset": 10465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10156,
+      "offset": 10494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10188,
+      "offset": 10526,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "BooleanLiteral",
-      "offset": 10789,
+      "offset": 11127,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 10820,
+      "offset": 11158,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 11932,
+      "offset": 12270,
       "length": 13,
       "value": "1000000000"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 11980,
+      "offset": 12318,
       "length": 12,
       "value": "100000000"
     },
     {
       "filePath": "\/Users\/snqu-587\/Desktop\/work\/quickvo\/sdk\/sdk_quickvo\/quickvo-ios\/QuickVO\/Control\/RTCRoomControl+JoinData.swift",
       "kind": "IntegerLiteral",
-      "offset": 12028,
+      "offset": 12366,
       "length": 11,
       "value": "10000000"
     },

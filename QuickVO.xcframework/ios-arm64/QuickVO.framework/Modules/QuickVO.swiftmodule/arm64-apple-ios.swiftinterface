@@ -372,9 +372,24 @@ extension QuickVO.LocalPreviewView {
 extension QuickVO.LocalRTCParticipant {
   final public func enableMicrophone(_ enable: Swift.Bool)
   final public func microphoneIsEnable() -> Swift.Bool
+  final public var availableAudioRoutes: [QuickVO.RTCAudioOutput] {
+    get async
+  }
+  final public var currentAudioRoute: QuickVO.RTCAudioOutput? {
+    get async
+  }
+  final public var desiredAudioRoute: QuickVO.RTCAudioOutput? {
+    get async
+  }
+  @discardableResult
+  final public func setAudioRoute(_ output: QuickVO.RTCAudioOutput) async -> Swift.Result<QuickVO.RTCAudioOutput, QuickVO.RTCAudioRouteError>
+  @discardableResult
+  final public func setAudioRoute(_ route: QuickVO.RTCAudioRoute) async -> Swift.Result<QuickVO.RTCAudioOutput, QuickVO.RTCAudioRouteError>
   final public func speakerIsEnable() async -> Swift.Bool
-  final public func enableSpeaker(_ enable: Swift.Bool)
-  final public func switchSpeaker() async
+  @discardableResult
+  final public func enableSpeaker(_ enable: Swift.Bool) async -> Swift.Bool
+  @discardableResult
+  final public func switchSpeaker() async -> Swift.Bool
   final public func restartAudio() async
 }
 extension QuickVO.LocalRTCParticipant {
@@ -821,16 +836,47 @@ public enum RTCCameraPosion {
     get
   }
 }
-public enum RTCAudioRoute : Swift.Sendable {
+public enum RTCAudioRoute : Swift.Sendable, Swift.Hashable {
   case speaker
   case receiver
   case bluetooth
   case headphones
+  case carAudio
+  case usb
+  case airPlay
+  public var isExternal: Swift.Bool {
+    get
+  }
   public static func == (a: QuickVO.RTCAudioRoute, b: QuickVO.RTCAudioRoute) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+public struct RTCAudioOutput : Swift.Sendable, Swift.Hashable, Swift.Identifiable {
+  public let route: QuickVO.RTCAudioRoute
+  public let name: Swift.String
+  public let uid: Swift.String
+  public var id: Swift.String {
+    get
+  }
+  public var isExternal: Swift.Bool {
+    get
+  }
+  public init(route: QuickVO.RTCAudioRoute, name: Swift.String, uid: Swift.String)
+  public static let builtInReceiver: QuickVO.RTCAudioOutput
+  public static let builtInSpeaker: QuickVO.RTCAudioOutput
+  public static func == (a: QuickVO.RTCAudioOutput, b: QuickVO.RTCAudioOutput) -> Swift.Bool
+  public typealias ID = Swift.String
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RTCAudioRouteError : Swift.Error, Swift.Sendable {
+  case routeUnavailable(QuickVO.RTCAudioRoute)
+  case sessionFailed(any Swift.Error)
+  case settledElsewhere(QuickVO.RTCAudioOutput)
 }
 public enum RoomScene : Swift.Sendable {
   case communication
@@ -1025,7 +1071,7 @@ extension QuickVO.RTCRoom {
   @available(*, deprecated, renamed: "localPartipant.switchCamera", message: "Use localPartipant.switchCamera instead")
   final public func switchCamera(_ postion: QuickVO.RTCCameraPosion? = nil)
   @available(*, deprecated, renamed: "localPartipant.enableSpeaker", message: "Use localPartipant.enableSpeaker instead")
-  final public func enableSpeaker(_ enable: Swift.Bool)
+  final public func enableSpeaker(_ enable: Swift.Bool) async
   @available(*, deprecated, renamed: "localPartipant.speakerIsEnable", message: "Use localPartipant.speakerIsEnable instead")
   final public func speakerIsEnable() async -> Swift.Bool
   @available(*, deprecated, renamed: "localPartipant.enableMicrophone", message: "Use localPartipant.enableMicrophone instead")
@@ -1763,8 +1809,6 @@ extension QuickVO.PeerConnectionType : Swift.RawRepresentable {}
 extension QuickVO.RTCRoomConnect : Swift.Hashable {}
 extension QuickVO.RTCCameraPosion : Swift.Equatable {}
 extension QuickVO.RTCCameraPosion : Swift.Hashable {}
-extension QuickVO.RTCAudioRoute : Swift.Equatable {}
-extension QuickVO.RTCAudioRoute : Swift.Hashable {}
 extension QuickVO.RoomScene : Swift.Equatable {}
 extension QuickVO.RoomScene : Swift.Hashable {}
 extension QuickVO.StreamType : Swift.Equatable {}
