@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-concise-pound-file -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 @preconcurrency import AVFAudio
 @preconcurrency import AVFoundation
@@ -20,7 +20,6 @@ import Metal
 import MetalKit
 import Network
 import QVReplayKit
-@_exported import QuickVO
 import ReplayKit
 import Swift
 import SwiftProtobuf
@@ -36,6 +35,9 @@ import gpupixel
 import os.lock
 import os
 final public class RoomVideoCaptureConfig {
+  public static let defaultWidth: Swift.Int
+  public static let defaultHeight: Swift.Int
+  public static let defaultFps: Swift.Int
   final public var width: Swift.Int {
     get
     set
@@ -61,6 +63,9 @@ final public class RoomVideoCaptureConfig {
   @objc deinit
 }
 final public class RoomAudioCaptureConfig {
+  public static let defaultEchoCancellation: Swift.Bool
+  public static let defaultNoiseSuppression: Swift.Bool
+  public static let defaultAutoGainControl: Swift.Bool
   final public var echoCancellation: Swift.Bool
   final public var noiseSuppression: Swift.Bool
   final public var autoGainControl: Swift.Bool
@@ -563,10 +568,6 @@ extension AVFoundation.AVCaptureDevice {
     get
   }
 }
-public struct RTCConfig {
-  public let rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
-  public init(socketURL: Foundation.URL, iceURL: [Swift.String]? = nil, rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = 1)
-}
 public struct RoomLocalOption : Swift.Sendable {
   public var defaultStartCamera: Swift.Bool
   public var subscribeType: QuickVO.StreamType
@@ -609,9 +610,28 @@ public struct RTCLogEntry {
   public let level: QuickVO.RTCLogLevel
   public let message: Swift.String
 }
+public enum RTCLogEnvironment {
+  case development
+  case production
+  public static func == (a: QuickVO.RTCLogEnvironment, b: QuickVO.RTCLogEnvironment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers final public class RTCEngine {
   public static let engine: QuickVO.RTCEngine
   final public var appId: Swift.String {
+    get
+  }
+  final public var socketURL: Foundation.URL? {
+    get
+  }
+  final public var iceURL: [Swift.String] {
+    get
+  }
+  public static let defaultIceURL: [Swift.String]
+  final public var logEnvironment: QuickVO.RTCLogEnvironment {
     get
   }
   final public var onLog: ((QuickVO.RTCLogEntry) -> Swift.Void)? {
@@ -630,7 +650,8 @@ public struct RTCLogEntry {
   @objc deinit
 }
 extension QuickVO.RTCEngine {
-  public static func create(_ appId: Swift.String)
+  public static func create(_ appId: Swift.String, socketURL: Foundation.URL? = nil, iceURL: [Swift.String]? = nil, logEnvironment: QuickVO.RTCLogEnvironment = .production)
+  final public func configure(socketURL: Foundation.URL? = nil, iceURL: [Swift.String]? = nil)
   public static func destroy()
 }
 public enum QuitIntent {
@@ -1038,7 +1059,7 @@ final public class RTCRoom {
   final public var total: Swift.Int {
     get async
   }
-  public init(with config: QuickVO.RTCConfig? = nil, delegat: (any QuickVO.RTCRoomDelegate)? = nil)
+  public init(delegat: (any QuickVO.RTCRoomDelegate)? = nil)
   @objc deinit
 }
 extension QuickVO.RTCRoom {
@@ -1051,7 +1072,6 @@ extension QuickVO.RTCRoom {
   final public func publishStream() async throws
   final public func startScreenShare(_ appGroup: Swift.String) async throws
   final public func unsubscribeP2P(_ user: Swift.String) async throws
-  final public func resetConfig(config: QuickVO.RTCConfig)
 }
 extension QuickVO.RTCRoom {
   final public func setRoomAudioVolume(_ volum: Swift.Double)
@@ -1524,12 +1544,18 @@ final public class RTCRoomConfig {
   final public var video: QuickVO.RoomVideoCaptureConfig
   final public var audio: QuickVO.RoomAudioCaptureConfig
   final public var reconnectPolicy: QuickVO.RTCReconnectPolicy
-  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy())
+  final public var rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
+  public static let defaultRtcStatsDataChannelPreferenceSeconds: Swift.Double
+  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy(), rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = RTCRoomConfig.defaultRtcStatsDataChannelPreferenceSeconds)
   @objc deinit
 }
 extension QuickVO.RTCRoomConfig {
-  public static let defaultVideo: QuickVO.RoomVideoCaptureConfig
-  public static let defaultAudio: QuickVO.RoomAudioCaptureConfig
+  public static var defaultVideo: QuickVO.RoomVideoCaptureConfig {
+    get
+  }
+  public static var defaultAudio: QuickVO.RoomAudioCaptureConfig {
+    get
+  }
 }
 public protocol RoomError : Foundation.LocalizedError, Swift.CustomStringConvertible {
 }
@@ -1554,6 +1580,7 @@ public enum ConnectError : QuickVO.RoomError {
   case roomReleased
   case trackNotPublished([QuickVO.RoomUserSubData])
   case simulcastNoSFUTrack
+  case endpointNotConfigured
   public var description: Swift.String {
     get
   }
@@ -1795,6 +1822,8 @@ extension QuickVO.ReconnectFailReason : Swift.Hashable {}
 extension QuickVO.ReconnectNetworkType : Swift.Hashable {}
 extension QuickVO.RTCLogLevel : Swift.Equatable {}
 extension QuickVO.RTCLogLevel : Swift.Hashable {}
+extension QuickVO.RTCLogEnvironment : Swift.Equatable {}
+extension QuickVO.RTCLogEnvironment : Swift.Hashable {}
 extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
 extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
 extension QuickVO.QuitIntent : Swift.Equatable {}
