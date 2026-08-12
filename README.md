@@ -81,18 +81,34 @@ open QuickVO.xcworkspace
 
 ## 快速开始
 
-### 1. 创建房间并设置委托
+> 从 1.7.x 升级请先看 [升级到 1.8.0](docs/MIGRATION-1.8.0.md)：`RTCConfig` 已删除，信令地址改由 `RTCEngine` 持有。
+
+### 1. 创建引擎
+
+引擎是进程级的，整个 App 只需创建一次。**信令地址配在这里，不是配在房间上**——没有内置默认地址，未配置时 `join` 会抛 `ConnectError.endpointNotConfigured`。
 
 ```swift
 import QuickVO
 
-// 配置信令地址（可选，默认使用内置配置）
-let config = RTCConfig(socketURL: URL(string: "wss://your-signal-server/websocket")!)
+// 地址启动时已知
+RTCEngine.create("your_app_id", socketURL: URL(string: "wss://your-signal-server/websocket")!)
 
-let room = RTCRoom(with: config, delegat: self)
+// 地址需要从自己的服务器取，就先创建、后补上；configure 对之后所有房间生效
+RTCEngine.create("your_app_id")
+RTCEngine.engine.configure(socketURL: url)
 ```
 
-### 2. 加入房间
+beta 包可以把 SDK 自身日志发到开发环境：`RTCEngine.create(appId, socketURL: url, logEnvironment: .development)`。
+
+### 2. 创建房间并设置委托
+
+房间不持有地址，join 时从引擎取一份快照，整场会话不变。按通话新建即可。
+
+```swift
+let room = RTCRoom(delegat: self)
+```
+
+### 3. 加入房间
 
 ```swift
 let option = RoomLocalOption(
@@ -106,7 +122,7 @@ let option = RoomLocalOption(
 try await room.join(token, "roomId", option)
 ```
 
-### 3. 实现房间委托
+### 4. 实现房间委托
 
 ```swift
 extension MyViewController: RTCRoomDelegate {
@@ -126,7 +142,7 @@ extension MyViewController: RTCRoomDelegate {
 }
 ```
 
-### 4. 渲染音视频轨道
+### 5. 渲染音视频轨道
 
 为每个 `RTCParticipant` 设置委托，接收其音视频轨道：
 
@@ -142,7 +158,7 @@ extension MyViewController: RTCParticipantDelegate {
 }
 ```
 
-### 5. 控制本地音视频
+### 6. 控制本地音视频
 
 本地控制统一通过 `room.localPartipant`：
 
@@ -154,7 +170,7 @@ room.localPartipant.enableSpeaker(true)      // 扬声器 / 听筒
 await room.localPartipant.startPreview(view) // 本地预览
 ```
 
-### 6. 退出房间
+### 7. 退出房间
 
 ```swift
 await room.quit()
@@ -193,20 +209,16 @@ QuickVO/
 ├── Server/       # HTTP / 房间服务接口
 ├── Socket/       # WebSocket 信令客户端
 ├── Net/          # 网络监测
-├── Config/       # 配置（RTCConfig、音视频参数、语言）
+├── Config/       # 配置（房间参数、音视频采集参数、语言）
 ├── Broadcast/    # 屏幕共享（ReplayKit）
 └── pb/           # Protobuf 生成代码
 ```
 
 ## 文档
 
-更多设计与架构文档见 [`docs/`](docs/) 目录：
+- [升级到 1.8.0](docs/MIGRATION-1.8.0.md) — 从 1.7.x 升级的破坏性变更与迁移步骤
 
-- [QuickVO 项目架构分析](docs/QuickVO项目架构分析.md)
-- [DataChannel 流程文档](docs/DataChannel流程文档.md)
-- [WebRTC 从零指南](docs/WEBRTC_FROM_ZERO_GUIDE.md)
-- [稳定性分析报告](docs/QuickVO稳定性分析报告.md)
-- [迁移指南](docs/MIGRATION_GUIDE.md)
+架构分析、DataChannel 流程等设计文档保留在 SDK 源码仓库，未随发布包分发；需要时向 SDK 团队索取。此前这里列出的五个 `docs/` 链接指向的是源码仓库的路径，在本仓库中始终无法访问。
 
 ## License
 
