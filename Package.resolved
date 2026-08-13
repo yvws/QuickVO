@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/quickvo/gpupixel-iOS.git",
       "state" : {
-        "revision" : "df727de5d5cd063dead2fa863b8f0c492fd05b14",
-        "version" : "1.2.3"
+        "revision" : "859450f3bb9da97ee78c3cdfd41126c578d0f649",
+        "version" : "1.2.4"
       }
     },
     {
