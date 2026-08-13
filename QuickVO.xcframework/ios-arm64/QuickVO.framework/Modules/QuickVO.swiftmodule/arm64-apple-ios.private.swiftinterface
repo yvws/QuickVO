@@ -1791,6 +1791,7 @@ extension Swift.Bool {
     }
   }
   public func requestRebuildSlot() -> QuickVO.UnifiedReconnectMachine.RebuildSlot
+  public func noteSfuRebuildPerformed()
   public func beginRebuildEpisodeIfNeeded()
   public func remainingRebuildDeadlineMs() -> Swift.UInt64
   public func socketReadyWaitMs() -> Swift.UInt64
