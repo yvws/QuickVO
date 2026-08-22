@@ -21,6 +21,10 @@ let package = Package(
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.0.0"),
         .package(url: "https://github.com/quickvo/SwiftNATDetector", from: "0.0.1"),
         .package(url: "https://github.com/quickvo/gpupixel-iOS.git", from: "1.2.4"),
+        // Crash capture. `Recording` for the recording engine and its monitors, `Filters` for the
+        // Apple-format report renderer. KSCrash's own report senders (`Installations`, `Sinks`) are
+        // not used, because delivery is injected rather than built in.
+        .package(url: "https://github.com/kstenerud/KSCrash.git", from: "2.6.0"),
     ],
     targets: [
         .binaryTarget(name: "QuickVO", path: "QuickVO.xcframework"),
@@ -32,6 +36,8 @@ let package = Package(
             .product(name: "Gzip", package: "GzipSwift"),
             .product(name: "WebRTC", package: "WebRTC-iOS"),
             .product(name: "gpupixel", package: "gpupixel-iOS", condition: .when(platforms: [.iOS])),
+            .product(name: "Recording", package: "KSCrash"),
+            .product(name: "Filters", package: "KSCrash"),
         ]),
           
     ],

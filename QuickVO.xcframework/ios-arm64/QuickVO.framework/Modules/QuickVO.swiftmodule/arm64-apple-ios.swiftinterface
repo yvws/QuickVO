@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-concise-pound-file -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 @preconcurrency import AVFAudio
 @preconcurrency import AVFoundation
@@ -16,6 +16,7 @@ import CoreMedia
 import CoreVideo
 import Darwin
 import Foundation
+import MachO
 import Metal
 import MetalKit
 import Network
@@ -115,6 +116,9 @@ public enum RoomVideoRrocessMode {
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Foundation.Data {
+  public mutating func append(_ string: Swift.String)
 }
 nonisolated public struct Board_Ws_V1_WireRow : Swift.Sendable {
   public var code: Swift.Int32
@@ -426,9 +430,6 @@ extension QuickVO.LocalRTCParticipant {
   final public var publishAudio: Swift.Bool
   @objc deinit
 }
-extension Foundation.Data {
-  public mutating func append(_ string: Swift.String)
-}
 public enum NetworkState : Swift.Sendable, Swift.CustomStringConvertible {
   case healthy
   case recovering(QuickVO.RecoveryTier)
@@ -562,6 +563,106 @@ public enum ReconnectNetworkType : Swift.Sendable, Swift.Equatable, Swift.Custom
     get
     set
   }
+}
+public enum QVReportKind : Swift.String, Swift.Codable, Swift.CaseIterable {
+  case crash
+  case outOfMemory
+  case hang
+  case nonFatalError
+  case routine
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [QuickVO.QVReportKind]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [QuickVO.QVReportKind] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum QVDiagnostics {
+  public static var isInstalled: Swift.Bool {
+    get
+  }
+  @discardableResult
+  public static func install(_ options: QuickVO.QVDiagnosticsOptions = .default) -> Swift.Bool
+}
+public struct QVDiagnosticsOptions : Swift.OptionSet, Swift.Sendable {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let crashes: QuickVO.QVDiagnosticsOptions
+  public static let termination: QuickVO.QVDiagnosticsOptions
+  public static let watchdog: QuickVO.QVDiagnosticsOptions
+  public static let metrics: QuickVO.QVDiagnosticsOptions
+  public static let zombies: QuickVO.QVDiagnosticsOptions
+  public static let `default`: QuickVO.QVDiagnosticsOptions
+  public static let all: QuickVO.QVDiagnosticsOptions
+  public typealias ArrayLiteralElement = QuickVO.QVDiagnosticsOptions
+  public typealias Element = QuickVO.QVDiagnosticsOptions
+  public typealias RawValue = Swift.Int
+}
+public struct QVUploadProgress : Swift.Equatable {
+  public let completed: Swift.Int
+  public let total: Swift.Int
+  public var fractionComplete: Swift.Double {
+    get
+  }
+  public static func == (a: QuickVO.QVUploadProgress, b: QuickVO.QVUploadProgress) -> Swift.Bool
+}
+public struct QVUploadNowResult : Swift.Equatable {
+  public let delivered: Swift.Int
+  public let failed: Swift.Int
+  public let deferred: Swift.Int
+  public let alreadyInFlight: Swift.Bool
+  public init(delivered: Swift.Int, failed: Swift.Int, deferred: Swift.Int, alreadyInFlight: Swift.Bool = false)
+  public var total: Swift.Int {
+    get
+  }
+  public static func == (a: QuickVO.QVUploadNowResult, b: QuickVO.QVUploadNowResult) -> Swift.Bool
+}
+extension QuickVO.QVDiagnostics {
+  public static func setReportUploader(_ uploader: (any QuickVO.QVReportUploader)?)
+  public static func setUploadsRoutineSegments(_ enabled: Swift.Bool)
+  public static func deliverPendingReports()
+  public static func uploadReportsNow(note: Swift.String = "", progress: @escaping (QuickVO.QVUploadProgress) -> Swift.Void = { _ in }, completion: @escaping (QuickVO.QVUploadNowResult) -> Swift.Void)
+  @discardableResult
+  public static func captureReport(note: Swift.String = "") -> Swift.Bool
+}
+public struct QVUploadRequest {
+  public let artifactID: Swift.String
+  public let kind: QuickVO.QVReportKind
+  public let artifactURL: Foundation.URL
+  public let attributes: [Swift.String : Swift.String]
+  public var legacyType: Swift.Int {
+    get
+  }
+  public var summary: Swift.String {
+    get
+  }
+  public var user: Swift.String {
+    get
+  }
+  public var reasons: [Swift.String] {
+    get
+  }
+  public var wasRequested: Swift.Bool {
+    get
+  }
+  public var device: Swift.String {
+    get
+  }
+  public var startedAt: Foundation.Date? {
+    get
+  }
+}
+public enum QVUploadOutcome {
+  case delivered
+  case retriable(Swift.String)
+  case permanent(Swift.String)
+  public static func forHTTPStatus(_ status: Swift.Int, host: Swift.String) -> QuickVO.QVUploadOutcome
+}
+public protocol QVReportUploader : AnyObject {
+  func upload(_ request: QuickVO.QVUploadRequest, completion: @escaping (QuickVO.QVUploadOutcome) -> Swift.Void)
 }
 extension AVFoundation.AVCaptureDevice {
   public var devicePosition: AVFoundation.AVCaptureDevice.Position {
@@ -1208,6 +1309,7 @@ extension QuickVO.RoomVideoDelegate {
   @_Concurrency.MainActor @preconcurrency weak public var delegate: (any QuickVO.RoomVideoDelegate)?
   @_Concurrency.MainActor @preconcurrency public var onFrameResumed: (() -> Swift.Void)?
   @_Concurrency.MainActor @preconcurrency public func rearmFirstFrame()
+  @_Concurrency.MainActor @preconcurrency public func render(_ frame: WebRTC.RTCVideoFrame)
   @_Concurrency.MainActor @preconcurrency public var mirror: QuickVO.RTCVideoMirror {
     get
     set
@@ -1573,6 +1675,7 @@ public enum ConnectError : QuickVO.RoomError {
   case subscribeStreamFailure([QuickVO.RoomUserSubData])
   case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
   case startScreenShareWithoutGroupId
+  case screenShareGroupUnavailable(Swift.String)
   case screenForbid
   case noAuth
   case joined
@@ -1821,6 +1924,9 @@ extension QuickVO.SocketHealth : Swift.Hashable {}
 extension QuickVO.ReconnectFailReason : Swift.Equatable {}
 extension QuickVO.ReconnectFailReason : Swift.Hashable {}
 extension QuickVO.ReconnectNetworkType : Swift.Hashable {}
+extension QuickVO.QVReportKind : Swift.Equatable {}
+extension QuickVO.QVReportKind : Swift.Hashable {}
+extension QuickVO.QVReportKind : Swift.RawRepresentable {}
 extension QuickVO.RTCLogLevel : Swift.Equatable {}
 extension QuickVO.RTCLogLevel : Swift.Hashable {}
 extension QuickVO.RTCLogEnvironment : Swift.Equatable {}
