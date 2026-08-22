@@ -1416,9 +1416,19 @@ public enum ConnectError: RoomError {
 
 ## 版本与迁移
 
-- **[升级到 1.8.0](docs/MIGRATION-1.8.0.md)** —— 从 1.7.x 升级。有 4 处编译期破坏和 4 处行为变化，典型接入点改动量 3 行。核心变化是 `RTCConfig` 删除，信令地址改由 `RTCEngine` 持有。
+当前版本 **1.8.0**。
+
+**1.8.0 的变化：** 相对 1.7.9 公开接口是纯增量的，60 个新声明、零删除、零签名变更，全部属于新增的诊断与崩溃上报子系统。另有一个新的错误枚举 case `ConnectError.screenShareGroupUnavailable(String)` —— 如果你对 `ConnectError` 做了没有 `default` 的穷举 `switch`，需要补一个分支。
+
+- **[升级指南](docs/MIGRATION-1.8.0.md)** —— 按起点版本分两条路。**从 1.7.4 及以后升级没有破坏性变更**；从 1.7.3 或更早升级则有 4 处编译期破坏（`RTCConfig` 删除、信令地址改由 `RTCEngine` 持有等），那些变更实际随 1.7.4 发布。
 
 每次发布随包提供 `build-manifest.json`，记录版本、构建号、commit、构建时间、工具链版本与链接形态，用于把线上问题对回具体构建。
+
+```json
+{ "module": "QuickVO", "version": "1.8.0", "commit": "d8a3bab…", "treeClean": true, … }
+```
+
+> 1.7.x 期间 `MARKETING_VERSION` 一直停在 `1.0`，那段时间发出的每一份 manifest 都写着一个从未发布过的版本号。1.8.0 起该字段与发行仓的 git tag 保持一致。
 
 架构分析、DataChannel 流程等设计文档保留在 SDK 源码仓库，未随发布包分发，需要时向 SDK 团队索取。
 

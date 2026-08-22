@@ -1,10 +1,49 @@
 # 升级到 1.8.0
 
-从 1.7.x 升级。本版有 **4 处编译期破坏**和 **4 处行为变化**，典型接入点的改动量是 3 行。
+下面每一条都对照各版本 `QuickVO.xcframework` 的 `.swiftinterface` 逐行核对过。
 
-下面每一条都对照 `QuickVO.xcframework` 的 `.swiftinterface` 逐行核对过。
+## 先看你从哪个版本来
+
+改动量取决于你的起点，这两条路差别很大：
+
+| 你现在用的版本 | 需要做什么 |
+| --- | --- |
+| **1.7.4 – 1.7.9** | **没有破坏性变更。** 只需检查一处穷举 `switch`，见下面「[从 1.7.4 及以后升级](#从-174-及以后升级)」 |
+| **1.7.3 或更早** | 有 4 处编译期破坏和 4 处行为变化，典型接入点改动量 3 行。见「[从 1.7.3 及更早升级](#从-173-及更早升级)」 |
+
+> 早前这份文档把那 4 处破坏归给了 1.8.0。核对 `.swiftinterface` 后确认它们实际随 **1.7.4** 发布：`RTCConfig` 在 1.7.3 的接口里还在，1.7.4 就已经没有了，`endpointNotConfigured`、`logEnvironment`、`defaultIceURL` 也都是 1.7.4 出现的。已按实际发布版本更正。
 
 ---
+
+## 1.8.0 本身有什么
+
+相对 1.7.9，公开接口是**纯增量的**：60 个新声明，零删除、零签名变更。全部属于新的诊断与崩溃上报子系统。
+
+- `QVDiagnostics`（`install` / `isInstalled` / `captureReport` / `uploadReportsNow` / `deliverPendingReports` / `setReportUploader` / `setUploadsRoutineSegments`）
+- `QVDiagnosticsOptions`、`QVReportUploader`、`QVUploadRequest` / `QVUploadOutcome` / `QVUploadProgress` / `QVUploadNowResult`、`QVReportKind`
+
+用法见 [README 的「诊断与崩溃上报」](../README.md#诊断与崩溃上报)。两件事值得在升级时就决定：
+
+1. **崩溃捕获是 opt-in 的**，不调用 `QVDiagnostics.install()` 就不安装。如果你的 App 已经在用 Crashlytics / Sentry / Bugsnag，**不要调用它** —— 两套收集器会争抢同一组信号处理器。
+2. **日志上报默认开启**（仅在出错或崩溃时上传，常规日志段不传）。关闭是 `RTCEngine.engine.uploadLog = false`，改投自己的服务是实现 `QVReportUploader`。上传内容清单见 README 的隐私小节。
+
+### 从 1.7.4 及以后升级
+
+唯一需要检查的地方：`ConnectError` 新增了一个 case。
+
+```swift
+case screenShareGroupUnavailable(String)
+```
+
+屏幕共享时 App Group 容器不可达会抛它 —— 这个错误此前不存在，App Group 配错的表现是对端静默黑屏。**如果你对 `ConnectError` 做了没有 `default` 的穷举 `switch`，会编译不过**，补一个 case 或 default 即可。
+
+除此之外，1.7.4 → 1.8.0 不需要改任何代码。
+
+---
+
+## 从 1.7.3 及更早升级
+
+以下内容随 **1.7.4** 发布。如果你已经在 1.7.4 及以后，跳过这一节。
 
 ## 一、为什么会有破坏性变更
 
@@ -233,7 +272,11 @@ try await room.join(token, roomId, option)
 
 ## 完整 API 变更表
 
-| 变更 | 1.7.x | 1.8.0 |
+按实际发布版本归属。
+
+### 1.7.3 → 1.7.4
+
+| 变更 | 1.7.3 | 1.7.4 |
 | --- | --- | --- |
 | 删除 | `struct RTCConfig` | — |
 | 删除 | `RTCRoom.init(with:delegat:)` | `RTCRoom.init(delegat:)` |
@@ -247,3 +290,18 @@ try await room.join(token, roomId, option)
 | 新增 | — | `RoomVideoCaptureConfig.defaultWidth` / `defaultHeight` / `defaultFps` |
 | 新增 | — | `RoomAudioCaptureConfig.defaultEchoCancellation` / `defaultNoiseSuppression` / `defaultAutoGainControl` |
 | 移除 | 26 个公开 ObjC 头文件 | 0 |
+
+### 1.7.9 → 1.8.0
+
+零删除、零签名变更。
+
+| 变更 | 1.7.9 | 1.8.0 |
+| --- | --- | --- |
+| 新增 | — | `enum QVDiagnostics` 及其 7 个静态方法 |
+| 新增 | — | `struct QVDiagnosticsOptions`（`.crashes` `.termination` `.watchdog` `.metrics` `.zombies` `.default` `.all`） |
+| 新增 | — | `protocol QVReportUploader` |
+| 新增 | — | `struct QVUploadRequest` / `enum QVUploadOutcome` |
+| 新增 | — | `struct QVUploadProgress` / `struct QVUploadNowResult` |
+| 新增 | — | `enum QVReportKind`（`.crash` `.hang` `.outOfMemory` `.nonFatalError` `.routine`） |
+| 新增 | — | `ConnectError.screenShareGroupUnavailable(String)` |
+| 依赖 | — | 分发清单新增 `KSCrash 2.6.0`（`Recording` + `Filters`） |
