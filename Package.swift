@@ -20,7 +20,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-protobuf.git", from: "1.32.0"),
         .package(url: "https://github.com/1024jp/GzipSwift", from: "6.0.0"),
         .package(url: "https://github.com/quickvo/SwiftNATDetector", from: "0.0.1"),
-        .package(url: "https://github.com/quickvo/gpupixel-iOS.git", from: "1.2.4"),
+        .package(url: "https://github.com/quickvo/gpupixel-iOS.git", from: "1.2.5"),
         // Crash capture. `Recording` for the recording engine and its monitors, `Filters` for the
         // Apple-format report renderer. KSCrash's own report senders (`Installations`, `Sinks`) are
         // not used, because delivery is injected rather than built in.

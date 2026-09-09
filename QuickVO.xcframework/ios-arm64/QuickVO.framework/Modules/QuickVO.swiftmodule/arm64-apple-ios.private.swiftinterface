@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name QuickVO
 // swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 @preconcurrency import AVFAudio
 @preconcurrency import AVFoundation
@@ -16,6 +16,8 @@ import CoreMedia
 import CoreVideo
 import Darwin
 import Foundation
+import LanvizeGLBeauty
+import LanvizeVideoCore
 import MachO
 import Metal
 import MetalKit
@@ -711,15 +713,6 @@ public struct RTCLogEntry {
   public let level: QuickVO.RTCLogLevel
   public let message: Swift.String
 }
-public enum RTCLogEnvironment {
-  case development
-  case production
-  public static func == (a: QuickVO.RTCLogEnvironment, b: QuickVO.RTCLogEnvironment) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
 @_hasMissingDesignatedInitializers final public class RTCEngine {
   public static let engine: QuickVO.RTCEngine
   final public var appId: Swift.String {
@@ -732,7 +725,7 @@ public enum RTCLogEnvironment {
     get
   }
   public static let defaultIceURL: [Swift.String]
-  final public var logEnvironment: QuickVO.RTCLogEnvironment {
+  final public var logReportURL: Foundation.URL? {
     get
   }
   final public var onLog: ((QuickVO.RTCLogEntry) -> Swift.Void)? {
@@ -751,7 +744,7 @@ public enum RTCLogEnvironment {
   @objc deinit
 }
 extension QuickVO.RTCEngine {
-  public static func create(_ appId: Swift.String, socketURL: Foundation.URL? = nil, iceURL: [Swift.String]? = nil, logEnvironment: QuickVO.RTCLogEnvironment = .production)
+  public static func create(_ appId: Swift.String, socketURL: Foundation.URL? = nil, iceURL: [Swift.String]? = nil)
   final public func configure(socketURL: Foundation.URL? = nil, iceURL: [Swift.String]? = nil)
   public static func destroy()
 }
@@ -1065,6 +1058,32 @@ public struct RoomForbidLatestAction : Swift.Sendable {
   public let forbid: Swift.Bool
   public init(action: QuickVO.RoomForbid, forbid: Swift.Bool)
 }
+public enum RoomCloseSource : Swift.String, Swift.Sendable {
+  case destroyRoom
+  case quitRoom
+  case local
+  case disconnect
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum RoomCloseReason : Swift.Equatable, Swift.Sendable {
+  case ownerEnded
+  case ownerTimeout
+  case closedByServer
+  case tokenExpired
+  case kickedOut
+  case selfQuit
+  case disconnected
+  case pkEnded
+  case unknown(source: QuickVO.RoomCloseSource, code: Swift.Int?)
+  public var isRoomGone: Swift.Bool {
+    get
+  }
+  public static func == (a: QuickVO.RoomCloseReason, b: QuickVO.RoomCloseReason) -> Swift.Bool
+}
 public protocol RTCRoomDelegate : AnyObject {
   func roomError(_ error: any Swift.Error)
   func tokenExpired()
@@ -1075,7 +1094,7 @@ public protocol RTCRoomDelegate : AnyObject {
   func didQuitBootTime(_ bootTime: Swift.String)
   func didJoin(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
   func didLeave(_ room: QuickVO.RTCRoom, _ participant: QuickVO.RTCParticipant)
-  func didClose(_ room: QuickVO.RTCRoom, _ code: Swift.Int?, _ desc: Swift.String?)
+  func didClose(_ room: QuickVO.RTCRoom, _ reason: QuickVO.RoomCloseReason, _ code: Swift.Int?, _ desc: Swift.String?)
   func disConnectWithoutRoom(_ room: QuickVO.RTCRoom)
   func didPublished(_ room: QuickVO.RTCRoom, _ track: [QuickVO.RoomTrackType])
   func receivePublished(_ room: QuickVO.RTCRoom, _ sub: [QuickVO.RoomUserSubData])
@@ -1109,7 +1128,11 @@ extension QuickVO.RTCRoomDelegate {
   public func whiteboardStateChanged(_ room: QuickVO.RTCRoom, _ whiteboardId: Swift.String)
 }
 public struct RoomLivePlaybackUrls : Swift.Sendable {
-  public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
+  public var mainLine: QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData?
+  public var standLines: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData]
+  public var urls: [QuickVO.RoomLivePlaybackUrls.RoomLiveUrlData] {
+    get
+  }
   public struct RoomLiveUrlData : Swift.Sendable {
   }
   public enum RoomLiveLocation : Swift.Int, Swift.CaseIterable, Swift.Sendable {
@@ -1648,8 +1671,19 @@ final public class RTCRoomConfig {
   final public var reconnectPolicy: QuickVO.RTCReconnectPolicy
   final public var rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval
   public static let defaultRtcStatsDataChannelPreferenceSeconds: Swift.Double
-  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy(), rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = RTCRoomConfig.defaultRtcStatsDataChannelPreferenceSeconds)
+  final public var forwardingWatchdog: QuickVO.RTCForwardingWatchdogConfig
+  public init(video: QuickVO.RoomVideoCaptureConfig = RTCRoomConfig.defaultVideo, audio: QuickVO.RoomAudioCaptureConfig = RTCRoomConfig.defaultAudio, reconnectPolicy: QuickVO.RTCReconnectPolicy = RTCReconnectPolicy(), rtcStatsDataChannelPreferenceSeconds: Foundation.TimeInterval = RTCRoomConfig.defaultRtcStatsDataChannelPreferenceSeconds, forwardingWatchdog: QuickVO.RTCForwardingWatchdogConfig = RTCForwardingWatchdogConfig())
   @objc deinit
+}
+public struct RTCForwardingWatchdogConfig : Swift.Sendable {
+  public var pushThresholdVideoKbps: Swift.Double
+  public var pushThresholdAudioKbps: Swift.Double
+  public var windowSamples: Swift.Int
+  public var dcStaleMs: Swift.Int
+  public var graceMs: Swift.Int
+  public var cooldownMs: Swift.Int
+  public var maxSelfHealPerTrack: Swift.Int
+  public init(pushThresholdVideoKbps: Swift.Double = 10, pushThresholdAudioKbps: Swift.Double = 5, windowSamples: Swift.Int = 10, dcStaleMs: Swift.Int = 3000, graceMs: Swift.Int = 3000, cooldownMs: Swift.Int = 30000, maxSelfHealPerTrack: Swift.Int = 3)
 }
 extension QuickVO.RTCRoomConfig {
   public static var defaultVideo: QuickVO.RoomVideoCaptureConfig {
@@ -1666,12 +1700,17 @@ extension QuickVO.RoomError {
     get
   }
 }
+public enum RoomBusinessCode : Swift.Equatable, Swift.Sendable {
+  case exceedMaxPublishers
+  case unknown(Swift.Int32)
+  public static func == (a: QuickVO.RoomBusinessCode, b: QuickVO.RoomBusinessCode) -> Swift.Bool
+}
 public enum ConnectError : QuickVO.RoomError {
   case connectError(Swift.Int32, _: Swift.String? = nil)
   case connectFailure(Swift.Int32)
   case connectTimeOut(_: Swift.String? = nil)
   case disConnected
-  case publishStreamFailure([QuickVO.RoomTrackType])
+  case publishStreamFailure([QuickVO.RoomTrackType], _: QuickVO.RoomBusinessCode? = nil)
   case subscribeStreamFailure([QuickVO.RoomUserSubData])
   case unSubscribeStreamFailure([QuickVO.RoomUserSubData])
   case startScreenShareWithoutGroupId
@@ -1929,8 +1968,6 @@ extension QuickVO.QVReportKind : Swift.Hashable {}
 extension QuickVO.QVReportKind : Swift.RawRepresentable {}
 extension QuickVO.RTCLogLevel : Swift.Equatable {}
 extension QuickVO.RTCLogLevel : Swift.Hashable {}
-extension QuickVO.RTCLogEnvironment : Swift.Equatable {}
-extension QuickVO.RTCLogEnvironment : Swift.Hashable {}
 extension QuickVO.MultipathNetSeverType : Swift.Equatable {}
 extension QuickVO.MultipathNetSeverType : Swift.Hashable {}
 extension QuickVO.QuitIntent : Swift.Equatable {}
@@ -1951,6 +1988,9 @@ extension QuickVO.StreamType : Swift.Equatable {}
 extension QuickVO.StreamType : Swift.Hashable {}
 extension QuickVO.SimulcastType : Swift.Equatable {}
 extension QuickVO.SimulcastType : Swift.Hashable {}
+extension QuickVO.RoomCloseSource : Swift.Equatable {}
+extension QuickVO.RoomCloseSource : Swift.Hashable {}
+extension QuickVO.RoomCloseSource : Swift.RawRepresentable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Equatable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.Hashable {}
 extension QuickVO.RoomLivePlaybackUrls.RoomLiveLocation : Swift.RawRepresentable {}
